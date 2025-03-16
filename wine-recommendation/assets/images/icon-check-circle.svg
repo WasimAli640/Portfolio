@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>icon-check-circle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-check-circle">
+            <path d="M13,0 C20.1797017,0 26,5.82029825 26,13 C26,20.1797017 20.1797017,26 13,26 C5.82029825,26 0,20.1797017 0,13 C0,5.82029825 5.82029825,0 13,0 Z M17.8046038,8.68007547 L10.9749434,15.5097358 L8.268,12.8008302 L7.36633962,13.705434 L10.9749434,17.3140377 L18.7062642,9.58271698 L17.8046038,8.68007547 Z" id="Combined-Shape" fill="#210B1A" fill-rule="nonzero"></path>
+            <g id="check-symbol" transform="translate(7.508000, 8.847000)"></g>
+        </g>
+    </g>
+</svg>
