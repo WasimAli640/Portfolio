@@ -1,0 +1,736 @@
+@import url(../font/bauziet/stylesheet.css);
+@import url(../font/roboto/stylesheet.css);
+/* Skip To Main Content Link */
+a.skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: #fff;
+    color: #000;
+    opacity: 0;
+}
+a.skip-to-main-content-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+*, *::before, *::after {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+:focus {
+    outline: 2px dashed #00FFB2 !important;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+a, a:hover {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+input, input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.chart-box {
+    position: relative;
+}
+
+#myChart, #innerChart {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: none;
+}
+.meter-widget .max-843-width {
+    max-width: 867px;
+}
+.meter-widget .max-760-width {
+    max-width: 760px !important;
+}
+
+/* Colors */
+.meter-widget .white {
+    color: #fff !important;
+}
+.meter-widget .blue {
+    color: #1F69FF !important;
+}
+.meter-widget .warning {
+    color: red;
+}
+
+/* BG Colors */
+.meter-widget .bg-blue {
+    background-image: linear-gradient(144.03deg, #0A1730 21.03%, #012169 121.12%) !important;
+}
+.meter-widget .bg-skblue1 {
+    background: linear-gradient(179.7deg, #0A90C1 2.86%, #4968FF 99.74%) !important;
+}
+.meter-widget .bg-skblue2 {
+    background: linear-gradient(181.42deg, #4869FF 1.21%, #65FFD1 132.77%) !important;
+}
+.meter-widget .bg-skblue3 {
+    background: linear-gradient(181.42deg, #5ED7DE 2.64%, #7E3CE9 98.79%) !important;
+}
+.meter-widget .bg-skblue4 {
+    background: linear-gradient(181.42deg, #7E3CE9 3.75%, #02C2FF 98.79%) !important;
+}
+.meter-widget .bg-white {
+    background-color: #fff !important;
+}
+.meter-widget .bg-li-blue {
+    background-color: #F0F5FB !important;
+}
+.meter-widget .bg-btm {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) -78%, rgba(0, 0, 0, 0.34) 94.67%);
+}
+
+/* Box shadow for box */
+.meter-widget .bx-sh {
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Border Radius 30px */
+.meter-widget .b-rad-30 {
+    border-radius: 30px;
+}
+
+.meter-widget .progress-txt {
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+/* Banner Section START */
+.meter-widget.meter-banner {
+    position: relative;
+    padding: 40px 0px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(36, 48, 72, 0.5), rgba(36, 48, 72, 0.8)), url(../images/banner-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.meter-widget .meter-banner-main {
+    position: relative;
+    min-height: 454px;
+    padding-top: 40px;
+    width: 100%;
+    z-index: 2;
+    transition: .2s;
+}
+.meter-widget .meter-bottom {
+    border-radius: 0 0 30px 30px;
+    padding: 30px 50px 30px 50px;
+}
+.meter-widget .meter-tab-container {
+    min-height: 310px;
+    max-height: 310px;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+.meter-widget .meter-top {
+    display: flex;
+    align-items: center;
+}
+.meter-widget .fill-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.meter-widget .fill-content span {
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 22px;
+}
+.meter-widget .city1,.meter-widget .city2 {
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    padding: 13px 22px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    min-width: 240px;
+    width: 100%;
+    min-height: 40px;
+}
+.meter-widget .fill-content label,
+.meter-input-box label  {
+    display: none;
+}
+.meter-widget .disclamar-txt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.5625em;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+.meter-widget .back-btn, .open-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    background-color: #fff;
+}
+.meter-widget .back-btn {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    height: 32px;
+    width: 32px;
+    overflow: hidden;
+    transition: all .2s ease;
+    z-index: 1;
+}
+.meter-widget .back-btn:hover {
+    background: #00FFB2;
+    background-color: #00FFB2;
+}
+/* .meter-widget .back-btn:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #00FFB2;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all .3s ease-in-out;
+}
+.meter-widget .back-btn:hover:after {
+    transform: scaleY(1);
+} */
+.meter-widget .back-btn img {
+    margin-left: -3px;
+    min-width: 6px;
+}
+.meter-widget .open-btn {
+    height: 26px;
+    width: 26px; 
+    transition: .2s;
+}
+.meter-widget .score-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0 20px 0;
+}
+.progress-box {
+    padding-bottom: 21px;
+}
+.progress-box:last-child {
+    padding-bottom: 0;
+}
+.meter-widget .progress-content, .meter-content {
+    position: relative;
+    width: 51%;
+}
+.meter-widget .progress-content {
+    width: 48%;
+}
+.meter-widget .meter-banner .container.chng-col:before {
+    background-image: linear-gradient(179.7deg, #0A90C1 2.86%, #4968FF 334.06%);
+}
+.meter-widget .meter-logo {
+    position: relative;
+    max-width: 304px;
+    width: 100%;
+    transition: .3s;
+}
+.meter-widget .meter-logo-box {
+    text-align: center;
+}
+.meter-widget .meter-box-content {
+    margin-top: 31px;
+    padding: 0;
+}
+.meter-widget .meter-txt {
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 0.937em;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    color: #fff;
+    margin: 0;
+    padding: 28px 0;
+}
+.meter-widget .chart-box {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+}
+.meter-widget .meterCount {
+    font-family: 'Bauziet';
+    font-size: 105px;
+    color: #fff;
+    padding-top: 70px;
+    line-height: 1;
+}
+.meter-widget .meter-text h2 {
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+}
+.meter-widget .progress-box h6 {
+    margin-bottom: 12px;
+    font-size: 10px;
+    line-height: 11px;
+}
+.meter-widget .progress-bar {
+    position: relative;
+    width: 100%;
+    height: 11px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+.meter-widget .progress-bar span {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+    width: 0;
+    transition: all 2s;
+    transition-delay: 2s;
+}
+.meter-widget .progress-bar.active span {
+    background-color: var(--col);
+    animation: progress 2.5s ease-out .3s forwards;
+}
+/* Animation Porgress Bar */
+@keyframes progress {
+    100% {
+        width: var(--w);
+    }
+}
+/* Animation Porgress Bar */
+.meter-tabs-content {
+    display: none;
+}
+.meter-widget .meter-tabs {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.meter-widget .meter-tabs > * + * {
+    margin-left:8px;
+}
+.meter-widget .meter-tab-head {
+    flex: 100%;
+}
+.meter-widget .meter-tab-head p {
+    margin-bottom: 17px;
+    font-weight: 400;
+    font-size: .75em;
+    line-height: 1.5;
+    color: #fff;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-family: 'Bauziet';
+}
+.meter-widget .tab-btn {
+    display: block;
+    position: relative;
+    padding: 8px 12px;
+    font-family: 'Bauziet';
+    background: #ffffffb3;
+    background-color: rgb(255 255 255 / 70%);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1.71875px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.87);
+    border: none;
+    min-width: 80px;
+    transition: all .2s ease;
+}
+.meter-widget .tab-btn:hover {
+    background-color: #fff;
+}
+.meter-widget .tab-btn::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: calc(100% - 30px);
+    background-color: #ffff;
+    border-radius: 8px;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    transition: all .3s ease-out;
+}
+.meter-widget .tab-btn::after {
+    background-color: var(--tab-color);
+}
+.meter-widget .tab-btn.active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+.meter-widget .tab-btn.gen-tab {
+    padding: 7px 12px;
+}
+.meter-widget .tab-btn.active {
+    background-color: #ffff;
+    font-weight: 700;
+}
+.mm-head-box {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    width: 118px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.meter-widget .vertical-text {
+    transform: rotate(-90deg);
+}
+.meter-widget .meter-tab-pane h4 span {
+    display: inline-block;
+    width: 26px;
+}
+.meter-widget .meter-tab-content {
+    position: relative;
+    padding: 0px 50px 0 50px;
+}
+.pricing-box {
+    padding: 40px 0px 36px 0;
+    max-height: 310px;
+}
+.meter-widget .mCustomScrollbar {
+    -ms-touch-action:auto;
+    touch-action: auto;
+}
+.meter-widget .pricing-box .mCustomScrollBox {
+    padding-left: 92px;
+    overflow-y: hidden;
+    overflow-x: clip;
+}
+.meter-widget .pricing-box .mCSB_container{
+    overflow: visible !important;
+}
+.meter-widget .mCSB_inside>.mCSB_container {
+    margin-right: 10px !important;
+}
+.meter-widget .mCS-light-thick.mCSB_scrollTools .mCSB_draggerContainer {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px; 
+    width: 5px;
+}
+.meter-widget .mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 5px;
+}
+/* .meter-widget .mCS-light-thick.mCSB_scrollTools .mCSB_draggerRail{  
+    width: 5px;
+    border-radius: 0;
+}  */
+/* .meter-widget #mCSB_2_scrollbar_vertical.mCSB_dragger{
+    height: 221px; 
+} */
+.meter-widget .pricing-content {
+    align-items: center;
+    justify-content: space-between;
+}
+.meter-widget .pricing-content:last-child{
+    margin-bottom: 0;
+}
+.meter-widget .price-categ {
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.7px;
+}
+.meter-widget .pricing-content h5 {
+    position: relative;
+    max-width: 254px;
+    width: 100%;
+}
+.meter-widget .tooltip-link {
+    position: relative;
+}
+.meter-widget .tooltip-link img {
+    vertical-align: baseline;
+}
+.meter-widget .tooltiptext  {
+    min-width: 167px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    margin-top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 10px 6px;
+    opacity: 0;
+    visibility: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    letter-spacing: normal;
+    line-height: 10px;
+    color: #1F69FF;
+    z-index: 9;
+    transition: all .3s ease;
+}
+.meter-widget .pricing-content:last-child .tooltiptext {
+    top: auto;
+    bottom: 100%;
+}
+.meter-widget .tooltip-link:hover .tooltiptext,
+.meter-widget .tooltip-link:focus .tooltiptext {
+    opacity: 1;
+    visibility: visible;
+}
+.meter-widget .pricing-content .price {
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 1.5;
+    letter-spacing: 0.744588px;
+    min-width: 120px;
+    text-align: center;
+    color: #fff;
+}
+.meter-widget .price.price1 {
+    border-right: 2px solid #fff;
+    padding-bottom: 36px;
+}
+.meter-widget .mm-tab-head {
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    letter-spacing: 0.08em;
+}
+.meter-widget .meter-input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.meter-widget .meter-inputs {
+    max-width: 240px;
+    width: 100%;
+    min-height: 50px;
+}
+.meter-widget .meter-form {
+    position: relative;
+    height: 40px;
+    background-color: #ffff;
+    border-radius: 10px;
+    max-width: 240px;
+    width: 100%;
+}
+.meter-widget .meter-input-box span {
+    display: inline-block;
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 22px;
+}
+.meter-widget .meter-form input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent !important;
+    background: transparent !important;
+    background-image: transparent !important;
+    border: none;
+    outline: none;
+    inset: 0;
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    border-radius: 10px;
+}
+.meter-widget .meter-form input::placeholder {
+    text-align: center;
+    font-size: 0;
+}
+.meter-widget .meter-form .autocomplete-items.dropdown-menu {
+    margin-top: 1px;
+    top: 100%;
+    width: 100%;
+    max-height: 157px;
+    overflow-y: auto;
+    border-radius: 10px;
+    overflow-x: hidden;
+    padding: 0;
+    background: #ffff;
+    background-color: #fff;
+    background-image: url();
+    scrollbar-width: 5px;
+    scrollbar-color: #c4c4c4 transparent;
+}
+.meter-widget .dropdown-item:focus, .meter-widget .dropdown-item:hover {
+    color: #ffff;
+    background-color: #1F69FF;
+}
+.meter-widget .meter-input-box .error {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 12px;
+    margin-top: 2px;
+    margin-left: 5px;
+    text-transform: inherit;
+    text-align: left;
+    line-height: 1;
+    padding: 0;
+}
+.meter-widget .submit-button {
+    width: 100%;
+    margin-top: 22px;
+}
+.meter-widget .submit-button .warning {
+    opacity: 0;
+}
+.meter-widget .submit-button .warning.show {
+    opacity: 1;
+}
+.meter-widget .warning-msg {
+    font-size: 10px;
+}
+.meter-widget .btn {
+    transition: all .3s ease-in-out;
+}
+.meter-widget .btn:focus, .meter-widget .btn:active {
+    box-shadow: none;
+    outline: none;
+}
+.meter-widget .btn-primary {
+    position: relative;
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #1F69FF;
+    border-color: transparent;
+    border: 2px solid transparent;
+    padding: 9px 44px;
+    opacity: 1 !important;
+    pointer-events: all !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.meter-widget .btn-primary:hover {
+    background-color: #397aff;
+    background: #397aff;
+}
+.meter-widget .submit-button .btn.disabled {
+    background: transparent;
+    border: 2px solid #ffffff;
+}
+.meter-widget .btn-primary.disabled:hover {
+    border-color: #1F69FF !important;
+    background-color: #1F69FF;
+    background: #1F69FF;
+}
+.meter-widget .meter-form .label {
+    position: absolute;
+    display: block;
+    font-family: 'Bauziet';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;  
+    padding: 0;
+    transform-origin: left;
+    transition: .3s; 
+    pointer-events: none; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+.meter-widget .meter-form input:not(:placeholder-shown) ~ .label ,.meter-form input:focus ~ .label {
+    top: -11px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 10px;
+}
+.meter-widget .meter-box2 .fill-content input::placeholder {
+    font-size: 0px;
+}
+
+
+

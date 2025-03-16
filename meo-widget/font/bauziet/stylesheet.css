@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Bauziet';
+    src: url('Bauziet-Norm-Bold.eot');
+    src: url('Bauziet-Norm-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Bauziet-Norm-Bold.woff2') format('woff2'),
+        url('Bauziet-Norm-Bold.woff') format('woff'),
+        url('Bauziet-Norm-Bold.ttf') format('truetype'),
+        url('Bauziet-Norm-Bold.svg#Bauziet-Norm-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet';
+    src: url('Bauziet-Norm-ExtraBold.eot');
+    src: url('Bauziet-Norm-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Bauziet-Norm-ExtraBold.woff2') format('woff2'),
+        url('Bauziet-Norm-ExtraBold.woff') format('woff'),
+        url('Bauziet-Norm-ExtraBold.ttf') format('truetype'),
+        url('Bauziet-Norm-ExtraBold.svg#Bauziet-Norm-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet';
+    src: url('Bauziet-Norm-LightItalic.eot');
+    src: url('Bauziet-Norm-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Bauziet-Norm-LightItalic.woff2') format('woff2'),
+        url('Bauziet-Norm-LightItalic.woff') format('woff'),
+        url('Bauziet-Norm-LightItalic.ttf') format('truetype'),
+        url('Bauziet-Norm-LightItalic.svg#Bauziet-Norm-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet';
+    src: url('Bauziet-Norm-Medium.eot');
+    src: url('Bauziet-Norm-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Bauziet-Norm-Medium.woff2') format('woff2'),
+        url('Bauziet-Norm-Medium.woff') format('woff'),
+        url('Bauziet-Norm-Medium.ttf') format('truetype'),
+        url('Bauziet-Norm-Medium.svg#Bauziet-Norm-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet';
+    src: url('Bauziet-Norm-RegularItalic.eot');
+    src: url('Bauziet-Norm-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Bauziet-Norm-RegularItalic.woff2') format('woff2'),
+        url('Bauziet-Norm-RegularItalic.woff') format('woff'),
+        url('Bauziet-Norm-RegularItalic.ttf') format('truetype'),
+        url('Bauziet-Norm-RegularItalic.svg#Bauziet-Norm-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet';
+    src: url('Bauziet-Norm-Light.eot');
+    src: url('Bauziet-Norm-Light.eot?#iefix') format('embedded-opentype'),
+        url('Bauziet-Norm-Light.woff2') format('woff2'),
+        url('Bauziet-Norm-Light.woff') format('woff'),
+        url('Bauziet-Norm-Light.ttf') format('truetype'),
+        url('Bauziet-Norm-Light.svg#Bauziet-Norm-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet';
+    src: url('Bauziet-Norm-Regular.eot');
+    src: url('Bauziet-Norm-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Bauziet-Norm-Regular.woff2') format('woff2'),
+        url('Bauziet-Norm-Regular.woff') format('woff'),
+        url('Bauziet-Norm-Regular.ttf') format('truetype'),
+        url('Bauziet-Norm-Regular.svg#Bauziet-Norm-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet';
+    src: url('Bauziet-Norm-MediumItalic.eot');
+    src: url('Bauziet-Norm-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Bauziet-Norm-MediumItalic.woff2') format('woff2'),
+        url('Bauziet-Norm-MediumItalic.woff') format('woff'),
+        url('Bauziet-Norm-MediumItalic.ttf') format('truetype'),
+        url('Bauziet-Norm-MediumItalic.svg#Bauziet-Norm-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet';
+    src: url('Bauziet-Norm-SemiBold.eot');
+    src: url('Bauziet-Norm-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Bauziet-Norm-SemiBold.woff2') format('woff2'),
+        url('Bauziet-Norm-SemiBold.woff') format('woff'),
+        url('Bauziet-Norm-SemiBold.ttf') format('truetype'),
+        url('Bauziet-Norm-SemiBold.svg#Bauziet-Norm-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
