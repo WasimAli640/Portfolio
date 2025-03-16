@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en" data-livestyle-extension="available" class="h-100">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+<meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+<title>MCT-Lock Desk Automation</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<!-- Animate CSS -->
+<link rel="stylesheet" href="assets/css/animate.css" />
+
+<!-- Floating lavel CSS -->
+<link rel="stylesheet" href="assets/css/floating-labels.css" />
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/custom.css" />
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css" />
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />	-->
+<!-- Font Awesome v5 CSS -->
+<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css" />
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md"> <a class="navbar-brand" href="#"> <img src="assets/images/mct-logo-1.png" alt="main logo" class="main-logo"></a>
+      <div class="m-visible">
+        <ul class="navbar-nav header-right-nav  flex-row">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <img src="assets/images/menu-icon.svg" alt="menu icon" class="img-fluid"> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav header-right-nav m-invisible">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+            <li class="nav-item dropdown"> 
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+            <div class="media">
+            		<img alt="pic" src="assets/images/profile-pic.png" class="user-img rounded-circle">
+            		<div class="media-body">
+                    	<span class="user-name">Natalie Arshakian </span>
+                        <div class="user-profile">Director Lock Desk</div>
+                    </div>
+            </div>
+             </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="admin-manager-edit-user.html">Edit Profile</a> <a class="dropdown-item" href="login.html">Logout</a> </div>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center nav-bottom m-visible">
+          <ul class="list-inline">
+            <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+            </li>
+            <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+            <li class="list-inline-item"><a href="#">Reports</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+              <div class="dropdown-menu dropdown-menu-right fadeInUp animated cmn-animation" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+            </li>
+            <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown4"> <a class="dropdown-item" href="client-list.html">Client  List</a> <a class="dropdown-item active" href="client-administration-6.1.html">Add Client</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown5"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown6"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+            </li>
+            <li class="list-inline-item"><a href="login.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center nav-bottom m-invisible">
+      <ul class="list-inline">
+        <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown10"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+        </li>
+        <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+        <li class="list-inline-item"><a href="#">Reports</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown11" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown11"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+        </li>
+        <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown12" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown12"> <a class="dropdown-item" href="client-list.html">Client List</a> <a class="dropdown-item active" href="client-administration-6.1.html">Add Client</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown13" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown13"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown14" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown14"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main class="pad-r-0">
+  <section class="create-team">
+    <h1 class="cstm-heading1">Client setup</h1>
+    <div class="heading5">Client Name: <span class="font-weight-bold">Auto Club Trust, FSB (AAA)</span></div>
+  </section>
+  <div class="cmn-divider"></div>
+  <section class="client-setup">
+    <div class="container-fluid">
+      <form action="client-administration-6.5.html">
+        <div class="row flex-md-row-reverse">
+          <div class="col-md-3 col-lg-3 client-right-nav p-0 m-invisible">
+            <div class="list-group list-group-flush"> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action completed"> Client Information </a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action completed">Credentials</a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action completed">Client Contacts</a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action active">Guidelines</a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action">Client Collateral</a> </div>
+          </div>
+          <div class="col-sm-12 d-none m-visible selected-page-title">
+            <div class="form-group">
+              <label for="PPE" class="pt-md-0 pt-3"></label>
+              <select style="display: none;" id="PPE">
+                <option>Select</option>
+                <option value="1">Some option</option>
+                <option value="2">Client Setup</option>
+                <option value="3">A disabled option</option>
+                <option value="4">Potato</option>
+              </select>
+              <div class="nice-select" tabindex="0"><span class="current">Select</span>
+                <ul class="list">
+                  <li data-value="1" class="option">Client Information</li>
+                  <li data-value="2" class="option">Credentials</li>
+                  <li data-value="3" class="option">Client Contacts</li>
+                  <li data-value="4" class="option selected focus">Guidelines</li>
+                  <li data-value="4" class="option">Client Collateral</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 col-lg-9 ">
+            <div class="client-left-panel fadeInUp animated cmn-animationl minimum-height">
+              <div class="custom-form mt-4 mb-3 ">
+                <ul class="nav nav-tabs cstm-tab1" id="myTab" role="tablist" >
+                  <li class="nav-item"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">BE Guidelines</a> </li>
+                  <li class="nav-item"> <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Priority Guidelines</a> </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <div class="create-rule">
+                    <div class="row">
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <label for="RuleName">Rule Name</label>
+                    <input type="text" class="form-control" id="RuleName" placeholder="Rule Name">
+                  </div>
+                </div>
+                
+              </div>
+              
+            
+               <div class="row">
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                     <select>
+                          <option data-display="Select">Program</option>
+                          <option value="1">Some option</option>
+                          <option value="2">Another option</option>
+                          <option value="3">A disabled option</option>
+                          <option value="4">Potato</option>
+                        </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                     <select>
+                          <option data-display="Select">Contains</option>
+                          <option value="1">Some option</option>
+                          <option value="2">Another option</option>
+                          <option value="3">A disabled option</option>
+                          <option value="4">Potato</option>
+                        </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="FHA" placeholder="FHA">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group d-flex align-items-center">
+                     <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="" class="action-icon mr-3" data-original-title="Delete"><img src="assets/images/delete.svg" alt="delete icon"></a>
+                     <div class="onoffswitch1">
+                        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1">
+                        <label class="onoffswitch1-label mb-0" for="myonoffswitch1"> <span class="onoffswitch1-inner"></span> <span class="onoffswitch1-switch"></span> </label>
+                      </div>
+                  </div>
+                </div>
+                
+              </div>
+                <div class="row">
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                     <select>
+                          <option data-display="Select">Loan Amount</option>
+                          <option value="1">Some option</option>
+                          <option value="2">Another option</option>
+                          <option value="3">A disabled option</option>
+                          <option value="4">Potato</option>
+                        </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                     <select>
+                          <option data-display="Select">&gt;</option>
+                          <option value="1">Some option</option>
+                          <option value="2">Another option</option>
+                          <option value="3">A disabled option</option>
+                          <option value="4">Potato</option>
+                        </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                      <input type="text" class="form-control"  placeholder="150000">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group d-flex align-items-center">
+                     <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="" class="action-icon mr-3" data-original-title="Delete"><img src="assets/images/delete.svg" alt="delete icon"></a>
+                     <div class="onoffswitch1">
+                        <input type="checkbox" name="onoffswitch2" class="onoffswitch1-checkbox" id="myonoffswitch2">
+                        <label class="onoffswitch1-label mb-0" for="myonoffswitch2"> <span class="onoffswitch1-inner"></span> <span class="onoffswitch1-switch"></span> </label>
+                      </div>
+                  </div>
+                </div>
+                
+              </div>
+                  <div class="row">
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                     <select>
+                          <option data-display="Select">Loan Term</option>
+                          <option value="1">Some option</option>
+                          <option value="2">Another option</option>
+                          <option value="3">A disabled option</option>
+                          <option value="4">Potato</option>
+                        </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                     <select>
+                          <option data-display="Select">IS</option>
+                          <option value="1">Some option</option>
+                          <option value="2">Another option</option>
+                          <option value="3">A disabled option</option>
+                          <option value="4">Potato</option>
+                        </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                      <input type="text" class="form-control"  placeholder="360">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group d-flex align-items-center">
+                     <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="" class="action-icon mr-3" data-original-title="Delete"><img src="assets/images/delete.svg" alt="delete icon"></a>
+                     <div class="onoffswitch1">
+                        <input type="checkbox" name="onoffswitch3" class="onoffswitch1-checkbox" id="myonoffswitch3" checked>
+                        <label class="onoffswitch1-label mb-0" for="myonoffswitch3"> <span class="onoffswitch1-inner"></span> <span class="onoffswitch1-switch"></span> </label>
+                      </div>
+                  </div>
+                </div>
+                
+              </div>
+                   <div class="row">
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                     <select>
+                          <option data-display="Select">Rate</option>
+                          <option value="1">Some option</option>
+                          <option value="2">Another option</option>
+                          <option value="3">A disabled option</option>
+                          <option value="4">Potato</option>
+                        </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                     <select>
+                          <option data-display="Select">&gt;</option>
+                          <option value="1">Some option</option>
+                          <option value="2">Another option</option>
+                          <option value="3">A disabled option</option>
+                          <option value="4">Potato</option>
+                        </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group">
+                      <input type="text" class="form-control"  placeholder="4">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="form-group d-flex align-items-center">
+                     <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="" class="action-icon mr-3" data-original-title="Delete"><img src="assets/images/delete.svg" alt="delete icon"></a>
+                     
+                  </div>
+                </div>
+                
+              </div>
+                <div class="row justify-content-end">
+              <div class="col-xl-3">
+                <div class="more-link "><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModalCenter" class="d-flex align-items-center"><img src="assets/images/icon-add.svg" alt="icon add"> <span class="pl-1">Add Condition</span></a></div>
+                </div>
+              </div>
+            
+              <div class="buttons-section pt-md-2 mt-4 mt-md-5 d-flex justify-content-center">
+                <button type="button" class="btn inner-page-btn-cancel mr-4" onclick="goBack()">Back</button>
+                <button type="submit" class="btn inner-page-btn">Create</button>
+            
+              </div>
+              </div>
+              
+                    
+                    
+                    
+                   
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <section class="table-responsive tab-data-table">
+                      <table id="data-list-table" class="table table-striped table-borderless nowrap" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th>Priorities</th>
+                            <th>Short Description</th>
+                            <th>Value</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="#">BE Lock</a></td>
+                            <td><a href="#">BE</a></td>
+                            <td><a href="#">Yes</a></td>
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">High Loan Value</a></td>
+                            <td><a href="#">High Val</a></td>
+                            <td><a href="#">750,000</a></td>
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">BE Lock</a></td>
+                            <td><a href="#">BE</a></td>
+                            <td><a href="#">Yes</a></td>
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">High Loan Value</a></td>
+                            <td><a href="#">High Val</a></td>
+                            <td><a href="#">750,000</a></td>
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section>
+                     <div class="buttons-section pt-md-2 mt-4 mt-md-5 d-flex justify-content-center">
+                <button type="button" class="btn inner-page-btn-cancel mr-4" onclick="goBack()">Back</button>
+                <button type="submit" class="btn inner-page-btn">Next</button>
+              </div>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="footer mt-auto">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center footer-content">
+      <div>Copyright &copy; 2019 MCT Live</div>
+      <div class="ml-auto">
+        <div class="media align-items-center">
+          <div class="media-body">Powered by </div>
+          <img src="assets/images/mct-logo.png" class="ml-2 footer-logo" alt="footer-logo"> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="assets/js/jquery-1.12.4.js"></script> 
+<script src="assets/js/popper.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+
+<!-- Custom JS --> 
+<script src="assets/js/custom.js"></script> 
+<!--	<script src="assets/js/fontawesome-all.js"></script>  --> 
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="assets/js/jquery.dataTables.min.js"></script> 
+<script src="assets/js/dataTables.bootstrap4.min.js"></script> 
+<!--nice select--> 
+<script src="assets/js/jquery.nice-select.min.js"></script> 
+<script>
+$('#data-list-table').DataTable({
+    scrollY: true,
+	paging: true,
+	bFilter: false, 
+	bInfo: false,
+	scrollX: true,
+	columnDefs: [
+	  { "width": "10%", "targets": 0 },{ "width": "80%", "targets": 1 },{ "width": "14%", "targets": 2 }
+    ]
+		
+});	
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+	
+</script>
+</body>
+</html>

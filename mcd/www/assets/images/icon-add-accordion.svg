@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icons / Caret Down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Admin-Manager" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Client-Administration-6.2.1" transform="translate(-894.000000, -808.000000)">
+            <g id="Group-2-Copy-8" transform="translate(175.000000, 794.000000)">
+                <g id="Input-Select-Dropdown">
+                    <g id="Icons-/-Caret-Down" transform="translate(725.000000, 20.000000) scale(-1, 1) rotate(90.000000) translate(-725.000000, -20.000000) translate(715.000000, 10.000000)">
+                        <g transform="translate(-0.000000, 0.000000)" id="Icons-/-Plus-White">
+                            <g>
+                                <g>
+                                    <g id="Group-6"></g>
+                                    <path d="M15.3487659,9.16278275 L10.8371894,9.16278275 L10.8371894,4.65116355 C10.8371894,4.44564082 10.55811,4 9.9999756,4 C9.44184117,4 9.16276176,4.44566521 9.16276176,4.65116355 L9.16276176,9.16280715 L4.6511609,9.16280715 C4.4456634,9.16278275 4,9.4418633 4,9.9999756 C4,10.5580879 4.4456634,10.8371928 4.6511609,10.8371928 L9.16278616,10.8371928 L9.16278616,15.3488365 C9.16278616,15.5543104 9.44184117,16 10,16 C10.5581588,16 10.8372138,15.5543104 10.8372138,15.3488365 L10.8372138,10.8371928 L15.3488391,10.8371928 C15.5543122,10.8371928 16,10.5581367 16,9.9999756 C16,9.44181451 15.5542634,9.16278275 15.3487659,9.16278275 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

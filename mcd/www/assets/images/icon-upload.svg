@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="50" viewBox="0 0 48 50">
+    <defs>
+        <filter id="a" width="162.5%" height="157.1%" x="-30%" y="-28.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="nonzero" filter="url(#a)" transform="translate(4 2)">
+        <path fill="#EFEBDE" d="M32.443 10.041L22.461 0H.357v41.6h32.086z"/>
+        <g fill="#D5D0BB">
+            <path d="M7.487 16.497h17.826c.394 0 .713-.321.713-.718a.715.715 0 0 0-.713-.717H7.487a.715.715 0 0 0-.713.717c0 .397.32.718.713.718zM7.487 10.759h7.13c.394 0 .713-.321.713-.718a.715.715 0 0 0-.713-.717h-7.13a.715.715 0 0 0-.713.717c0 .397.32.718.713.718zM25.313 20.8H7.487a.715.715 0 0 0-.713.717c0 .397.32.717.713.717h17.826c.394 0 .713-.32.713-.717a.715.715 0 0 0-.713-.717zM25.313 26.538H7.487a.715.715 0 0 0-.713.717c0 .397.32.717.713.717h17.826c.394 0 .713-.32.713-.717a.715.715 0 0 0-.713-.717zM25.313 32.276H7.487a.715.715 0 0 0-.713.717c0 .397.32.717.713.717h17.826c.394 0 .713-.32.713-.717a.715.715 0 0 0-.713-.717z"/>
+        </g>
+        <path fill="#D5D0BB" d="M22.46 0v10.041h9.983z"/>
+        <g transform="translate(22.4 24)">
+            <ellipse cx="8.8" cy="8.8" fill="#ED7161" rx="8.448" ry="8.8"/>
+            <path fill="#FFF" d="M9.795 8.8l2.49-2.593a.754.754 0 0 0 0-1.037.684.684 0 0 0-.996 0L8.8 7.763 6.31 5.17a.684.684 0 0 0-.995 0 .754.754 0 0 0 0 1.037L7.805 8.8l-2.49 2.593a.754.754 0 0 0 0 1.037.688.688 0 0 0 .498.215c.18 0 .36-.072.498-.215L8.8 9.837l2.49 2.593a.688.688 0 0 0 .497.215c.18 0 .36-.072.498-.215a.754.754 0 0 0 0-1.037L9.795 8.8z"/>
+        </g>
+    </g>
+</svg>

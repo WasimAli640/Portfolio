@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en" data-livestyle-extension="available" class="h-100">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+<meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+<title>MCT-Lock Desk Automation</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<!-- Floating lavel CSS -->
+<link rel="stylesheet" href="assets/css/floating-labels.css" />
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/custom.css" />
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css" />
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />	-->
+<!-- Font Awesome v5 CSS -->
+<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css" />
+ 
+</head>
+<body class="d-flex flex-column h-100">
+<header class="inner-page-header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md inner-header"> <a class="navbar-brand" href="#"> <img src="assets/images/mct-logo.png" alt="main logo" class="site-logo m-invisible">
+    	<img src="assets/images/mct-logo-1.png" alt="main logo" class="m-visible site-logo">
+    </a>
+		<div class="m-visible">
+      <ul class="navbar-nav header-right-nav  flex-row">
+        <li class="nav-item">
+          <div class="d-flex flex-column flex-md-row volume-detail">
+            <div class="today-details">Today's Volume </div>
+            <div>
+              <div>Locks: 12</div>
+              <div>Volume: $3,607,334</div>
+              <div>Non Lock: 17</div>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <img src="assets/images/menu-icon.svg" alt="menu icon" class="img-fluid"> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav header-right-nav m-invisible">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> 
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+            <div class="media">
+            		<img alt="pic" src="assets/images/user-img.jpg" class="user-img rounded-circle">
+            		<div class="media-body">
+                    	<span class="user-name">Natalie Arshakian </span>
+                        <div class="user-profile">Team 3 <div>Lock Desk Analyst</div></div>
+                    </div>
+            </div>
+             </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="admin-manager-edit-user.html">Edit Profile</a> <a class="dropdown-item" href="login.html">Logout</a> </div>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center nav-bottom m-visible">
+          <ul class="list-inline">
+            <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+			  <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>	
+            </li>
+            <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+            <li class="list-inline-item"><a href="#">Reports</a></li>
+            <li class="list-inline-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+              <div class="dropdown-menu dropdown-menu-right fadeInUp animated cmn-animation" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+            </li>
+            <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown4"> <a class="dropdown-item active" href="client-list.html">Client  List</a> <a class="dropdown-item" href="client-administration-6.1.html">Add Client</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown5"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown6"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+            </li>
+			<li class="list-inline-item"><a href="login.html">Logout</a></li>    
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center nav-bottom m-invisible">
+      <ul class="list-inline inner-header-ul">
+        <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+          <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+        </li>
+        <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+        <li class="list-inline-item"><a href="#">Reports</a></li>
+        <li class="list-inline-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown11" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+          <div class="dropdown-menu dropdown-menu-right fadeInUp animated cmn-animation" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+        </li>
+        <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown12" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown4"> <a class="dropdown-item active" href="client-list.html">Client  List</a> <a class="dropdown-item" href="client-administration-6.1.html">Add Client</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown13" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown5"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown14" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown6"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+        </li>
+		
+      </ul>
+    </div>
+    
+    <div class="total-clients-count d-flex align-items-center justify-content-center flex-column m-invisible">
+      <p class="total-clients">Total Clients</p>
+      <p class="count flex-wrap">80</p>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container-fluid table-list client-success-setup client-list-page">
+    <section class="page-heading"> 
+      <div class="row">
+       <div class="col-xl-4"></div>
+        <div class="col-sm-6 col-lg-6 col-xl-4 align-self-auto">
+          <h1 class="m-auto heading left-text">Client List</h1>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-4 text-right filter-section d-flex justify-content-sm-end justify-content-center align-items-center">
+          <button type="submit" class="btn inner-page-btn cstm-btn1 mr-auto mr-sm-0 ">
+      		<div class="d-flex align-items-center "><img src="assets/images/icon-add-white.svg" alt="icon add" > <span class="pl-2">Add New</span></div></button>
+           <a data-toggle="collapse" href="#search-custom" class="search-icon ml-sm-1"> <img src="assets/images/search.png" class="search-right-icon" alt="search"/></a>
+           <a data-toggle="collapse" href="#collapseExample"  class="filter-icon ml-md-1"> <img src="assets/images/filter.png" alt="filter" /> </a> </div>
+        <div class="collapse w-100" id="collapseExample">
+          <div class="card card-body filter-div position-relative">
+			  <a href="javascript:void(0)" class="search-close-img"><img src="assets/images/icon-close.svg" alt="closeicon" width="10"></a>
+            <div class="row align-items-end">
+              <div class="col-md-3">
+                <div class="form-group  ">
+                  <label for="Functions">Functions</label>
+                  <select id="Functions" style="display: none;">
+                    <option>Select</option>
+                    <option value="1">Some option</option>
+                    <option value="2">Another option</option>
+                    <option value="3">A disabled option</option>
+                    <option value="4">Potato</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group ">
+                  <label for="Locks" class="pt-md-0 pt-3">Locks</label>
+                  <select id="Locks" >
+                    <option>Select</option>
+                    <option value="1">Some option</option>
+                    <option value="2">Another option</option>
+                    <option value="3">A disabled option</option>
+                    <option value="4">Potato</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group ">
+                  <label for="Priority" class="pt-md-0 pt-3">Priority</label>
+                  <select id="Priority" >
+                    <option>Select</option>
+                    <option value="1">Some option</option>
+                    <option value="2">Another option</option>
+                    <option value="3">A disabled option</option>
+                    <option value="4">Potato</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3 pl-md-0">
+                <button type="submit" class="btn inner-page-btn cstm-btn1 toggle-btn">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+		<div class="collapse justify-content-end d-flex" id="search-custom">
+          <div class="filter-div search-div position-relative">
+			  <a href="javascript:void(0)" class="search-close-img"><img src="assets/images/icon-close.svg" alt="closeicon" width="10"></a>
+            <div class="row pt-10">
+              <div class="col-lg-12">
+               
+                 	<div class="row align-items-center d-flex search-div-section">
+                    	<div class="search-input">
+                         <label for="Search_here"  class="d-none">Search</label>
+                        	 <input id="Search_here"  type="search" class="form-control w-100" placeholder="Search here">
+                        </div>
+                        <div class="pl-md-0 pt-md-0">
+                        	<button type="submit" class="btn inner-page-btn cstm-btn1 toggle-btn ml-0 ">Submit</button>
+                        </div>
+                    </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="table-responsive">
+      <table id="data-list-table" class="table table-striped table-borderless nowrap" style="width:100%">
+        <thead>
+          <tr>
+            <th>Client Name</th>
+            <th>Service Level</th>
+            <th>Lock Desk Hours</th>
+            <th>LOS</th>
+            <th>PPE</th>
+            <th>Risk Value</th>
+            <th>Hedge Client</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>American Financial Network</td>
+            <td>Full Service - All</td>
+            <td>7:00-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>Mortech (integrated)</td>
+            <td><img src="assets/images/low.png" class="risk-icon" alt="low"/> LOW</td>
+            <td>Y</td>
+          </tr>
+          <tr>
+            <td>Bank of Little Rock</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>Encompass</td>
+            <td>Mortech (Lock-in Pro)</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>
+          <tr>
+            <td>American Financial Network</td>
+            <td>Full Service - All</td>
+            <td>7:00-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>Mortech (integrated)</td>
+            <td><img src="assets/images/low.png" class="risk-icon" alt="low"/> LOW</td>
+            <td>Y</td>
+          </tr>
+          <tr>
+            <td>Bank of Little Rock</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>Encompass</td>
+            <td>Mortech (Lock-in Pro)</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>
+          <tr>
+            <td>Community Mortgage</td>
+            <td>Locks & Committed Loan Sale Data Entry</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>Optimal</td>
+            <td class="high-text"><img src="assets/images/low.png" class="low-icon" alt="high"/> MEDIUM</td>
+            <td>Y</td>
+          </tr>
+		  <tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-1:30 PM PST</td>
+            <td>PC Lender</td>
+            <td>Price My Loan (no login)</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	
+		  <tr>
+            <td>Community Mortgage</td>
+            <td>Locks & Committed Loan Sale Data Entry</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>Optimal</td>
+            <td class="high-text"><img src="assets/images/low.png" class="low-icon" alt="high"/> MEDIUM</td>
+            <td>Y</td>
+          </tr>	
+		  <tr>
+            <td>Bank of Little Rock</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:00-4:00 PM PST</td>
+            <td>Encompass</td>
+            <td>Decision Assist</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>
+		  <tr>
+            <td>American Financial Network</td>
+            <td>Full Service - All</td>
+            <td>7:00-3:30 PM PST</td>
+            <td>PC Lender</td>
+            <td>MCT Live</td>
+            <td class="high-text"><img src="assets/images/low.png" class="low-icon" alt="high"/> LOW</td>
+            <td>Y</td>
+          </tr>	
+		  <tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	
+          
+          
+          <tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	<tr>
+            <td>CLM Mortgage</td>
+            <td>Full Service BE, Changes, Commits</td>
+            <td>7:30-4:00 PM PST</td>
+            <td>PC Lender</td>
+            <td>NYLX</td>
+            <td class="high-text"><img src="assets/images/high.png" class="risk-icon" alt="high"/> HIGH</td>
+            <td>Y</td>
+          </tr>	
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-cmn btn-csv">Download as CSV</button>
+    </div>
+  </div>
+</main>
+<footer class="footer mt-auto">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center footer-content">
+      <div>Copyright &copy; 2019 MCT Live</div>
+      <div class="ml-auto">
+        <div class="media align-items-center">
+          <div class="media-body">Powered by </div>
+          <img src="assets/images/mct-logo.png" class="ml-2 footer-logo" alt="footer-logo"> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>  
+<script src="assets/js/popper.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+
+<!-- Custom JS --> 
+<script src="assets/js/custom.js"></script> 
+<!--	<script src="assets/js/fontawesome-all.js"></script>  --> 
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="assets/js/jquery.dataTables.min.js"></script> 
+<script src="assets/js/dataTables.bootstrap4.min.js"></script> 
+<!--nice select--> 
+<script src="assets/js/jquery.nice-select.min.js"></script> 
+<script>
+
+	$('#data-list-table').DataTable({
+		bFilter: false,
+		scrollY: true,
+		scrollX: true
+});
+	
+	$( ".search-icon" ).click(function() {
+     $('.collapse').removeClass('show');
+   });
+	$( ".filter-icon" ).click(function() {
+     $('.collapse').removeClass('show');
+   });
+		
+	
+	
+      </script>
+</body>
+</html>
