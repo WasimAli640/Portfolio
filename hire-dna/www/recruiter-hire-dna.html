@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Fonts CSS -->    
+    <link rel="stylesheet" href="css/fonts.css">    
+
+
+    <!-- Custom CSS -->  
+    <link rel="stylesheet" href="css/custom.css">    
+      
+     <!-- Dashboard CSS -->  
+     <link href="css/dashboard.css" rel="stylesheet">
+      
+ <!-- Animate CSS -->  
+     <link href="css/animate.css" rel="stylesheet">
+
+
+    <title>Welcome to HireDNA</title>
+  </head>
+
+<body class="wizard-pages">
+<nav class="navbar fixed-top flex-md-nowrap p-0 align-items-start">
+    <div class="navbar-brand col-xl-2 col-lg-3 col-md-4 mr-0 d-flex d-md-block">
+              <a class="logo mr-0" href="#"><img src="images/hiredna_logo.svg" alt="HireDNA" width="120px"></a>
+      
+   </div>
+  
+  <ul class="navbar-nav flex-row align-items-center left-navigations" id="left-navigations"></ul>
+  <ul class="navbar-nav px-3 flex-row justify-content-end align-items-center right-navigations">
+     
+    
+         
+      
+      
+        <li class="nav-item  dropdown account-dropdown  position-relative">
+          <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#dd-collapse" role="button" aria-expanded="false" aria-controls="dd-collapse"><span class="user-avtar"><img src="images/avtar-placeholder.svg" class="avtar-img" alt=""></span> John Smith <img src="images/icon-angle-down.svg" class="dropdown-arrow" alt=""></a>
+           <div class="collapse dd-box" id="dd-collapse">
+           
+             <div class="menu-inner">
+                <a class=" d-flex" href="#"><img src="images/icon-user.svg" alt="" class="mr-2">Profile <img src="images/icon-edit.svg" alt="" class="ml-auto"></a>
+                <div class="dd-link"></div>
+                <a class="d-flex" data-toggle="collapse" href="#status-box" role="button" aria-expanded="false" aria-controls="status-box"><img src="images/icon-status.svg" alt="" class="mr-2">Status <img src="images/icon-edit.svg" alt="" class="ml-auto"></a>
+                <div class="collapse status-label-box position-relative" id="status-box">
+                    <a href="#status-box" class="btn btn-primary ok-btn" data-toggle="collapse" aria-expanded="false" aria-controls="status-box">OK</a>
+
+                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                         <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job
+                          </label>
+                          <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job
+                          </label>
+                       <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job
+                          </label>
+                    </div>
+                </div>
+                <div class="dd-link"></div>
+                <a class=" d-flex" href="recruiter-login.html"><img src="images/icon-logout.svg" alt="" class="mr-2">Logout</a>
+            </div>
+           
+           </div>
+         </li>
+     
+       <li class="nav-item  d-xl-none d-block toggle">
+      <a class="mobile-toggle navbar-toggle" href="javascript:void(0);" id="sidebar-toggle">
+        <img src="images/icon-more-grey.svg" alt="">
+     </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+      
+    <nav class="col-xl-2 col-lg-3 col-md-4 sidebar" id="mySidenav">
+      <div class="sidebar-sticky">
+          
+          <ul class="steps-timeline">
+              <li class="completed">Describe your status</li>
+              <li class="active">Recruiting background
+           <ul class="sub-steps-timeline">
+                          <li class="completed">Have you recruited for Permanent/Direct hire roles?</li>
+                          <li class="completed">How long you have been recruiting for B2B Sales?</li>
+                          <li class="completed">What type of sales roles are you most interested in recruiting for?</li>
+                          <li class="completed">What brings you to HireDNA?</li>
+                          <li>What job markets do you recruit for?</li>
+              </ul>
+                  </li>
+              </ul> 
+      </div>
+    </nav>
+
+        <main role="main" class="col-xl-10 col-lg-12 col-md-12 ml-sm-auto main-pad">
+        
+        
+      <div class="header-block">
+        <h2>Recruiting background</h2>
+        <p>Tell us about your recruiting background, based on the information you share with us, our team will take a tailor-made approach when working with you</p>
+      </div>
+              <div class="step-progress">
+                  <div class="progress-caption">5 of 6 questions in this step</div>
+                  <ul class="step-progress-bar d-flex align-items-center">
+                   <li class="progress completed"></li>
+                   <li class="progress completed"></li>
+                   <li class="progress completed"></li>
+                   <li class="progress completed"></li>
+                   <li class="progress active"></li>
+                   <li class="progress"></li>
+                      </ul>
+              </div>
+        <div class="que-ans-block animated fadeIn d-flex flex-column">
+            <h3 class="que">What brings you to HireDNA?</h3>
+            <div class="ans-options">
+            <div class="option-group">
+                   <div class="custom-control custom-radio custom-radio-sty2">
+                      <input type="radio" id="option01" name="option" class="custom-control-input">
+                      <label class="custom-control-label" for="option01">To grow my recruiting business</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-radio-sty2">
+                      <input type="radio" id="option02" name="option" class="custom-control-input">
+                      <label class="custom-control-label" for="option02">I am in between jobs, and looking for an opportunity to job vacancies and earn placement fees</label>
+                    </div>
+                <div class="custom-control custom-radio custom-radio-sty2">
+                      <input type="radio" id="option03" name="option" class="custom-control-input">
+                      <label class="custom-control-label" for="option03">Just browsing</label>
+                    </div>
+                 <div class="custom-control custom-radio custom-radio-sty2">
+                      <input type="radio" id="option4" name="option" class="custom-control-input">
+                      <label class="custom-control-label" for="option4">I have a full-time job, but I am looking to supplement my incomeo</label>
+                    </div>
+                  <div class="custom-control custom-radio custom-radio-sty2">
+                      <input type="radio" id="option5" name="option" class="custom-control-input">
+                      <label class="custom-control-label" for="option5">Other</label>
+                    </div>
+                   </div>
+                </div>
+            <div class="action-buttons">
+            <a href="recruiter-sales-roles.html" class="btn btn-outline-primary back-btn">Back</a>
+            <a href="recruiter-job-markets.html" class="btn btn-primary next-btn">Next</a>
+                
+            </div>
+        </div>
+
+
+    </main>
+  </div>
+</div>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dashboard.js"></script>
+   <script>
+
+        $(document).ready(function(){
+  $(".mobile-toggle").click(function(){
+    $(".sidebar").toggleClass("open");
+    $(".mobile-toggle").toggleClass("active");
+  });
+
+
+      $('.progress .progress-bar').css("max-width",
+                function() {
+                    return $(this).attr("aria-valuenow") + "%";
+                }
+        )
+    });
+
+</script>
+    </body>
+</html>
+
+
+
+
+

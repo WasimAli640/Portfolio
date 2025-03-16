@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en" data-livestyle-extension="available" class="h-100">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+<meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+<title>MCT-Lock Desk Automation</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/custom.css" />
+
+<!-- Animate CSS -->
+<link rel="stylesheet" href="assets/css/animate.css" />
+
+<!-- Font Awesome v5 CSS -->
+<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css" />
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md"> <a class="navbar-brand" href="#"> <img src="assets/images/mct-logo-1.png" alt="main logo" class="main-logo"></a>
+      <div class="m-visible">
+        <ul class="navbar-nav header-right-nav  flex-row">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <img src="assets/images/menu-icon.svg" alt="menu icon" class="img-fluid"> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav header-right-nav m-invisible">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="media"> <img alt="pic" src="assets/images/profile-pic.png" class="user-img rounded-circle">
+              <div class="media-body"> <span class="user-name">Natalie Arshakian </span>
+                <div class="user-profile">Director Lock Desk</div>
+              </div>
+            </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="admin-manager-edit-user.html">Edit Profile</a> <a class="dropdown-item" href="login.html">Logout</a> </div>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center nav-bottom m-visible">
+          <ul class="list-inline">
+            <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+            </li>
+            <li class="list-inline-item active"><a href="tickets-list.html">Tickets</a></li>
+            <li class="list-inline-item"><a href="#">Reports</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+              <div class="dropdown-menu dropdown-menu-right fadeInUp animated cmn-animation" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown4"> <a class="dropdown-item" href="client-list.html">Client  List</a> <a class="dropdown-item" href="client-administration-6.1.html">Add Client</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown5"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown6"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+            </li>
+            <li class="list-inline-item"><a href="login.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center nav-bottom m-invisible">
+      <ul class="list-inline">
+        <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown10"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+        </li>
+        <li class="list-inline-item active"><a href="tickets-list.html">Tickets</a></li>
+        <li class="list-inline-item"><a href="#">Reports</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown11" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown11"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown12" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown12"> <a class="dropdown-item" href="client-list.html">Client List</a> <a class="dropdown-item" href="client-administration-6.1.html">Add Client</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown13" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown13"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown14" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown14"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main class="pad-r-0">
+  <section class="create-team position-relative ticket-head">
+    <h1 class="cstm-heading1">Ticket Management</h1>
+    <div class="position-absolute d-flex align-items-center cstm-back cstm-back-2"><img src="assets/images/icon-back.svg" alt="icon back" /><a href="javascript:history.back();" class="cmn-link pl-2">Back</a></div>
+  </section>
+  <div class="cmn-divider"></div>
+  <section class="ticket-setup">
+    <div class="container-fluid">
+      <form action="ticket-management-3.2.1.html">
+      <div class="row flex-column-reverse flex-md-row-reverse">
+      <div class="col-md-5 col-xl-4 ticket-right-panel">
+        <section class="ticket-timeline">
+          <div class="timeline">
+            <div class="timeline__group">
+              <div class="timeline__box">
+                <div class="timeline__date"> <span class="timeline__day">1</span> </div>
+                <div class="timeline__post">
+                  <div class="timeline__content">
+                    <div class="accordion position-relative cmn-accordion2 mt-0" id="accordionExample2">
+                      <div class="card cstm-accordion-mt-0"> <a href="#collapse6" class="card-header d-flex align-items-center accordian-icon heading6" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">Status</a>
+                        <div id="collapse6" class="collapse show" aria-labelledby="heading6" data-parent="#accordionExample2">
+                          <div class="card-body">
+                            <ul class="list-inline list-4">
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user" role="main" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                  <input type="radio" class="custom-control-input" name="Status" id="customControlInline" >
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline" > New </label>
+                                </div>
+                              </li>
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user" role="main" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                  <input type="radio" class="custom-control-input" name="Status" id="customControlInline2">
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline2" > Assigned </label>
+                                </div>
+                              </li>
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user" role="main" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                  <input type="radio" class="custom-control-input" name="Status" id="customControlInline3">
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline3" > In Process </label>
+                                </div>
+                              </li>
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user" role="main" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                  <input type="radio" class="custom-control-input" name="Status" id="customControlInline10" checked>
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline10" > Follow-up </label>
+                                </div>
+                              </li>
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user" role="main"  data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                  <input type="radio" class="custom-control-input" name="Status" id="customControlInline4">
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline4"> Complete with Follow-up </label>
+                                </div>
+                              </li>
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user" role="main" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                  <input type="radio" class="custom-control-input" name="Status" id="customControlInline5">
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline5" > Escalate </label>
+                                </div>
+                              </li>
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user" role="main" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                  <input type="radio" class="custom-control-input" name="Status" id="customControlInline6">
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline6" > Complete </label>
+                                </div>
+                              </li>
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user" role="main" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                  <input type="radio" class="custom-control-input" name="Status" id="customControlInline7">
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline7" > Deleted </label>
+                                </div>
+                              </li>
+                            </ul>
+                            <div class="collapse multi-collapse show" id="multiCollapseExample1">
+                              <div class="collapse-content">
+                                <div class="row">
+                                  <div class="col-lg-6">
+                                    <div class="form-group">
+                                      <label for="Open-time44">Reason Code</label>
+                                      <select id="Open-time44">
+                                        <option data-display="Select">select</option>
+                                        <option value="1">Reason Code2</option>
+                                        <option value="2">Reason Code3</option>
+                                        <option value="3">Reason Code4</option>
+                                        <option value="4">Reason Code5</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <div class="form-group">
+                                      <label for="Close-time" class="pt-lg-0 pt-3">Reassign</label>
+                                      <select id="Close-time">
+                                        <option data-display="Select">select</option>
+                                        <option value="1">Reassign1</option>
+                                        <option value="2">Reassign2</option>
+                                        <option value="3">Reassign3</option>
+                                        <option value="4">Reassign4</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__group">
+              <div class="timeline__box">
+                <div class="timeline__date"> <span class="timeline__day">2</span> </div>
+                <div class="timeline__post">
+                  <div class="timeline__content">
+                    <div class="accordion position-relative cmn-accordion2 mt-0" id="accordionExample3">
+                      <div class="card cstm-accordion-mt-0"> <a href="#collapse7" class="card-header d-flex align-items-center accordian-icon heading6" id="heading7" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">Launch</a>
+                        <div id="collapse7" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample3">
+                          <div class="card-body">
+                            <ul class="list-inline list-4">
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user">
+                                  <input type="radio" class="custom-control-input" name="Launch" id="customControlInline11" >
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline11">Open LOS</label>
+                                </div>
+                              </li>
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user">
+                                  <input type="radio" class="custom-control-input" name="Launch" id="customControlInline12">
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline12">Open PPE</label>
+                                </div>
+                              </li>
+                              <li class="list-inline-item">
+                                <div class="custom-control custom-radio custom-checkbox-control custom-radio-control-user">
+                                  <input type="radio" class="custom-control-input" name="Launch" id="customControlInline13" checked>
+                                  <label class="custom-control-label d-flex align-items-center" for="customControlInline13">Investor Login</label>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__group">
+              <div class="timeline__box">
+                <div class="timeline__date"> <span class="timeline__day">3</span> </div>
+                <div class="timeline__post">
+                  <div class="timeline__content">
+                    <ul class="list-group list-group-flush list-group-timeline">
+                      <li class="list-group-item">
+                        <ul class="list-inline list-5 custom-form mt-0 mb-0">
+                          <li class="list-inline-item align-top">
+                            <div class="heading6">Add Investor Confirm</div>
+                            <div class="custom-file-upload custom-file-upload-1">
+                              <input type="file" class="custom-file-input custom-file-input-1 position-absolute w-0" id="customFile">
+                              <label class="custom-file-label-upload" for="customFile"></label>
+                            </div>
+                            <div id="progress-bar1" class="mt-2 row align-items-center">
+                              <div class="col-10 pr-0">
+                                <div class="progress" style="height: 4px;">
+                                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                              <div class="col-2">
+                                <div class="bold">30%</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-inline-item align-top">
+                            <div class="heading6">Add Internal Confirm</div>
+                            <div class="custom-file-upload custom-file-upload-2">
+                              <input type="file" class="custom-file-input custom-file-input-2 position-absolute w-0" id="customFile2">
+                              <label class="custom-file-label-upload" for="customFile2"></label>
+                            </div>
+                            <div id="progress-bar2" class="mt-2 row align-items-center">
+                              <div class="col-10 pr-0">
+                                <div class="progress" style="height: 4px;">
+                                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                              <div class="col-2">
+                                <div class="bold">30%</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="accordion position-relative cmn-accordion2" id="accordionExample">
+                          <div class="card"> <a href="#collapseOne" class="card-header d-flex align-items-center accordian-icon heading6" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Resources </a>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="flex-column d-flex resources-list"> <a href="#">ABC Mortgage Lock Desk Manual</a> <a href="#">ABC Mortgage Company Policies & Proced</a> </div>
+                              </div>
+                              <div class="more-link text-right mt-2 pl-0"><a href="javascript:void(0)"  class="d-flex align-items-center"><img src="assets/images/icon-add.svg" alt="icon add"> <span class="pl-1">Add More</span></a></div>
+                            </div>
+                          </div>
+                          <div class="card"> <a href="#collapsetwo" class="card-header d-flex align-items-center accordian-icon heading6" id="headingtwo" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo"> Logs </a>
+                            <div id="collapsetwo" class="collapse" aria-labelledby="headingtwo" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="log-section mCustomScrollbar" data-mcs-theme="dark">
+                                  <div class="log-grid">
+                                    <div class="log-time">3/27/2019, 12:52 PM</div>
+                                    <div>Escalate Reason: DTI approval, reassigned to Miguel Garcia</div>
+                                  </div>
+                                  <div class="log-grid">
+                                    <div class="log-time">3/27/2019, 12:47 PM</div>
+                                    <div>In process set by Rob Wilson</div>
+                                  </div>
+                                  <div class="log-grid">
+                                    <div class="log-time">3/27/2019, 12:45 PM</div>
+                                    <div>Assign to Rob Wilson</div>
+                                  </div>
+                                  <div class="log-grid">
+                                    <div class="log-time">3/27/2019, 12:43 PM</div>
+                                    <div>Received by system</div>
+                                  </div>
+                                  <div class="log-grid">
+                                    <div class="log-time">3/27/2019, 12:52 PM</div>
+                                    <div>Escalate Reason: DTI approval, reassigned to Miguel Garcia</div>
+                                  </div>
+                                  <div class="log-grid">
+                                    <div class="log-time">3/27/2019, 12:47 PM</div>
+                                    <div>In process set by Rob Wilson</div>
+                                  </div>
+                                  <div class="log-grid">
+                                    <div class="log-time">3/27/2019, 12:45 PM</div>
+                                    <div>Assign to Rob Wilson</div>
+                                  </div>
+                                  <div class="log-grid">
+                                    <div class="log-time">3/27/2019, 12:43 PM</div>
+                                    <div>Received by system</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-8">
+      <div class="ticket-management-left-panel">
+      <ul class="list-inline list-ticket1">
+      <li class="list-inline-item">
+        <div class="heading5">Client Name: <span class="font-weight-bold">Auto Club Trust, FSB (AAA)</span></div>
+      </li><li class="list-inline-item">
+        <div class="d-flex align-items-center justify-content-center justify-content-xl-end">
+        <span class="heading5"> Function: </span>
+        <div class="dropup cstm-dropdown2">
+        <a class="pl-2 dropdown-toggle" href="#" id="navbarDropdown15" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Change</a>
+        <div class="dropdown-menu dropdown-menu-right  ">
+        <div class="custom-form mt-0 mb-0 position-relative">
+        <a class="position-absolute close-dropdown" href="#"> <img src="assets/images/icon-close.svg" alt="close dropdown" width="12"></a>
+     
+        <div class="d-flex align-items-end ">
+          <div class="pr-2">
+            <label for="Change">Function</label>
+            <input type="text" class="form-control" id="Change" placeholder="Change" value="Change">
+          </div>
+          <div class="">
+            <button type="submit" class="btn inner-page-btn cstm-btn1 toggle-btn ">Save</button>
+          </div>
+        </div>
+      
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    </div>
+    </li>
+    </ul>
+    <ul class="list-inline list-ticket1">
+      <li class="list-inline-item"><div class="heading5">Loan Number: <span class="font-weight-bold">2018224556</span></div>
+      </li><li class="list-inline-item">
+        <div class="heading5">Borrower: <span class="font-weight-bold">Jones P.</span></div>
+      </li>
+    </ul>
+    <div class="ticket-grid">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">Loan Officer Name</div>
+            <div class="flex-fill w-50">John</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">Property Type</div>
+            <div class="flex-fill w-50">Office</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">Address</div>
+            <div class="flex-fill w-50">123 Main street</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">Lock Type</div>
+            <div class="flex-fill w-50">BE</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">Purpose</div>
+            <div class="flex-fill w-50">Purchase</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">Investor</div>
+            <div class="flex-fill w-50">PennyMac</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">Program</div>
+            <div class="flex-fill w-50 font-size11">30 YEAR FIXED CONVENTIONAL</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">FICO</div>
+            <div class="flex-fill w-50 font-size11">600</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">AUS Type</div>
+            <div class="flex-fill w-50">N/A</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">DTI</div>
+            <div class="flex-fill w-50">N/A</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">Loan Amount</div>
+            <div class="flex-fill w-50">$304,000.00</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">Rate</div>
+            <div class="flex-fill w-50">5.00%</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">Lock Period</div>
+            <div class="flex-fill w-50">30</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <div class="flex-fill w-50 bg-color1">LO Price</div>
+            <div class="flex-fill w-50 font-size11">Point: 0.000<br>
+              Price: 99.500</div>
+          </div>
+        </li>
+      </ul>
+      <div class="semi_bold">Notes</div>
+      <div class="font-size11">Lorem ipsum is a dummy text for printing</div>
+      <div class="d-flex justify-content-end mt-3">
+        <button type="submit" class="btn inner-page-btn cstm-btn1 toggle-btn">Edit</button>
+      </div>
+    </div>
+    <div class="heading6">Associated Tickets</div>
+    <ul class="list-inline list-ticket2">
+                <li class="list-inline-item"><a href="#" class="link2">03/21/2019 12:32pm</a></li>
+                <li class="list-inline-item"><a href="#" class="link2"> Lock</a></li>
+              </ul>
+              <ul class="list-inline list-ticket2">
+                <li class="list-inline-item"><a href="#" class="link2">03/23/2019 3:24pm</a></li>
+                <li class="list-inline-item"><a href="#" class="link2"> Extension</a></li>
+              </ul>
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+  </section>
+</main>
+<footer class="footer mt-auto">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center footer-content">
+      <div>Copyright &copy; 2019 MCT Live</div>
+      <div class="ml-auto">
+        <div class="media align-items-center">
+          <div class="media-body">Powered by </div>
+          <img src="assets/images/mct-logo.png" class="ml-2 footer-logo" alt="footer-logo"> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+<script src="assets/js/popper.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<!--nice select--> 
+<script src="assets/js/jquery.nice-select.min.js"></script> 
+<!--Date picker--> 
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<!--Custome scroll--> 
+
+<!-- Custom JS --> 
+<script src="assets/js/custom.js"></script> 
+<!--	<script src="assets/js/fontawesome-all.js"></script>  --> 
+<script>
+ 
+			 $("#progress-bar1").hide();	 
+		$("#progress-bar2").hide();
+		 
+$('#customFile').bind('change', function () {
+  var filename = $(".custom-file-input-1").val(); 
+  if (/^\s*$/.test(filename)) {
+    $(".custom-file-upload-1").removeClass('active');
+	$("#progress-bar1").hide();
+    $("#noFile").text("No file chosen..."); 
+  }
+  else {
+    $(".custom-file-upload-1").addClass('active');
+	$("#progress-bar1").show();
+    $("#noFile").text(filename.replace("Loading...")); 
+  }
+});
+
+$('#customFile2').bind('change', function () {
+  var filename = $(".custom-file-input-2").val(); 
+  if (/^\s*$/.test(filename)) {
+    $(".custom-file-upload-2").removeClass('active');
+	$("#progress-bar2").hide();
+    $("#noFile").text("No file chosen..."); 
+  }
+  else {
+    $(".custom-file-upload-2").addClass('active');
+	$("#progress-bar2").show();
+    $("#noFile").text(filename.replace("Loading...")); 
+  }
+});
+		
+         $(document).ready(function(){
+             $('.mCustomScrollbar').scrollbar();
+			 
+			
+		 
+
+			 
+         }); 
+      </script>
+</body>
+</html>

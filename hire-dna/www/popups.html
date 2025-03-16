@@ -1,0 +1,241 @@
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+      <!-- Fonts CSS -->    
+      <link rel="stylesheet" href="css/fonts.css">    
+
+
+      <!-- Custom CSS -->  
+      <link rel="stylesheet" href="css/custom.css">    
+      <link rel="stylesheet" href="css/inner-style.css">    
+        
+       <!-- Dashboard CSS -->  
+       <link href="css/dashboard.css" rel="stylesheet">
+        
+   <!-- Animate CSS -->  
+       <link href="css/animate.css" rel="stylesheet">
+
+
+      <title>Welcome to HireDNA</title>
+    </head>
+
+  <body>
+   <nav class="navbar fixed-top flex-md-nowrap p-0 align-items-start">
+    <div class="navbar-brand without-sidebar col-xl-2 col-lg-3 col-md-4 mr-0 d-flex d-md-block">
+              <a class="logo mr-0" href="#"><img src="images/hiredna_logo.svg" alt="HireDNA" width="120px" /></a>
+      <a class="notifications d-block d-md-none" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+          <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+          <img src="images/icon-bell.svg" alt=""/></a>
+   </div>
+  <ul class="navbar-nav flex-row align-items-center left-navigations"  id="left-navigations">
+        
+    <li class="nav-item ">
+      <a class="nav-link " href="#">Dashboard</a>
+    </li>
+           <li class="nav-item active">
+      <a class="nav-link" href="#">Jobs</a>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Companies</a>
+    </li>
+            <li class="nav-item dropdown report-dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="report-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports<img src="images/icon-angle-down-grey.svg" class="dropdown-arrow" alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="report-dropdown">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+         
+        </div>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Refer a friend</a>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Resources</a>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Calendar</a>
+    </li>
+<!--
+          <li class="nav-item dropdown more">
+      <a class="nav-link dropdown-toggle" href="#" id="more-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icon-more-grey.svg"  alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="more-dropdown">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+         
+        </div>
+    </li>
+-->
+  </ul>
+
+  <ul class="navbar-nav px-3 flex-row justify-content-end align-items-center right-navigations">
+     
+         <li class="nav-item d-none d-md-block">
+      <a class="nav-link notifications" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+          <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+          <img src="images/icon-bell.svg" alt=""/></a>
+    </li>
+         
+      
+      
+        <li class="nav-item dropdown account-dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="account-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-avtar"><img src="images/avtar-placeholder.svg" class="avtar-img" alt=""/></span> John Smith <img src="images/icon-angle-down.svg" class="dropdown-arrow" alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="account-dropdown">
+          <a class="dropdown-item d-flex" href="#"><img src="images/icon-user.svg" alt="" class="mr-2"/>Profile <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+          <a class="dropdown-item d-flex" href="#"><img src="images/icon-status.svg" alt="" class="mr-2"/>Status <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+         <a class="dropdown-item d-flex" href="#"><img src="images/icon-logout.svg" alt="" class="mr-2"/>Logout</a>
+        </div>
+    </li>
+       <li class="nav-item d-xl-none d-block toggle">
+      <a class="mobile-toggle navbar-toggle d-flex align-items-center justify-content-center"  href="javascript:void(0);" id="menu-toggle">
+         <div class="bar-group d-flex flex-column align-items-center justify-content-center">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </div>
+     </a>
+    </li>
+  </ul>
+</nav>
+<div class="col-12 col-md-3 mt-5 pt-5" >
+                               <a class="btn btn-lg btn-primary btn-block mt-md-5 font-normal" data-toggle="modal" data-target="#ApplyNowStatusModal" href="javascript:void(0)">Apply now</a>
+                            </div>
+
+                            <!-- Modal -->
+                      <div class="modal fade candidate-flow-modal " id="ApplyNowStatusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <img src="images/icons/cross-circle.svg">
+                                </button>
+                              </div>
+                              <div class="modal-body align-center">
+                                  <img src="images/icons/experience.svg">
+                                  <h3 class="comn-title mt-3 ">Awesome!</h3>
+                                <p class="pera">You have successfully applied for this job!</p>
+                                <p class="pera">A member of our team will be in touch soon regarding next steps.</p>
+                              </div>
+                              <div class="modal-footer align-center">
+
+                                <button type="button" class="btn btn-lg btn-primary  mx-auto px-5 mb-4" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                            <!-- Modal -->
+                      <div class="modal fade candidate-flow-modal " id="ApplyNowStatusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <img src="images/icons/cross-circle.svg">
+                                </button>
+                              </div>
+                              <div class="modal-body align-center">
+                                  <img src="images/icons/experience.svg">
+                                  <h3 class="comn-title mt-3 ">Awesome!</h3>
+                                <p class="pera">You have successfully applied for this job!</p>
+                                <p class="pera">A member of our team will be in touch soon regarding next steps.</p>
+                              </div>
+                              <div class="modal-footer align-center">
+
+                                <button type="button" class="btn btn-lg btn-primary  mx-auto px-5 mb-4" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+          <!-- <script src="js/popper.min.js"></script> -->
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/dashboard.js"></script>
+
+         <script>
+
+                  $(document).ready(function(){
+      $("#sidebar-toggle").click(function(){
+        $(".sidebar").toggleClass("open");
+        $("#sidebar-toggle").toggleClass("active");
+      });
+       $("#menu-toggle").click(function(){
+           $(".left-navigations").toggleClass("open");
+        $("#menu-toggle").toggleClass("active");
+      });
+        });
+
+      </script>
+
+      <script type="text/javascript">
+          $(document).ready(function() {
+
+
+              $(window).scroll(function(){
+
+                var sticky = $('.stick-top'),
+                scroll = $(window).scrollTop();
+                 console.log(scroll);
+                if (scroll >= 560) sticky.addClass('fixed');
+                else sticky.removeClass('fixed');
+              });
+        });
+        </script>
+      
+      <!--    Notification Modal -->
+<div class="modal blue-overlay fade" id="NotificationModal" tabindex="-1" role="dialog" aria-labelledby="NotificationModalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout notification-modal" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-flex align-items-center">
+        <h5 class="modal-title" id="NotificationModalModalLabel">Notifications</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="images/icon-cross-black.svg" alt="close"/>
+        </button>
+      </div>
+      <div class="modal-body notification-body">
+          <div class="small-text mr-auto">Today</div>
+          <div class="notification d-flex flex-column new">
+              <div class="notification-content-block d-flex">
+                  <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                  <div class="notification-content">
+                      <div class="notification-title">6WRESEARCH</div>
+                      <div class="notification-description">Hi, you have been shortlisted for the role of Sales Manager on 6WRESEARCH. Please attend this assessment to proceed further.</div>
+                  </div>
+              </div>
+               <div class="small-text ml-auto">19-02-2020, 03:14AM </div>
+          </div>
+          <div class="notification d-flex flex-column">
+              <div class="notification-content-block d-flex">
+                  <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                  <div class="notification-content">
+                      <div class="notification-title">SG Consultants</div>
+                      <div class="notification-description">Hey you,  have been shortlisted for the role of Sales Manager on SG Consultants. Please let us know your availability for an interview by clicking here.</div>
+                  </div>
+              </div>
+               <div class="small-text ml-auto">19-02-2020, 01:00AM </div>
+          </div>
+          
+          
+          
+      </div>
+     
+    </div>
+  </div>
+</div>
+      </body>
+  </html>
+
+
+
+
+

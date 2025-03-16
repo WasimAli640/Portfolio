@@ -1,0 +1,447 @@
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Fonts CSS -->    
+        <link rel="stylesheet" href="css/fonts.css">    
+
+
+        <!-- Custom CSS -->  
+        <link rel="stylesheet" href="css/custom.css">    
+        <link rel="stylesheet" href="css/inner-style.css">    
+          
+         <!-- Dashboard CSS -->  
+         <link href="css/dashboard.css" rel="stylesheet">
+         <link href="css/dataTables.bootstrap4.min.css" rel="stylesheet">
+          
+     <!-- Animate CSS -->  
+         <link href="css/animate.css" rel="stylesheet">
+
+
+        <title>Welcome to HireDNA</title>
+      </head>
+
+    <body> 
+        <nav class="navbar fixed-top flex-md-nowrap p-0 align-items-start">
+      <div class="navbar-brand without-sidebar col-xl-2 col-lg-3 col-md-4 mr-0 d-flex d-md-block">
+                <a class="logo mr-0" href="#"><img src="images/hiredna_logo.svg" alt="HireDNA" width="120px" /></a>
+        <a class="notifications d-block d-md-none" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+            <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+            <img src="images/icon-bell.svg" alt=""/></a>
+     </div>
+    <ul class="navbar-nav flex-row align-items-center left-navigations"  id="left-navigations">
+          
+      <li class="nav-item ">
+        <a class="nav-link " href="#">Dashboard</a>
+      </li>
+             <li class="nav-item">
+        <a class="nav-link" href="#">Jobs</a>
+      </li>
+             <li class="nav-item">
+        <a class="nav-link" href="#">Companies</a>
+      </li>
+              <li class="nav-item dropdown report-dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="report-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports<img src="images/icon-angle-down-grey.svg" class="dropdown-arrow" alt=""/></a>
+          <div class="dropdown-menu" aria-labelledby="report-dropdown">
+            <a class="dropdown-item" href="#">Jobs applied</a>
+          <a class="dropdown-item" href="#">Application Status</a>
+           
+          </div>
+      </li>
+             <li class="nav-item">
+        <a class="nav-link" href="#">Refer a friend</a>
+      </li>
+             <li class="nav-item">
+        <a class="nav-link" href="#">Resources</a>
+      </li>
+             <li class="nav-item">
+        <a class="nav-link" href="#">Calendar</a>
+      </li>
+  <!--
+            <li class="nav-item dropdown more">
+        <a class="nav-link dropdown-toggle" href="#" id="more-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icon-more-grey.svg"  alt=""/></a>
+          <div class="dropdown-menu" aria-labelledby="more-dropdown">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+           
+          </div>
+      </li>
+  -->
+    </ul>
+
+    <ul class="navbar-nav px-3 flex-row justify-content-end align-items-center right-navigations">
+       
+           <li class="nav-item d-none d-md-block">
+        <a class="nav-link notifications" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+            <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+            <img src="images/icon-bell.svg" alt=""/></a>
+      </li>
+           
+        <li class="nav-item  dropdown account-dropdown  position-relative">
+          <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#dd-collapse" role="button" aria-expanded="false" aria-controls="dd-collapse"><span class="user-avtar"><img src="images/avtar-placeholder.svg" class="avtar-img" alt=""/></span> John Smith <img src="images/icon-angle-down.svg" class="dropdown-arrow" alt=""/></a>
+           <div class="collapse dd-box" id="dd-collapse">
+           
+             <div class="menu-inner">
+                <a class=" d-flex" href="#"><img src="images/icon-user.svg" alt="" class="mr-2"/>Profile <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="dd-link"></div>
+                <a class="d-flex" data-toggle="collapse" href="#status-box" role="button" aria-expanded="false" aria-controls="status-box"><img src="images/icon-status.svg" alt="" class="mr-2"/>Status <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="collapse status-label-box position-relative" id="status-box">
+                    <a href="#status-box" class="btn btn-primary ok-btn" data-toggle="collapse" aria-expanded="false" aria-controls="status-box">OK</a>
+
+                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                         <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job
+                          </label>
+                          <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job
+                          </label>
+                       <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job
+                          </label>
+                    </div>
+                </div>
+                <div class="dd-link"></div>
+                <a class=" d-flex" href="candidate-login.html"><img src="images/icon-logout.svg" alt="" class="mr-2"/>Logout</a>
+            </div>
+           
+           </div>
+         </li>
+         
+         <li class="nav-item d-xl-none d-block toggle">
+        <a class="mobile-toggle navbar-toggle d-flex align-items-center justify-content-center"  href="javascript:void(0);" id="menu-toggle">
+           <div class="bar-group d-flex flex-column align-items-center justify-content-center">
+           <div class="bar"></div>
+           <div class="bar"></div>
+           <div class="bar"></div>
+        </div>
+       </a>
+      </li>
+  <!--
+         <li class="nav-item  d-md-none d-block toggle">
+        <a class="mobile-toggle"  href="javascript:void(0);" id="sidebar-toggle">
+           <img src="images/icon-more-grey.svg" alt=""/>
+       </a>
+      </li>
+  -->
+    </ul>
+  </nav>
+        <main role="main" class="col-xl-12 col-lg-12 col-md-12 col-auto">
+            <div class="container">
+                
+              <div class="row">
+                <!-- <div class="col-12 col-md-12 col-lg-4"> -->
+                <div class="col-12 ">
+                  <h3 class="comn-title2 mt-0">
+                    Application Status
+                  </h3>
+                  
+                </div>
+                <!-- <div class="col-12 col-md-12 col-lg-8"> -->
+                <div class="col-12 application-status-n-breadcrumb ">
+                  <nav aria-label="breadcrumb" class="candidate-flow-breadcrumb">
+                    <ol class="breadcrumb p-0">
+                      <li class="breadcrumb-item "><a href="#" class="dark-aqua-shade-color">Reports</a></li>
+                      <li class="breadcrumb-item  dark-blue-color font-medium" aria-current="page">Application Status</li>
+                    </ol>
+                  </nav>
+                  <div class="table-breadcrumb w-100 d-flex align-items-end justify-content-end flex-wrap">
+                    <div class="breadcrumb-contant">
+                      Unassigned
+                      <p>0</p>
+                    </div>
+                    <div class="breadcrumb-contant">
+                      Applied
+                      <p>1</p>
+                    </div>
+                    <div class="breadcrumb-contant">In Review<p>2</p>
+                    </div>
+                    <div class="breadcrumb-contant">
+                      Submitted
+                      <p>3</p>
+                    </div>
+                    <div class="breadcrumb-contant">
+                      Shortlisted	
+                      <p>4</p>
+                    </div>
+                    <div class="breadcrumb-contant">
+                      Interviewing
+                      <p>5</p>
+                    </div>
+                    <div class="breadcrumb-contant">
+                      Offer
+                      <p>6</p>
+                    </div>
+					  <div class="breadcrumb-contant">
+                      Hired
+                      <p>7</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <section class="data-table p-0 section-style section-gap-both candidate-application-status">
+              <div class="w-100 no_dataTables_length">
+                <table id="ApplicationStatusTable1" class="table table-ui table-striped m-0 " style="width:100%">
+                          <thead>
+                              <tr>
+                                  <th>COMPANY</th>
+                                  <th>APPLIED FOR</th>
+                                  <th style="max-width: 100px; min-width: 100px;">DATE</th>
+                                  <th style="max-width: 350px; min-width: 350px;">STATUS</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect d-flex">
+                                      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Shell_logo.svg/1200px-Shell_logo.svg.png" class="company-logo">
+                                      <h5>Royal Dutch Shell Netherlands</h5>
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect">
+                                      <h5>Assistant sales / stock manager</h5>
+                                      <p>Modern Trade, Sale Training</p>
+                                    </a>
+                                  </td>
+                                  <td>
+                                      <p>02-17-2020</p>
+                                  </td>
+                                  <td>
+                                      <span class="vertical-style-text">
+                                        STEP
+                                      </span>
+                                      <div class="table-status red-alert" count="3">
+                                        Rejected
+                                      </div>
+                                      <p class="status-root">Pending Approval > Accepted > Interview > Final Interview</p>
+                                  </td>
+                              </tr>
+
+                              <tr>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect d-flex">
+                                      <img src="https://i2.wp.com/theshuttle.org.uk/wp-content/uploads/pharmacy.png?fit=960%2C600&ssl=1" class="company-logo">
+                                      <h5>Green Cross Pharmacy</h5>
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect">
+                                      <h5>Area Sales manager</h5>
+                                      <p>Sales Training </p>
+                                    </a>
+                                  </td>
+                                  <td>
+                                      <p>04-17-2020</p>
+                                  </td>
+                                  <td>
+                                      <span class="vertical-style-text">
+                                        STEP
+                                      </span>
+                                      <div class="table-status" count="7">
+                                        Hired
+                                      </div>
+                                      <p class="status-root">Pending Approval > Accepted > Interview > Final Interview > Offer</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect d-flex">
+                                      <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1080/https://www.rajdomains.com/wp-content/uploads/2019/05/6W.jpg" class="company-logo">
+                                      <h5>6WRESEARCH</h5>
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect">
+                                      <h5>Business Development manager</h5>
+                                      <p>Male Only Graduate Required /MBA</p>
+                                    </a>
+                                  </td>
+                                  <td>
+                                      <p>02-17-2020</p>
+                                  </td>
+                                  <td>
+                                      <span class="vertical-style-text">
+                                        STEP
+                                      </span>
+                                      <div class="table-status red-alert" count="4">
+                                        Rejected
+                                      </div>
+                                      <p class="status-root">Applied > Pending-Approval > Accepted</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect d-flex">
+                                      <img src="https://cdn.dribbble.com/users/103361/screenshots/2894477/sg.jpg" class="company-logo">
+                                      <h5>SG Consultants</h5>
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect">
+                                      <h5>Assistant sales manager</h5>
+                                      <p>Modern Trade, Sale Training</p>
+                                    </a>
+                                  </td>
+                                  <td>
+                                      <p>03-17-2020</p>
+                                  </td>
+                                  <td>
+                                      <span class="vertical-style-text">
+                                        STEP
+                                      </span>
+                                      <div class="table-status" count="4">
+                                        Interviewing
+                                      </div>
+                                      <p class="status-root">Applied > Pending-Approval > Accepted</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect d-flex">
+                                      <img src="https://i2.wp.com/theshuttle.org.uk/wp-content/uploads/pharmacy.png?fit=960%2C600&ssl=1" class="company-logo">
+                                      <h5>Green Cross Pharmacy</h5>
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect">
+                                      <h5>Assistant sales manager</h5>
+                                      <p>Modern Trade, Sale Training</p>
+                                    </a>
+                                  </td>
+                                  <td>
+                                      <p>04-17-2020</p>
+                                  </td>
+                                  <td>
+                                      <span class="vertical-style-text">
+                                        STEP
+                                      </span>
+                                      <div class="table-status red-alert" count="2">
+                                        Withdraw
+                                      </div>
+                                      <p class="status-root">Applied > Pending-Approval > Accepted</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect d-flex">
+                                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKJhbCMcoIeCN4ZWPS7uE0YkQqKVPSdQ8oh2bSORuFqj_DjYt6" class="company-logo">
+                                      <h5>Metsa Playwood Doors</h5>
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <a href="javascript:void(0);" class="no-effect">
+                                      <h5>Assistant sales manager</h5>
+                                      <p>Modern Trade, Sale Training</p>
+                                    </a>
+                                  </td>
+                                  <td>
+                                      <p>05-17-2020</p>
+                                  </td>
+                                  <td>
+                                      <span class="vertical-style-text">
+                                        STEP
+                                      </span>
+                                      <div class="table-status" count="1">
+                                        Interviewing
+                                      </div>
+                                      <p class="status-root">Applied > Pending-Approval > Accepted</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                          <!-- <tfoot>
+                              <tr>
+                                  <th>Name</th>
+                                  <th>Position</th>
+                                  <th>Office</th>
+                                  <th>Age</th>
+                              </tr>
+                          </tfoot> -->
+                      </table>
+              </div>
+            </section>
+                </div>
+        </main>
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/dashboard.js"></script>
+
+          <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+          <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+          <script type="text/javascript">
+          $(document).ready(function() {
+            $('#ApplicationStatusTable1').DataTable({
+                  "scrollX": true,
+                  "paging":   true,
+                  "filter":   false,
+                   "ordering": true,
+                  "info":     false,
+                  "order": [],
+                  "columnDefs": [
+                        { orderable: false, targets: [2] }
+                  ]
+              });
+              });
+        </script>
+<script src="js/custom.js"></script>
+        
+        
+        
+        <!--    Notification Modal -->
+  <div class="modal blue-overlay fade" id="NotificationModal" tabindex="-1" role="dialog" aria-labelledby="NotificationModalModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout notification-modal" role="document">
+      <div class="modal-content">
+        <div class="modal-header d-flex align-items-center">
+          <h5 class="modal-title" id="NotificationModalModalLabel">Notifications</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="images/icon-cross-black.svg" alt="close"/>
+          </button>
+        </div>
+        <div class="modal-body notification-body">
+            <div class="small-text mr-auto">Today</div>
+            <div class="notification d-flex flex-column new">
+                <div class="notification-content-block d-flex">
+                    <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                    <div class="notification-content">
+                        <div class="notification-title">6WRESEARCH</div>
+                        <div class="notification-description">Hi, you have been shortlisted for the role of Sales Manager on 6WRESEARCH. Please attend this assessment to proceed further.</div>
+                    </div>
+                </div>
+                 <div class="small-text ml-auto">19-02-2020, 03:14AM </div>
+            </div>
+            <div class="notification d-flex flex-column">
+                <div class="notification-content-block d-flex">
+                    <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                    <div class="notification-content">
+                        <div class="notification-title">SG Consultants</div>
+                        <div class="notification-description">Hey you,  have been shortlisted for the role of Sales Manager on SG Consultants. Please let us know your availability for an interview by clicking here.</div>
+                    </div>
+                </div>
+                 <div class="small-text ml-auto">19-02-2020, 01:00AM </div>
+            </div>
+            
+            
+            
+        </div>
+       
+      </div>
+    </div>
+  </div>
+        </body>
+    </html>
+
+
+
+
+

@@ -1,0 +1,376 @@
+    <!doctype html>
+   <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+      <!-- Fonts CSS -->    
+      <link rel="stylesheet" href="css/fonts.css">    
+
+
+      <!-- Custom CSS -->  
+      <link rel="stylesheet" href="css/custom.css">    
+      <link rel="stylesheet" href="css/inner-style.css">    
+        
+       <!-- Dashboard CSS -->  
+       <link href="css/dashboard.css" rel="stylesheet">
+        
+   <!-- Animate CSS -->  
+       <link href="css/animate.css" rel="stylesheet">
+
+
+      <title>Welcome to HireDNA</title>
+    </head>    
+
+  <body class="candidate-jobs-applied">
+  <nav class="navbar fixed-top flex-md-nowrap p-0 align-items-start">
+    <div class="navbar-brand without-sidebar col-xl-2 col-lg-3 col-md-4 mr-0 d-flex d-md-block">
+              <a class="logo mr-0" href="#"><img src="images/hiredna_logo.svg" alt="HireDNA" width="120px" /></a>
+      <a class="notifications d-block d-md-none" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+          <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+          <img src="images/icon-bell.svg" alt=""/></a>
+   </div>
+  <ul class="navbar-nav flex-row align-items-center left-navigations"  id="left-navigations">
+        
+    <li class="nav-item ">
+      <a class="nav-link " href="#">Dashboard</a>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Jobs</a>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Companies</a>
+    </li>
+            <li class="nav-item dropdown report-dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="report-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports<img src="images/icon-angle-down-grey.svg" class="dropdown-arrow" alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="report-dropdown">
+          <a class="dropdown-item" href="#">Jobs applied</a>
+          <a class="dropdown-item" href="#">Application Status</a>
+         
+        </div>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Refer a friend</a>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Resources</a>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Calendar</a>
+    </li>
+<!--
+          <li class="nav-item dropdown more">
+      <a class="nav-link dropdown-toggle" href="#" id="more-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icon-more-grey.svg"  alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="more-dropdown">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+         
+        </div>
+    </li>
+-->
+  </ul>
+
+  <ul class="navbar-nav px-3 flex-row justify-content-end align-items-center right-navigations">
+     
+         <li class="nav-item d-none d-md-block">
+      <a class="nav-link notifications" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+          <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+          <img src="images/icon-bell.svg" alt=""/></a>
+    </li>
+         
+      
+      
+        <li class="nav-item  dropdown account-dropdown  position-relative">
+          <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#dd-collapse" role="button" aria-expanded="false" aria-controls="dd-collapse"><span class="user-avtar"><img src="images/avtar-placeholder.svg" class="avtar-img" alt=""/></span> John Smith <img src="images/icon-angle-down.svg" class="dropdown-arrow" alt=""/></a>
+           <div class="collapse dd-box" id="dd-collapse">
+           
+             <div class="menu-inner">
+                <a class=" d-flex" href="#"><img src="images/icon-user.svg" alt="" class="mr-2"/>Profile <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="dd-link"></div>
+                <a class="d-flex" data-toggle="collapse" href="#status-box" role="button" aria-expanded="false" aria-controls="status-box"><img src="images/icon-status.svg" alt="" class="mr-2"/>Status <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="collapse status-label-box position-relative" id="status-box">
+                    <a href="#status-box" class="btn btn-primary ok-btn" data-toggle="collapse" aria-expanded="false" aria-controls="status-box">OK</a>
+
+                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                         <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job
+                          </label>
+                          <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job
+                          </label>
+                       <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job
+                          </label>
+                    </div>
+                </div>
+                <div class="dd-link"></div>
+                <a class=" d-flex" href="candidate-login.html"><img src="images/icon-logout.svg" alt="" class="mr-2"/>Logout</a>
+            </div>
+           
+           </div>
+         </li>
+       <li class="nav-item d-xl-none d-block toggle">
+      <a class="mobile-toggle navbar-toggle d-flex align-items-center justify-content-center"  href="javascript:void(0);" id="menu-toggle">
+         <div class="bar-group d-flex flex-column align-items-center justify-content-center">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </div>
+     </a>
+    </li>
+  </ul>
+</nav>
+      <main role="main" class="col-auto xs-px-0">
+          <div class="container">
+              
+            <div class="row">
+              <div class="col-12 col-md-12">
+                <h3 class="comn-title2 m-0">
+                  Jobs Applied
+                </h3>
+                <nav aria-label="breadcrumb" class="candidate-flow-breadcrumb">
+                  <ol class="breadcrumb p-0 m-0">
+                    <li class="breadcrumb-item "><a href="#" class="dark-aqua-shade-color">Reports</a></li>
+                    <li class="breadcrumb-item  dark-blue-color font-medium" aria-current="page">Jobs Applied</li>
+                  </ol>
+                </nav>
+              </div>
+              <!-- <div class="col-12 col-md-12 align-right">
+                <a href="javascript:void(0)" class="link mb-2 d-inline-block">
+                  Export Report
+                </a>
+              </div> -->
+              <div class="col-12 col-md-12 align-right">
+                <a href="javascript:void(0)" class="link d-inline-block">
+                  <span class="text-decoration-none pr-1"><img src="images/icons/export-report.svg" alt=" "></span>Export Report
+                </a>
+              </div>
+            </div>
+
+
+            <div class="Job-matches-for-you jobs-applied">
+                <ul class="m-0 p-0 list-style-none xs-px-0-section-style">
+                  <li class="section-style p-4 mb-3 hover-effect-grow">
+                    <a href="javascript:void(0)" class="no-effect">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <div class="company-details d-flex align-items-center">
+                          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Shell_logo.svg/1200px-Shell_logo.svg.png" class="company_logo">
+                            <div class="pl-2">
+                              <h4 class="comn-title font-normal mb-0">Royal Dutch Shell Netherlands</h4>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-8 other-info row">
+                        <p class="pera charcol-grey-color  m-0 d-inline-block  col-md-5 col-12">Job applied by you <br> <span class="mt-2 dark-blue-color">Sales manager -  Chicago, IL</span></p>
+
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-3">Applied on <br> <span class="mt-2 dark-blue-color ">01-31-2020</span></p>
+
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-4">Status <br>
+                          <span class="mt-2 table-status no-count simple-ui yellow-warning">
+                            Pending Approval
+                          </span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </a>
+                  </li>
+                  
+                  <li class="section-style section-gap-bottom p-4 hover-effect-grow">
+                    <a href="javascript:void(0)" class="no-effect">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <div class="company-details d-flex align-items-center">
+                          <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1080/https://www.rajdomains.com/wp-content/uploads/2019/05/6W.jpg" class="company_logo">
+                            <div class="pl-2">
+                              <h4 class="comn-title font-normal mb-0">6WRESEARCH</h4>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-8 other-info row">
+                        <p class="pera charcol-grey-color  m-0 d-inline-block  col-md-5 col-12">Job applied by you <br> <span class="mt-2  dark-blue-color">Sales manager -  Chicago, IL</span></p>
+
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-3">Applied on <br> <span class="mt-2 dark-blue-color ">01-28-2020</span></p>
+
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-4">Status <br>
+                          <span class="mt-2 table-status no-count simple-ui yellow-warning" >
+                            Pending Approval
+                          </span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </a>
+                  </li>
+
+                  <li class="section-style section-gap-bottom p-4 hover-effect-grow">
+                    <a href="javascript:void(0)" class="no-effect">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <div class="company-details d-flex align-items-center">
+                          <img src="images/icons/company-logo1.png" class="company_logo">
+                            <div class="pl-2">
+                              <h4 class="comn-title font-normal mb-0 ">VOV International</h4>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-8 other-info row">
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-5 col-12">Job applied by you <br> <span class="mt-2 dark-blue-color">Sales manager -  Chicago, IL</span></p>
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-3">Applied on <br> <span class="mt-2 dark-blue-color ">01-22-2020</span></p>
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-4">Status <br>
+                          <span class="mt-2 table-status no-count simple-ui yellow-warning" >
+                            Pending Approval
+                          </span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </a>
+                  </li>
+                  
+                  <li class="section-style section-gap-bottom p-4 hover-effect-grow">
+                    <a href="javascript:void(0)" class="no-effect">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <div class="company-details d-flex align-items-center">
+                          <img src="images/icons/company-logo2.png" class="company_logo">
+                            <div class="pl-2">
+                              <h4 class="comn-title font-normal mb-0 ">SG Consultants</h4>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-8 other-info row">
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-5 col-12">Job applied by you <br> <span class="mt-2 dark-blue-color">Sales manager -  Chicago, IL</span></p>
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-3">Applied on <br> <span class="mt-2 dark-blue-color ">01-20-2020</span></p>
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-4">Status <br>
+                          <span class="mt-2 table-status no-count simple-ui yellow-warning" count="4">
+                            Pending Approval
+                          </span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </a>
+                  </li>
+
+                  <li class="section-style section-gap-bottom p-4 hover-effect-grow">
+                    <a href="javascript:void(0)" class="no-effect">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <div class="company-details d-flex align-items-center">
+                          <img src="images/icons/company-logo3.png" class="company_logo">
+                            <div class="pl-2">
+                              <h4 class="comn-title font-normal mb-0 ">Green Cross Pharmacy</h4>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-8 other-info row">
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-5 col-12">Job applied by you <br> <span class="mt-2 dark-blue-color">Sales manager -  Chicago, IL</span></p>
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-3">Applied on <br> <span class="mt-2 dark-blue-color ">01-19-2020</span></p>
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-4">Status <br>
+                          <span class="mt-2 table-status no-count simple-ui yellow-warning" count="4">
+                            Pending Approval
+                          </span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </a>
+                  </li>
+
+                  <li class="section-style section-gap-bottom p-4 hover-effect-grow">
+                    <a href="javascript:void(0)" class="no-effect">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <div class="company-details d-flex align-items-center">
+                          <img src="images/icons/company-logo1.png" class="company_logo">
+                            <div class="pl-2">
+                              <h4 class="comn-title font-normal mb-0 ">VOV International</h4>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-8 other-info row">
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-5 col-12">Job applied by you <br> <span class="mt-2 dark-blue-color">Sales manager -  Chicago, IL</span></p>
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-3">Applied on <br> <span class="mt-2 dark-blue-color ">01-17-2020</span></p>
+                        <p class="pera charcol-grey-color m-0 d-inline-block  col-md-4">Status <br>
+                          <span class="mt-2 table-status no-count simple-ui yellow-warning" count="4">
+                            Pending Approval
+                          </span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </a>
+                  </li>
+                  
+                </ul>
+            </div>
+</div>
+      </main>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/dashboard.js"></script>
+
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+      <script src="js/custom.js"></script>
+      
+      
+      
+<!--    Notification Modal -->
+<div class="modal blue-overlay fade" id="NotificationModal" tabindex="-1" role="dialog" aria-labelledby="NotificationModalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout notification-modal" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-flex align-items-center">
+        <h5 class="modal-title" id="NotificationModalModalLabel">Notifications</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="images/icon-cross-black.svg" alt="close"/>
+        </button>
+      </div>
+      <div class="modal-body notification-body">
+          <div class="small-text mr-auto">Today</div>
+          <div class="notification d-flex flex-column new">
+              <div class="notification-content-block d-flex">
+                  <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                  <div class="notification-content">
+                      <div class="notification-title">6WRESEARCH</div>
+                      <div class="notification-description">Hi, you have been shortlisted for the role of Sales Manager on 6WRESEARCH. Please attend this assessment to proceed further.</div>
+                  </div>
+              </div>
+               <div class="small-text ml-auto">19-02-2020, 03:14AM </div>
+          </div>
+          <div class="notification d-flex flex-column">
+              <div class="notification-content-block d-flex">
+                  <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                  <div class="notification-content">
+                      <div class="notification-title">SG Consultants</div>
+                      <div class="notification-description">Hey you,  have been shortlisted for the role of Sales Manager on SG Consultants. Please let us know your availability for an interview by clicking here.</div>
+                  </div>
+              </div>
+               <div class="small-text ml-auto">19-02-2020, 01:00AM </div>
+          </div>
+          
+          
+          
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+      </body>
+  </html>
+
+
+
+
+

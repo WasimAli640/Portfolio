@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- Fonts CSS -->
+<link rel="stylesheet" href="css/fonts.css">
+
+<link href="css/bootstrap-datepicker3.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/inner-style.css">
+
+<!-- Dashboard CSS -->
+<link href="css/dashboard.css" rel="stylesheet">
+
+<!-- Animate CSS -->
+<link href="css/animate.css" rel="stylesheet">
+
+<!-- Image Select CSS -->
+<link href="css/image-select.css" rel="stylesheet">
+
+            <link rel="stylesheet" href="css/bootstrap-select.css">
+
+    
+    
+<title>Welcome to HireDNA</title>
+</head>
+    
+<!--     <style>
+        .datepicker{
+            box-shadow: 0 3px 9px 0 rgba(0,0,0,0.28);
+            border-color: transparent;
+        }
+        .datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active:active {
+	color: #fff;
+	background-color: #0ABF53;
+	border-color: #0ABF53;
+}
+        .datepicker table tr td.active.active:hover{
+            color: #fff;
+	background-color: #0ABF53;
+	border-color: #0ABF53;
+        }
+        .datepicker table tr td span.active.active{
+             color: #fff;
+	background-color: #0ABF53;
+	border-color: #0ABF53;
+        }
+        .datepicker table tr td span.active.active:hover{
+            color: #fff !important;
+	background-color: #0ABF53 !important;
+	border-color: #0ABF53 !important;
+        }
+        .datepicker table thead tr th {
+       font-weight: 500;
+}
+    </style> -->
+    
+<body class="account-manager-employer  recruter-edit">
+<nav class="navbar fixed-top flex-md-nowrap p-0 align-items-start">
+    <div class="navbar-brand col-xl-2 col-lg-3 col-md-4 mr-0 d-flex d-md-block">
+              <a class="logo mr-0" href="#"><img src="images/hiredna_logo.svg" alt="HireDNA" width="120px" /></a>
+      <a class="notifications d-block d-md-none" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+          <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+          <img src="images/icon-bell.svg" alt=""/></a>
+   </div>
+  <ul class="navbar-nav flex-row align-items-center left-navigations"  id="left-navigations">
+        
+    <li class="nav-item active">
+      <a class="nav-link " href="#">Dashboard</a>    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Jobs</a>    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Companies</a>    </li>
+    <li class="nav-item dropdown report-dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="report-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports<img src="images/icon-angle-down-grey.svg" class="dropdown-arrow" alt=""/></a>
+    <div class="dropdown-menu" aria-labelledby="report-dropdown">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>        </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Refer a friend</a>    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Resources</a>    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Calendar</a>    </li>
+<!--
+          <li class="nav-item dropdown more">
+      <a class="nav-link dropdown-toggle" href="#" id="more-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icon-more-grey.svg"  alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="more-dropdown">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+         
+        </div>
+    </li>
+-->
+  </ul>
+
+  <ul class="navbar-nav px-3 flex-row justify-content-end align-items-center right-navigations">
+     
+         <li class="nav-item d-none d-md-block">
+      <a class="nav-link notifications" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+          <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+          <img src="images/icon-bell.svg" alt=""/></a>
+    </li>
+         
+      
+      
+        <!--<li class="nav-item dropdown account-dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="account-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-avtar"><img src="images/avtar-placeholder.svg" class="avtar-img" alt=""/></span> John Smith <img src="images/icon-angle-down.svg" class="dropdown-arrow" alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="account-dropdown">
+          <a class="dropdown-item d-flex" href="#"><img src="images/icon-user.svg" alt="" class="mr-2"/>Profile <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+          <a class="dropdown-item d-flex" href="#"><img src="images/icon-status.svg" alt="" class="mr-2"/>Status <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+         <a class="dropdown-item d-flex" href="#"><img src="images/icon-logout.svg" alt="" class="mr-2"/>Logout</a>        </div>
+    </li>-->
+    
+    
+        <li class="nav-item  dropdown account-dropdown  pr-3 position-relative">
+          <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#dd-collapse" role="button" aria-expanded="false" aria-controls="dd-collapse"><span class="user-avtar"><img src="images/avtar-placeholder.svg" class="avtar-img" alt=""/></span> John Smith <img src="images/icon-angle-down.svg" class="dropdown-arrow" alt=""/></a>
+           <div class="collapse dd-box" id="dd-collapse">
+           
+             <div class="menu-inner">
+                <a class=" d-flex" href="#"><img src="images/icon-user.svg" alt="" class="mr-2"/>Profile <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="dd-link"></div>
+                <a class="d-flex" data-toggle="collapse" href="#status-box" role="button" aria-expanded="false" aria-controls="status-box"><img src="images/icon-status.svg" alt="" class="mr-2"/>Status <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="collapse status-label-box position-relative" id="status-box">
+                    <a href="#status-box" class="btn btn-primary ok-btn" data-toggle="collapse" aria-expanded="false" aria-controls="status-box">OK</a>
+
+                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                         <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job
+                          </label>
+                          <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job
+                          </label>
+                       <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job
+                          </label>
+                    </div>
+                </div>
+                <div class="dd-link"></div>
+                <a class=" d-flex" href="recruiter-login.html"><img src="images/icon-logout.svg" alt="" class="mr-2"/>Logout</a>
+            </div>
+           
+           </div>
+         </li>
+    
+    
+       <li class="nav-item d-xl-none d-block toggle">
+      <a class="mobile-toggle navbar-toggle d-flex align-items-center justify-content-center"  href="javascript:void(0);" id="menu-toggle">
+         <div class="bar-group d-flex flex-column align-items-center justify-content-center">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </div>
+     </a>
+    </li>
+       <li class="nav-item  d-md-none d-block toggle">
+      <a class="mobile-toggle"  href="javascript:void(0);" id="sidebar-toggle">
+         <img src="images/icon-more-grey.svg" alt=""/>
+     </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+      
+    <nav class="col-xl-2 col-lg-2 col-md-3 sidebar" id="mySidenav">
+      <div class="sidebar-sticky">
+          
+          <ul class="steps-timeline">
+              <li class="active">Describe your status</li>
+              <li class="">Recruiting background</li>
+              </ul> 
+      </div>
+    </nav>
+
+    <main role="main" class="col-xl-10 col-lg-9 col-md-8 ml-sm-auto">
+
+
+
+
+
+<!-- form-page  -->
+
+
+
+
+<div class="form__group comn-4-all">
+    <input type="input" class="form__field" placeholder="-" value="VOV International" name="name" id='' required />
+    <label for="name" class="form__label">Company Name</label>
+</div>
+
+
+
+
+<br>
+
+
+
+<div class="form__group comn-4-all icons-with-input">
+  <img src="images/icons/calander.svg" class="icons-on-input">
+    <input type="input" class="form__field" placeholder="Date" data-provide="datepicker"  value="January 2017" name="name" id='' required />
+    <label for="name" class="form__label">Date</label>
+</div>
+
+
+<br>
+
+
+<div class="form__group comn-4-all with-dollar">
+  <span class="dollar-icon">$</span>
+    <input type="input" class="form__field" placeholder="Company Name" value="VOV International" name="name" id='' required />
+    <label for="name" class="form__label">Company Name</label>
+</div>
+
+<br>
+<!-- floting-textarea -->
+<div class="form__group comn-4-all pt-0">
+    <textarea type="input" class="form__field border px-3 py-4" placeholder="Write a brief description about this Job" value="VOV International" rows="5" name="name" required=""></textarea>
+    <label for="name" class="form__label">Write a brief description about this Job</label>
+</div>
+
+<br>
+
+  <div class="form__group comn-4-all py-0">
+    <textarea class=" p-3 my-0  border  w-100 form__field text-left placeholder" placeholder="Write a brief description about this Job"  rows="5"></textarea>
+  </div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class=" form__group ui-3 field custom-select-dropdown comn-4-all city">
+                  <select class="selectpicker">
+                    <option >City</option>
+                    <option >City</option>
+                    <option >City</option>
+                  </select>
+    </div>
+  </div>
+  <div class="col-md-6">
+      <div class="form__group comn-4-all with-dollar">
+        <span class="dollar-icon">$</span>
+          <input type="input" class="form__field" placeholder="Company Name" value="VOV International" name="name" id='' required />
+        <label for="name" class="form__label">Company Name</label>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="select-label  bg-light" href="#">Chicago, Illinois <a href="#" class="ml-3" data-toggle="tooltip" title="Remove"><img src="images/icon-close.svg" alt=""/></a></div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+  </div>
+</div>
+      
+      
+      
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!--    <script src="js/jquery-3.2.1.slim.min.js"></script>-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-slider.js"></script>    
+
+    <script src="js/bootstrap-select.js"></script>   
+    <script src="js/bootstrap-datepicker.min.js"></script>    
+    <script src="js/custom.js"></script>    
+    
+       <script>
+
+
+// $('[data-provide="datepicker"]').datepicker({
+//     format: 'MM yyyy'
+// });
+
+           
+           
+// // Get Modal
+//var modal = document.getElementById('left-navigations');
+//    
+//// Get pseudoelement to open Modal
+//var btn = document.getElementById("menu-toggle");
+//
+//// Get the <span> element to close Modal
+//var span = document.getElementsByClassName("close")[0];
+//
+//// When user clicks button, open Modal
+//btn.onclick = function() {
+//   modal.style.display = "block";
+//    $("body").addClass("modal-open");
+//    $(modal).addClass(" animated slideInDown faster");
+//   
+//   };
+//
+//// When user clicks Close (x), close Modal
+//span.onclick = function() {
+//   modal.style.display = "none";
+//     $("body").removeClass("modal-open");
+//    $(modal).removeClass(" animated slideInDown faster");
+//
+//   };
+
+// When user clicks anywhere outside of the Modal, close Modal
+// window.onclick = function(event) {
+//    if (event.target == modal) {
+//       modal.style.display = "none";
+//       
+//       }
+//    }
+
+</script>
+    
+<!--    Notification Modal -->
+<div class="modal blue-overlay fade" id="NotificationModal" tabindex="-1" role="dialog" aria-labelledby="NotificationModalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout notification-modal" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-flex align-items-center">
+        <h5 class="modal-title" id="NotificationModalModalLabel">Notifications</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="images/icon-cross-black.svg" alt="close"/>
+        </button>
+      </div>
+      <div class="modal-body notification-body">
+          <div class="small-text mr-auto">Today</div>
+          <div class="notification d-flex flex-column new">
+              <div class="notification-content-block d-flex">
+                  <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                  <div class="notification-content">
+                      <div class="notification-title">6WRESEARCH</div>
+                      <div class="notification-description">Hi, you have been shortlisted for the role of Sales Manager on 6WRESEARCH. Please attend this assessment to proceed further.</div>
+                  </div>
+              </div>
+               <div class="small-text ml-auto">19-02-2020, 03:14AM </div>
+          </div>
+          <div class="notification d-flex flex-column">
+              <div class="notification-content-block d-flex">
+                  <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                  <div class="notification-content">
+                      <div class="notification-title">SG Consultants</div>
+                      <div class="notification-description">Hey you,  have been shortlisted for the role of Sales Manager on SG Consultants. Please let us know your availability for an interview by clicking here.</div>
+                  </div>
+              </div>
+               <div class="small-text ml-auto">19-02-2020, 01:00AM </div>
+          </div>
+          
+          
+          
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+
+    
+  </body>
+</html>

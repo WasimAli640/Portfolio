@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/gif" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- NIce Select CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.min.1.14.css">
+
+    <!-- DatepickerCSS -->
+    <link rel="stylesheet" href="../assets/css/daterangepicker.css">
+
+    <!-- Custom Font CSS -->
+    <link rel="stylesheet" href="../assets/fonts/custom-font.css">
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+
+    <!-- Dasboard CSS -->
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+    <!-- dataTables -->
+    <link rel="stylesheet" href="../assets/css/dataTables.bootstrap5.min.css">
+
+    <!-- Style Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css?v=1">
+    <link rel="stylesheet" href="../assets/css/custom.css?v=1">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v=1">
+
+    <title>Welcome to Brain Gym</title>
+</head>
+
+<body class="bg-white">
+
+
+    <header class="header header-main">
+        <nav class="navbar fixed-top flex-md-nowrap p-0">
+            <a class="navbar-brand col-md-3 col-lg-2 me-0 fs-6" href="#"><img src="../assets/images/logo-with-text.svg" alt="Brain Gym" /></a>
+
+            <div class="page-content-header">
+                <div class="body-block mb-0">
+                    <h4>Coach details</h4>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">User managment</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Coach detail</li>
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+            <ul class="navbar-nav ms-auto right-nav">
+                <li class="nav-item dropdown notification-dd">
+                    <a class="nav-link dropdown-toggle notify" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"><img src="../assets/images/icon-notification-header.svg" alt="" /></a>
+                    <ul class="dropdown-menu p-4">
+                        <li>
+                            <h5 class="text-center text-primary">Notification</h5>
+                        </li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown profile-dd">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://picsum.photos/id/1027/200" alt="profile photo" />
+                        <div class="text-here">
+                            <span>Haylie Kenter</span>
+                            <span class="designation">Admin</span>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="icon-user"></i>Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="icon-logout"></i>Logout
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <li class="nav-item">
+                        <button class="navbar-toggler  d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                    </li>
+
+                </li>
+            </ul>
+        </nav>
+
+        <div class="page-content-header">
+            <div class="body-block mb-0">
+                <h4>Employee details</h4>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">User managment</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Coach detail</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFilter" aria-labelledby="offcanvasFilterLabel">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Filter</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+            <div class="col-md-12 mr-b-12">
+                <div class="body-text-emphasis ">Date range</div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-floating w-100">
+                  <input type="text" name="daterange" class="form-control datepicker pd-y-12" value="" placeholder="Created date" />
+                   <label for="floatingInput" class="floating-hide">Created date</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                    <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-floating w-100">
+                  <input type="text" name="daterange" class="form-control datepicker pd-y-12" value="" placeholder="Created date" />
+                   <label for="floatingInput" class="floating-hide">Created date</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                    <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                </div>
+            </div>
+
+
+            <div class="col-md-12 mr-b-12 mr-t-16 d-flex">
+                <div class="body-text-emphasis ">Location</div>
+                <a href="#" class="link ms-auto my-1">Clear</a>
+            </div>
+
+            <div class="col-md-12">
+                 <div class="form-floating custom-dd-s">
+                  <label for="floatingInput">Country</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option selected>India</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                   </div>
+
+                 <div class="feedback invalid-feedback" data-valmsg-replace="true"> error message. </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                 <div class="form-floating custom-dd-s">
+                  <label for="floatingInput">State</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option selected>Madhya Pradesh</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                   </div>
+
+                 <div class="feedback invalid-feedback" data-valmsg-replace="true"> error message. </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                 <div class="form-floating custom-dd-s">
+                  <label for="floatingInput">City</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option selected>Indore</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                   </div>
+
+                 <div class="feedback invalid-feedback" data-valmsg-replace="true"> error message. </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 mr-b-12 mr-t-16 d-flex">
+                <div class="body-text-emphasis ">Location</div>
+                <a href="#" class="link ms-auto my-1">Clear</a>
+            </div>
+
+            <div class="col-md-12">
+                 <div class="form-floating custom-dd-s">
+                  <label for="floatingInput">Department</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option >Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                   </div>
+
+                 <div class="feedback invalid-feedback" data-valmsg-replace="true"> error message. </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="offcanvas-footer">
+          
+        <div class="block-action text-end">
+            <a href="#" data-bs-dismiss="offcanvas" class="btn btn-secondary mr-r-16">Cancel</a>
+            <a class="btn btn-primary" data-bs-dismiss="offcanvas" href="#">Apply</a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+    <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+        <div class="position-sticky sidebar-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">
+                        <i class="icon-dashboard"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="icon-manage"></i> User management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="icon-link"></i> External Resources
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">
+                        <i class="icon-calendar"></i> Events
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="icon-building"></i> Organization
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="modal fade" id="GenerateID" aria-hidden="true" aria-labelledby="GenerateIDLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--        <h4 class="modal-title" id="exampleModalToggleLabel">Modal Title</h4>-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="body-block mobile-m-0">
+                        <h4>Assign/Reassign coach</h4>
+                        <p class="body-text-mini text-dark-grey">Choose a new coach for this employee.</p>
+                    </div>
+                    <div class="body-block-group inline-block right-border">
+                        <div class="body-block">
+                            <div class="body-text-emphasis">Dulce Press863458</div>
+                            <p class="body-text-mini text-dark-grey">Unique ID</p>
+                        </div>
+                        <div class="body-block">
+                            <div class="body-text-emphasis">Charlie Vaccaro</div>
+                            <p class="body-text-mini text-dark-grey">Coach assigned</p>
+                        </div>
+                    </div>
+
+                    <div class="form-floating search-input">
+                        <img src="../assets/images/icon-search.svg" class="input-icon left-icon icon-search" alt="icon-search">
+                        <input type="search" id="myInput" class="form-control" id="myCountry" name="myCountry" placeholder="Search by coach name or unique ID" placeholder="-">
+                        <label for="floatingInput" class="floating-hide">Search coach</label>
+                        <img src="../assets/images/icon-close-dark.svg" class="input-icon right-icon icon-close" alt="icon-search">
+                    </div>
+
+
+                    <ul class="reassign-coach-list mb-0 mr-t-6 d-inline-block w-100">
+
+                        <li class="mr-b-24">
+                            <div class="coach-list row ">
+                                <div class="col-lg-10 col-md-9 d-flex">
+                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avtar avtar-sm" alt="avtar image" />
+                                    <p class="body-text text-dark-grey d-inline-block my-auto">Esther Howard</p>
+                                </div>
+                                <div class="col-lg-2 col-md-3 text-end">
+                                    <a href="#" class="links my-2 d-inline-block" onclick="selectCoach(this)">Select</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mr-b-24">
+                            <div class="coach-list row ">
+                                <div class="col-lg-10 col-md-9 d-flex">
+                                    <img src="https://images.pexels.com/photos/1854865/pexels-photo-1854865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avtar avtar-sm" alt="avtar image" />
+                                    <p class="body-text text-dark-grey d-inline-block my-auto">Wade Warren</p>
+                                </div>
+                                <div class="col-lg-2 col-md-3 text-end">
+                                    <a href="#" class="links my-2 d-inline-block" onclick="selectCoach(this)">Select</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mr-b-24">
+                            <div class="coach-list row ">
+                                <div class="col-lg-10 col-md-9 d-flex">
+                                    <img src="https://images.pexels.com/photos/824125/pexels-photo-824125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avtar avtar-sm" alt="avtar image" />
+                                    <p class="body-text text-dark-grey d-inline-block my-auto">Cameron Williamson</p>
+                                </div>
+                                <div class="col-lg-2 col-md-3 text-end">
+                                    <a href="#" class="links my-2 d-inline-block" onclick="selectCoach(this)">Select</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mr-b-24">
+                            <div class="coach-list row ">
+                                <div class="col-lg-10 col-md-9 d-flex">
+                                    <img src="https://images.pexels.com/photos/2380795/pexels-photo-2380795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avtar avtar-sm" alt="avtar image" />
+                                    <p class="body-text text-dark-grey d-inline-block my-auto">Brooklyn Simmons</p>
+                                </div>
+                                <div class="col-lg-2 col-md-3 text-end">
+                                    <a href="#" class="links my-2 d-inline-block" onclick="selectCoach(this)">Select</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mr-b-24">
+                            <div class="coach-list row ">
+                                <div class="col-lg-10 col-md-9 d-flex">
+                                    <img src="https://images.pexels.com/photos/4071709/pexels-photo-4071709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avtar avtar-sm" alt="avtar image" />
+                                    <p class="body-text text-dark-grey d-inline-block my-auto">Leslie Alexander</p>
+                                </div>
+                                <div class="col-lg-2 col-md-3 text-end">
+                                    <a href="#" class="links my-2 d-inline-block" onclick="selectCoach(this)">Select</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    <button class="btn btn-primary disabled " disabled id="UpdateCoachBtn" data-bs-toggle="modal">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- edit popup -->
+    <div class="modal fade" id="UnassignID" aria-hidden="true" aria-labelledby="UnassignIDLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="body-block mobile-m-0">
+                        <h4>Unassign team member</h4>
+                        <p class="body-text-mini text-dark-grey">Are you sure you want to unassign member <span class="fw-500 text-black">PBKO668547863458</span> from this coach?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary pd-r-32 pd-l-32" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    <button type="button" class="btn btn-primary pd-r-32 pd-l-32">Unassign</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Unassign popup -->
+    <div class="modal fade" id="assign-new-memberID" aria-hidden="true" aria-labelledby="assign-new-memberIDLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--        <h4 class="modal-title" id="exampleModalToggleLabel">Modal Title</h4>-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="body-block">
+                        <h4>Assign new member</h4>
+                        <p class="body-text-mini text-dark-grey">Please enter employee unique ID that you want to asssign to this coach. </p>
+                    </div>
+
+                    <div class="form-floating mb-0"> <input type="email" class="form-control" id="floatingInput" placeholder="-">
+                        <a href="javascript:void(0)" class="password-eye"></a><label for="floatingInput">Enter unique ID</label>
+                        <div class="feedback invalid-feedback"> error message. </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    <button class="btn btn-primary disabled " disabled>Assign</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- edit popup -->
+
+    <main class=" ms-sm-auto after-login">
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="go-back me-auto"><a href="./user-management-coach.html" class="body-text text-black"><i class="icon-arrow-left fs-18 vertical-align-middle pd-r-4"></i>Back</a></div>
+                    <div class="user-top-head d-flex align-items-start align-items-md-center flex-column flex-md-row mr-t-20 mr-b-24">
+                        <div class="user-info-block  d-flex align-items-center">
+                            <img src="../assets/images/avtar-male.svg" class="avtar avtar-lg mr-r-12" alt="" />
+
+
+                            <div>
+                                <div class="d-flex align-items-center mr-b-8">
+                                    <div class="body-text-emphasis mr-r-4">Dulce Press</div>
+                                    <div class="badge badge-green user-status pd-x-8 pd-y-4 h-auto">Active</div>
+                                </div>
+                                <div class="body-text">
+                                    <i class="icon-star-fill text-warning"></i>
+                                    <i class="icon-star-fill text-warning"></i>
+                                    <i class="icon-star-fill text-warning"></i>
+                                    <i class="icon-star-fill text-warning"></i>
+                                    <i class="icon-star text-warning"></i></div>
+                            </div>
+                            <!-- <div class="body-text-emphasis mr-r-4"></div>
+                            <div class="badge badge-green user-status pd-x-8 pd-y-4 h-auto">Active</div> -->
+
+                        </div>
+                        <div class="block-action ms-auto mt-3 mt-md-0">
+                            <a class="btn btn-secondary min-w-inherit pd-all-16 mr-r-12" href="#"><i class="icon-edit fs-24"></i></a>
+                            <a class="btn btn-secondary min-w-inherit pd-all-16" href="#"><i class="icon-delete fs-24"></i></a>
+
+                        </div>
+                        <a class="btn btn-primary min-w-inherit  assign-btn" data-bs-toggle="modal" href="#assign-new-memberID">Assign new member</a>
+                    </div>
+                    <div class="other-detail-box border pd-all-28 border-radius-12 border-light mr-b-32">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4 col-xl-3">
+                                <div class="feature-block">
+                                    <div class="icon-box"><i class="icon-user-group text-dark-grey fs-20"></i></div>
+                                    <div class="feature-info">
+                                        <div class="body-text-mini text-dark-grey lh-normal mr-b-6">Team members</div>
+                                        <div class="body-text-emphasis lh-normal ">100</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xl-3">
+                                <div class="feature-block">
+                                    <div class="icon-box"><i class="icon-call text-dark-grey fs-20"></i></div>
+                                    <div class="feature-info">
+                                        <div class="body-text-mini text-dark-grey lh-normal mr-b-6">No. of calls</div>
+                                        <div class="body-text-emphasis lh-normal ">105</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xl-3">
+                                <div class="feature-block">
+                                    <div class="icon-box"><i class="icon-message text-dark-grey fs-20"></i></div>
+                                    <div class="feature-info">
+                                        <div class="body-text-mini text-dark-grey lh-normal mr-b-6">No. of messages</div>
+                                        <div class="body-text-emphasis lh-normal ">200</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xl-3">
+                                <div class="feature-block">
+                                    <div class="icon-box"><i class="icon-email text-dark-grey fs-20"></i></div>
+                                    <div class="feature-info">
+                                        <div class="body-text-mini text-dark-grey lh-normal mr-b-6">Email</div>
+                                        <div class="body-text-emphasis lh-normal ">phillip@example.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xl-3">
+                                <div class="feature-block">
+                                    <div class="icon-box"><i class="icon-call text-dark-grey fs-20"></i></div>
+                                    <div class="feature-info">
+                                        <div class="body-text-mini text-dark-grey lh-normal mr-b-6">Phone</div>
+                                        <div class="body-text-emphasis lh-normal ">+1234567890</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xl-3">
+                                <div class="feature-block">
+                                    <div class="icon-box"><i class="icon-gender text-dark-grey fs-20"></i></div>
+                                    <div class="feature-info">
+                                        <div class="body-text-mini text-dark-grey lh-normal mr-b-6">Gender</div>
+                                        <div class="body-text-emphasis lh-normal ">Male</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xl-3">
+                                <div class="feature-block">
+                                    <div class="icon-box"><i class="icon-pronouns text-dark-grey fs-20"></i></div>
+                                    <div class="feature-info">
+                                        <div class="body-text-mini text-dark-grey lh-normal mr-b-6">Pronouns</div>
+                                        <div class="body-text-emphasis lh-normal ">He/him</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-container-one">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item active" role="presentation"><a class="nav-link active" href="#overview" role="tab" aria-controls="overview" data-bs-toggle="tab" aria-selected="false" tabindex="-1"><span> Overview</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#team-members" role="tab" aria-controls="team-members" data-bs-toggle="tab" aria-selected="false" tabindex="-1"><span> Team members(100)</span></a></li>
+
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active show" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 mr-b-24">
+                                        <div class="card border-radius-12 border-light coach-detail-graph">
+                                            <div class="card-body pd-all-20">
+                                                <h6 class="body-text-emphasis text-dark-grey mr-b-16">Coach rating</h6>
+                                                <img src="../assets/images/coach-rating.png" class="img-fluid w-100" alt="">
+                                                <hr class="m-0 mr-t-16 mr-b-16">
+                                                <div class="chart-filter-box ">
+                                                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter" class="filter-btn " ><i class="icon-filter fs-16 mr-r-6"></i>  Filter</button>
+                                                    <ul class="chip-group unique-id-list filter-list">
+                                                        <li class="chip">
+                                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li class="chip">
+                                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li class="chip">
+                                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li class="chip">
+                                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 mr-b-24">
+                                        <div class="card border-radius-12 border-light coach-detail-graph">
+                                            <div class="card-body pd-all-20">
+                                                <h6 class="body-text-emphasis text-dark-grey mr-b-16">Team members</h6>
+                                                <img src="../assets/images/team-members.png" class="img-fluid w-100" alt="">
+                                                <hr class="m-0 mr-t-16 mr-b-16">
+                                                <div class="chart-filter-box ">
+                                                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter" class="filter-btn " ><i class="icon-filter fs-16 mr-r-6"></i>  Filter</button>
+                                                    <ul class="chip-group unique-id-list filter-list">
+                                                        <li class="chip">
+                                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 mr-b-24">
+                                        <div class="card border-radius-12 border-light coach-detail-graph">
+                                            <div class="card-body pd-all-20">
+                                                <h6 class="body-text-emphasis text-dark-grey mr-b-16">Messages and Calls</h6>
+                                                <div class="mr-b-32">
+                                                    <img src="../assets/images/messages-and-calls.png" class="img-fluid w-100" alt="">
+                                                </div>
+
+                                                <hr class="m-0 mr-t-16 mr-b-16">
+                                                <div class="row">
+                                                    <div class="col-xl-8 col-lg-8 col-md-7 col-sm-6 order-sm-1 order-2">
+                                                        
+                                                <div class="chart-filter-box ">
+                                                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter" class="filter-btn " ><i class="icon-filter fs-16 mr-r-6"></i>  Filter</button>
+                                                    <ul class="chip-group unique-id-list filter-list">
+                                                        <li class="chip">
+                                                            <div class="chip-label">Weekly</div>
+                                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li class="chip">
+                                                            <div class="chip-label">Messages</div>
+                                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li class="chip">
+                                                            <div class="chip-label">03Aug  - 09Aug , 22</div>
+                                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 order-sm-2 order-1">
+                                                        <div class="d-flex ms-auto mt-3 mt-md-0 graph-choose-filter">
+                                                            <div class="messages-graph-filter">
+                                                                <div class="graph-filter-cricle messages-filter"></div> Messages
+                                                            </div>
+                                                            <div class="messages-graph-filter">
+                                                                <div class="graph-filter-cricle call-filter"></div> Call
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane " id="team-members" role="tabpanel" aria-labelledby="team-member-tab">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row filter-listing table-filter-listing">
+                                            <div class="col-md-6 col-lg-5 col-xl-4">
+                                                <div class="form-floating search-input mr-b-24">
+                                                    <img src="../assets/images/icon-search.svg" class="input-icon left-icon icon-search" alt="icon-search">
+                                                    <input type="search" class="form-control" id="employeeSearchInTable" name="employeeSearch" placeholder="-">
+                                                    <label for="floatingInput" class="floating-hide">Search by coach name or unique ID</label>
+                                                    <div class="feedback invalid-feedback">
+                                                        error message.
+                                                    </div>
+                                                    <img src="../assets/images/icon-close-dark.svg" class="input-icon right-icon icon-close" alt="icon-search">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xl-3 d-flex align-items-center flex-column flex-md-row">
+                                                <div class="form-floating w-100  mr-b-24">
+                                                    <input type="text" name="daterange" class="form-control daterange pd-y-12" value="" placeholder="Created date" />
+                                                    <label for="floatingInput" class="floating-hide">Created date</label>
+                                                    <div class="feedback invalid-feedback">
+                                                        error message.
+                                                    </div>
+                                                    <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table id="userManagementEmployee" class="table " style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Unique ID</th>
+                                                        <th>Created on</th>
+                                                        <th>Created by</th>
+                                                        <th>Rating</th>
+                                                        <th>
+                                                            Status
+                                                        </th>
+
+                                                        <th>
+                                                            No. of message
+                                                        </th>
+                                                        <th>
+                                                            No.of call
+                                                        </th>
+                                                        <th class="pe-0" style="width: 50px;max-width: 50px; min-width: 50px;box-sizing: border-box;">
+
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fw-600">PBKO668547863458</td>
+                                                        <td>01/05/2022</td>
+                                                        <td>Haylie Kenter</td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+
+                                                            <div class="badge-rating badge-blue">Great</div>
+
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-green">Active</div>
+                                                        </td>
+                                                        <td>01</td>
+                                                        <td>52</td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="#">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#UnassignID">
+                                                                                <i class="icon-link-broken vertical-align-middle mr-r-10 fs-20"></i> Unassign
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-600">PBKO668547863458</td>
+                                                        <td>12/05/2022</td>
+                                                        <td>Kenter Haylie</td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+
+                                                            <div class="badge-rating badge-blue">Average</div>
+
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-yellow">Inactive</div>
+                                                        </td>
+                                                        <td>12</td>
+                                                        <td>52</td>
+
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="#">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#UnassignID">
+                                                                                <i class="icon-link-broken vertical-align-middle mr-r-10 fs-20"></i> Unassign
+                                                                            </a>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-600">PBKO668547863458</td>
+                                                        <td>16/05/2022</td>
+                                                        <td>Robert Patricia</td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+
+                                                            <div class="badge-rating badge-blue">Good</div>
+
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-blue">Engaged</div>
+                                                        </td>
+                                                        <td>50</td>
+                                                        <td>52</td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="#">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#UnassignID">
+                                                                                <i class="icon-link-broken vertical-align-middle mr-r-10 fs-20"></i> Unassign
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-600">PBKO668547863458</td>
+                                                        <td>21/05/2022</td>
+                                                        <td>Christopher Daniel</td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+
+                                                            <div class="badge-rating badge-blue">Great</div>
+
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-green">Active</div>
+                                                        </td>
+                                                        <td>88</td>
+                                                        <td>52</td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="#">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#UnassignID">
+                                                                                <i class="icon-link-broken vertical-align-middle mr-r-10 fs-20"></i> Unassign
+                                                                            </a>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        function selectCoach(argument) {
+            $('#UpdateCoachBtn').removeClass('disabled').removeAttr('disabled');
+            $(argument).text('Selected');
+        }
+    </script>
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/popper.min-2.9.2.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap-select.min.1.14.js"></script>
+
+    <script src="../assets/js/os-browser-detection.js"></script>
+
+    <!-- Autocomplete JS -->
+    <script src="../assets/js/search_autocomplete.js"></script>
+
+    <!-- Datepicker JS -->
+    <script src="../assets/js/moment.min.js"></script>
+    <script src="../assets/js/daterangepicker.js"></script>
+    <!-- dataTables -->
+    <script src="../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/dataTables.bootstrap5.min.js"></script>
+
+    <!--  Custom JS-->
+    <script src="../assets/js/custom.js"></script>
+    <script type="text/javascript">
+        function selectCoach(argument) {
+            $('#UpdateCoachBtn').removeClass('disabled').removeAttr('disabled');
+            $(argument).text('Selected');
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            oTable = $('#userManagementEmployee').DataTable({
+                dom: '<"top"i>rt<"bottom"flp>',
+                info: false,
+
+
+                initComplete: function() {
+                    this.api().columns().every(function() {
+                        var column = this;
+                        var columnHeaderCell = column.header();
+
+                        if (column.index() == 1 || column.index() == 4) {
+
+
+                            var select = $('<select class="" ><option value="">' + $(columnHeaderCell).html() + '</option></select>')
+                                .appendTo($(column.header()).empty())
+                                .on('change', function() {
+                                    var val = $.fn.dataTable.util.escapeRegex(
+                                        $(this).val()
+                                    );
+                                    column
+                                        .search(val ? '^' + val + '$' : '', true, false)
+                                        .draw();
+                                });
+
+                            column.data().unique().sort().each(function(d, j) {
+                                d = d.replace(/<[^>]*>?/gm, '');
+                                select.append('<option value="' + d + '">' + d + '</option>');
+                            });
+
+                        }
+
+                    });
+
+                    setTimeout(function() {}, 2000);
+                },
+
+                "columnDefs": [{
+                    orderable: true,
+                    className: 'reorder',
+                    targets: 0
+                }, {
+                    orderable: true,
+                    className: 'reorder',
+                    targets: 3
+                }, {
+                    orderable: false,
+                    targets: '_all'
+                }]
+            });
+
+            $('#employeeSearchInTable').keyup(function() {
+                oTable.search($(this).val()).draw();
+            })
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        /*An array containing all the country names in the world:*/
+        var coachName = ["Abdeali Robert Patricia", "Mohsin Wade Warren", "BrainGym Cameron Williamson", "Brooklyn Simmons", "Leslie Alexander", "Esther", "Wade ", "Cameron ", "Brooklyn ", "Leslie "];
+        var coachImages = [
+            "https://images.pexels.com/photos/2380795/pexels-photo-2380795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/824125/pexels-photo-824125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/4071709/pexels-photo-4071709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        ];
+
+        /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+        coach_search_autocomplete(document.getElementById("myInput"), coachName, coachImages);
+    </script>
+
+
+</body>
+
+</html>

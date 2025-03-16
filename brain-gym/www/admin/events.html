@@ -1,0 +1,632 @@
+<!doctype html>
+  <html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/gif" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- NIce Select CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.css">
+
+    <!-- DatepickerCSS -->
+    <link rel="stylesheet" href="../assets/css/daterangepicker.css">
+
+    <!-- Custom Font CSS -->
+    <link rel="stylesheet" href="../assets/fonts/custom-font.css">
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+
+    <!-- Dasboard CSS -->
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+    <!-- dataTables -->
+    <link rel="stylesheet" href="../assets/css/dataTables.bootstrap5.min.css">
+
+
+    <!-- Style Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <title>Welcome to Brain Gym</title>
+  </head>
+  <body class="bg-white">
+
+    <div class="toasts-alert"><div id="liveAlert" class="live-alert"></div></div>
+
+
+    <header class="header header-main">
+      <nav class="navbar fixed-top flex-md-nowrap p-0">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 fs-6" href="#"><img src="../assets/images/logo-with-text.svg" alt="Brain Gym"/></a>
+
+        <div class="page-content-header">
+          <div class="body-block mb-0">
+            <h4>Events</h4>
+            <!--             <p class="body-text-mini">User managment</p>-->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Events</li>
+              </ol>
+            </nav>
+
+          </div>
+        </div>
+        <ul class="navbar-nav ms-auto right-nav">
+          <li class="nav-item dropdown notification-dd">
+            <a class="nav-link dropdown-toggle notify" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"><img src="../assets/images/icon-notification-header.svg" alt=""/></a>
+            <ul class="dropdown-menu p-4">
+              <li>
+                <h5 class="text-center text-primary">Notification</h5>
+              </li>
+              <li> <hr></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown profile-dd">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://picsum.photos/id/1027/200" alt="profile photo" /> 
+              <div class="text-here">              
+                <span>Haylie Kenter</span>
+                <span class="designation">Admin</span>
+              </div>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="icon-user"></i>Profile
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="icon-logout"></i>Logout
+                </a>
+              </li>
+            </ul>
+
+
+            <li class="nav-item">
+              <button class="navbar-toggler  d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </li>
+
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-content-header">
+        <div class="body-block mb-0">
+          <h4>User management</h4>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Link</a></li>
+              <li class="breadcrumb-item"><a href="#">Link</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Link Active</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+      <div class="position-sticky sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link " href="dashboard.html">
+              <i class="icon-dashboard"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="user-management-employee.html">
+              <i class="icon-manage"></i>
+              User management
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-link"></i>
+              External Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="events.html">
+              <i class="icon-calendar"></i>
+              Events
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-building"></i>
+              Organization
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+
+
+    <main class=" ms-sm-auto after-login">
+
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tab-container-one">
+              <ul class="nav nav-tabs">
+                <li class="nav-item active"><a class="nav-link active" href="events.html" ><span>Upcoming (96)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="events-ongoing.html"><span>Ongoing (34)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="events-completed.html"><span>Completed (20)</span></a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="Employee">
+
+                  <div class="row">
+                    <div class="col-md-12">
+
+                      <div class="row filter-listing table-filter-listing">
+                        <div class="col-md-6 col-lg-5 col-xl-4">
+                          <div class="form-floating search-input">
+                            <img src="../assets/images/icon-search.svg" class="input-icon left-icon icon-search" alt="icon-search">
+                            <input type="search" class="form-control" id="employeeSearchInTable" name="employeeSearch" placeholder="-" >
+                            <label for="floatingInput" class="floating-hide">Search by event name</label>
+                            <div class="feedback invalid-feedback">
+                              error message.
+                            </div>
+                            <img src="../assets/images/icon-close-dark.svg" class="input-icon right-icon icon-close" alt="icon-search">
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3 col-lg-4 d-flex align-items-center flex-column flex-md-row">
+                          <div class="form-floating w-100">
+                            <input type="text" name="daterange" class="form-control daterange pd-y-12" value="" placeholder="Created date" />
+                            <label for="floatingInput" class="floating-hide">Created date</label>
+                            <div class="feedback invalid-feedback">
+                              error message.
+                            </div>
+                            <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                          </div>
+                          <a href="#" class="link white-space-nowrap mx-3 mb-3">Clear all</a>
+                        </div>
+
+                        <div class="col-md-12 col-xl-2 col-lg-3 ms-auto text-end">
+                          <a href="user-management-events-add-new.html" class="btn btn-primary">Add event</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="modal fade" id="DeleteModalToggle" aria-hidden="true" aria-labelledby="DeleteModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <!--<h4 class="modal-title" id="exampleModalToggleLabel">Modal Title</h4>-->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="body-block mr-b-12">
+                              <h4 class="mr-b-4">Delete event</h4>
+                              <p class="body-text-mini text-black">Are you sure you want to delete <b>Mental Health Awareness</b> event?</p>
+                            </div>
+
+                          </div>
+                          <div class="modal-footer pt-0">
+                            <button type="button" class="btn btn-secondary">Cancel</button>
+                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="table-responsive">
+                        <table id="userManagementEmployee" class="table " style="width:100%">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>Date</th>
+                              <th>Time</th>
+                              <th>Location</th>
+                              <th class="pe-0" style="width: 50px;max-width: 50px; min-width: 50px;box-sizing: border-box;"> </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+
+                            <tr>
+                              <td >
+                                <div class="d-flex align-items-center">
+                                  <img src="https://picsum.photos/id/1029/200" class="table-avtar" alt="avtar" /> 
+                                  <span class="white-space-nowrap text-truncate">Mental health awareness </span>
+                                </div>
+                              </td>
+                              <td class="white-space-nowrap">09/09/2022 - 09/11/2022</td>
+                              <td class="white-space-nowrap">11:00am - 2:00pm</td>
+                              <td>
+                                <span class="table-pera text-truncate" style="max-width: 350px;">
+                                  82 Elmhurst Road, Aylesb 82 Elmhurst Road, Aylesb
+                                </span>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-events-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="user-management-events-edit.html">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td >
+                                <div class="d-flex align-items-center">
+                                  <img src="https://picsum.photos/id/1029/200" class="table-avtar" alt="avtar" /> 
+                                  <span class="white-space-nowrap text-truncate">Mental health awareness </span>
+                                </div>
+                              </td>
+                              <td class="white-space-nowrap">09/09/2022 - 09/11/2022</td>
+                              <td class="white-space-nowrap">11:00am - 2:00pm</td>
+                              <td>
+                                <span class="table-pera text-truncate" style="max-width: 350px;">
+                                  82 Elmhurst Road, Aylesb 82 Elmhurst Road, Aylesb
+                                </span>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-events-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="user-management-events-edit.html">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td >
+                                <div class="d-flex align-items-center">
+                                  <img src="https://picsum.photos/id/1029/200" class="table-avtar" alt="avtar" /> 
+                                  <span class="white-space-nowrap text-truncate">Mental health awareness </span>
+                                </div>
+                              </td>
+                              <td class="white-space-nowrap">09/09/2022 - 09/11/2022</td>
+                              <td class="white-space-nowrap">11:00am - 2:00pm</td>
+                              <td>
+                                <span class="table-pera text-truncate" style="max-width: 350px;">
+                                  82 Elmhurst Road, Aylesb 82 Elmhurst Road, Aylesb
+                                </span>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-events-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="user-management-events-edit.html">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td >
+                                <div class="d-flex align-items-center">
+                                  <img src="https://picsum.photos/id/1029/200" class="table-avtar" alt="avtar" /> 
+                                  <span class="white-space-nowrap text-truncate">Mental health awareness </span>
+                                </div>
+                              </td>
+                              <td class="white-space-nowrap">09/09/2022 - 09/11/2022</td>
+                              <td class="white-space-nowrap">11:00am - 2:00pm</td>
+                              <td>
+                                <span class="table-pera text-truncate" style="max-width: 350px;">
+                                  82 Elmhurst Road, Aylesb 82 Elmhurst Road, Aylesb
+                                </span>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-events-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="user-management-events-edit.html">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td >
+                                <div class="d-flex align-items-center">
+                                  <img src="https://picsum.photos/id/1029/200" class="table-avtar" alt="avtar" /> 
+                                  <span class="white-space-nowrap text-truncate">Mental health awareness </span>
+                                </div>
+                              </td>
+                              <td class="white-space-nowrap">09/09/2022 - 09/11/2022</td>
+                              <td class="white-space-nowrap">11:00am - 2:00pm</td>
+                              <td>
+                                <span class="table-pera text-truncate" style="max-width: 350px;">
+                                  82 Elmhurst Road, Aylesb 82 Elmhurst Road, Aylesb
+                                </span>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-events-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="user-management-events-edit.html">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td >
+                                <div class="d-flex align-items-center">
+                                  <img src="https://picsum.photos/id/1029/200" class="table-avtar" alt="avtar" /> 
+                                  <span class="white-space-nowrap text-truncate">Mental health awareness </span>
+                                </div>
+                              </td>
+                              <td class="white-space-nowrap">09/09/2022 - 09/11/2022</td>
+                              <td class="white-space-nowrap">11:00am - 2:00pm</td>
+                              <td>
+                                <span class="table-pera text-truncate" style="max-width: 350px;">
+                                  82 Elmhurst Road, Aylesb 82 Elmhurst Road, Aylesb
+                                </span>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-events-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="user-management-events-edit.html">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td >
+                                <div class="d-flex align-items-center">
+                                  <img src="https://picsum.photos/id/1029/200" class="table-avtar" alt="avtar" /> 
+                                  <span class="white-space-nowrap text-truncate">Mental health awareness </span>
+                                </div>
+                              </td>
+                              <td class="white-space-nowrap">09/09/2022 - 09/11/2022</td>
+                              <td class="white-space-nowrap">11:00am - 2:00pm</td>
+                              <td>
+                                <span class="table-pera text-truncate" style="max-width: 350px;">
+                                  82 Elmhurst Road, Aylesb 82 Elmhurst Road, Aylesb
+                                </span>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-events-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="user-management-events-edit.html">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </main>
+
+
+    <!-- jQuery, Popper.js, and Bootstrap JS --> 
+
+    <script src="../assets/js/jquery-3.5.1.min.js"></script> 
+    <script src="../assets/js/popper.min-2.9.2.js"></script> 
+    <script src="../assets/js/bootstrap.min.js"></script> 
+    <script src="../assets/js/bootstrap-select.min.1.14.js"></script>
+
+
+
+    <!-- Datepicker JS -->    
+    <script src="../assets/js/moment.min.js"></script> 
+    <script src="../assets/js/daterangepicker.js"></script> 
+    <!-- dataTables -->
+    <script src="../assets/js/jquery.dataTables.min.js"></script> 
+    <script src="../assets/js/dataTables.bootstrap5.min.js"></script> 
+
+    <!-- Autocomplete JS -->    
+    <script src="../assets/js/coach_search_autocomplete.js"></script> 
+
+    <script src="../assets/js/os-browser-detection.js"></script> 
+
+    <!--  Custom JS--> 
+    <script src="../assets/js/custom.js"></script> 
+
+    <script type="text/javascript">
+      function selectCoach(argument) {
+        $('#UpdateCoachBtn').removeClass('disabled').removeAttr('disabled');
+        $(argument).text('Selected');
+      }
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+
+
+        oTable = $('#userManagementEmployee').DataTable({
+          dom: '<"top"i>rt<"bottom"flp>',
+          info: false,
+          initComplete: function () {
+            this.api().columns().every( function () {
+              var column = this;
+              var columnHeaderCell = column.header();
+
+              // if ( column.index() == 3 || column.index() == 4 ) {  
+
+
+              //   var select = $('<select class="selectpicker" ><option value="">' + $(columnHeaderCell).html() + '</option></select>')
+              //   .appendTo( $(column.header()).empty() )
+              //   .on( 'change', function () {
+              //     var val = $.fn.dataTable.util.escapeRegex(
+              //       $(this).val()
+              //       );
+              //     column
+              //     .search( val ? '^'+val+'$' : '', true, false )
+              //     .draw();
+              //   } );
+
+              //   column.data().unique().sort().each( function ( d, j ) {
+              //     d = d.replace(/<[^>]*>?/gm, ''); 
+              //     select.append( '<option value="'+d+'">'+d+'</option>' );
+              //   } );
+
+              // } 
+
+            } );
+
+            setTimeout(function(){
+            }, 2000);
+          },
+
+          "columnDefs": [
+          { orderable: true, className: 'reorder', targets: 0 },
+          { orderable: true, className: 'reorder', targets: 1 },
+          { orderable: true, className: 'reorder', targets: 2 },
+          { orderable: false, targets: '_all' }
+          ]
+        });   
+
+        $('#employeeSearchInTable').keyup(function(){
+          oTable.search($(this).val()).draw() ;
+        })
+
+      });
+
+    </script>
+
+    <script type="text/javascript">
+
+      /*An array containing all the country names in the world:*/
+      var coachName = ["Abdeali Robert Patricia","Mohsin Wade Warren","BrainGym Cameron Williamson","Brooklyn Simmons","Leslie Alexander","Esther","Wade ","Cameron ","Brooklyn ","Leslie "];
+      var coachImages = [
+      "https://images.pexels.com/photos/2380795/pexels-photo-2380795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/824125/pexels-photo-824125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/4071709/pexels-photo-4071709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      ];
+
+      /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+      coach_search_autocomplete(document.getElementById("myInput"), coachName, coachImages);
+    </script>
+
+  </body>
+  </html>

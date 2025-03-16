@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Analyst" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Analyst-Dashboard---Expand" transform="translate(-162.000000, -84.000000)">
+            <g id="Circle" transform="translate(150.000000, 85.000000)">
+                <g id="Group-16" transform="translate(13.000000, 0.000000)">
+                    <circle id="Oval" stroke="#2EC145" stroke-width="2" fill="#FFFFFF" cx="14.5" cy="14.5" r="14.5"></circle>
+                    <path d="M21.7949734,10.1994263 C21.5216183,9.93352458 21.0784313,9.93352458 20.8050215,10.1994263 L12.4185942,18.3564487 L9.19498878,15.2210534 C8.92163364,14.9551517 8.47844668,14.9551783 8.20503686,15.2210534 C7.93165438,15.4869285 7.93165438,15.9179882 8.20503686,16.1838898 L11.9236183,19.8006635 C12.1968914,20.0665386 12.6404064,20.0663524 12.9135702,19.8006635 L21.7949734,11.1622893 C22.0683559,10.8964142 22.0683285,10.465328 21.7949734,10.1994263 Z" id="Path" fill="#2EC145" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

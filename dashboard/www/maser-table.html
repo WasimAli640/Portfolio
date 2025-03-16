@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en" data-livestyle-extension="available" class="h-100">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+<meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+<title>MCT-Lock Desk Automation</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<!-- Floating lavel CSS -->
+<link rel="stylesheet" href="assets/css/floating-labels.css" />
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/custom.css" />
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css" />
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />	-->
+<!-- Font Awesome v5 CSS -->
+<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css" />
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md"> <a class="navbar-brand" href="#"> <img src="assets/images/mct-logo-1.png" alt="main logo" class="main-logo"></a>
+      <div class="m-visible">
+        <ul class="navbar-nav header-right-nav  flex-row">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <img src="assets/images/menu-icon.svg" alt="menu icon" class="img-fluid"> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav header-right-nav m-invisible">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="media"> <img alt="pic" src="assets/images/profile-pic.png" class="user-img rounded-circle">
+              <div class="media-body"> <span class="user-name">Natalie Arshakian </span>
+                <div class="user-profile">Director Lock Desk</div>
+              </div>
+            </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="admin-manager-edit-user.html">Edit Profile</a> <a class="dropdown-item" href="login.html">Logout</a> </div>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center nav-bottom m-visible">
+          <ul class="list-inline">
+            <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+            </li>
+            <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+            <li class="list-inline-item"><a href="#">Reports</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+              <div class="dropdown-menu dropdown-menu-right fadeInUp animated cmn-animation" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown4"> <a class="dropdown-item" href="client-list.html">Client  List</a> <a class="dropdown-item" href="client-administration-6.1.html">Add Client</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown5"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+            </li>
+            <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown6"> 
+				  
+				  <a class="dropdown-item" href="function-management.html">Function</a> 
+				  <a class="dropdown-item" href="reason-code.html">Reason Code</a>
+				  <a class="dropdown-item" href="lock-type-management.html">Lock Type</a> 
+				   <a class="dropdown-item active" href="javascript:void(0)">Master Table</a>
+			  </div>
+            </li>
+            <li class="list-inline-item"><a href="login.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center nav-bottom m-invisible">
+      <ul class="list-inline">
+        <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown10"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+        </li>
+        <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+        <li class="list-inline-item"><a href="#">Reports</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown11" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown11"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown12" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown12"> <a class="dropdown-item" href="client-list.html">Client List</a> <a class="dropdown-item" href="client-administration-6.1.html">Add Client</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown13" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown13"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+        </li>
+        <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown14" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown14"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a>
+			  <a class="dropdown-item active" href="maser-table.html">Master Table</a>
+			</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main class="pad-lr-0">
+  <section class="create-team position-relative ticket-head master-table-head">
+    <h1 class="cstm-heading1">Heading</h1>
+  </section>
+  <div class="cmn-divider"></div>
+  <section class="ticket-setup table-master">
+    <div class="container-fluid ticket-management-edit">
+      <div class="row">
+        <div class="col-lg-2 client-right-nav p-0 m-tab-invisible">
+          <div class="list-group list-group-flush"> <a href="javascript:void(0)" class="list-group-item list-group-item-action active"> Heading-1 </a> <a href="javascript:void(0)" class="list-group-item list-group-item-action ">Heading-2</a> <a href="javascript:void(0)" class="list-group-item list-group-item-action">Heading-3</a> <a href="javascript:void(0)" class="list-group-item list-group-item-action">Heading-4</a> <a href="javascript:void(0)" class="list-group-item list-group-item-action">Heading-5</a> <a href="javascript:void(0)" class="list-group-item list-group-item-action">Heading-6</a> </div>
+        </div>
+        <div class="col-sm-12 d-none m-tab-visible selected-page-title">
+          <div class="form-group">
+            <label for="PPE">&nbsp;</label>
+            <select style="display: none;" id="PPE">
+              <option>Select</option>
+              <option value="1">Heading-1</option>
+              <option value="2">Heading-2</option>
+              <option value="3">Heading-3</option>
+				<option value="4">Heading-4</option>
+				<option value="5">Heading-5</option>
+				<option value="6">Heading-6</option>
+            </select>
+            <div class="nice-select" tabindex="0"><span class="current">Select</span>
+              <ul class="list">
+                <li data-value="1" class="option selected focus">Heading-1</li>
+                <li data-value="2" class="option">Heading-2</li>
+                <li data-value="3" class="option">Heading-3</li>
+				<li data-value="4" class="option">Heading-4</li>
+				<li data-value="5" class="option">Heading-5</li>
+			    <li data-value="6" class="option">Heading-6</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <div class="master-table">
+            <section class="page-heading">
+              <div class="row">
+                <div class="col-sm-6 col-lg-6 col-xl-6">
+                  <h1 class="m-auto heading left-text">Heading-1</h1>
+                </div>
+                
+                <div class="col-sm-6 col-lg-6 col-xl-6 text-right filter-section d-flex justify-content-sm-end justify-content-center align-items-center">
+                  <button type="submit" data-toggle="modal" data-target="#addtable-exampleModalCenter" class="btn inner-page-btn cstm-btn1 mr-auto mr-sm-0" onclick="relocate_new_user()">
+                  <div class="d-flex align-items-center "><img src="assets/images/icon-add-white.svg" alt="icon add"> <span  class="pl-2">Add New</span></div>
+                  </button>
+                  <a data-toggle="collapse" href="#search-custom" class="search-icon ml-sm-1" aria-expanded="true"> <img src="assets/images/search.png" class="search-right-icon pr-0" alt="search"></a> </div>
+              </div>
+              <div class="justify-content-end d-flex collapse" id="search-custom" style="">
+                <div class="filter-div search-div position-relative"> <a href="javascript:void(0)" class="search-close-img"><img src="assets/images/icon-close.svg" alt="closeicon" width="10"></a>
+                  <div class="row pt-10">
+                    <div class="col-lg-12">
+                      <div class="row align-items-center d-flex search-div-section">
+                        <div class="search-input">
+                          <label for="Search_here" class="d-none">Search</label>
+                          <input id="Search_here" type="search" class="form-control w-100" placeholder="Search here">
+                        </div>
+                        <div class="pl-md-0 pt-md-0">
+                          <button type="submit" class="btn inner-page-btn cstm-btn1 toggle-btn ml-0 ">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="table-responsive">
+              <table id="data-list-table" class="table table-striped table-borderless nowrap" style="width:100%">
+                <thead>
+                  <tr>
+                    <th>Table h. </th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>column-1</td>
+                    <td><span class="table-tag">New</span></td>
+                    <td><span data-toggle="modal" data-target="#edit-exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a></span><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                  </tr>
+                  <tr>
+                    <td>column-2</td>
+                    <td><span class="table-tag-2">Completed</span></td>
+                    <td><span data-toggle="modal" data-target="#edit-exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a></span><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                  </tr>
+                  <tr>
+                    <td>column-3</td>
+                    <td><span class="table-tag-3">Assigned</span></td>
+                    <td><span data-toggle="modal" data-target="#edit-exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a></span><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                  </tr>
+					
+				  <tr>
+                    <td>column-4</td>
+                    <td><span class="table-tag-1">Follow Up</span></td>
+                    <td><span data-toggle="modal" data-target="#edit-exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a></span><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                  </tr>
+					
+					  <tr>
+                    <td>column-5</td>
+                    <td><span class="table-tag-4">Deleted</span></td>
+                    <td><span data-toggle="modal" data-target="#edit-exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a></span><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                  </tr>
+					
+					  <tr>
+                    <td>column-6</td>
+                    <td><span class="table-tag-4">Escalate</span></td>
+                    <td><span data-toggle="modal" data-target="#edit-exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a></span><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                  </tr>
+					
+					  <tr>
+                    <td>column-7</td>
+                    <td><span class="table-tag-1">Follow Up</span></td>
+                    <td><span data-toggle="modal" data-target="#edit-exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a></span><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                  </tr>
+					
+					  <tr>
+                    <td>column-8</td>
+                    <td><span class="table-tag-2">Complete with follow-up</span></td>
+                    <td><span data-toggle="modal" data-target="#edit-exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a></span><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                  </tr>
+					
+					  <tr>
+                    <td>column-9</td>
+                    <td><span class="table-tag">New</span></td>
+                    <td><span data-toggle="modal" data-target="#edit-exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a></span><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                  </tr>
+					
+					  <tr>
+                    <td>column-3</td>
+                    <td><span class="table-tag-2">Completed</span></td>
+                    <td><span data-toggle="modal" data-target="#edit-exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a></span><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon ml-2"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                  </tr>
+					
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer mt-auto">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center footer-content">
+      <div>Copyright &copy; 2019 MCT Live</div>
+      <div class="ml-auto">
+        <div class="media align-items-center">
+          <div class="media-body">Powered by </div>
+          <img src="assets/images/mct-logo.png" class="ml-2 footer-logo" alt="footer-logo"> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade settings-section-modal reason-code-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body document-model">
+        <div class="d-flex align-items-center doucment-heading">Reason Code
+          <button type="button" class="close ml-auto" data-dismiss="modal"><img src="assets/images/icon-close.svg" alt="closeicon" width="10px"></button>
+        </div>
+        <div class="custom-file-text">
+          <label class="text label-hide" for="customFile">11</label>
+          <input type="text" id="customFile" class="form-control" placeholder="Enter reason code here">
+        </div>
+        <div class="buttons-section d-flex justify-content-center">
+          <button type="submit" class="btn inner-page-btn-cancel mr-4" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn inner-page-btn">Add Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade settings-section-modal reason-code-modal" id="edit-exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body document-model">
+        <div class="d-flex align-items-center doucment-heading">Edit Reason Code
+          <button type="button" class="close ml-auto" data-dismiss="modal"><img src="assets/images/icon-close.svg" alt="closeicon" width="10px"></button>
+        </div>
+        <div class="custom-file-text">
+          <label class="text label-hide" for="Reason Code">11</label>
+          <input type="text" name="reason-code" id="reason-code" class="form-control" value="Reason Code">
+        </div>
+        <div class="buttons-section d-flex justify-content-center">
+          <button type="submit" class="btn inner-page-btn-cancel mr-4" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn inner-page-btn">Add Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+	<div class="modal fade settings-section-modal reason-code-modal master-table-m" id="addtable-exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body document-model">
+        <div class="d-flex align-items-center doucment-heading">Add Table
+          <button type="button" class="close ml-auto" data-dismiss="modal"><img src="assets/images/icon-close.svg" alt="closeicon" width="10px"></button>
+        </div>
+        <div class="custom-file-text">
+          <label class="text" for="Table h.">Table h.</label>
+          <input type="text" name="reason-code" id="reason-code1" class="form-control" value="Column-1">
+			
+			<div class="error-msg">This field cannot be empty.</div>
+			
+        </div>
+        <div class="buttons-section d-flex justify-content-center">
+          <button type="submit" class="btn inner-page-btn-cancel mr-4" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn inner-page-btn">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="assets/js/jquery-1.12.4.js"></script> 
+<script src="assets/js/popper.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+
+<!-- Custom JS --> 
+<script src="assets/js/custom.js"></script> 
+<!--	<script src="assets/js/fontawesome-all.js"></script>  --> 
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="assets/js/jquery.dataTables.min.js"></script> 
+<script src="assets/js/dataTables.bootstrap4.min.js"></script> 
+<!--nice select--> 
+<script src="assets/js/jquery.nice-select.min.js"></script> 
+<script>
+$('#data-list-table').DataTable({
+    scrollY: false,
+	paging: true,
+	bFilter: false, 
+	bInfo: true,
+	scrollX: true,
+	columnDefs: [
+	  { "width": "10%", "targets": 0 },{ "width": "80%", "targets": 1 },{ "width": "10%", "targets": 2 }
+    ]
+		
+});
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+</body>
+</html>

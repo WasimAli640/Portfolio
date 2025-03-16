@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="73px" viewBox="0 0 1440 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Web Elements - Desktop Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1438.83847,98.1099692 C1439.17914,88.682996 1439.73899,72.7495904 1440.51802,50.3097526 C1362.48025,75.0152734 1245.25702,88.005707 1114.85623,82.663546 C993.996232,77.715546 885.708232,58.001546 810.203232,30.461546 C743.727232,6.21454602 671.803232,1.27354602 602.371232,14.922546 C558.224232,23.600546 511.495232,31.212546 463.016232,37.443546 C267.703957,62.5388656 94.3949481,53.7594727 0.473537131,27.2533006 C0.265551612,33.2092266 0.0257305014,40.0768047 -0.245926201,47.8560348 L1438.83847,98.1099692 Z" id="path-1"></path>
+    </defs>
+    <g id="Web-Elements---Desktop-Copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#FFFFFF" transform="translate(720.136045, 52.775812) rotate(-2.000000) translate(-720.136045, -52.775812) " xlink:href="#path-1"></use>
+    </g>
+</svg>

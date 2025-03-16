@@ -1,0 +1,225 @@
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+      <!-- Fonts CSS -->    
+      <link rel="stylesheet" href="css/fonts.css">    
+
+
+      <!-- Custom CSS -->  
+      <link rel="stylesheet" href="css/custom.css">    
+      <link rel="stylesheet" href="css/inner-style.css">    
+        
+       <!-- Dashboard CSS -->  
+       <link href="css/dashboard.css" rel="stylesheet">
+        
+   <!-- Animate CSS -->  
+       <link href="css/animate.css" rel="stylesheet">
+
+
+      <title>Welcome to HireDNA</title>
+    </head>
+
+  <body class="wizard-pages">
+  <nav class="navbar fixed-top flex-md-nowrap p-0 align-items-start">
+    <div class="navbar-brand without-sidebar col-xl-2 col-lg-3 col-md-4 mr-0 d-flex d-md-block">
+              <a class="logo mr-0" href="#"><img src="images/hiredna_logo.svg" alt="HireDNA" width="120px" /></a>
+      <a class="notifications d-block d-md-none" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+          <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+          <img src="images/icon-bell.svg" alt=""/></a>
+   </div>
+  <ul class="navbar-nav flex-row align-items-center left-navigations"  id="left-navigations">
+        
+    <li class="nav-item ">
+      <a class="nav-link " href="#">Dashboard</a>
+    </li>
+           <li class="nav-item ">
+      <a class="nav-link" href="#">Jobs</a>
+    </li>
+           <li class="nav-item ">
+      <a class="nav-link" href="#">Companies</a>
+    </li>
+            <li class="nav-item dropdown report-dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="report-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports<img src="images/icon-angle-down-grey.svg" class="dropdown-arrow" alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="report-dropdown">
+          <a class="dropdown-item" href="#">Jobs applied</a>
+          <a class="dropdown-item" href="#">Application Status</a>
+         
+        </div>
+    </li>
+           <li class="nav-item ">
+      <a class="nav-link" href="#">Refer a friend</a>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Resources</a>
+    </li>
+           <li class="nav-item">
+      <a class="nav-link" href="#">Calendar</a>
+    </li>
+<!--
+          <li class="nav-item dropdown more">
+      <a class="nav-link dropdown-toggle" href="#" id="more-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icon-more-grey.svg"  alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="more-dropdown">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+         
+        </div>
+    </li>
+-->
+  </ul>
+
+  <ul class="navbar-nav px-3 flex-row justify-content-end align-items-center right-navigations">
+     
+         <li class="nav-item d-none d-md-block">
+      <a class="nav-link notifications" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+          <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+          <img src="images/icon-bell.svg" alt=""/></a>
+    </li>
+         
+      
+      
+        <li class="nav-item  dropdown account-dropdown  position-relative">
+          <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#dd-collapse" role="button" aria-expanded="false" aria-controls="dd-collapse"><span class="user-avtar"><img src="images/avtar-placeholder.svg" class="avtar-img" alt=""/></span> John Smith <img src="images/icon-angle-down.svg" class="dropdown-arrow" alt=""/></a>
+           <div class="collapse dd-box" id="dd-collapse">
+           
+             <div class="menu-inner">
+                <a class=" d-flex" href="#"><img src="images/icon-user.svg" alt="" class="mr-2"/>Profile <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="dd-link"></div>
+                <a class="d-flex" data-toggle="collapse" href="#status-box" role="button" aria-expanded="false" aria-controls="status-box"><img src="images/icon-status.svg" alt="" class="mr-2"/>Status <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="collapse status-label-box position-relative" id="status-box">
+                    <a href="#status-box" class="btn btn-primary ok-btn" data-toggle="collapse" aria-expanded="false" aria-controls="status-box">OK</a>
+
+                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                         <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job
+                          </label>
+                          <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job
+                          </label>
+                       <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job
+                          </label>
+                    </div>
+                </div>
+                <div class="dd-link"></div>
+                <a class=" d-flex" href="candidate-login.html"><img src="images/icon-logout.svg" alt="" class="mr-2"/>Logout</a>
+            </div>
+           
+           </div>
+         </li>
+       <li class="nav-item d-xl-none d-block toggle">
+      <a class="mobile-toggle navbar-toggle d-flex align-items-center justify-content-center"  href="javascript:void(0);" id="menu-toggle">
+         <div class="bar-group d-flex flex-column align-items-center justify-content-center">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </div>
+     </a>
+    </li>
+  </ul>
+</nav>
+      <main role="main" class="col-auto xs-px-0">
+          <div class="container">
+              
+            <div class="row">
+              <div class="col-12 col-md-12">
+                <h3 class="comn-title2 mb-5">
+                  Screening Questions
+                </h3>
+
+                <div class="px-4 py-3 dark-blue-bg" >
+                  <div class="row">
+                    <div class="col-12 ">
+                      <h3 class="white-color font-24 font-medium mb-2">Assistant-Sales-Manager </h3>
+                      <p class="font-16 white-color m-0">VOV International</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                 
+
+                  <form class="mt-4 mb-5 mb-md-0">
+                    <div class="row  p-0 " >
+                      <div class="col-12  col-md-12 " >
+                          <div class="form-group ">
+                            <h5 class="comn-title font-normal pt-0 mt-4 mb-3">
+                              1. What is your work authorization status?
+                            </h5>
+                              <!-- <textarea class="form-control dark-blue-color" name="Skills" placeholder="Add a personal note (Optional)" ></textarea> -->
+                              <div class="form__group comn-4-all py-0">
+                              <textarea class=" p-3 my-0  border  w-100 form__field text-left placeholder" placeholder="Add a personal note (Optional)"  rows="5"></textarea>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-12  col-md-12 " >
+                          <div class="form-group ">
+                            <h5 class="comn-title font-normal pt-0 mt-4 mb-3">
+                              2. What is your desired compensation?
+                            </h5>
+                              <!-- <textarea class="form-control dark-blue-color" name="Skills" placeholder="Write your anwer here..." ></textarea> -->
+
+                              <div class="form__group comn-4-all py-0">
+                              <textarea class=" p-3 my-0  border  w-100 form__field text-left placeholder" placeholder="Write your anwer here..."  rows="5"></textarea>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-12  col-md-12 mb-5 mb-md-0" >
+                          <div class="form-group ">
+                            <h5 class="comn-title font-normal pt-0 mt-4 mb-3">
+                              3. What is your current location (With Zip Code)?
+                            </h5>
+                              <!-- <textarea class="form-control dark-blue-color" name="Skills" placeholder="Write your anwer here..." ></textarea> -->
+                              
+                              <div class="form__group comn-4-all py-0">
+                              <textarea class=" p-3 my-0  border  w-100 form__field text-left placeholder" placeholder="Write your anwer here..."  rows="5"></textarea>
+                            </div>
+                          </div>
+                      </div>
+
+                    </div>
+                      <div class="row">
+              <div class="col-12">
+                      <div class="action-buttons ml-auto mb-md-5">
+                        <a href="recruiter-b2bsales.html" class="btn btn-outline-primary back-btn">Cancel</a>
+                        <a href="recruiter-hire-dna.html" class="btn btn-primary next-btn">Submit</a>
+                      </div>
+                  </div>
+              </div>
+                  </form>
+                  </div>
+                  
+            </div>
+</div>
+        
+
+      </main>
+
+
+      <script src="js/jquery-3.2.1.slim.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/dashboard.js"></script>
+
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+        <script src="js/custom.js"></script>
+
+
+      </body>
+  </html>
+
+
+
+
+

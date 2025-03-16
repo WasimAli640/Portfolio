@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en" data-livestyle-extension="available" class="h-100">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+<meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+<title>MCT-Lock Desk Automation</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<!-- Animate CSS -->
+<link rel="stylesheet" href="assets/css/animate.css" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/custom.css" />
+
+<!-- Font Awesome v5 CSS -->
+<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css" />
+    
+<style>
+    .font-semibold{font-family: 'muli_semibold';}
+    </style>
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md"> <a class="navbar-brand" href="#"> <img src="assets/images/mct-logo-1.png" alt="main logo" class="main-logo"></a>
+      <div class="m-visible">
+        <ul class="navbar-nav header-right-nav  flex-row">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <img src="assets/images/menu-icon.svg" alt="menu icon" class="img-fluid"> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav header-right-nav m-invisible">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="media"> <img alt="pic" src="assets/images/profile-pic.png" class="user-img rounded-circle">
+              <div class="media-body"> <span class="user-name">Natalie Arshakian </span>
+                <div class="user-profile">Director Lock Desk</div>
+              </div>
+            </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="admin-manager-edit-user.html">Edit Profile</a> <a class="dropdown-item" href="login.html">Logout</a> </div>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center nav-bottom m-visible">
+          <ul class="list-inline">
+            <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+            </li>
+            <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+            <li class="list-inline-item"><a href="#">Reports</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+              <div class="dropdown-menu dropdown-menu-right fadeInUp animated cmn-animation" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+            </li>
+            <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown4"> <a class="dropdown-item" href="client-list.html">Client  List</a> <a class="dropdown-item active" href="client-administration-6.1.html">Add Client</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown5"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown6"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+            </li>
+            <li class="list-inline-item"><a href="login.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center nav-bottom m-invisible">
+      <ul class="list-inline">
+        <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown10"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+        </li>
+        <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+        <li class="list-inline-item"><a href="#">Reports</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown11" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown11"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+        </li>
+        <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown12" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown12"> <a class="dropdown-item" href="client-list.html">Client List</a> <a class="dropdown-item active" href="client-administration-6.1.html">Add Client</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown13" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown13"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown14" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown14"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main class="pad-r-0">
+  <section class="create-team">
+    <h1>Client Setup</h1>
+  </section>
+  <section class="client-setup">
+    <div class="container-fluid">
+    <form action="client-administration-6.2.html">
+      <div class="row flex-md-row-reverse">
+        <div class="col-md-3 col-lg-3 client-right-nav p-0 m-invisible">
+          <div class="list-group list-group-flush"> <a href="javascript:void(0)" class="list-group-item list-group-item-action"> Client Information </a> <a href="javascript:void(0)" class="list-group-item list-group-item-action ">Credentials</a> <a href="javascript:void(0)" class="list-group-item list-group-item-action">Client Contacts</a> <a href="javascript:void(0)" class="list-group-item list-group-item-action">Guidelines</a> <a href="javascript:void(0)" class="list-group-item list-group-item-action">Client Collateral</a> <a href="javascript:void(0)" class="list-group-item list-group-item-action active">Billing</a> </div>
+        </div>
+        <div class="col-sm-12 d-none m-visible selected-page-title mt-0">
+          <div class="form-group">
+            <label for="PPE">&nbsp;</label>
+            <select style="display: none;" id="PPE">
+              <option>Select</option>
+              <option value="1">Some option</option>
+              <option value="2">Client Setup</option>
+              <option value="3">A disabled option</option>
+              <option value="4">Potato</option>
+            </select>
+            <div class="nice-select" tabindex="0"><span class="current">Select</span>
+              <ul class="list">
+                <li data-value="1" class="option selected focus">Client Information</li>
+                <li data-value="2" class="option">Credentials</li>
+                <li data-value="3" class="option">Client Contacts</li>
+                <li data-value="4" class="option">Guidelines</li>
+                <li data-value="4" class="option">Client Collateral</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 col-lg-9 ">
+          <div class="client-left-panel fadeInUp animated cmn-animationl">
+            <div class="custom-form mt-md-4">
+              <div class="heading4">Billing Period</div>
+                <div class="row">
+                  <div class="col-lg-8 col-xl-5 col-md-10">
+                   <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group d-flex align-items-center mb-0"> <span class="mr-3">From Date</span>
+                      <div class="custom-calendar">
+                        <label for="datepicker" style="display: none">datepicker</label>
+                        <input type="text" class="form-control" readonly id="datepicker" placeholder="select" >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group d-flex align-items-center mb-0"> <span class="mr-3">To Date</span>
+                      <div class="custom-calendar">
+                        <label for="datepicker" style="display: none">datepicker</label>
+                        <input type="text" class="form-control" readonly id="datepicker1" placeholder="select" >
+                      </div>
+                    </div>
+                  </div>
+                </div></div>   <div class="col-md-2 col-lg-4 col-xl-7 text-right"><a href="javascript:;" class="link-navyblue">View Log</a></div></div>
+                
+                <div class="custome-divider"></div>
+                
+                
+              <div class="heading4">Billing Lock Terms</div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                  <!--  <label for="First-Name">Lock Terms</label>-->
+                    <div class="form-row align-items-center">
+                      <div class="col-auto">
+                       <label><b>BPS</b> </label>
+                        
+                      </div>
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput">Name</label>
+                        <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="" value="15">
+                      </div>
+                    </div>
+                      
+                            <div class="custom-control custom-checkbox mt-2">
+                <input type="checkbox" onClick="toggle1();" class="custom-control-input" id="customControlInline5">
+                <label class="custom-control-label font-semibold" for="customControlInline5">Per Lock Type</label>
+              </div>
+              <div id="box_show" style="display: none;" class="mt-3">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Address5">Bond</label>
+                      <input type="text" class="form-control" id="Address5" placeholder="Enter Value">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Portfolio">Portfolio</label>
+                      <input type="text" class="form-control" id="Portfolio" placeholder="Enter Value">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Mandatory">Mandatory</label>
+                      <input type="text" class="form-control" id="Mandatory" placeholder="Enter Value">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Hedged">Hedged</label>
+                      <input type="text" class="form-control" id="Hedged" placeholder="Enter Value">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Floating">Floating</label>
+                      <input type="text" class="form-control" id="Floating" placeholder="Enter Value">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Best-Efforts">Best Efforts</label>
+                      <input type="text" class="form-control" id="Best-Efforts" placeholder="Enter Value">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Other">Other</label>
+                      <input type="text" class="form-control" id="Other" placeholder="Enter Value">
+                    </div>
+                  </div>
+                </div>
+                  
+                  
+                  
+                  
+              </div>
+                  </div>
+                </div>
+              </div>
+                
+                
+        
+            
+                 <div class="row mt-1">
+                <div class="col-md-12">
+                  <div class="form-group mb-0">
+           
+                        <div class="form-row align-items-center">
+                      <div class="col-auto">
+                       <label><b>Per Loan</b> </label>
+                        
+                      </div>
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput2">Name</label>
+                        <input type="text" class="form-control mb-2" id="inlineFormInput2" placeholder="" value="15">
+                      </div>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-2">
+                <input type="checkbox" onClick="toggle2();" class="custom-control-input" id="customControlInline6">
+                <label class="custom-control-label font-semibold" for="customControlInline6">Per Lock Type</label>
+              </div>               
+                
+                <div id="box_show2" style="display: none;" class="mt-3">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Address5">Bond</label>
+                      <input type="text" class="form-control" id="Address5" placeholder="Enter Value">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Portfolio">Portfolio</label>
+                      <input type="text" class="form-control" id="Portfolio" placeholder="Enter Value">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Mandatory">Mandatory</label>
+                      <input type="text" class="form-control" id="Mandatory" placeholder="Enter Value">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Hedged">Hedged</label>
+                      <input type="text" class="form-control" id="Hedged" placeholder="Enter Value">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Floating">Floating</label>
+                      <input type="text" class="form-control" id="Floating" placeholder="Enter Value">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Best-Efforts">Best Efforts</label>
+                      <input type="text" class="form-control" id="Best-Efforts" placeholder="Enter Value">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="Other">Other</label>
+                      <input type="text" class="form-control" id="Other" placeholder="Enter Value">
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div></div></div>
+          
+                
+                   <div class="custome-divider"></div> 
+                
+                
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="First-Name">Fixed MIN?</label>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto radio-btn">
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline1Yes" name="customRadioInline1" class="custom-control-input" checked>
+                          <label class="custom-control-label" for="customRadioInline1Yes">Yes </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline2No" name="customRadioInline1" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadioInline2No">No</label>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput2">Name</label>
+                        <input type="text" class="form-control mb-2" id="inlineFormInput2" placeholder="" value="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="First-Name">Fixed MAX</label>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto radio-btn">
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline1Yes2" name="customRadioInline2" class="custom-control-input" checked>
+                          <label class="custom-control-label" for="customRadioInline1Yes2">Yes </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline2No2" name="customRadioInline2" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadioInline2No2">No</label>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput2">Name</label>
+                        <input type="text" class="form-control mb-2" id="inlineFormInput2" placeholder="" value="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="First-Name">Full Service Daily Rate</label>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto radio-btn">
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline1Yes3" name="customRadioInline3" class="custom-control-input" checked>
+                          <label class="custom-control-label" for="customRadioInline1Yes3">Yes </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline2No3" name="customRadioInline3" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadioInline2No3">No</label>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput3">Name</label>
+                        <input type="text" class="form-control mb-2" id="inlineFormInput3" placeholder="" value="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="form-group mb-0">
+                    <label for="Monthly-bill-notes">Monthly bill notes</label>
+                    <textarea class="form-control gray-contol" id="Monthly-bill-notes" rows="2"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custome-divider"></div>
+            <div class="heading4 mb-3">Rate Per Function <a href="javascript:;" data-toggle="modal" data-target="#exampleModalCenter" class="link-navyblue ml-3">All</a></div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Purchase">Purchase Advice Data Entry</label>
+                  <input type="text" class="form-control" id="Purchase" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Loan">Loan Sale - Data Entry</label>
+                  <input type="text" class="form-control" id="Loan" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Sale">Loan Sale - Allocation</label>
+                  <input type="text" class="form-control" id="Sale" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Loan-Sale">Loan Sale</label>
+                  <input type="text" class="form-control" id="Loan-Sale" placeholder="Enter Value">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Special">Special Project</label>
+                  <input type="text" class="form-control" id="Special" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Renegotiation">Renegotiation</label>
+                  <input type="text" class="form-control" id="Renegotiation" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Re-Lock">Re-Lock</label>
+                  <input type="text" class="form-control" id="Re-Lock" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Rejection">Rejection</label>
+                  <input type="text" class="form-control" id="Rejection" placeholder="Enter Value">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Registration">Registration</label>
+                  <input type="text" class="form-control" id="Registration" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Pricing-Scenario">Pricing Scenario</label>
+                  <input type="text" class="form-control" id="Pricing-Scenario" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Extension">Extension</label>
+                  <input type="text" class="form-control" id="Extension" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Change">Change</label>
+                  <input type="text" class="form-control" id="Change" placeholder="Enter Value">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Update">Update</label>
+                  <input type="text" class="form-control" id="Update" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Cancellation">Cancellation</label>
+                  <input type="text" class="form-control" id="Cancellation" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Data-entry">Data entry</label>
+                  <input type="text" class="form-control" id="Data-entry" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Communication">Communication</label>
+                  <input type="text" class="form-control" id="Communication" placeholder="Enter Value">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Other2">Other</label>
+                  <input type="text" class="form-control" id="Other2" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Lock-Transfer">Lock Transfer</label>
+                  <input type="text" class="form-control" id="Lock-Transfer" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Special-Project">Special Project</label>
+                  <input type="text" class="form-control" id="Special-Project" placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Investor-Retarget">Investor Retarget</label>
+                  <input type="text" class="form-control" id="Investor-Retarget" placeholder="Enter Value">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Lock ">Lock </label>
+                  <input type="text" class="form-control" id="Lock " placeholder="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Allocation">Loan Sale - Allocation MCTLive</label>
+                  <input type="text" class="form-control" id="Allocation" placeholder="Enter Value">
+                </div>
+              </div>
+            </div>
+            <div class="custome-divider"></div>
+            <div class="heading4 mb-3">Data Services</div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group mb-0 custom-form mt-0">
+                  <label for="First-Name">Data</label>
+                  <div class="form-row align-items-center">
+                    <div class="col-auto radio-btn">
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1Flat" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1Flat">Flat </label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2Per" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2Per">Per Entry</label>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <label class="sr-only" for="inlineFormInput4">Name</label>
+                      <input type="text" class="form-control mb-2" id="inlineFormInput4" placeholder="" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custome-divider"></div>
+            <div class="heading4 mb-3">One Time Fees</div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Set">Set up</label>
+                  <input type="text" class="form-control" id="Set" placeholder="" value="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Credit">Credit</label>
+                  <input type="text" class="form-control" id="Credit" placeholder="" value="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Proration">Proration/Manual</label>
+                  <input type="text" class="form-control" id="Proration" placeholder="" value="Enter Value">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="Full">Full Service Days</label>
+                  <input type="text" class="form-control" id="Full" placeholder="" value="Enter Value">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="form-group mb-0">
+                  <label for="One-time">One time notes</label>
+                  <textarea class="form-control gray-contol" id="One-time" rows="2"></textarea>
+                </div>
+                  
+                            
+              </div>
+            </div>
+              
+              
+              <div class="custome-divider"></div>
+              
+              
+              
+              
+                   <div class="row">
+              <div class="col-md-12">
+                <div class="form-group mb-0 custom-form mt-0">
+              
+                  <div class="form-row align-items-center">
+                    <div class="col-auto">
+                      
+           
+                        
+                              <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customControlInline">
+                        <label class="custom-control-label text-nowrap" for="customControlInline">Override</label>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <label class="sr-only" for="inlineFormInput44">Name</label>
+                      <input type="text" class="form-control mb-2" id="inlineFormInput44" placeholder="" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+              
+            <div class="text-center mt-md-5 mb-md-5 mt-3 mb-5 pb-md-2">
+              <button type="submit" class="btn inner-page-btn outline-btn">Cancel</button>
+              <button type="submit" class="btn inner-page-btn ml-3">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+         </form> </div>
+
+
+  </section>
+</main>
+<footer class="footer mt-auto">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center footer-content">
+      <div>Copyright &copy; 2019 MCT Live</div>
+      <div class="ml-auto">
+        <div class="media align-items-center">
+          <div class="media-body">Powered by </div>
+          <img src="assets/images/mct-logo.png" class="ml-2 footer-logo" alt="footer-logo"> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade settings-section-modal reason-code-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body document-model">
+        <div class="d-flex align-items-center doucment-heading">Rate Per Function
+          <button type="button" class="close ml-auto" data-dismiss="modal"><img src="assets/images/icon-close.svg" alt="closeicon" width="10px"></button>
+        </div>
+        <div class="custom-file-text">
+          <label class="text label-hide" for="customFile">11</label>
+          <input type="text" id="customFile" class="form-control" placeholder="Enter value">
+        </div>
+        <div class="buttons-section d-flex justify-content-center">
+          <button type="submit" class="btn inner-page-btn-cancel mr-4" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn inner-page-btn">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="assets/js/jquery-1.12.4.js"></script> 
+<script src="assets/js/popper.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<!--nice select--> 
+<script src="assets/js/jquery.nice-select.min.js"></script> 
+<!--Date picker-->
+<link rel="stylesheet" href="assets/css/bootstrap-datepicker.css" />
+<script src="assets/js/bootstrap-datepicker.js"></script> 
+<!--Custome scroll--> 
+
+<!-- Custom JS --> 
+<script src="assets/js/custom.js"></script> 
+<!--	<script src="assets/js/fontawesome-all.js"></script>  --> 
+
+<script>       
+$(document).ready(function() {
+$(".current").text("Client Information");
+$('select').text('qqq');
+});
+</script> 
+<script type="text/javascript">
+	function toggle1(){
+			$("#box_show").slideToggle("show");			
+					}	
+
+    	function toggle2(){
+			$("#box_show2").slideToggle("show");			
+					}	
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+
+
+
+    
+
+ $("#datepicker1").datepicker({
+  format: 'mm/dd/yyyy'
+});
+
+ $('#datepicker').datepicker({
+    format: 'mm/dd/yyyy'
+  
+});
+     $('#datepicker4').datepicker({
+    format: 'mm/dd/yyyy'
+  
+});
+    
+     $('#datepicker3').datepicker({
+       format: 'mm/dd/yyyy'
+
+  
+});
+   
+
+    
+    
+    
+  
+	
+
+	
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth() + 1; //January is 0!
+
+var yyyy = today.getFullYear();
+if (dd < 10) {
+  dd = '0' + dd;
+} 
+if (mm < 10) {
+  mm = '0' + mm;
+} 
+var today = mm + '/' + dd + '/' + yyyy;
+$('#datepicker1').val(today);
+$('#datepicker').val(today);  
+    
+    
+
+    
+      </script>
+</body>
+</html>

@@ -1,0 +1,1105 @@
+<!doctype html>
+<!doctype html>
+  <html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/gif" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- NIce Select CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.css">
+
+    <!-- DatepickerCSS -->
+    <link rel="stylesheet" href="../assets/css/daterangepicker.css">
+
+    <!-- Custom Font CSS -->
+    <link rel="stylesheet" href="../assets/fonts/custom-font.css">
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+
+    <!-- Dasboard CSS -->
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+    <link rel="stylesheet" href="../assets/css/timepicki.css?v=1.0">
+    <!-- dataTables -->
+    <link rel="stylesheet" href="../assets/css/dataTables.bootstrap5.min.css">
+
+
+    <!-- Style Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css?v1.1">
+    <link rel="stylesheet" href="../assets/css/custom.css?v1.1">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v1.1">
+
+    <title>Welcome to Brain Gym</title>
+  </head>
+  <body class="bg-white">
+
+    <div class="toasts-alert"><div id="liveAlert" class="live-alert"></div></div>
+
+
+    <header class="header header-main">
+      <nav class="navbar fixed-top flex-md-nowrap p-0">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 fs-6" href="#"><img src="../assets/images/logo-with-text.svg" alt="Brain Gym"/></a>
+
+        <div class="page-content-header">
+          <div class="body-block mb-0">
+            <h4>User management</h4>
+            <!--             <p class="body-text-mini">User managment</p>-->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">User managment</li>
+              </ol>
+            </nav>
+
+          </div>
+        </div>
+        <ul class="navbar-nav ms-auto right-nav">
+          <li class="nav-item dropdown notification-dd">
+            <a class="nav-link dropdown-toggle notify" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"><img src="../assets/images/icon-notification-header.svg" alt=""/></a>
+            <ul class="dropdown-menu p-4">
+              <li>
+                <h5 class="text-center text-primary">Notification</h5>
+              </li>
+              <li> <hr></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown profile-dd">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://picsum.photos/id/1027/200" alt="profile photo" /> 
+              <div class="text-here">              
+                <span>Haylie Kenter</span>
+                <span class="designation">Admin</span>
+              </div>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="icon-user"></i>Profile
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="icon-logout"></i>Logout
+                </a>
+              </li>
+            </ul>
+
+
+            <li class="nav-item">
+              <button class="navbar-toggler  d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </li>
+
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-content-header">
+        <div class="body-block mb-0">
+          <h4>User management</h4>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Link</a></li>
+              <li class="breadcrumb-item"><a href="#">Link</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Link Active</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+      <div class="position-sticky sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="dashboard.html">
+              <i class="icon-dashboard"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="icon-manage"></i>
+              User management
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-link"></i>
+              External Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">
+              <i class="icon-calendar"></i>
+              Events
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-building"></i>
+              Organization
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+
+
+    <main class=" ms-sm-auto after-login">
+
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tab-container-one">
+              <ul class="nav nav-tabs">
+                <li class="nav-item active"><a class="nav-link active" href="#" ><span>Employee (96)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="../admin/user-management-coach.html"><span>Coach (34)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="../admin/user-management-corporate.html"><span>Corporate (20)</span></a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="Employee">
+
+                  <div class="row">
+                    <div class="col-md-12">
+
+                      <div class="row filter-listing table-filter-listing">
+                        <div class="col-md-6 col-lg-5 col-xl-4">
+                          <div class="form-floating search-input">
+                            <img src="../assets/images/icon-search.svg" class="input-icon left-icon icon-search" alt="icon-search">
+                            <input type="search" class="form-control" id="employeeSearchInTable" name="employeeSearch" placeholder="-" >
+                            <label for="floatingInput" class="floating-hide">Search by coach name or unique ID</label>
+                            <div class="feedback invalid-feedback">
+                              error message.
+                            </div>
+                            <img src="../assets/images/icon-close-dark.svg" class="input-icon right-icon icon-close" alt="icon-search">
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 d-flex align-items-center flex-column flex-md-row">
+                          <div class="form-floating w-100">
+                            <input type="text" name="daterange" class="form-control daterange pd-y-12" value="" placeholder="Created date" />
+                            <label for="floatingInput" class="floating-hide">Created date</label>
+                            <div class="feedback invalid-feedback">
+                              error message.
+                            </div>
+                            <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                          </div>
+                          <a href="#" class="link white-space-nowrap mx-3 mb-3">Clear all</a>
+                        </div>
+
+                        <div class="col-md-12 col-xl-2 col-lg-2 ms-auto text-end">
+                          <a href="user-management-employee-generate-id.html" class="btn btn-primary">Generate ID</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="modal fade" id="GenerateID" aria-hidden="true" aria-labelledby="GenerateIDLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <!--        <h4 class="modal-title" id="exampleModalToggleLabel">Modal Title</h4>-->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="body-block mobile-m-0">
+                              <h4>Assign/Reassign coach</h4>
+                              <p class="body-text-mini text-dark-grey">Choose a new coach for this employee.</p>
+                            </div>
+                            <div class="body-block-group inline-block right-border">
+                              <div class="body-block">
+                                <div class="body-text-emphasis">PBKO668547863458</div>
+                                <p class="body-text-mini text-dark-grey">Unique ID</p>
+                              </div>
+                              <div class="body-block">
+                                <div class="body-text-emphasis">Charlie Vaccaro</div>
+                                <p class="body-text-mini text-dark-grey">Coach assigned</p>
+                              </div>
+                            </div>
+
+                            <div class="form-floating search-input">
+                              <img src="../assets/images/icon-search.svg" class="input-icon left-icon icon-search" alt="icon-search">
+                              <input type="search" id="myInput" class="form-control" id="myCountry" name="myCountry" placeholder="Search by coach name or unique ID" placeholder="-">
+                              <label for="floatingInput" class="floating-hide">Search coach</label>
+                              <img src="../assets/images/icon-close-dark.svg" class="input-icon right-icon icon-close" alt="icon-search">
+                            </div>
+
+
+                            <ul class="reassign-coach-list mb-0 mr-t-6 d-inline-block w-100">
+
+                              <li class="mr-b-24">
+                                <div class="coach-list row ">
+                                  <div class="col-lg-10 col-md-9 d-flex">
+                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avtar avtar-sm" alt="avtar image" />
+                                    <p class="body-text text-dark-grey d-inline-block my-auto">Esther Howard</p>
+                                  </div>
+                                  <div class="col-lg-2 col-md-3 text-end">
+                                    <a href="#" class="links my-2 d-inline-block" onclick="selectCoach(this)">Select</a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="mr-b-24">
+                                <div class="coach-list row ">
+                                  <div class="col-lg-10 col-md-9 d-flex">
+                                    <img src="https://images.pexels.com/photos/1854865/pexels-photo-1854865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avtar avtar-sm" alt="avtar image" />
+                                    <p class="body-text text-dark-grey d-inline-block my-auto">Wade Warren</p>
+                                  </div>
+                                  <div class="col-lg-2 col-md-3 text-end">
+                                    <a href="#" class="links my-2 d-inline-block" onclick="selectCoach(this)">Select</a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="mr-b-24">
+                                <div class="coach-list row ">
+                                  <div class="col-lg-10 col-md-9 d-flex">
+                                    <img src="https://images.pexels.com/photos/824125/pexels-photo-824125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avtar avtar-sm" alt="avtar image" />
+                                    <p class="body-text text-dark-grey d-inline-block my-auto">Cameron Williamson</p>
+                                  </div>
+                                  <div class="col-lg-2 col-md-3 text-end">
+                                    <a href="#" class="links my-2 d-inline-block" onclick="selectCoach(this)">Select</a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="mr-b-24">
+                                <div class="coach-list row ">
+                                  <div class="col-lg-10 col-md-9 d-flex">
+                                    <img src="https://images.pexels.com/photos/2380795/pexels-photo-2380795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avtar avtar-sm" alt="avtar image" />
+                                    <p class="body-text text-dark-grey d-inline-block my-auto">Brooklyn Simmons</p>
+                                  </div>
+                                  <div class="col-lg-2 col-md-3 text-end">
+                                    <a href="#" class="links my-2 d-inline-block" onclick="selectCoach(this)">Select</a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="mr-b-24">
+                                <div class="coach-list row ">
+                                  <div class="col-lg-10 col-md-9 d-flex">
+                                    <img src="https://images.pexels.com/photos/4071709/pexels-photo-4071709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avtar avtar-sm" alt="avtar image" />
+                                    <p class="body-text text-dark-grey d-inline-block my-auto">Leslie Alexander</p>
+                                  </div>
+                                  <div class="col-lg-2 col-md-3 text-end">
+                                    <a href="#" class="links my-2 d-inline-block" onclick="selectCoach(this)">Select</a>
+                                  </div>
+                                </div>
+                              </li>
+
+                            </ul>
+
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                            <button class="btn btn-primary disabled " disabled id="UpdateCoachBtn" data-bs-toggle="modal" >Update</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="DeleteModalToggle" aria-hidden="true" aria-labelledby="DeleteModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <!--<h4 class="modal-title" id="exampleModalToggleLabel">Modal Title</h4>-->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="body-block mr-b-12">
+                              <div class="body-text-emphasis">PBKO668547863458</div>
+                              <p class="body-text-mini text-dark-grey">Unique ID</p>
+                            </div>
+                            <div class="body-block">
+                              <p class="body-text-mini text-black">Are you sure you want to delete this employee?</p>
+                            </div>
+
+                          </div>
+                          <div class="modal-footer pt-0">
+                            <button type="button" class="btn btn-secondary">Cancel</button>
+                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="InitiateExitSurveyModalToggle" aria-hidden="true" aria-labelledby="InitiateExitSurveyModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered modal-md">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <!--<h4 class="modal-title" id="exampleModalToggleLabel">Modal Title</h4>-->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="body-block mr-b-12">
+                              <h4 class="mr-b-12">Initiate Exit Survey</h4>
+                              <p class="body-text-mini text-dark-grey">Unique ID</p>
+                              <div class="body-text-emphasis">PBKO668547863458</div>
+                            </div>
+                            <div class="body-block">
+                              <p class="body-text-mini text-black">Are you sure you want to initiate exit survey?</p>
+                            </div>
+
+                          </div>
+                          <div class="modal-footer pt-0">
+                            <button type="button" class="btn btn-secondary">Cancel</button>
+                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Yes, Initiate Exit Survey</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="table-responsive">
+                        <table id="userManagementEmployee" class="table " style="width:100%">
+                          <thead>
+                            <tr>
+                              <th>Unique ID</th>
+                              <th>Created on</th>
+                              <th>Created by</th>
+                              <th>
+                                Coach
+                              </th>
+                              <th>
+                                Status
+                              </th>
+                              <th style="width: 78px;max-width: 78px; min-width: 78px;box-sizing: border-box;">
+
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>PBKO668547863458</td>
+                              <td>01/05/2022</td>
+                              <td>Haylie Kenter</td>
+                              <td>Khalil</td>
+                              <td>
+                                <div class="badge badge-blue">Engaged</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>PBKO668547863459</td>
+                              <td>12/05/2022</td>
+                              <td>Kenter Haylie</td>
+                              <td>Khalil</td>
+                              <td>
+                                <div class="badge badge-red">Never engaged</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>PBKO668547863440</td>
+                              <td>16/05/2022</td>
+                              <td>Robert Patricia</td>
+                              <td>Adelle</td>
+                              <td>
+                                <div class="badge badge-yellow">Inactive</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>PBKO668547863325</td>
+                              <td>21/05/2022</td>
+                              <td>Christopher Daniel</td>
+                              <td>Adelle</td>
+                              <td>
+                                <div class="badge badge-red">Never engaged</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>PBKO668547863458</td>
+                              <td>08/06/2022</td>
+                              <td>Mark Steven</td>
+                              <td>Adelle</td>
+                              <td>
+                                <div class="badge badge-green">Active</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>PBKO668547863158</td>
+                              <td>09/06/2022</td>
+                              <td>Kenneth Joshua</td>
+                              <td>Damien</td>
+                              <td>
+                                <div class="badge badge-red">Never engaged</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>PBKO668547863858</td>
+                              <td>12/06/2022</td>
+                              <td>George Timothy</td>
+                              <td>Khalil</td>
+                              <td>
+                                <div class="badge badge-yellow">Inactive</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>PBKO668547863208</td>
+                              <td>16/06/2022</td>
+                              <td>Christopher Daniel</td>
+                              <td>Khalil</td>
+                              <td>
+                                <div class="badge badge-red">Never engaged</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>BBKO668547863458</td>
+                              <td>11/05/2022</td>
+                              <td>Philip Kenter</td>
+                              <td>Russell</td>
+                              <td>
+                                <div class="badge badge-blue">Engaged</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>FBKO668547863459</td>
+                              <td>22/05/2022</td>
+                              <td>Bobby Haylie</td>
+                              <td>Russell</td>
+                              <td>
+                                <span class="badge badge-yellow">Inactive</span>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>UBKO668547863440</td>
+                              <td>06/05/2022</td>
+                              <td>Willie Patricia</td>
+                              <td>Raymond</td>
+                              <td>
+                                <div class="badge badge-yellow">Inactive</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>KBKO668547863325</td>
+                              <td>05/05/2022</td>
+                              <td>Harold Daniel</td>
+                              <td>Russell</td>
+                              <td>
+                                <div class="badge badge-green">Active</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>ZBKO668547863458</td>
+                              <td>18/06/2022</td>
+                              <td>Zachary Steven</td>
+                              <td>Henry</td>
+                              <td>                                          
+                                <div class="badge badge-blue">Engaged</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>IBKO668547863158</td>
+                              <td>29/06/2022</td>
+                              <td>Jerry Joshua</td>
+                              <td>Raymond</td>
+                              <td>
+                                <div class="badge badge-red">Never engaged</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>JBKO668547863858</td>
+                              <td>30/06/2022</td>
+                              <td>Scott Timothy</td>
+                              <td>Henry</td>
+                              <td>
+                                <div class="badge badge-yellow">Inactive</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>EBKO668547863208</td>
+                              <td>31/06/2022</td>
+                              <td>Ryan Daniel</td>
+                              <td>Henry</td>
+                              <td>
+                                <div class="badge badge-red">Never engaged</div>
+                              </td>
+                              <td>
+                                <div class="form-floating p-0 m-0">
+                                  <div class="dropdown min-w-inherit">
+                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                      <li>
+                                        <a class="dropdown-item " href="user-management-employee-detail.html">
+                                          <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 " ></i> View details
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex" data-bs-toggle="modal" href="#InitiateExitSurveyModalToggle">
+                                          <img class="dropdown-icon mr-r-18 mb-auto mt-1" src="../assets/images/initiate-exit-survey.svg" alt="icon" /> <span>Initiate exit survey</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                          <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                          <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </main>
+
+
+    <!-- jQuery, Popper.js, and Bootstrap JS --> 
+
+    <script src="../assets/js/jquery-3.5.1.min.js"></script> 
+    <script src="../assets/js/popper.min-2.9.2.js"></script> 
+    <script src="../assets/js/bootstrap.min.js"></script> 
+    <script src="../assets/js/bootstrap-select.min.1.14.js"></script>
+
+
+
+    <!-- Datepicker JS -->    
+    <script src="../assets/js/moment.min.js"></script> 
+    <script src="../assets/js/daterangepicker.js"></script> 
+    <!-- dataTables -->
+    <script src="../assets/js/jquery.dataTables.min.js"></script> 
+    <script src="../assets/js/dataTables.bootstrap5.min.js"></script> 
+
+    <!-- Autocomplete JS -->    
+    <script src="../assets/js/coach_search_autocomplete.js"></script> 
+
+    <script src="../assets/js/os-browser-detection.js"></script> 
+
+    <!--  Custom JS--> 
+    <script src="../assets/js/timepicki.js"></script> 
+    <script src="../assets/js/custom.js"></script> 
+
+    <script type="text/javascript">
+      function selectCoach(argument) {
+        $('#UpdateCoachBtn').removeClass('disabled').removeAttr('disabled');
+        $(argument).text('Selected');
+      }
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+
+
+        oTable = $('#userManagementEmployee').DataTable({
+          dom: '<"top"i>rt<"bottom"flp>',
+          scrollY: '425px',
+          scrollCollapse: true,
+          info: false,
+          initComplete: function () {
+            this.api().columns().every( function () {
+              var column = this;
+              var columnHeaderCell = column.header();
+
+              if ( column.index() == 3 || column.index() == 4 ) {  
+
+
+                var select = $('<select class="selectpicker" ><option value="">' + $(columnHeaderCell).html() + '</option></select>')
+                .appendTo( $(column.header()).empty() )
+                .on( 'change', function () {
+                  var val = $.fn.dataTable.util.escapeRegex(
+                    $(this).val()
+                    );
+                  column
+                  .search( val ? '^'+val+'$' : '', true, false )
+                  .draw();
+                } );
+
+                column.data().unique().sort().each( function ( d, j ) {
+                  d = d.replace(/<[^>]*>?/gm, ''); 
+                  select.append( '<option value="'+d+'">'+d+'</option>' );
+                } );
+
+              } 
+
+            } );
+
+            setTimeout(function(){
+            }, 2000);
+          },
+
+          "columnDefs": [
+          { orderable: true, className: 'reorder', targets: 0 },
+          { orderable: true, className: 'reorder', targets: 1 },
+          { orderable: false, targets: '_all' }
+          ]
+        });   
+
+        $('#employeeSearchInTable').keyup(function(){
+          oTable.search($(this).val()).draw() ;
+        })
+
+      });
+
+    </script>
+
+    <script type="text/javascript">
+
+      /*An array containing all the country names in the world:*/
+      var coachName = ["Abdeali Robert Patricia","Mohsin Wade Warren","BrainGym Cameron Williamson","Brooklyn Simmons","Leslie Alexander","Esther","Wade ","Cameron ","Brooklyn ","Leslie "];
+      var coachImages = [
+      "https://images.pexels.com/photos/2380795/pexels-photo-2380795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/824125/pexels-photo-824125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/4071709/pexels-photo-4071709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      ];
+
+      /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+      coach_search_autocomplete(document.getElementById("myInput"), coachName, coachImages);
+    </script>
+
+  </body>
+  </html>

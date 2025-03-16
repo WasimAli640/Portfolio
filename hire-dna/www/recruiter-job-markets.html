@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Fonts CSS -->    
+    <link rel="stylesheet" href="css/fonts.css">    
+
+
+    <!-- Custom CSS -->  
+    <link rel="stylesheet" href="css/custom.css">    
+      
+     <!-- Dashboard CSS -->  
+     <link href="css/dashboard.css" rel="stylesheet">
+      
+ <!-- Animate CSS -->  
+     <link href="css/animate.css" rel="stylesheet">
+
+       <!-- Select Dropdown CSS -->  
+     <link href="css/select-dropdown.css" rel="stylesheet">     
+
+    <title>Welcome to HireDNA</title>
+  </head>
+
+<body class="wizard-pages">
+    <nav class="navbar fixed-top flex-md-nowrap p-0 align-items-start">
+    <div class="navbar-brand col-xl-2 col-lg-3 col-md-4 mr-0 d-flex d-md-block">
+              <a class="logo mr-0" href="#"><img src="images/hiredna_logo.svg" alt="HireDNA" width="120px" /></a>
+      
+   </div>
+  
+  <ul class="navbar-nav flex-row align-items-center left-navigations" id="left-navigations"></ul>
+  <ul class="navbar-nav px-3 flex-row justify-content-end align-items-center right-navigations">
+     
+    
+         
+      
+      
+        <li class="nav-item  dropdown account-dropdown  position-relative">
+          <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#dd-collapse" role="button" aria-expanded="false" aria-controls="dd-collapse"><span class="user-avtar"><img src="images/avtar-placeholder.svg" class="avtar-img" alt=""/></span> John Smith <img src="images/icon-angle-down.svg" class="dropdown-arrow" alt=""/></a>
+           <div class="collapse dd-box" id="dd-collapse">
+           
+             <div class="menu-inner">
+                <a class=" d-flex" href="#"><img src="images/icon-user.svg" alt="" class="mr-2"/>Profile <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="dd-link"></div>
+                <a class="d-flex" data-toggle="collapse" href="#status-box" role="button" aria-expanded="false" aria-controls="status-box"><img src="images/icon-status.svg" alt="" class="mr-2"/>Status <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="collapse status-label-box position-relative" id="status-box">
+                    <a href="#status-box" class="btn btn-primary ok-btn" data-toggle="collapse" aria-expanded="false" aria-controls="status-box">OK</a>
+
+                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                         <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job
+                          </label>
+                          <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job
+                          </label>
+                       <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job
+                          </label>
+                    </div>
+                </div>
+                <div class="dd-link"></div>
+                <a class=" d-flex" href="recruiter-login.html"><img src="images/icon-logout.svg" alt="" class="mr-2"/>Logout</a>
+            </div>
+           
+           </div>
+         </li>
+     
+       <li class="nav-item  d-xl-none d-block toggle">
+      <a class="mobile-toggle navbar-toggle"  href="javascript:void(0);" id="sidebar-toggle">
+        <img src="images/icon-more-grey.svg" alt=""/>
+     </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+      
+    <nav class="col-xl-2 col-lg-4 col-md-5 sidebar" id="mySidenav">
+      <div class="sidebar-sticky">
+          
+          <ul class="steps-timeline">
+              <li class="completed">Describe your status</li>
+              <li class="active">Recruiting background
+     	     <ul class="sub-steps-timeline">
+                          <li class="completed">Have you recruited for Permanent/Direct hire roles?</li>
+                          <li class="completed">How long you have been recruiting for B2B Sales?</li>
+                          <li class="completed">What type of sales roles are you most interested in recruiting for?</li>
+                          <li class="completed">What brings you to HireDNA?</li>
+                          <li class="completed">What job markets do you recruit for?</li>
+              </ul>
+                  </li>
+              </ul> 
+      </div>
+    </nav>
+
+        <main role="main" class="col-xl-10 col-lg-12 col-md-12 ml-sm-auto main-pad">
+        
+        
+      <div class="header-block">
+        <h2>Recruiting background</h2>
+        <p>Tell us about your recruiting background, based on the information you share with us, our team will take a tailor-made approach when working with you</p>
+      </div>
+              <div class="step-progress">
+                  <div class="progress-caption">6 of 6 questions in this step</div>
+                  <ul class="step-progress-bar d-flex align-items-center">
+                   <li class="progress completed"></li>
+                   <li class="progress completed"></li>
+                   <li class="progress completed"></li>
+                   <li class="progress completed"></li>
+                   <li class="progress completed"></li>
+                   <li class="progress active"></li>
+                      </ul>
+              </div>
+        <div class="que-ans-block animated fadeIn d-flex flex-column">
+            <h3 class="que">What job markets do you recruit for?</h3>
+            <div class="ans-options">
+             <select class="form-control form-control-xs selectpicker select-width country-select" name="" data-size="7" data-live-search="true" data-title="Location" id="state_list" data-width="100%" multiple>
+                          <option value="Afganistan">Afghanistan</option>
+   <option value="">Albania</option>
+   <option value="">Algeria</option>
+   <option value="">American Samoa</option>
+   <option value="">Andorra</option>
+   <option value="">Angola</option>
+   <option value="">Anguilla</option>
+   <option value="">Antigua & Barbuda</option>
+   <option value="">Argentina</option>
+   <option value="">Armenia</option>
+   <option value="">Aruba</option>
+   <option value="">Australia</option>
+   <option value="">Austria</option>
+   <option value="">Azerbaijan</option>
+   <option value="">Bahamas</option>
+   <option value="">Bahrain</option>
+   <option value="">Bangladesh</option>
+   <option value="">Barbados</option>
+   <option value="">Belarus</option>
+   <option value="">Belgium</option>
+   <option value="">Belize</option>
+   <option value="">Benin</option>
+   <option value="">Bermuda</option>
+   <option value="">Bhutan</option>
+   <option value="">Bolivia</option>
+   <option value="">Bonaire</option>
+   <option value="">Bosnia & Herzegovina</option>
+   <option value="">Botswana</option>
+   <option value="">Brazil</option>
+   <option value=" Indian Ocean Ter">British Indian Ocean Ter</option>
+   <option value="">Brunei</option>
+   <option value="">Bulgaria</option>
+   <option value="">Burkina Faso</option>
+   <option value="">Burundi</option>
+   <option value="">Cambodia</option>
+   <option value="">Cameroon</option>
+   <option value="">Canada</option>
+   <option value="">Canary Islands</option>
+   <option value="">Cape Verde</option>
+   <option value="">Cayman Islands</option>
+   <option value="">Central African Republic</option>
+   <option value="">Chad</option>
+   <option value="">Channel Islands</option>
+   <option value="">Chile</option>
+   <option value="">China</option>
+   <option value="">Christmas Island</option>
+   <option value=" ">Cocos Island</option>
+   <option value="">Colombia</option>
+   <option value="">Comoros</option>
+   <option value="">Congo</option>
+   <option value=" ">Cook Islands</option>
+   <option value=" ">Costa Rica</option>
+   <option value=" ">Cote DIvoire</option>
+   <option value="">Croatia</option>
+   <option value="">Cuba</option>
+   <option value="">Curacao</option>
+   <option value="">Cyprus</option>
+   <option value=" ">Czech Republic</option>
+   <option value="">Denmark</option>
+   <option value="">Djibouti</option>
+   <option value="">Dominica</option>
+   <option value=" ">Dominican Republic</option>
+   <option value=" ">East Timor</option>
+   <option value="">Ecuador</option>
+   <option value="">Egypt</option>
+   <option value=" ">El Salvador</option>
+   <option value=" ">Equatorial Guinea</option>
+   <option value="">Eritrea</option>
+   <option value="">Estonia</option>
+   <option value="">Ethiopia</option>
+   <option value=" ">Falkland Islands</option>
+   <option value=" ">Faroe Islands</option>
+   <option value="">Fiji</option>
+   <option value="">Finland</option>
+   <option value="">France</option>
+   <option value="">French Guiana</option>
+   <option value=" ">French Polynesia</option>
+   <option value="">French Southern Ter</option>
+   <option value="">Gabon</option>
+   <option value="">Gambia</option>
+   <option value="">Georgia</option>
+   <option value="">Germany</option>
+   <option value="">Ghana</option>
+   <option value="">Gibraltar</option>
+   <option value=" ">Great Britain</option>
+   <option value="">Greece</option>
+   <option value="">Greenland</option>
+   <option value="">Grenada</option>
+   <option value="">Guadeloupe</option>
+   <option value="">Guam</option>
+   <option value="">Guatemala</option>
+   <option value="">Guinea</option>
+   <option value="">Guyana</option>
+   <option value="">Haiti</option>
+   <option value="">Hawaii</option>
+   <option value="">Honduras</option>
+   <option value=" ">Hong Kong</option>
+   <option value="">Hungary</option>
+   <option value="">Iceland</option>
+   <option value="">Indonesia</option>
+   <option value="">India</option>
+   <option value="">Iran</option>
+   <option value="">Iraq</option>
+   <option value="">Ireland</option>
+   <option value=" ">Isle of Man</option>
+   <option value="">Israel</option>
+   <option value="">Italy</option>
+   <option value="">Jamaica</option>
+   <option value="">Japan</option>
+   <option value="">Jordan</option>
+   <option value="">Kazakhstan</option>
+   <option value="">Kenya</option>
+   <option value="">Kiribati</option>
+   <option value=" ">Korea North</option>
+   <option value=" ">Korea South</option>
+   <option value="">Kuwait</option>
+   <option value="">Kyrgyzstan</option>
+   <option value="">Laos</option>
+   <option value="">Latvia</option>
+   <option value="">Lebanon</option>
+   <option value="">Lesotho</option>
+   <option value="">Liberia</option>
+   <option value="">Libya</option>
+   <option value="">Liechtenstein</option>
+   <option value="">Lithuania</option>
+   <option value="">Luxembourg</option>
+   <option value="">Macau</option>
+   <option value="">Macedonia</option>
+   <option value="">Madagascar</option>
+   <option value="">Malaysia</option>
+   <option value="">Malawi</option>
+   <option value="">Maldives</option>
+   <option value="">Mali</option>
+   <option value="">Malta</option>
+   <option value=" ">Marshall Islands</option>
+   <option value="">Martinique</option>
+   <option value="">Mauritania</option>
+   <option value="">Mauritius</option>
+   <option value="">Mayotte</option>
+   <option value="">Mexico</option>
+   <option value=" ">Midway Islands</option>
+   <option value="">Moldova</option>
+   <option value="">Monaco</option>
+   <option value="">Mongolia</option>
+   <option value="">Montserrat</option>
+   <option value="">Morocco</option>
+   <option value="">Mozambique</option>
+   <option value="">Myanmar</option>
+   <option value="">Nambia</option>
+   <option value="">Nauru</option>
+   <option value="">Nepal</option>
+   <option value=" ">Netherland Antilles</option>
+   <option value="">Netherlands (Holland, Europe)</option>
+   <option value="">Nevis</option>
+   <option value=" ">New Caledonia</option>
+   <option value=" ">New Zealand</option>
+   <option value="">Nicaragua</option>
+   <option value="">Niger</option>
+   <option value="">Nigeria</option>
+   <option value="">Niue</option>
+   <option value=" ">Norfolk Island</option>
+   <option value="">Norway</option>
+   <option value="">Oman</option>
+   <option value="">Pakistan</option>
+   <option value=" ">Palau Island</option>
+   <option value="">Palestine</option>
+   <option value="">Panama</option>
+   <option value=" ">Papua New Guinea</option>
+   <option value="">Paraguay</option>
+   <option value="">Peru</option>
+   <option value="">Philippines</option>
+   <option value=" ">Pitcairn Island</option>
+   <option value="">Poland</option>
+   <option value="">Portugal</option>
+   <option value=" ">Puerto Rico</option>
+   <option value="">Qatar</option>
+   <option value="  ">Republic of Montenegro</option>
+   <option value=" ">Republic of Serbia</option>
+   <option value="">Reunion</option>
+   <option value="">Romania</option>
+   <option value="">Russia</option>
+   <option value="">Rwanda</option>
+   <option value=" ">St Barthelemy</option>
+   <option value="">St Eustatius</option>
+   <option value=" ">St Helena</option>
+   <option value=" ">St Kitts-Nevis</option>
+   <option value=" ">St Lucia</option>
+   <option value=" ">St Maarten</option>
+   <option value=" ">St Pierre & Miquelon</option>
+   <option value="  ">St Vincent & Grenadines</option>
+   <option value="">Saipan</option>
+   <option value="">Samoa</option>
+   <option value=" ">Samoa American</option>
+   <option value=" ">San Marino</option>
+   <option value=" ">Sao Tome & Principe</option>
+   <option value=" ">Saudi Arabia</option>
+   <option value="">Senegal</option>
+   <option value="">Seychelles</option>
+   <option value="">Sierra Leone</option>
+   <option value="">Singapore</option>
+   <option value="">Slovakia</option>
+   <option value="">Slovenia</option>
+   <option value=" ">Solomon Islands</option>
+   <option value="">Somalia</option>
+   <option value="">South Africa</option>
+   <option value="">Spain</option>
+   <option value=" ">Sri Lanka</option>
+   <option value="">Sudan</option>
+   <option value="">Suriname</option>
+   <option value="">Swaziland</option>
+   <option value="">Sweden</option>
+   <option value="">Switzerland</option>
+   <option value="">Syria</option>
+   <option value="">Tahiti</option>
+   <option value="">Taiwan</option>
+   <option value="">Tajikistan</option>
+   <option value="">Tanzania</option>
+   <option value="">Thailand</option>
+   <option value="">Togo</option>
+   <option value="">Tokelau</option>
+   <option value="">Tonga</option>
+   <option value="">Trinidad & Tobago</option>
+   <option value="">Tunisia</option>
+   <option value="">Turkey</option>
+   <option value="">Turkmenistan</option>
+   <option value=""Turks & Caicos Is</option>
+   <option value="">Tuvalu</option>
+   <option value="">Uganda</option>
+   <option value=" ">United Kingdom</option>
+   <option value="">Ukraine</option>
+   <option value="">United Arab Emirates</option>
+   <option value="">United States of America</option>
+   <option value="">Uruguay</option>
+   <option value="">Uzbekistan</option>
+   <option value="">Vanuatu</option>
+   <option value=" ">Vatican City State</option>
+   <option value="">Venezuela</option>
+   <option value="">Vietnam</option>
+   <option value="">Virgin Islands (Brit)</option>
+   <option value=" ">Virgin Islands (USA)</option>
+   <option value=" ">Wake Island</option>
+   <option value="">Wallis & Futana Is</option>
+   <option value="">Yemen</option>
+   <option value="">Zaire</option>
+   <option value="">Zambia</option>
+   <option value="">Zimbabwe</option>
+                      </select>
+            </div>
+            <div class="action-buttons">
+            <a href="recruiter-hire-dna.html" class="btn btn-outline-primary back-btn">Back</a>
+            <a href="recruiter-congratulations.html" class="btn btn-primary next-btn">Next</a>
+                
+            </div>
+        </div>
+
+
+    </main>
+  </div>
+</div>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dashboard.js"></script>
+        <script src="js/select-dropdown.js"></script>    
+<script src="js/custom.js"></script>
+    
+    
+    </body>
+</html>
+
+
+
+
+

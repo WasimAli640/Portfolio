@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en" data-livestyle-extension="available" class="h-100">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+<meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+<title>MCT-Lock Desk Automation</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<link href="assets/css/picktim.css" rel="stylesheet" type="text/css">
+
+<link href="assets/css/picktim.css" rel="stylesheet" type="text/css">
+<!-- Animate CSS -->
+<link rel="stylesheet" href="assets/css/animate.css" />
+
+<!-- Floating lavel CSS -->
+<link rel="stylesheet" href="assets/css/floating-labels.css" />
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/custom.css" />
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css" />
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />	-->
+<!-- Font Awesome v5 CSS -->
+<script src="https://kit.fontawesome.com/c56015cba5.js"></script>
+	
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md"> <a class="navbar-brand" href="#"> <img src="assets/images/mct-logo-1.png" alt="main logo" class="main-logo"></a>
+      <div class="m-visible">
+        <ul class="navbar-nav header-right-nav  flex-row">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <img src="assets/images/menu-icon.svg" alt="menu icon" class="img-fluid"> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav header-right-nav m-invisible">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+            <li class="nav-item dropdown"> 
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+            <div class="media">
+            		<img alt="pic" src="assets/images/profile-pic.png" class="user-img rounded-circle">
+            		<div class="media-body">
+                    	<span class="user-name">Natalie Arshakian </span>
+                        <div class="user-profile">Director Lock Desk</div>
+                    </div>
+            </div>
+             </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="admin-manager-edit-user.html">Edit Profile</a> <a class="dropdown-item" href="login.html">Logout</a> </div>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center nav-bottom m-visible">
+          <ul class="list-inline">
+            <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+            </li>
+            <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+            <li class="list-inline-item"><a href="#">Reports</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+              <div class="dropdown-menu dropdown-menu-right fadeInUp animated cmn-animation" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+            </li>
+            <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown4"> <a class="dropdown-item" href="client-list.html">Client  List</a> <a class="dropdown-item active" href="client-administration-6.1.html">Add Client</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown5"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown6"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+            </li>
+            <li class="list-inline-item"><a href="login.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center nav-bottom m-invisible">
+      <ul class="list-inline">
+        <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown10"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+        </li>
+        <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+        <li class="list-inline-item"><a href="#">Reports</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown11" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown11"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+        </li>
+        <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown12" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown12"> <a class="dropdown-item" href="client-list.html">Client List</a> <a class="dropdown-item active" href="client-administration-6.1.html">Add Client</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown13" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown13"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown14" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown14"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main class="pad-r-0">
+  <section class="create-team">
+    <h1 class="cstm-heading1">Client setup</h1>
+    <div class="heading5">Client Name: <span class="font-weight-bold">Auto Club Trust, FSB (AAA)</span></div>
+  </section>
+  <div class="cmn-divider"></div>
+  <section class="client-setup">
+    <div class="container-fluid">
+      <form action="client-administration-6.5.html">
+        <div class="row flex-md-row-reverse">
+          <div class="col-md-3 col-lg-3 client-right-nav p-0 m-invisible">
+            <div class="list-group list-group-flush"> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action completed"> Client Information </a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action completed">Credentials</a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action completed">Client Contacts</a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action active">Guidelines</a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action">Client Collateral</a> </div>
+          </div>
+          <div class="col-sm-12 d-none m-visible selected-page-title">
+            <div class="form-group">
+              <label for="PPE" class="pt-md-0 pt-3"></label>
+              <select style="display: none;" id="PPE">
+                <option>Select</option>
+                <option value="1">Some option</option>
+                <option value="2">Client Setup</option>
+                <option value="3">A disabled option</option>
+                <option value="4">Potato</option>
+              </select>
+              <div class="nice-select" tabindex="0"><span class="current">Select</span>
+                <ul class="list">
+                  <li data-value="1" class="option">Client Information</li>
+                  <li data-value="2" class="option">Credentials</li>
+                  <li data-value="3" class="option">Client Contacts</li>
+                  <li data-value="4" class="option selected focus">Guidelines</li>
+                  <li data-value="4" class="option">Client Collateral</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 col-lg-9 ">
+            <div class="client-left-panel fadeInUp animated cmn-animationl minimum-height">
+              <div class="custom-form mt-4 mb-3 ">
+              <div class="d-flex cmn-tabs flex-column flex-md-row mt-5">
+                <ul class="nav nav-tabs cstm-tab1 mr-auto mt-0" id="myTab" role="tablist" >
+                  <li class="nav-item"> <a class="nav-link active" id="home-tab" data-id="1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">BE Guidelines</a> </li>
+                  <li class="nav-item"> <a class="nav-link" id="profile-tab" data-id="2" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Priority Guidelines</a> </li>
+                </ul>
+				  <div class="mr-auto mr-sm-0  mt-md-0 mt-3">
+                 <a  class="btn inner-page-btn cstm-btn1  create-rule " href="#">
+      		<div class="d-flex align-items-center "><img src="assets/images/icon-add-white.svg" alt="icon add"> <span class="pl-2">Create Rule</span></div></a>
+					</div>  
+                </div>
+              
+                
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                       <section class="table-responsive tab-data-table">
+                       
+                      <table id="rule-list-table" class="table table-striped table-borderless nowrap" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th><div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customControlInline1">
+                                      <label class="custom-control-label " for="customControlInline1"> </label>
+                                    </div></th>
+                            <th>Rule List</th>
+                            <th>Action</th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customControlInline2">
+                                      <label class="custom-control-label " for="customControlInline2"> </label>
+                                    </div></td>
+                            <td>Rule -1</td>
+                           
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon"><img src="assets/images/delete.svg" alt="delete icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy" class="action-icon"><img src="assets/images/icon-copy.svg" alt="icon copy"/></a></td>
+                          </tr>
+                          
+                           <tr>
+                            <td><div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customControlInline3">
+                                      <label class="custom-control-label " for="customControlInline3"> </label>
+                                    </div></td>
+                            <td>Rule -2</td>
+                           
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon"><img src="assets/images/delete.svg" alt="delete icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy" class="action-icon"><img src="assets/images/icon-copy.svg" alt="icon copy"/></a></td>
+                          </tr>
+                       
+                        <tr>
+                            <td><div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customControlInline4">
+                                      <label class="custom-control-label " for="customControlInline4"> </label>
+                                    </div></td>
+                            <td>Rule -3</td>
+                           
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon"><img src="assets/images/delete.svg" alt="delete icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy" class="action-icon"><img src="assets/images/icon-copy.svg" alt="icon copy"/></a></td>
+                          </tr>
+                        
+                        
+                         <tr>
+                            <td><div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customControlInline5">
+                                      <label class="custom-control-label " for="customControlInline5"> </label>
+                                    </div></td>
+                            <td>Rule -4</td>
+                           
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon"><img src="assets/images/delete.svg" alt="delete icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy" class="action-icon"><img src="assets/images/icon-copy.svg" alt="icon copy"/></a></td>
+                          </tr>
+                         
+                         
+                          <tr>
+                            <td><div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customControlInline6">
+                                      <label class="custom-control-label " for="customControlInline6"> </label>
+                                    </div></td>
+                            <td>Rule -5</td>
+                           
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon"><img src="assets/images/delete.svg" alt="delete icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy" class="action-icon "><img src="assets/images/icon-copy.svg" alt="icon copy"/></a></td>
+                          </tr>
+                          
+                           <tr>
+                            <td><div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customControlInline7">
+                                      <label class="custom-control-label " for="customControlInline7"> </label>
+                                    </div></td>
+                            <td>Rule -6</td>
+                           
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon"><img src="assets/images/delete.svg" alt="delete icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy" class="action-icon"><img src="assets/images/icon-copy.svg" alt="icon copy"/></a></td>
+                          </tr>
+                          
+                           <tr>
+                            <td><div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customControlInline8">
+                                      <label class="custom-control-label " for="customControlInline8"> </label>
+                                    </div></td>
+                            <td>Rule -7</td>
+                           
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon"><img src="assets/images/delete.svg" alt="delete icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy" class="action-icon "><img src="assets/images/icon-copy.svg" alt="icon copy"/></a></td>
+                          </tr>
+                          
+                           <tr>
+                            <td><div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customControlInline9">
+                                      <label class="custom-control-label " for="customControlInline9"> </label>
+                                    </div></td>
+                            <td>Rule -8</td>
+                           
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon "><img src="assets/images/delete.svg" alt="delete icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Copy" class="action-icon "><img src="assets/images/icon-copy.svg" alt="icon copy"/></a></td>
+                          </tr>
+                         
+                         
+                        </tbody>
+                      </table>
+                    </section>
+                    <div class="buttons-section pt-md-2 mt-4 mt-md-5 d-flex justify-content-center">
+                <button type="button" class="btn inner-page-btn-cancel mr-4" onclick="goBack()">Back</button>
+                <button type="submit" class="btn inner-page-btn">Save and Next</button>
+              </div> 
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <section class="table-responsive tab-data-table">
+                      <table id="data-list-table" class="table table-striped table-borderless nowrap priorities" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th>Priorities</th>
+                            <th>Short Description</th>
+                            <th>Value</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>BE Lock</td>
+                            <td>BE</td>
+                            <td>Yes</td>
+                            <td valign="middle"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon "><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                          </tr>
+                          
+                           <tr class="edit-row">
+                            <td>High Loan Value</td>
+                            <td>High Val</td>
+                            <td><input type="text" class="form-control" placeholder="Enter here" value="$254"></td>
+                            <td valign="middle"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Save" class="action-icon"><img src="assets/images/icon-save.svg" alt="Save icon"/></a> <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Close" class="action-icon edit-close"><img src="assets/images/icon-close-tr.svg" alt="icon close icon"/></a></td>
+                          </tr>
+                           <tr>
+                            <td>Time Pending</td>
+                            <td>Pend</td>
+                            <td>00:15</td>
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon "><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                          </tr>
+                           <tr class="edit-row">
+                            <td>High Loan Value</td>
+                            <td>High Val</td>
+                            <td><input type="text" class="form-control" placeholder="Enter here" value="Lorem ipsum"></td>
+                            <td valign="middle"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Save" class="action-icon"><img src="assets/images/icon-save.svg" alt="Save icon"/></a> <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Close" class="action-icon edit-close"><img src="assets/images/icon-close-tr.svg" alt="icon close icon"/></a></td>
+                          </tr>
+                          <tr class="edit-row">
+                            <td valign="middle">BE Lock</td>
+                            <td>BE</td>
+                            <td><div class="onoffswitch1">
+                        <input type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1">
+                        <label class="onoffswitch1-label mb-0" for="myonoffswitch1"> <span class="onoffswitch1-inner"></span> <span class="onoffswitch1-switch"></span> </label>
+                      </div></td>
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Save" class="action-icon"><img src="assets/images/icon-save.svg" alt="Save icon"/></a> <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Close" class="action-icon edit-close"><img src="assets/images/icon-close-tr.svg" alt="icon close icon"/></a></td>
+                          </tr>
+                          
+                           <tr>
+                            <td>High Loan Value</td>
+                            <td>High Val</td>
+                            <td>$254</td>
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                          </tr>
+                           <tr class="edit-row">
+                            <td>Time Pending</td>
+                            <td>Pend</td>
+                            <td width="20%"><div class="timepicker position-relative" id="timepicker"></div></td>
+                             <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Save" class="action-icon"><img src="assets/images/icon-save.svg" alt="Save icon"/></a> <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Close" class="action-icon edit-close"><img src="assets/images/icon-close-tr.svg" alt="icon close icon"/></a></td>
+                          </tr>
+                          <tr>
+                            <td>Keyword</td>
+                            <td> Keyword</td>
+                            <td>Lorem ipsum</td>
+                            <td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit" class="action-icon"><img src="assets/images/edit.svg" alt="edit icon"/></a><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Delete" class="action-icon"><img src="assets/images/delete.svg" alt="delete icon"/></a></td>
+                          </tr>
+                          
+                        
+                        </tbody>
+                      </table>
+                      
+                    </section>
+                    <div class="buttons-section pt-md-2 mt-4 mt-md-5 d-flex justify-content-center">
+                <button type="button" class="btn inner-page-btn-cancel mr-4" onclick="goBack()">Back</button>
+                <button type="submit" class="btn inner-page-btn">Save and Next</button>
+              </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="footer mt-auto">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center footer-content">
+      <div>Copyright &copy; 2019 MCT Live</div>
+      <div class="ml-auto">
+        <div class="media align-items-center">
+          <div class="media-body">Powered by </div>
+          <img src="assets/images/mct-logo.png" class="ml-2 footer-logo" alt="footer-logo"> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="assets/js/popper.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<!--picktime--> 
+<script src="assets/js/picktim.js"></script>
+<script>
+$(function () {
+ $(".timepicker").picktim({mode: 'h12'});
+ $('.create-rule').show();
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  var target = $(e.target).attr("href") // activated tab
+  if(target=='#home'){
+	 
+   		$('.create-rule').show();
+  }else{
+
+	$('.create-rule').hide();
+}
+  
+});
+});
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+	
+</script>
+<!-- Custom JS --> 
+<script src="assets/js/custom.js"></script> 
+
+<!--	<script src="assets/js/fontawesome-all.js"></script>  --> 
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="assets/js/jquery.dataTables.min.js"></script> 
+<script src="assets/js/dataTables.bootstrap4.min.js"></script> 
+<!--nice select--> 
+<script src="assets/js/jquery.nice-select.min.js"></script> 
+
+<script>
+ $('#data-list-table').DataTable({
+	/* scrollY:        '50vh',*/
+       scrollCollapse: true,
+    searching: false,
+    paging: false,
+    info: false,
+	bSortable: true,
+	
+});
+
+ $('#rule-list-table').DataTable({
+    scrollY: true,
+	paging: true,
+	bFilter: false, 
+	bInfo: false,
+	scrollX: true,
+	columnDefs: [
+	  { "width": "10%", "targets": 0 },{ "width": "68%", "targets": 1 },{ "width": "22%", "targets": 2 }
+    ]
+		
+});	
+
+$(document).ready(function() {
+	
+
+	
+$(".current").text("Guidelines");
+
+ $("#customControlInline1").click(function () {
+            $(".custom-control-input").attr('checked', this.checked);
+  });
+
+
+
+ $('a[data-toggle="tab"]').on( 'shown.bs.tab', function (e) {
+        $.fn.dataTable.tables( {visible: true, api: true} ).columns.adjust();
+    } );
+
+
+});
+
+
+
+
+
+</script>
+</body>
+</html>
