@@ -1,0 +1,668 @@
+@font-face {
+    font-family: 'GT Super Ds Trial';
+    src: url('../fonts/GTSuperDsTrial-Bd.woff2') format('woff2'),
+        url('../fonts/GTSuperDsTrial-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Ds Trial';
+    src: url('../fonts/GTSuperDsTrial-Rg.woff2') format('woff2'),
+        url('../fonts/GTSuperDsTrial-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Ds Trial';
+    src: url('../fonts/GTSuperDsTrial-Md.woff2') format('woff2'),
+        url('../fonts/GTSuperDsTrial-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Ds Trial';
+    src: url('../fonts/GTSuperDsTrial-Lt.woff2') format('woff2'),
+        url('../fonts/GTSuperDsTrial-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+	font-family: 'GT Super Ds Trial';
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+    -webkit-font-smoothing: antialiased;
+}
+img{
+	max-width: 100%;
+}
+.outer {
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+}
+.section1{
+	position: relative;
+	margin-right: 3.75rem;
+    width: 33.75rem;
+    height: 100vh;
+    position: relative;
+}
+.header-outer {
+    perspective: 1000px;
+}
+.banner-img {
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 250px);
+    position: relative;
+    z-index: 5;
+}
+.white-bg {
+    position: absolute;
+    height: 100%;width: 100%;
+    left: 0;top: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.first-img{
+	background: url(../images/firstimg.jpg) no-repeat;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+}
+
+
+.offer {
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 150px;
+    z-index: 9;
+    /* cursor: pointer; */
+    font-weight: 500;
+}
+
+
+.big-button {
+    position: absolute;
+    height: 13vw;
+    width: 13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 100%;
+    background: #000;
+    text-decoration: none;
+}
+
+.btn-text {
+    color: #fff;
+    text-align: center;
+    pointer-events: none;
+}
+
+.hover-big-btn {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;top: 0;
+    background-color: #fff;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(0);
+    pointer-events: none;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    width: 100vh;
+    z-index: 10;
+    padding: 0px 30px;
+    -webkit-transform: translate(-50.5%,-50%) translateZ(0) rotate(-90deg);
+    transform: translate(-50.5%,-50%) translateZ(0) rotate(-90deg);
+    -webkit-transform-origin: 50% 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #aaa;
+    will-change: transform;
+}
+.header nav ul{
+	display: flex;
+	align-items: center;
+}
+/* .header nav ul li {
+    padding: 10px 0;
+} */
+.header nav ul li a{
+	color: #000;
+	text-decoration: none;
+	font-size: 15px;
+	margin-right:38px;
+	position: relative;
+    float: left;
+    padding: 10px 0;
+}
+.header nav ul li a:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -1px;
+    transform: scaleX(0);
+    transition: .3s;
+    
+}
+.header nav ul li a:hover:after {
+    transform: scaleX(1);
+}
+.header.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+.peragraph {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    white-space: normal;
+    margin: 0 100px 0 0;
+}
+
+
+.section3 {
+    display: flex;
+    margin-left:60px;
+    height: 100vh;
+    width: 100vw;
+}
+.section3 .peragraph p{
+	color: #aaa;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.section3 ul li {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+}
+.section3 ul li a{
+	color:#000;
+	font-size: 16px;
+	text-decoration: none;
+	position: relative;
+    font-weight: 300;
+}
+.section3 ul li a:after{
+	width: 100%;
+	height: 1px;
+	background: #000;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: all 0.3s;
+	transform-origin: center right;
+}
+.section3 ul li a:hover:after{
+	transform: scaleX(.0001);
+}
+.ideatext {
+    position: relative;
+}
+
+.ideatext p{
+	font-size: 34vh;
+    line-height: 1;
+    font-weight: 300;
+    color: #222;
+	display: flex;
+	align-items: center;
+}
+
+.ideatext .second img {
+    max-width: 400px;
+    margin-right: 100px;
+}
+
+.section-outer.header-outer {
+    white-space: normal;
+    height: 100vh;
+}
+
+.section-outer {
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+/*html.has-scroll-smooth {
+    overflow: visible;
+}*/
+::-webkit-scrollbar {
+    display: none;
+}
+#content {
+  display: flex;
+   overflow: visible;
+}
+
+/*carousel section start*/
+.section4 {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.carousel-section{
+    width: 800px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+.image-carousel{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+}
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    scale: 1.2;
+}
+
+.slick-slider .banner {
+    scale: 1.2;
+}
+
+.section5 {
+    display: inline-block;
+    width: 100vh;
+    white-space: normal;
+    height: 100vh;
+    padding: 40px;
+}
+.section-content {
+    font-size: 30px;
+    line-height: 1.3;
+    overflow: hidden;
+    font-weight: 300;
+}
+.split-line {
+  overflow: hidden;
+}
+.peragraph-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    gap: 30px;
+}
+.peragraph-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #aaa;
+    font-weight: 300;
+}
+
+
+.about {
+    width:30vw;
+    height: 100vh;
+    white-space: normal;
+    padding: 40px;
+    border-right: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    background-color: #f1f1f1;
+    /*transform: translateX(-500px);*/
+    overflow: hidden;
+    margin-left: 100px;
+    font-weight: 300;
+}
+.section-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.about h2{
+    font-size: 45px;
+    font-weight: 300;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+.about p{
+font-size: 16px;
+}
+.image-carousel ul li a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagechange{
+    display: inline-block;
+    white-space: normal;
+    width: 50vw;
+    height: 100vh;
+}
+
+.c-brand-list_wrapper {
+    height: 100vh;
+    position: relative;
+}
+.c-brand-img {
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: url(../images/shad2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s background-image;
+    opacity: 0;
+}
+.c-brand-img:after {
+    position: absolute;
+    content: "";
+    height: 100%;width: 100%;
+    left: 0;top: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+.c-brand-list{
+    height: 100vh;
+    padding: 40px; 
+}
+.c-brand-list li a {
+    font-size:38px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+}
+.c-brand-list li a:hover,.c-brand-list li a{
+    color: inherit;
+}
+li.c-brand-list_item{
+    position: relative;
+    z-index: 1;
+    color: #000;
+    cursor: pointer;
+}
+.c-brand-list_item a{
+    pointer-events: none;
+}
+
+.triangle {
+    white-space: normal;
+    width: 338px;
+    height: 100vh;
+    display: inline-block;
+    padding: 30px 0;
+}
+.branding-sec{
+    width: 100vw;
+    height: 100vh;
+    white-space: normal;
+}
+.brand-name {
+    white-space: nowrap;
+    display: flex;
+    width: auto;
+    width: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 9.375rem;
+    -webkit-transform: translate(-50%,-50%) rotate(-90deg);
+    transform: translate(-50%,-50%) rotate(-90deg);
+}
+.c-rail_track-container {
+    white-space: nowrap;
+    display: flex;
+    width: auto;
+}
+.scrollingText{
+    font-size: 194px;
+    position: relative;
+    font-weight: 300;
+}
+
+.scrollingText:after {
+    content: "";
+    height: 1px;
+    width: 200px;
+    margin: 0 6px;
+    display: inline-block;
+    background-color: currentColor;
+    vertical-align: middle;
+}
+.brand-img-sec {
+    padding: 40px;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 250px;
+}
+.inside-area {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+.brand-bigimg {
+    background: url(../images/must-1-1.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width: 550px;
+    height: 100%;
+
+}
+.brand-small {
+    background: url(../images/must-2-1.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width: 293px;
+    height: 214px;
+    position: absolute;
+    right: -150px;
+    bottom: 161px;
+}
+.mustBtn {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100%;
+    right: -260px;
+    bottom: 120px;
+    font-size: 45px;
+    font-weight: 300;
+    text-decoration: none;
+    overflow: hidden;
+}
+.detail-brand {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+    margin-left: auto;
+    padding-right: 130px;
+}
+
+.location{
+    font-size:16px;
+    color:#aaa;
+}
+.location span{
+    color:#333;
+}
+.detail-brand p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #aaa;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+.shopbtn {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #000;
+    margin-top: 20px;
+}
+.footer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 200px;
+    font-size: 18px;
+    background: #f1f1f1;
+}
+
+@media (min-width: 1000px){
+.section-outer {
+     white-space: nowrap; 
+}
+}
+
+@media (max-width: 991px){
+    .section-outer{
+        white-space: normal;
+        width: 100%;
+    }
+    .outer {
+    width: 100%;
+    white-space: normal;
+    display: inline-block;
+}
+#content {
+    display: inline-block;
+    overflow: visible;
+}
+.section1 {
+    position: relative;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transform: none;
+    transform: none;
+}
+.section-outer.header-outer {
+    height: auto;
+}
+.section3 {
+    display: inline-block;
+    margin-left: 60px;
+    height: 100%;
+    width: 100%;
+}
+.white-bg{
+    background-color: transparent;
+}
+.big-button{
+    width: 200px;
+    height: 200px;
+}
+.peragraph {
+    width: 100%;
+    margin: 0;
+}
+.ideatext {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.about {
+    width: 100%;
+    height: 100%;
+    white-space: normal;
+    margin-left: 0;
+    padding: 40px;
+}
+.branding-sec {
+    width: 100%;
+    height: 100%;
+    white-space: normal;
+}  
+.brand-name {
+    width: auto;
+    width: 100%;
+    position: inherit;
+    top: 0;
+    left: 0;
+    -webkit-transform: 0;
+} 
+.ideatext p{
+    font-size: 14vh;
+}
+
+}
+
+

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'GT Super Ds Trial Bd';
+    src: url('GTSuperDsTrial-Bd.woff2') format('woff2'),
+        url('GTSuperDsTrial-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Ds Trial Rg';
+    src: url('GTSuperDsTrial-Rg.woff2') format('woff2'),
+        url('GTSuperDsTrial-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Ds Trial Md';
+    src: url('GTSuperDsTrial-Md.woff2') format('woff2'),
+        url('GTSuperDsTrial-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Ds Trial Lt';
+    src: url('GTSuperDsTrial-Lt.woff2') format('woff2'),
+        url('GTSuperDsTrial-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
