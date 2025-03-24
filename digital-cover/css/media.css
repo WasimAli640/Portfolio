@@ -1,0 +1,60 @@
+@media (max-width:1300px) {
+    .b-paragraph {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .gallery-box1 .project-img {
+        right: 5%;
+    }
+    .gallery-box2 .project-img {
+        left: 5%;
+    }
+}
+
+@media (max-width:991px) {
+    .brand {
+        width: 10vw;
+      }
+    .b-xl {
+        font-size: 15vw;
+    }
+    .left-b-block, .right-b-block {
+        position: relative;
+        left: auto;right: auto;bottom: auto;top: auto;
+    }
+    .big-button {
+        height: 150px;width: 150px;
+    }
+    .banner .big-button {
+        bottom: auto;
+    }
+    .btn-icon svg {
+        width: 30px;
+    }
+    .btn-icon p {
+        font-size: 12px;
+    }
+    .liquid-distortion .tab-pos-first {
+        order: 1;
+    }
+    .liquid-distortion .tab-pos-last {
+        order: 2;
+    }
+    .dist-image {
+        margin: auto;
+    }
+    .big-btn-block {
+        height: 200px;
+    }
+    
+    
+}
+
+@media (max-width:600px) {
+    .brand {
+        width: 15vw;
+      }
+    .b-xl .f-xl, .b-xl .s-xl {
+        text-align: center;
+    }
+}
