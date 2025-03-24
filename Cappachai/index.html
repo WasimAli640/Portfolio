@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cappa Chai</title>
+    <!-- Link Bootstrap - 5.2 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Google Font - 'Brygada 1918' & 'Urbanist' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- Link Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Link Custom CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top d-sm-flex d-none align-items-center">
+        <div class="container-fluid px-6">
+          <div class="d-flex align-items-center justify-content-between">
+            <div
+              class="left-header w-100 order-2 order-sm-1 text-sm-start text-end"
+            >
+              <a
+                href="#"
+                class="address-link font-body text-dark text-decoration-none fw-regular d-inline-flex align-items-start"
+              >
+                <i class="fa-solid fa-location-dot me-2"></i>
+                <span class="d-sm-block d-none"
+                  >350 5th Ave, New York, NY 10118</span
+                >
+              </a>
+            </div>
+            <div class="mid-header flex-shrink-0 order-1 order-sm-2">
+              <div class="brand">
+                <img
+                  class="brand-logo img-fluid"
+                  src="assets/images/black-logo.svg"
+                  alt="home"
+                />
+              </div>
+            </div>
+            <div
+              class="right-header w-100 d-sm-flex d-none justify-content-end order-3"
+            >
+              <a href="#" class="btn btn-lg btn-primary-outline">Delivery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-main py-sm-3">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+          <div class="container-fluid px-6">
+            <a class="navbar-brand display-5 text-dark fw-bold" href="#"
+              ><img class="nav-logo-mob d-sm-none d-inline-block me-1" src="assets/images/black-logo.svg" width="40px" alt=""> CappaChai</a
+            >
+            <div class="navbar-right d-flex align-items-center">
+              <i class="fa-solid fa-location-dot me-2 d-sm-none d-inline-block me-3"></i>
+              <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon">
+                  <span class="navbar-toggler-line"></span>
+                  <span class="navbar-toggler-line"></span>
+                  <span class="navbar-toggler-line"></span>
+                </span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-sm-2 mb-4 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link" aria-current="page" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link" aria-current="page" href="#"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link" aria-current="page" href="#">Shop</a>
+                </li>
+                <li class="nav-item d-sm-none">
+                  <a class="nav-link link" aria-current="page" href="#"
+                    >Delivery</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="side-bar-block flex-shrink-0 d-none d-lg-block">
+              <button
+                class="menu-button position-relative"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <span class="menu-line"></span>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div
+                  class="offcanvas-header justify-content-end position-relative"
+                >
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body side-bar text-center p-0">
+                  <div class="side-bar-content">
+                    <img
+                      src="assets/images/tea-logo.png"
+                      alt=""
+                      class="side-bar-logo mx-auto text-center"
+                      style="height: 5rem"
+                    />
+                    <p class="sidebar-info body pb-3">
+                      BistroM5 - created on Bootstrap 5 theme, which will help
+                      to create a unique website for restaurants, cafes or
+                      promotion of personal brand chef. Thoughtful and
+                      unconventional blocks with menus, staff, forms will ensure
+                      an influx of new clients.
+                    </p>
+                    <div class="side-bar-contact">
+                      <h2 class="display-4">BistroM5</h2>
+                      <p class="display-6 text-center">
+                        <a href="#" class="w-100 text-dark"
+                          >350 5th Ave, New York, NY 10118</a
+                        >
+                        <br /><br />
+                        <a href="#" class="w-100 text-dark">+1 234-567-8900</a>
+                        <a href="#" class="w-100 text-dark">+9 876-543-2100</a>
+                      </p>
+                    </div>
+                    <div
+                      class="side-bar-social d-flex align-items-center justify-content-center"
+                    >
+                      <a
+                        href="#"
+                        class="social-link bg-gray text-white rounded-circle"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="social-link bg-gray text-white rounded-circle"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="social-link bg-gray text-white rounded-circle"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="social-link bg-gray text-white rounded-circle"
+                        ><i class="fa-brands fa-linkedin-in"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero Banner Section -->
+    <section
+      class="section section-1 hero-banner overflow-x-hidden position-relative pt-xl-5 pt-7 pb-9"
+    >
+      <div class="container-fluid">
+        <div
+          class="item-img item-img-1 position-absolute top-50 d-lg-block d-none"
+        >
+          <img
+            class="img-fluid w-100 h-100 object-fit-cover"
+            src="assets/images/mbr-740x925.jpg"
+            alt=""
+          />
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 position-relative offset-lg-1 mb-5 mb-lg-0">
+            <div class="img-wrapper">
+              <div class="item-img item-img-2 position-relative">
+                <img
+                  class="img-fluid w-100 h-100 object-fit-cover"
+                  src="assets/images/mbr-1334x889.jpeg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="item-img item-img-3 position-absolute d-lg-block d-none"
+              >
+                <img
+                  class="img-fluid w-100 h-100 object-fit-cover"
+                  src="assets/images/mbr-1440x1920.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 offset-md-1">
+            <div class="banner-content pe-lg-100">
+              <h1 class="display-2 title-style mb-18">Сoffee for every day</h1>
+              <p class="body mb-33">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex
+                voluptatem voluptas aut quod, autem obcaecati molestiae optio
+                consequuntur.
+              </p>
+              <a class="btn btn-primary-outline" href="#">coffee catalog</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Advertise Section -->
+    <section
+      class="section section-2 advertise-section jarallax pt-7 pb-9 overlay overlay-primary"
+      style="background-image: url('assets/images/mbr-1-1920x1280.jpg')"
+    >
+      <div class="container-fluid px-6">
+        <div class="col-lg-10 mx-auto text-center">
+          <h2 class="display-2 title-style text-white my-25">
+            PRODUCTION AND ONLINE STORE FRESHLY ROASTED COFFEE
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- Product Section -->
+    <section class="section section-3 product-section pb-7 pt-7">
+      <div class="container-fluid px-6">
+        <div class="row mt-lg-7">
+          <div class="col-lg-4 col-md-6 col-sm-8 mx-auto mb-5">
+            <div class="ab-card px-4">
+              <div class="img-wrapper up-effect padding-2 border">
+                <img
+                  class="ab-card-img"
+                  src="assets/images/mbr-787x1181.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="ab-card-content text-center mt-27">
+                <h3 class="heading-6 font-heading fw-bold mb-3">
+                  For milk drinks
+                </h3>
+                <p class="body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eaque suscipit, nulla quam. Corporis magni nostrum, inventore
+                  tenetur rem!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8 mx-auto mb-5 mt-lg-n7">
+            <div class="ab-card px-4">
+              <div class="img-wrapper up-effect padding-2 border">
+                <img
+                  class="ab-card-img"
+                  src="assets/images/mbr-787x524.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="ab-card-content text-center mt-27">
+                <h3 class="heading-6 font-heading fw-bold mb-3">
+                  With low acidity
+                </h3>
+                <p class="body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eaque suscipit, nulla quam. Corporis magni nostrum, inventore
+                  tenetur rem!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8 mx-auto mb-5">
+            <div class="ab-card px-4">
+              <div class="img-wrapper up-effect padding-2 border">
+                <img
+                  class="ab-card-img"
+                  src="assets/images/mbr-787x525.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="ab-card-content text-center mt-27">
+                <h3 class="heading-6 font-heading fw-bold mb-3">
+                  For the coffee machine
+                </h3>
+                <p class="body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eaque suscipit, nulla quam. Corporis magni nostrum, inventore
+                  tenetur rem!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8 mx-auto mb-5">
+            <div class="ab-card px-4">
+              <div class="img-wrapper up-effect padding-2 border">
+                <img
+                  class="ab-card-img"
+                  src="assets/images/mbr-787x1283.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="ab-card-content text-center mt-27">
+                <h3 class="heading-6 font-heading fw-bold mb-3">
+                  Strong coffee
+                </h3>
+                <p class="body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eaque suscipit, nulla quam. Corporis magni nostrum, inventore
+                  tenetur rem!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8 mx-auto mb-5 mt-lg-n7">
+            <div class="ab-card px-4">
+              <div class="img-wrapper up-effect padding-2 border">
+                <img
+                  class="ab-card-img"
+                  src="assets/images/mbr-1-787x525.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="ab-card-content text-center mt-27">
+                <h3 class="heading-6 font-heading fw-bold mb-3">
+                  For the Turks
+                </h3>
+                <p class="body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eaque suscipit, nulla quam. Corporis magni nostrum, inventore
+                  tenetur rem!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8 mx-auto mb-5">
+            <div class="ab-card px-4">
+              <div class="img-wrapper up-effect padding-2 border">
+                <img
+                  class="ab-card-img"
+                  src="assets/images/mbr-787x590.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="ab-card-content text-center mt-27">
+                <h3 class="heading-6 font-heading fw-bold mb-3">For the cup</h3>
+                <p class="body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eaque suscipit, nulla quam. Corporis magni nostrum, inventore
+                  tenetur rem!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Quote Section -->
+    <section class="section section-4 quote-section">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 col-12 d-flex flex-direction-column">
+          <div class="image-wrapper">
+            <img
+              class="img-fluid"
+              src="assets/images/mbr-1453x969.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="col-lg-6 col-12 position-relative h-100 d-flex flex-direction-column my-5 my-lg-0"
+        >
+          <div
+            class="q-wrapper py-sm-5 px-lg-5 px-md-3 px-2 h-100 d-flex justify-content-center align-items-center position-relative w-100"
+          >
+            <div class="q-content-box text-center">
+              <p class="display-4 q-title">
+                Consectetur veritatis consequatur repellat sint rerum, fugiat!
+              </p>
+              <p class="mb-0 display-6">Joseph White</p>
+            </div>
+            <div
+              class="tea-shape position-absolute top-50 start-50 translate-middle"
+            >
+              <img class="w-100" src="assets/images/black-logo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Select Favourite Section -->
+    <section class="section section-5 select-favourite pb-7 pt-7">
+      <div class="container-fluid">
+        <div class="section-title sf-title">
+          <h3 class="display-2 title-style text-center text-dark">
+            CHOOSE A FAVORITE
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-8 mx-auto px-3 px-3">
+            <div class="sf-card position-relative mb-4 mb-sm-0">
+              <div class="sf-img-wrapper position-relative">
+                <div class="postion-absolute top-0 start-0 w-100 h-100">
+                  <img
+                    class="h-100 w-100 object-fit-cover"
+                    src="assets/images/mbr-646x429.jpg"
+                    alt=""
+                  />
+                  <div class="badge badge-white">new</div>
+                </div>
+                <div
+                  class="sf-card-button position-absolute top-50 start-50 translate-middle"
+                >
+                  <a href="#" class="btn btn-white">ADD TO CART</a>
+                </div>
+              </div>
+              <div class="card-content sf-card-content text-center">
+                <h3 class="card-title display-4">Experimental</h3>
+                <p class="body">10.00$</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-8 mx-auto px-3 px-3">
+            <div class="sf-card position-relative mb-4 mb-sm-0">
+              <div class="sf-img-wrapper position-relative">
+                <div class="postion-absolute top-0 start-0 w-100 h-100">
+                  <img
+                    class="h-100 w-100 object-fit-cover"
+                    src="assets/images/mbr-646x431.jpg"
+                    alt=""
+                  />
+                  <div class="badge badge-white">SOLD</div>
+                </div>
+                <div
+                  class="sf-card-button position-absolute top-50 start-50 translate-middle"
+                >
+                  <a href="#" class="btn btn-white">ADD TO CART</a>
+                </div>
+              </div>
+              <div class="card-content sf-card-content text-center">
+                <h3 class="card-title display-4">Blend</h3>
+                <p class="body">10.00$</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-8 mx-auto px-3 px-3">
+            <div class="sf-card position-relative mb-4 mb-sm-0">
+              <div class="sf-img-wrapper position-relative">
+                <div class="postion-absolute top-0 start-0 w-100 h-100">
+                  <img
+                    class="h-100 w-100 object-fit-cover"
+                    src="assets/images/mbr-1-646x431.jpg"
+                    alt=""
+                  />
+                  <div class="badge badge-white">popular</div>
+                </div>
+                <div
+                  class="sf-card-button position-absolute top-50 start-50 translate-middle"
+                >
+                  <a href="#" class="btn btn-white">ADD TO CART</a>
+                </div>
+              </div>
+              <div class="card-content sf-card-content text-center">
+                <h3 class="card-title display-4">Natural</h3>
+                <p class="body">10.00$</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-8 mx-auto px-3 px-3">
+            <div class="sf-card position-relative mb-4 mb-sm-0">
+              <div class="sf-img-wrapper position-relative">
+                <div class="postion-absolute top-0 start-0 w-100 h-100">
+                  <img
+                    class="h-100 w-100 object-fit-cover"
+                    src="assets/images/mbr-2-646x431.jpg"
+                    alt=""
+                  />
+                  <div class="badge badge-white">discount</div>
+                </div>
+                <div
+                  class="sf-card-button position-absolute top-50 start-50 translate-middle"
+                >
+                  <a href="#" class="btn btn-white">ADD TO CART</a>
+                </div>
+              </div>
+              <div class="card-content sf-card-content text-center">
+                <h3 class="card-title display-4">Washed</h3>
+                <p class="body">10.00$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Client Section -->
+    <section class="section section-6 client-section pt-9 pb-9">
+      <div class="container-fluid px-6">
+        <div class="c-item-img text-center">
+          <img
+            class="mx-auto"
+            src="assets/images/black-logo.svg"
+            width="105px"
+            alt=""
+          />
+        </div>
+        <div class="owl-carousel owl-theme client-carousel">
+          <div class="item client-carousel-item text-center">
+            <div class="user col-lg-8 col-md-10 mx-auto">
+              <p class="display-4 text-dark">
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+                eum optio dolorem reiciendis ducimus consectetur dolores illo
+                repellat deleniti rerum sint fugiat dolor emque!"
+              </p>
+              <div class="body">Alexa / Barista</div>
+            </div>
+          </div>
+          <div class="item client-carousel-item text-center">
+            <div class="user col-lg-8 col-md-10 mx-auto">
+              <p class="display-4 text-dark">
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+                eum optio dolorem reiciendis ducimus consectetur dolores illo
+                repellat deleniti rerum sint fugiat dolor emque!"
+              </p>
+              <div class="body">Alexa / Barista</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="section section-7 gallery-section py-3">
+      <div class="container-fluid">
+        <div class="row client-gallery">
+          <div class="col-lg-2 col-md-4 col-sm-6 px-3 mb-5">
+            <div class="client-gallery-img">
+              <img
+                class="img-fluid object-fit-cover"
+                src="assets/images/mbr-409x273.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 px-3 mb-5">
+            <div class="client-gallery-img">
+              <img
+                class="img-fluid object-fit-cover"
+                src="assets/images/mbr-409x272.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 px-3 mb-5">
+            <div class="client-gallery-img">
+              <img
+                class="img-fluid object-fit-cover"
+                src="assets/images/mbr-1-409x273.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 px-3 mb-5">
+            <div class="client-gallery-img">
+              <img
+                class="img-fluid object-fit-cover"
+                src="assets/images/mbr-2-409x273.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 px-3 mb-5">
+            <div class="client-gallery-img">
+              <img
+                class="img-fluid object-fit-cover"
+                src="assets/images/mbr-3-409x273.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 px-3 mb-5">
+            <div class="client-gallery-img">
+              <img
+                class="img-fluid object-fit-cover"
+                src="assets/images/mbr-4-409x273.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="section-8 about-section pt-5 pt-7 position-relative">
+      <div class="container-fluid">
+        <div class="ab-shape-left d-md-block d-none"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-5 offset-lg-1">
+            <div class="image-wrapper ab-img pt-8 position-relative z-index-1">
+              <img
+                class="img-fluid"
+                src="assets/images/mbr-1120x747.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5 offset-lg-1 py-5 py-lg-0">
+            <div
+              class="ab-content section-content-padding text-center position-relative z-index-1"
+            >
+              <h3 class="display-2">ABOUT US</h3>
+              <p class="body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+                quia sit necessitatibus quasi, perspiciatis animi exercitationem
+                assumenda delectus, magnam rerum vero. <br />
+                <br />
+                Distinctio dolores alias vero ut consequatur quasi ad quas?
+                Earum quia sit necessitatibus quasi, perspiciatis animi.
+              </p>
+              <div class="leave-shape">
+                <img class="img-fluid" src="assets/images/shape.png" alt="" />
+              </div>
+              <div class="ab-social-content d-flex justify-content-center">
+                <a
+                  href="#"
+                  class="social-link rounded-circle bg-gray text-white"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  href="#"
+                  class="social-link rounded-circle bg-gray text-white"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="social-link rounded-circle bg-gray text-white"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ab-shape-right d-md-block d-none"></div>
+      </div>
+    </section>
+    <!-- Enquiry Section -->
+    <section class="section section-9 enquiry-section pb-8 pt-8">
+      <div class="container-fluid">
+        <div class="col-lg-12 col-md-8 mx-auto">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+              <div class="enq-content px-xl-4 px-1">
+                <h3 class="display-4 font-heading">Call Us</h3>
+                <a
+                  href="#"
+                  class="d-inline-flex align-items-start enquiry-link text-dark"
+                >
+                  <span class="icon-wrapper"
+                    ><i class="fa-solid fa-phone"></i
+                  ></span>
+                  <span class="body">+1 234-567-8900</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+              <div class="enq-content px-xl-4 px-1">
+                <h3 class="display-4 font-heading">Our Location</h3>
+                <a
+                  href="#"
+                  class="d-inline-flex align-items-start enquiry-link text-dark"
+                >
+                  <span class="icon-wrapper"
+                    ><i class="fa-solid fa-house"></i
+                  ></span>
+                  <span class="body">350 5th Ave, New York, NY 10118</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+              <div class="enq-content px-xl-4 px-1">
+                <h3 class="display-4 font-heading">Write Us</h3>
+                <a
+                  href="#"
+                  class="d-inline-flex align-items-start enquiry-link text-dark"
+                >
+                  <span class="icon-wrapper"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></span>
+                  <span class="body">mobirise@company.com</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+              <div class="enq-content px-xl-4 px-1">
+                <h3 class="display-4 font-heading">Follow Us</h3>
+                <a
+                  href="#"
+                  class="d-inline-flex align-items-start enquiry-link text-dark"
+                >
+                  <span class="icon-wrapper"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></span>
+                  <span class="body">@mobirise</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Leave Message Section -->
+    <section class="section section-10 msg-form-section">
+      <div class="container">
+        <div class="m-form-box bg-gray-200 position-relative">
+          <div class="col-lg-8 mx-auto">
+            <div class="form-title">
+              <h3 class="display-1 text-dark text-uppercase text-center">
+                LEAVE A MESSAGE
+              </h3>
+              <form class="msg-form">
+                <fieldset class="row">
+                  <legend class="visually-hidden">
+                    Please fill inputs to leave the message.
+                  </legend>
+                  <div class="col-lg-6">
+                    <label for="name" class="visually-hidden"
+                      >Enter Your Full Name</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control display-6"
+                      placeholder="Name*"
+                      required="required"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="email" class="visually-hidden"
+                      >Enter Your Email Account</label
+                    >
+                    <input
+                      type="text"
+                      id="email"
+                      class="form-control display-6"
+                      placeholder="Email*"
+                      required="required"
+                    />
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="message" class="visually-hidden"
+                      >Leave your message here</label
+                    >
+                    <textarea
+                      id="message"
+                      class="form-control display-6"
+                      placeholder="Leave your message"
+                    ></textarea>
+                  </div>
+                  <div class="col-xl-4 col-md-5 mx-auto">
+                    <div class="msg-form-button text-center">
+                      <a href="#" class="btn btn-lg btn-primary w-100"
+                        >BOOK NOW</a
+                      >
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Blog Section -->
+    <section class="section section-11 our-blog-section pt-5 pb-7">
+      <div class="container-fluid">
+        <div class="section-title text-center">
+          <h3 class="display-2 text-dark title-style">READ OUR BLOG</h3>
+        </div>
+        <div class="blog-card">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-10">
+              <div class="image-wrapper">
+                <img
+                  src="assets/images/bistro10.jpg"
+                  class="img-fluid object-fit-cover"
+                  alt=""
+                />
+              </div>
+              <div class="blog-card-body">
+                <p class="blog-card-info display-6 fw-normal">
+                  <a href="#" class="text-dark">
+                    April 13, 2025<span class="slash">Cocktails</span></a
+                  >
+                </p>
+                <h3 class="blog-card-title display-2">
+                  Delicious desserts with your own hands
+                </h3>
+                <p class="body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolorum accusantium, ipsam sunt corporis veritatis debitis.
+                  Tempora blanditiis quisquam porro debitis sit praesentium est
+                  voluptates excepturi eos quibusdam. Minus dolore, sapiente.
+                </p>
+                <a href="#" class="btn btn-link my-0">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer py-2 text-center">
+      <p class="body">© Copyright 2025 Mobirise - All Rights Reserved</p>
+    </footer>
+    <!-- Link Jquery 3.6.4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Link Bootstrap - 5.2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link Owl Carousel 2.3.4 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Jarallax JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+    <!-- Link Smooth Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+    <!-- Link Custom JS -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+      jarallax(document.querySelectorAll(".jarallax"), {
+        speed: 0.2,
+      });
+      $(document).ready(function () {
+        $(".client-carousel").owlCarousel({
+          items: 1,
+          margin: 10,
+          nav: true,
+          loop: true,
+          smartSpeed: 1000,
+        });
+      });
+    </script>
+  </body>
+</html>
