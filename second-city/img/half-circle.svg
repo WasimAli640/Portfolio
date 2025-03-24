@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128px" height="251px" viewBox="0 0 128 251" version="1.1">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>HalfCircle</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Web-Black-Section1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-318.000000, -277.000000)">
+        <path d="M443.303,448.832 C417.606,448.832 396.774,428 396.774,402.303 C396.774,376.605 417.606,355.773 443.303,355.773 L443.303,279 C375.205,279 320,334.205 320,402.303 C320,470.4 375.205,525.605 443.303,525.605 L443.303,448.832 Z" id="HalfCircle" stroke="#FFFFFF" stroke-width="4"/>
+    </g>
+</svg>
