@@ -1,0 +1,368 @@
+@media (max-width : 1200px) {
+    /* Hero Banner */
+    .hero-banner .hero-title {
+        padding-bottom: 50px;
+    }
+    .hero-banner .hero-right-image {
+        align-items: end;
+    }
+    /* Test Section */
+    .test-section .intro-text {
+        font-size: calc(1vw + 1.8rem);
+    }
+    /* News Section */
+    .news-section .news-card-body {
+        background: linear-gradient(180deg, rgb(1 0 2), #fff0 35%, #fff0 50%, #010002);
+    }
+}
+
+@media (max-width : 991px) {
+    .section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .heading-1 {
+        font-size: calc(4.5rem + 2.5vw);
+    }
+    .heading-2-caps {
+        font-size: calc(3rem + 2vw);
+    }
+    /* Hero Banner */
+    .hero-banner {
+        padding-top: 6rem !important;
+    }
+    .hero-banner .hero-title {
+        padding-bottom: 24px;
+    }
+    .hero-banner .hero-right-image {
+        width: 50%;
+        align-items: end;
+    }
+    .hero-banner .hero-right-image img{
+        max-height: 100%;
+        height: 100%;
+    }
+    /* promotion section */
+    .promotion-section .p-card-image {
+        max-height: 280px;
+    }
+    .promotion-section .p-card-bg {
+        object-position: top center;
+    }
+    /* Test Section */
+    .test-section .intro-text {
+        font-size: calc(1vw + 1.8rem);
+    }
+    /* Advertisement Section */
+    .advertisement-section .image-carousel-wrapper {
+        margin-top: 3rem;
+    }
+    /* Feature Section */
+    .section.feature-section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .feature-section .feature-image, 
+    .our-mission-section .our-mission-image {
+        aspect-ratio: 6 / 3;
+        object-position: 10% center;
+    }
+    .feature-section .feature-section-title {
+        max-width: none;
+        margin-bottom: 1.5rem;
+    }
+    /* News Section */
+    .section.news-section {
+        padding-top: 0;
+     }
+    .news-section .news-section-card-row {
+        --bs-gutter-x : 3rem;
+        --bs-gutter-y : 3rem;
+        margin-top: 0;
+    }
+    /* Footer */
+    .footer .footer-form{
+        margin-left: 0;
+    }
+    .footer .footer-top {
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width : 767px) {
+    .section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    /* heading */
+    .heading-1 {
+        font-size: calc(2rem + 3vw);
+    }
+    /* header */
+    .header .navbar-nav{
+        align-items: start;
+    }
+    .header .nav-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1rem;
+    }
+    .header .navbar-brand img {
+        width: 110px;
+    }
+    .header .navbar-nav {
+        gap: .2rem;
+        padding-top: 16px;
+    }
+    .header li.nav-item {
+        border-bottom: 1px solid;
+        width: 100%;
+    }
+    /* Hero Banner */
+    .hero-banner .hero-right-image {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .hero-banner .hero-right-image img {
+        max-height: 300px;
+        object-position: center;
+    }
+    /* Promotion Section */
+    .promotion-section .promotion-section-row {
+        --bs-gutter-x: 2rem;
+        --bs-gutter-y: 2rem;
+    }
+    .promotion-section .promotion-card-large {
+        padding: 2rem;
+        min-height: 560px;
+    }
+    /* Test Section */
+    .test-section {
+        min-height: none;
+    }
+    .test-section .intro-text {
+        font-size: calc(1vh + 1.5rem);
+    }
+    /* Feature Section */
+    .feature-section .feature-content {
+        padding-bottom: 2rem;
+    }
+    /* Our Mission Section */
+    .our-mission-section .our-mission-banner-wrapper {
+        margin-top: 2rem;
+    }
+    /* Advertisement Section */
+    .advertisement-section .image-carousel-wrapper {
+        margin-top: 2rem;
+    }
+    /* News Section */
+    .news-section .news-section-card-row {
+        --bs-gutter-x : 2rem;
+        --bs-gutter-y : 2rem;
+    }
+
+}
+@media (max-width : 575px) {
+    .input-field {
+        font-size: .8rem;
+        min-height: 38px;
+    }
+    .btn-primary {
+        font-size: .8rem;
+        padding: .5253rem 1rem;
+    }
+    .btn-white-outline {
+        padding: 0.8rem 1rem;
+    }
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .sub-heading {
+        font-size: .9rem;
+    }
+    .heading-2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .heading-2-caps {
+        font-size: calc(2rem + 2vw);
+    }
+    .heading-3 {
+        margin-bottom: .9rem;
+        font-size: 1.8rem;
+    }
+    .heading-4 {
+        margin-bottom: .5rem;
+        font-size: 1.1rem;
+    }
+    .heading-5 {
+        margin-bottom: .5rem;
+        font-size: 1rem;
+    }
+    .paragraph {
+        font-size: 1rem;
+    }
+    .paragraph-sm {
+        font-size: .9rem;
+    }
+    .section-title .btn {
+        margin-top: .5rem;
+    }
+    /* header */
+    .header {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .header .navbar {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .header .navbar-brand img {
+        width: 90px;
+    }
+    .header .nav-link {
+        font-size: .9rem;
+    }
+    .header .navbar-toggler-icon:first-child {
+        transform: translateY(-7px);
+    }
+    .header .navbar-toggler-icon:last-child {
+        transform: translateY(7px);
+    }
+    .header .navbar-toggler {
+        width: 25px;
+        height: 25px;
+    }
+    /* Hero Banner */
+    .hero-banner {
+        padding-top: 5rem;
+    }
+    .hero-banner .hero-title {
+        padding-bottom: 1rem;
+    }
+    .hero-banner .hero-right-image {
+        position: relative;
+        width: 100%;
+    }
+    /* Promotion Section */
+    .promotion-section .promotion-title {
+        margin-bottom: 1.5rem;
+    }
+    .promotion-section .promotion-section-row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 1.5rem;
+    }
+    .promotion-section .promotion-card-large {
+        padding: 1.5rem 1rem;
+        min-height: 560px;
+    }
+    .promotion-section .p-card-body .paragraph {
+        font-size: .9rem;
+    }
+    /* Test Section */
+    .test-section .intro-text {
+        font-size: calc(1vw + 1.1rem);
+    }
+    /* advertisement Section */
+    .advertisement-section .image-carousel {
+        aspect-ratio: 3 / 4;
+    }
+    /* Feature Section */
+    .feature-section .feature-section-title .heading-2 {
+        margin-bottom: .5rem !important;
+    }
+    .feature-section .feature-list-icon {
+        width: 1rem;
+    }
+    /* News Section */
+    .news-section .news-section-card {
+        aspect-ratio: 5 / 4;
+    }
+    .news-section .news-heading {
+        font-size: 1.1rem;
+    }
+    /* CTA Section */
+    .cta-section {
+        min-height: 98vw;
+    }
+    /* Footer */
+    .footer {
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+    }
+    .footer .footer-top {
+        margin-bottom: 2rem;
+    }
+    .footer .footer-logo {
+        max-width: 7rem;
+        /* margin-bottom: 1.5rem; */
+    }
+    .footer .footer-title {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+    .footer .footer-list-link,
+    .footer .footer-bottom-link {
+        font-size: 15px;
+    }
+    .footer .footer-social-link {
+        width: 2.8rem;
+        height: 2.8rem;
+        padding: .9rem;
+    }
+    .footer .footer-top .heading-3 {
+        font-size: 1.6rem;
+    }
+    .footer .footer-top .paragraph {
+        font-size: .9rem;
+    }
+    .footer .form-wrapper {
+        margin-bottom: 10px;
+        gap: 12px
+    }
+}
+@media (max-width : 420px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        overflow: hidden;
+    }
+    .btn-link-arrow .btn-arrow {
+        width: .6rem;
+    }
+    /* Hero Banner */
+    .hero-banner .hero-title-heading {
+        margin-bottom: 16px;
+    }
+    .hero-banner .hero-title {
+        padding-bottom: .5rem;
+    }
+    .hero-banner .hero-right-image {
+        margin-top: 1rem;
+    }
+    /* Promotion Section */
+    .promotion-section .promotion-card-large .p-card-body {
+        padding: 1.5rem 1rem;
+        border-radius: 0;
+        margin: 0 -1rem -1.5rem;
+    }
+    /* Footer */
+    .footer .footer-social-list {
+        gap: .5rem;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 992px) {
+    .promotion-col-lg-8 {
+        width: 68.2222%;
+    }
+    .promotion-col-lg-4 {
+        width: 31.7778%;
+    }
+}

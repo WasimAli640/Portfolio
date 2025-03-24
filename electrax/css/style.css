@@ -1,0 +1,759 @@
+@import url(./reset.css);
+@import url(./utility.css);
+
+/* Header */
+.header {
+    background-color: var(--off-white);
+    z-index: 11111;
+    transition: transform .5s ease;
+}
+.header.scrolling-down {
+    transform: translateY(-100%);
+}
+.header.scrolling-up {
+    transform: translateY(0);
+}
+.electrax-airplane-page .header.sticky {
+    background-color: black !important;
+}
+.header .navbar {
+    padding-top: 15px ;
+    padding-bottom: 15px;
+}
+.header .navbar-brand {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header .navbar-brand img {
+    max-height: 18px;
+    width: 128px;
+    object-fit: cover;
+}
+.header .navbar-dark .navbar-brand img {
+    filter: invert(100%);
+}
+.header .navbar-nav{
+    align-items: center;
+    gap: 1.5rem;
+}
+.header .nav-link {
+    font-family: var(--text-font);
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: .02em;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.header .navbar-toggler {
+    /* reset boostrap */
+    padding: 5px;
+    border: none;
+    /* style */
+    position: relative;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.header .navbar-toggler:focus {
+    box-shadow: none;
+}
+.header .navbar-toggler-icon {
+    /* reset boostrap */
+    background: none;
+    /* style */
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #333;
+    transition: transform .3s ease;
+}
+.header .navbar-dark .navbar-toggler-icon {
+    background-color: #fff;
+}
+.header .navbar-toggler-icon:first-child {
+    transform: translateY(-8px);
+}
+.header .navbar-toggler-icon:last-child {
+    transform: translateY(8px);
+}
+.header .navbar-toggler[aria-expanded = true] .navbar-toggler-icon:first-child {
+    transform: rotate(-45deg);
+}
+.header .navbar-toggler[aria-expanded = true] .navbar-toggler-icon:nth-child(2) {
+    transform: translateX(100%)
+}
+.header .navbar-toggler[aria-expanded = true] .navbar-toggler-icon:last-child {
+    transform: rotate(45deg);
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-color: var(--off-white);
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    z-index: 1;
+}
+.hero-banner .hero-title {
+    padding-bottom: 184px;
+}
+.hero-banner .hero-title-heading {
+    margin-bottom: 24px;
+}
+/* .hero-banner .hero-title-paragraph {
+    padding-bottom: 24px;
+} */
+/* .hero-banner .hero-c-to-a-button {
+    margin-top: 24px;
+} */
+.hero-banner .hero-right-image {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-height: 85%;
+    height: 100%;
+    width: 40%;
+    z-index: -1;
+    overflow: hidden;
+}
+.hero-banner .hero-right-image img{
+    max-width: 750px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Promotion Section */
+.promotion-section .promotion-title {
+    margin-bottom: 3rem;
+}
+.promotion-section .promotion-section-row {
+    --bs-gutter-x: 2.5rem;
+    --bs-gutter-y: 2.5rem;
+}
+.promotion-section .promotion-card {
+    position: relative;
+    background-color: var(--off-white);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    height: 100%;
+}
+.promotion-section .promotion-card-large {
+    padding: 3rem;
+    min-height: 700px;
+    justify-content: space-between;
+}
+.promotion-section .p-card-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0%;
+    z-index: -1;
+    object-fit: cover;
+}
+.promotion-section .p-card-body {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+.promotion-section .p-card-body-text {
+    background-color: var(--card-gray);
+}
+.promotion-section .p-card-body-wrapper {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.promotion-section .p-card-image {
+    max-height: 14.125rem;
+    width: 100%;
+}
+.promotion-section .p-card-image img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.promotion-section .promotion-card.card-black {
+    background-color: var(--black);
+    color: white;
+}
+.promotion-section .promotion-card.card-black .paragraph-sm {
+    color: white;
+}
+/* Test Section */
+.test-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vw;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/flying-2-bw.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.test-section .intro-text {
+    letter-spacing: 1.648px;
+    font-size: calc(1vh + 2.5rem);
+    font-weight: 300;
+    line-height: 1.25em;
+    position: relative;
+}
+/* Advertisement Section */
+.advertisement-section .advertisement-section-title-row {
+    --bs-gutter-x : 3rem;
+}
+.advertisement-section .image-carousel-wrapper {
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 125vw;
+    padding: 0 20px;
+}
+.advertisement-section .image-carousel {
+    aspect-ratio: 3/2;
+    border-radius: 1rem;
+    object-fit: cover;
+    width: 32.5%;
+}
+/* Feature Section */
+.feature-section .feature-section-row,
+.our-mission-section .our-mission-section-row  {
+    --bs-gutter-x : 4rem;
+}
+.feature-section .feature-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.feature-section .feature-section-title {
+    max-width: 30rem;
+}
+.feature-section .feature-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.feature-section .feature-list-item {
+    align-items: baseline;
+    gap: 1rem;
+}
+.feature-section .feature-list-icon {
+    width: 1.25rem;
+    max-width: none;
+}
+.feature-section .feature-image,
+.our-mission-section .our-mission-image {
+    aspect-ratio: 6 / 7;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    width: 100%;
+    position: relative;
+}
+.feature-section .feature-list-gray-card {
+    padding: 24px;
+    background-color: var(--card-gray);
+    border-radius: 1rem;
+}
+/* News Section */
+.news-section .news-section-card-row {
+    --bs-gutter-x : 3rem;
+    /* --bs-gutter-y : 3rem; */
+    margin-top: 2.5rem;
+}
+.news-section .news-section-card {
+    display: flex;
+    color: #d4d4d4;
+    text-decoration: none;
+    aspect-ratio:  4/5;
+    border-radius: 1rem;
+    /* z-index: 1; */
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+.news-section .news-section-card:hover {
+    transform: translateY(-.5rem);
+}
+.news-section .news-card-image-wrapper {
+    z-index: -1;
+}
+.news-section .news-card-image {
+    object-fit: cover;
+}
+.news-section .news-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    width: 100%;
+    background: linear-gradient(180deg,#010002,#fff0 25%,#fff0 75%,#010002);
+    transition: background .5s ease;
+}
+.news-section .news-section-card:hover .news-card-body {
+    background-color: #0003;
+}
+.news-section .news-card-date-wrapper {
+    display: flex;
+    align-items: center;
+    gap: .375rem;
+    font-size: .875rem;
+    letter-spacing: .702px;
+}
+.news-section .news-card-date-wrapper .news-dot {
+    display: block;
+    background-color: #d4d4d4;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+}
+.news-section .news-heading {
+    color: var(--off-white);
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.25em;
+    letter-spacing: .841px;
+}
+/* CTA Section */
+.cta-section {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../image/plane-black-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vw;
+}
+.cta-section .cta-section-title .heading-2-caps,
+.cta-section .cta-section-title .paragraph {
+    color: #fff;
+    margin-bottom: .5rem;
+}
+/* Footer */
+.footer {
+    background-color: var(--card-gray);
+    padding-top: 5.75rem;
+    padding-bottom: 2rem;
+}
+.footer .footer-top {
+    margin-bottom: 4rem;
+}
+.footer .footer-form{
+    margin-bottom: .75rem;
+    margin-left: 15px;
+}
+.footer .form-wrapper {
+    display: flex;
+    align-items: end;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.footer .input-field {
+    width: 100%;
+}
+.footer .footer-main {
+    margin-bottom: 3rem;
+}
+.footer .footer-enquiry {
+    margin-right: 20px;
+}
+.footer .footer-logo {
+    display: flex;
+    max-width: 10rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+.footer .footer-logo img {
+    width: 100%;
+}
+.footer .footer-title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: .845px;
+}
+.footer .footer-social {
+    margin-top: 1.5rem;
+}
+.footer .footer-social-list {
+    gap: 1rem;
+}
+.footer .footer-social-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    background-color: #e6e6e6;
+    border-radius: 100%;
+    transition: background-color .2s ease;
+}
+.footer .footer-social-link:hover {
+    background-color: #C5C5C5;
+}
+.footer .footer-list-heading {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.footer .footer-list-link{
+    position: relative;
+    display: inline-flex;
+    font-size: 1.1rem;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.4rem;
+    padding: .5rem 0;
+    letter-spacing: .79px;
+}
+.footer .footer-list-link::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--black);
+    transform: translateY(0%);
+    opacity: 0;
+    transition: all .2s ease;
+}
+.footer .footer-list-link:hover::after {
+    transform: translateY(-7px);
+    opacity: 1;
+}
+.footer .footer-bottom-list {
+    gap: 1.25rem;
+}
+.footer .footer-bottom-link {
+    color: var(--black);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    letter-spacing: .83px;
+}
+.footer .footer-bottom-link:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+/* --- Electrax Airplane Page --- */
+.electrax-banner-section-wrapper {
+    overflow: hidden;
+}
+.electrax-banner {
+    position: relative;
+    padding-top: 6.5rem;
+    padding-bottom: 2rem;
+    background-color: #000;
+    color: white;
+    z-index: 1;
+}
+.elect-banner-image-wrapper{
+    background: url(../image/plane-black-background-wide.jpeg);
+    background-position: 50%;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    z-index: -1;
+}
+.elect-banner-image-wrapper-copy {
+    /* transform-style: preserve-3d; */
+    background-color: #000;
+    background-image: linear-gradient(#000, #000 70% , #0000), url(../image/plane-black-background-wide.jpeg);
+    background-size: cover;
+    background-position: 0 0, 50% 5px;
+    transform: translateY(100%) rotateX(0deg) rotateY(180deg) rotate(180deg);
+}
+.electrax-hero-banner-wrapper {
+    min-height: 48rem;
+}
+.elect-measure-wrapper {
+    gap: 4.5rem;
+}
+.elect-measure-heading-wrapper {
+    display: inline-flex;
+    align-items: baseline;
+    margin-bottom: .25rem;
+}
+.elect-measure-box-wrapper {
+    display: inline-flex;
+    padding-top: .5rem;
+    padding-right: .5rem;
+    border-top: 2px solid white;
+    border-right: 1px solid white;
+    border-radius: 0 1rem 0;
+    min-width: 12.5rem;
+}
+.elect-measure-box {
+    padding: 1rem;
+    border-radius: 0 1rem 0 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+}
+.electrax-feature-section {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    color: #fff;
+    z-index: 1;
+}
+.e-banner-content-wrapper {
+    border-top: 1px solid #6f6c67;
+    padding-top: 1rem;
+}
+.electrax-feature-section .paragraph-sm {
+    color: #f4f4f4;
+    opacity: .8;
+}
+.electrax-feature-section-row {
+    justify-content: center;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 6rem;
+}
+/* Electrax Promotion Section */
+.elect-promotion-title {
+    margin-bottom: 3rem;
+}
+.elect-promotion-row {
+    --bs-gutter-x : 2.5rem;
+    --bs-gutter-y : 2.5rem;
+}
+.elect-promotion-card {
+    position: relative;
+    background-color: #010002;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.elect-promotion-card-title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 4rem 2rem;
+}
+.elect-promotion-card-wide .elect-promotion-card-title {
+    padding: 4rem;
+}
+.elect-promotion-card-image-wrapper {
+    aspect-ratio: 16/9;
+}
+.elect-promotion-card-wide .elect-promotion-card-image-wrapper {
+    position: relative;
+    min-height: 29rem;
+    max-height: 32rem;
+    height: 100%;
+    width: 100%;
+}
+.elect-promotion-card-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.elect-promotion-card-small .elect-promotion-card-image {
+    aspect-ratio: 16/9;
+}
+.elect-promotion-card-title .paragraph-sm {
+    color: #f4f4f4;
+}
+/* Take Flight Section */
+.take-flight-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #050403;
+    min-height: 250vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    overflow: visible;  /* Change from hidden to visible */
+}
+.container-collage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.tk-image-collage-wrapper{
+    flex: 1;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+}
+.tk-image-main-collage {
+    position: sticky;
+    top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 60svh;
+    height: 100%;
+    width: 85%;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tk-image-main-collage .tk-main-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.tk-image-main-collage-title {
+    color: #fff;
+    position: absolute;
+    inset: auto auto 2rem;
+    text-align: center;
+    width: 100%;
+}
+.tk-image-collage {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+.tk-collage-image-small {
+    aspect-ratio: 3.25 / 4;
+    object-fit: cover;
+    border-radius: .75rem;
+    width: 100%;
+    height: 100%;
+}
+.tk-image-collage-1 {
+    right: 0;
+    top: 15%;
+}
+.tk-image-collage-2 {
+    left: 0;
+    top: 35%;
+}
+.tk-image-collage-3 {
+    right: 0;
+    top: 55%;
+}
+.tk-image-collage-4 {
+    left: 0;
+    top: 75%;
+}
+/* Info Section */
+.info-section .info-section-title {
+    margin-bottom: 3rem;
+}
+.info-section .container-info-lg {
+    max-width: 92rem;
+}
+.info-section-tab-wrapper {
+    position: relative;
+    width: 100%;
+}
+.info-section-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    column-gap: 1.5rem;
+    margin-top: 2.5rem;
+    border: none;
+}
+.info-section-tabs .info-section-nav-link {
+    margin-bottom: 0;
+    border: none;
+    border-radius: unset;
+    border-top: 1px solid #333;
+    opacity: .7;
+    padding: 1rem 2rem;
+    width: 50%;
+    max-width: 25.75rem;
+    text-align: left;
+}
+.info-section-tabs .nav-item.show .nav-link, .info-section-tabs .nav-link.active {
+    color: #222;
+    background: 0 0;
+    border-top: 2px solid #333;
+    opacity: 1;
+}
+.info-section-tabs .nav-link:focus, .info-section-tabs .nav-link:hover {
+    border-color: #333 transparent transparent transparent;
+}
+.info-section .info-tab-pane-img {
+    border-radius: 1rem;
+    aspect-ratio: 2.25;
+    width: 100%;
+    object-fit: cover;
+}
+/* Elect Feature Section */
+.elect-feature-section {
+    background-color: #010002;
+}
+.elect-feature-section .elect-feature-list-content-wrapper .paragraph {
+    color: #fff;
+}
+.elect-feature-section .elect-feature-list-gray-card {
+    background-color: #ffffff1f;
+}
+.elect-feature-section .elect-feature-list-gray-card .paragraph {
+    color: #adadad;
+}
+/* Enquiry Section */
+.faq-section .faq-section-row {
+    --bs-gutter-x: 4rem;
+}
+.faq-section .accordion-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.faq-section .accordion-item {
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(241, 241, 241);
+    overflow: hidden;
+}
+.faq-section .accordion-button:focus,
+.faq-section .accordion-button:not(.collapsed) {
+    box-shadow: none;
+    /* outline: 1px solid #000; */
+}
+.faq-section .accordion-button::after {
+    display: none;
+}
+.faq-section .accordion-button {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(241, 241, 241);
+    padding: 2rem;
+}
+.faq-section .accordion-button-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: #333;
+}
+.faq-section .accordion-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 100%;
+    border: 2px solid #333;
+}
+.faq-section .accordion-icon .accordion-icon-horizontal-line, 
+.faq-section .accordion-icon .accordion-icon-vertical-line {
+    position: absolute;
+    height: 2px;
+    width: .75rem;
+    background-color: #333;
+    border-radius: 1px;
+    transition: transform .3s ease;
+}
+.faq-section .accordion-button.collapsed .accordion-icon .accordion-icon-vertical-line {
+    transform: rotate(-90deg);
+}
+.faq-section .accordion-body {
+    padding: 0 2rem 2rem;
+}
