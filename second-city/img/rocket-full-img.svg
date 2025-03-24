@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="290px" height="367px" viewBox="0 0 290 367" version="1.1">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>illus-rocket-mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="LatestDesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homev2" transform="translate(-464.000000, -6371.000000)">
+            <g id="illus-rocket-mobile" transform="translate(578.000000, 6541.500000) rotate(-49.000000) translate(-578.000000, -6541.500000) translate(439.000000, 6331.000000)">
+                <polygon id="rocket-triangle-yellow" fill="#FFDD59" transform="translate(185.162268, 54.070547) rotate(-255.000000) translate(-185.162268, -54.070547) " points="145.249799 54.0705472 225.074736 -4.37559953 225.074736 112.516694"/>
+                <rect id="rocket-rectangle" stroke="#FF6036" stroke-width="4" transform="translate(115.292209, 197.848196) rotate(15.000000) translate(-115.292209, -197.848196) " x="86.9919847" y="112.04481" width="56.6004485" height="171.606771"/>
+                <circle id="rocket-circle" fill="#FF6036" cx="151.595097" cy="172.141593" r="21"/>
+                <polygon id="rocket-line1" fill="#FFDD59" fill-rule="nonzero" transform="translate(61.378140, 363.296945) rotate(112.000000) translate(-61.378140, -363.296945) " points="22.4281397 368.201571 22.4281397 358.392319 100.328141 358.392319 100.328141 368.201571"/>
+                <polygon id="rocket-line2" fill="#FFDD59" fill-rule="nonzero" transform="translate(96.948579, 380.972864) rotate(106.000000) translate(-96.948579, -380.972864) " points="57.9985778 385.87749 57.9985778 376.068237 135.898579 376.068237 135.898579 385.87749"/>
+                <polygon id="rocket-line3" fill="#FFDD59" fill-rule="nonzero" transform="translate(138.229767, 380.972864) rotate(96.000000) translate(-138.229767, -380.972864) " points="99.2797665 385.87749 99.2797665 376.068237 177.179768 376.068237 177.179768 385.87749"/>
+                <polygon id="rocket-triangle-sm" fill="#4509C2" transform="translate(31.077916, 242.641828) rotate(14.000000) translate(-31.077916, -242.641828) " points="54.0779162 209.641828 54.0779162 275.641828 8.07791618 275.641828"/>
+                <polygon id="rocket-triangle-big" fill="#4509C2" transform="translate(231.269617, 289.304509) scale(1, -1) rotate(-196.000000) translate(-231.269617, -289.304509) " points="265.389194 240.350333 265.389194 338.258685 197.15004 338.258685"/>
+            </g>
+        </g>
+    </g>
+</svg>
