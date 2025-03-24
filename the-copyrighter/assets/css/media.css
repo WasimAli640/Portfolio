@@ -1,0 +1,176 @@
+@media screen and (max-width:1100px) {
+    .cs-nav-link {
+        margin: 30px 5px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .brand img {
+        width: 40px;
+    }
+    .header-content,
+    .menu-btn,
+    .nav-main {
+        display: flex;
+    }
+    .cs-lg-navbar {
+        display: none;
+        position: absolute;
+        height: 100vh;
+        padding-top: 80px;
+        top: 0;
+        left: 0;
+        background-color: var(--clr-yellow);
+        box-shadow: 1px 0 5px rgb(0 0 0 / 20%);
+        z-index: -99;
+        overflow-y: auto;
+    }
+    .cs-lg-navbar,
+    ul.cs-nav-list,
+    li.cs-nav-item {
+        width: 100%;
+    }
+    .cs-nav-item {
+        border: 1px solid #273639;
+        width: 100%;
+        text-align: center;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+    .cs-nav-list-left .cs-nav-item:first-child {
+        border-top: none;
+    }
+    .cs-nav-list-right .cs-nav-item:last-child {
+        border-bottom: none;
+    }
+    .cs-lg-navbar .brand {
+        display: none;
+    }
+    .cs-nav-list,
+    .cs-lg-navbar {
+        flex-direction: column;
+    }
+    .cs-nav-link {
+        font-size: 1.1rem;
+    }
+
+    /* About Section */
+    .about-section .ab-content {
+        max-width: inherit;
+    } 
+    /* Work process section */
+    .work-process-section {
+        background-color: var(--clr-dark-400);
+    }
+    .wp-figure {
+        overflow: hidden;
+        height: 400px;
+    }
+    /* Footer  */
+    .f-social-list > * + * {
+        margin-left: 36px;
+    }
+}
+@media screen and (max-width:775px) {
+    .heading-1 {
+        font-size: 3.5rem;
+    }
+    .heading-2 {
+        font-size: 2.8rem;
+    }
+    .heading-3,
+    .paragraph {
+        font-size: .8rem !important;
+    }
+    .heading-4 {
+        font-size: 1.5rem;
+    }
+    .heading-7 {
+        font-size: 1rem;
+    }
+    .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .accordion-button::after {
+        height: 30px;
+        width: 30px;
+        background-size: contain;
+    }
+    /* Footer */
+    .f-logo-link {
+        width: 60px;
+    }
+    .f-social-list {
+        justify-content: center;
+    }
+    .f-social-list > * + * {
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .container,
+    .container.container-lg {
+        padding: 0 15px;
+    }
+    .heading-1 {
+        font-size: 2rem;
+    }
+    .heading-2 {
+        font-size: 2rem;
+    }
+    .paragraph,
+    .cs-nav-link {
+        font-size: 12px;
+    }
+    .btn-lg {
+        padding: 12px 30px;
+        font-size: 12px !important;
+    }
+    .accordion-body,
+    .accordion-button {
+        font-size: .8rem !important;
+    }
+    .accordion-button::after {
+        height: 20px;
+        width: 20px;
+    }
+    .menu-btn span {
+        height: 2px;
+        width: 25px;
+    }
+    /* How Section */
+    .text-wrapper {
+        padding: 30px 20px;
+    }
+    /* About Section */
+    .hero-banner,
+    .how-section,
+    .about-section,
+    .work-process-section,
+    .testimonial-section,
+    .feature-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .feature-section {
+        padding-bottom: 0;
+    }
+    /* Testomonial Section */
+    .t-quote img {
+        width: 36px;
+    }
+    /* Footer */
+    .f-logo-link {
+        width: 40px;
+    }
+    .footer-copyright,
+    .footer-link {
+        font-size: 14px;
+    }
+}
