@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/gif" sizes="16x16">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+<!-- NIce Select CSS -->
+<link rel="stylesheet" href="../assets/css/bootstrap-select.min.1.14.css">
+
+    <!-- DatepickerCSS -->
+<link rel="stylesheet" href="../assets/css/daterangepicker.css">
+
+<!-- Custom Font CSS -->
+<link rel="stylesheet" href="../assets/fonts/custom-font.css">
+<link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+
+<!-- Dasboard CSS -->
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+
+<!-- Style Custom CSS -->
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/custom.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+<title>Welcome to Brain Gym</title>
+</head>
+<body class="bg-white">
+
+    
+<header class="header header-main">
+<nav class="navbar fixed-top flex-md-nowrap p-0">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 fs-6" href="#"><img src="../assets/images/logo-with-text.svg" alt="Brain Gym"/></a>
+
+  <div class="page-content-header">
+        <div class="body-block mb-0">
+             <h4>Corporate Details</h4>
+            <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">User managment</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Details</li>
+  </ol>
+</nav>
+
+          </div>
+    </div>
+  <ul class="navbar-nav ms-auto right-nav">
+      <li class="nav-item dropdown notification-dd">
+      <a class="nav-link dropdown-toggle notify" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"><img src="../assets/images/icon-notification-header.svg" alt=""/></a>
+             <ul class="dropdown-menu p-4">
+              <li>
+                <h5 class="text-center text-primary">Notification</h5>
+              </li>
+              <li> <hr></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+    </li>
+      <li class="nav-item dropdown profile-dd">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://picsum.photos/id/1027/200" alt="profile photo" /> 
+            <div class="text-here">              
+              <span>Haylie Kenter</span>
+              <span class="designation">Admin</span>
+            </div>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">
+                  <i class="icon-user"></i>Profile
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                  <i class="icon-logout"></i>Logout
+              </a>
+            </li>
+          </ul>
+
+
+            <li class="nav-item">
+                <button class="navbar-toggler  d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </li>
+
+        </li>
+  </ul>
+</nav>
+
+  <div class="page-content-header">
+        <div class="body-block mb-0">
+            <h4>Corporate details</h4>
+            <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">User managment</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Details</li>
+  </ol>
+</nav>
+          </div>
+    </div>
+</header>
+
+    <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+      <div class="position-sticky sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="dashboard.html">
+              <i class="icon-dashboard"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+             <i class="icon-manage"></i>
+              User management
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-link"></i>
+              External Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">
+             <i class="icon-calendar"></i>
+              Events
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-building"></i>
+              Organization
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+<div class="modal fade" id="DeleteModalToggle" aria-hidden="true" aria-labelledby="DeleteModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="body-block mr-b-12">
+             <div class="body-text-emphasis fw-400">Corporate name - <strong>Leo Mango</strong></div>
+          </div>
+          <div class="body-block">
+             <p class="body-text-mini text-black">Are you sure you want to delete this corporate?</p>
+          </div>
+          
+      </div>
+      <div class="modal-footer pt-0">
+          <button type="button" class="btn btn-secondary">Cancel</button>
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <main class=" ms-sm-auto after-login corporate-detail">
+        
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="go-back me-auto"><a href="user-management-corporate.html" class="body-text text-black"><i class="icon-arrow-left fs-18 vertical-align-middle pd-r-4"></i>Back</a></div>
+              <div class="user-top-head d-flex align-items-start align-items-md-center flex-column flex-md-row mr-t-20 mr-b-24">
+                <div class="user-info-block  d-flex align-items-center">
+                      <img src="../assets/images/avtar-male.svg" class="avtar avtar-lg mr-r-12" alt=""/>
+                    <div>
+                    <div class="d-flex align-items-center mr-b-8">
+                        <div class="body-text-emphasis mr-r-4">Phillip Bator</div>
+                        <div class="badge badge-green user-status pd-x-8 pd-y-4 h-auto">Active</div>
+                        </div>
+                    <div class="body-text text-dark-grey lh-normal">Sr. Manager (Sales)</div>
+                  </div>
+                  </div>
+                  <div class="block-action ms-auto mt-3 mt-md-0">
+                      <a class="btn btn-secondary min-w-inherit pd-all-16 mr-r-12" href="user-management-corporate-generate-new.html"><i class="icon-edit fs-24"></i></a>
+                      <a class="btn btn-secondary min-w-inherit pd-all-16" data-bs-toggle="modal" href="#DeleteModalToggle"><i class="icon-delete fs-24"></i></a>
+                  </div>
+            </div>
+              <div class="other-detail-box border pd-all-28 pd-b-0 pe-md-0 mr-b-24 border-radius-12 border-light">
+              <div class="row">
+                  <div class="col-md-6 col-lg-4 col-xl-3 ">
+                      <div class="feature-block">
+                          <div class="icon-box"><i class="icon-message text-dark-grey fs-20"></i></div>
+                          <div class="feature-info">
+                              <div class="body-text-mini text-dark-grey lh-normal mr-b-6">Email</div>
+                              <div class="body-text-emphasis lh-normal ">phillip@example.com</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 ">
+                      <div class="feature-block">
+                          <div class="icon-box"><i class="icon-call text-dark-grey fs-20"></i></div>
+                          <div class="feature-info">
+                              <div class="body-text-mini text-dark-grey lh-normal mr-b-6">Phone</div>
+                              <div class="body-text-emphasis lh-normal">+1234567890</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 ">
+                      <div class="feature-block">
+                          <div class="icon-box"><i class="icon-gender text-dark-grey fs-20"></i></div>
+                          <div class="feature-info">
+                              <div class="body-text-mini text-dark-grey lh-normal  mr-b-6">Gender</div>
+                              <div class="body-text-emphasis lh-normal">Male</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 ">
+                      <div class="feature-block">
+                          <div class="icon-box"><i class="icon-pronouns text-dark-grey fs-20"></i></div>
+                          <div class="feature-info">
+                              <div class="body-text-mini text-dark-grey lh-norma  mr-b-6l">Pronouns</div>
+                              <div class="body-text-emphasis lh-normal">He/him</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              </div>
+
+
+              <div class="other-detail-box border pd-all-28 mr-b-24 border-radius-12 border-light">
+                 <div class="feature-info mr-b-24">
+                              <div class="body-text text-dark-grey lh-normal mr-b-12 ">About me</div>
+                              <div class="body-text-emphasis lh-160pr mr-b-6 fw-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nunc vitae, ultrices purus id volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nunc vitae, ultrices purus id volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nunc vitae, ultrices purus id volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nunc vitae, ultrices purus id volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nunc vitae, ultrices purus id volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nunc vitae, ultrices purus id volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nunc vitae, ultrices purus id volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nunc vitae, ultrices purus id volutpat.</div>
+                          </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+    </main>
+
+<script type="text/javascript">
+  function selectCoach(argument) {
+    $('#UpdateCoachBtn').removeClass('disabled').removeAttr('disabled');
+    $(argument).text('Selected');
+  }
+</script>
+
+<!-- jQuery, Popper.js, and Bootstrap JS --> 
+
+<!-- jQuery, Popper.js, and Bootstrap JS --> 
+
+<script src="../assets/js/jquery-3.5.1.min.js"></script> 
+<script src="../assets/js/popper.min-2.9.2.js"></script> 
+<script src="../assets/js/bootstrap.min.js"></script> 
+<script src="../assets/js/bootstrap-select.min.1.14.js"></script> 
+
+<script src="../assets/js/os-browser-detection.js"></script> 
+
+<!-- Autocomplete JS -->    
+<script src="../assets/js/search_autocomplete.js"></script> 
+    
+    <!-- Datepicker JS -->    
+<script src="../assets/js/moment.min.js"></script> 
+<script src="../assets/js/daterangepicker.js"></script> 
+
+<!--  Custom JS--> 
+<script src="../assets/js/custom.js"></script> 
+
+
+</body>
+</html>

@@ -1,0 +1,764 @@
+@import "function";
+@import "rest";
+@import "mixin";
+@import "base";
+@import "animation";
+
+body {
+    animation: fade-in .6s ease forwards;
+    opacity: 1;
+}
+.header {
+    position: absolute;
+    z-index: 99;
+    animation: fade-down .6s ease $loadTime forwards;
+    opacity: 0;
+    @include pseudo(after) {
+        background-color: rgb(0 0 0 / 50%);
+        z-index: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all .3s ease;
+    }
+    .header-content {
+        @media #{$mobileXL}
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .top-header {
+        padding: 8px 0;
+        @media #{$mobile} {
+            padding: 0;
+        }
+    }
+    .brand {
+        padding: 1em 0;
+        &:hover svg path {
+            fill: #e4032f;
+        }
+    }
+    .cs-nav-item i{
+        font-size: 22px;
+        &:hover {
+            color: var(--clr-primary-400);
+        }
+    }
+    .social-list > * + * {
+        margin-left: 24px;
+    }
+    .main-nav-list {
+        @media #{$mobileXL}
+        {
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            flex-direction: column;
+            align-items: start;
+            background-color: #252027;
+            padding: 80px 10px 10px;
+            width: 50%;
+            max-width: 200px;
+            transform: translateX(calc(100% + 10px));
+            transition: all 0.5s ease;
+            min-height: calc(100vh - 4px);
+            justify-content: start;
+        }
+    }
+    .main-nav-list.show {
+        transform: translateY(0) translateX(0);
+    }
+    .main-nav-list > * + * {
+        margin-left: 32px;
+        @media #{$mobileXL}
+        {
+            margin-left: 0;
+        }
+    }
+    .main-nav-list .cs-nav-item {
+        line-height: 40px;
+        // font-size: 18px;
+        text-transform: uppercase;
+        color:rgba(#fff, 0.8);
+        font-weight: 600;
+        transition: all .15s ease;
+        &:hover
+        {
+            color: var(--clr-primary-400);
+        }
+        @media #{$mobileXL}
+        {
+            width: 100%;
+            padding: 0 20px;
+            &:not(:last-child) {
+                border-bottom: 1px solid var(--clr-light-100);
+            }
+        }
+    }
+    .main-nav-list .cs-nav-item.active {
+        color: var(--clr-primary-400);
+    }
+
+    .menu-button {
+        display: none !important;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        margin-left: auto;
+        z-index: 999;
+        overflow: hidden;
+        background-color: transparent;
+        @media #{$mobileXL}
+        {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+
+        }
+        @media #{$mobile}{
+            height: 40px;
+            width: 40px;
+        }
+        span {
+            height: 2px;
+            width: 30px;
+            background-color: #fff;
+            pointer-events: none;
+            @media #{$mobile} {
+                width: 25px;
+            }
+            &:first-child {
+                transform: translateY(-10px);
+                @media #{$mobile} {
+                    transform: translateY(-6px);
+                }
+            }
+            &:last-child {
+                transform: translateY(10px);
+                @media #{$mobile} {
+                    transform: translateY(6px);
+                }
+            }
+        }
+    }
+    .menu-button.show {
+        border: 2px solid white !important;
+        span {
+            &:first-child {
+                transform: rotate(-45deg) translateY(7px) translateX(0px);
+                width: 15px;
+                @media #{$mobile} {
+                    transform: rotate(-45deg) translateY(7px) translateX(3px);
+                    width: 10px;
+                }
+            }
+            &:nth-child(2) {
+                transform: translateX(-4px);
+                @media #{$mobile} {
+                    transform: translateX(0px);
+                    width: 20px;
+                }
+            }
+            &:last-child {
+                transform: rotate(45deg) translateY(-7px) translateX(0px);
+                width: 15px;
+                @media #{$mobile} {
+                    transform: rotate(45deg) translateY(-7px) translateX(3px);
+                    width: 10px;
+                }
+            }
+        }
+    }
+    .brand {
+        position: relative;
+        z-index: 99;
+        @media #{$mobile} {
+            max-width: 90px;
+        }
+    }
+    &.sticky{
+        @media #{$mobileXL} {
+            position: fixed;
+            background-color: rgba(#252027, 0.5);
+            backdrop-filter: blur(2px);
+            &:after {
+                transform: scaleY(1);
+            }
+        }
+    }
+}
+
+/*For Animation*/
+section{
+    & :is(.pizza-img-wrapper img,
+        .banner-content, 
+          .card.cs-card,
+          .ds-c-box,
+          .ds-c-left,
+          .cs-card,
+          .daily-deal,
+          .ds-image) {
+        opacity: 0;
+        transition: all .6s ease;
+    }
+    &.active :is(.card.cs-card,
+    .ds-c-box,
+    .ds-c-left,
+    .cs-card,
+    .daily-deal,
+    .ds-image,
+    .deal-box){
+        opacity: 1;
+        transform: none;
+    }
+    & :is(.banner-content,
+    .pizza-img-wrapper img,
+    .card.cs-card,
+    .cs-card,
+    .ds-image) {
+    transform: translateY(100%);
+    }
+    & :is(.ds-c-left){
+        transform: translateX(-100%);
+    }
+    & :is(.ds-c-box){
+        transform: translateX(100%);
+    }
+    & :is(.card.cs-card,.ds-c-box){
+        transition-delay: calc(.2s * var(--i));
+    }
+}
+
+
+section.active{
+    transition: all .5s ease;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(#000, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pizzeria-template-hero-bg-img.webp);
+    background-position: center;
+    background-size: cover;
+    min-height: 962px;
+    padding: 50px 0 150px;
+    z-index: 1;
+    // overflow: hidden;
+    &::before{
+        z-index: -1;
+    }
+    .curve-shape-bg {
+        @extend %curve-bg-bottom;
+    }
+    .banner-content {
+        text-align: center;
+        animation: fade-up .6s ease $loadTime forwards;
+    }
+    .heading-1 {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+    .banner-button > * + * {
+        margin-left: 30px;
+    }
+    @media #{$mobile}{
+        min-height: 540px;
+    }
+
+}
+
+
+
+.pizza-box {
+    .pizza-img-wrapper img {
+        animation: fade-up .6s ease $loadTime + .3s forwards;
+        transform: translateY(0);
+        position: relative;
+        margin-top: clamp(-228px, -15vw, -120px);
+        max-width: clamp(200px, 50vw, 457px);
+        z-index: 1;
+        @media #{$mobile}
+        {
+            margin-left: 3px;
+        }
+
+    }
+}
+
+.advertise-section {
+    padding-bottom: clamp(10px, 4vw, 104px);
+    .advertise-content {
+        margin-top: -40px;
+        @media #{$mobileXL}
+        {
+            margin-top: 0;
+            padding-top: 50px;
+        }
+    }
+    .card.cs-card {
+        @media #{$mobileXL}{
+            margin-bottom: 50px;
+        }
+    }
+    &.active{
+        .card.cs-card {
+            // animation: fade-up .6s ease calc(.2s * var(--i)) forwards;
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+  
+
+    .card-img-box {
+        margin-bottom: 24px;
+        @media #{$mobileXL}{
+            max-width: 200px;
+            margin: 0 auto 24px auto;
+        }
+        img {
+            border-radius: 100%;
+        }
+    }
+    .heading-4 {
+        margin-bottom: 20px;
+        @media #{$mobile} {
+            margin-bottom: 10px;
+        }
+    }
+
+
+}
+
+.delivery-section {
+    padding: clamp(0px, 6vw, 128px) 0;
+    background-image:  linear-gradient(rgba(#000, 0.8),rgba(#000, 0.8)), url(../images/pizzeria-template-delivery-section-img-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    @media #{$mobileXL}{
+        .row .col-lg-3 {
+            margin-top: 50px;
+        }
+    }
+    .img-box {
+        height: 128px;
+        width: 128px;
+        font-size: 64px;
+        margin-bottom: 15px;
+    }
+    .heading-4 {
+        @media #{$mobile} {
+            margin-bottom: 0;
+        }
+    }
+    &.active{
+        .ds-c-left {
+            // animation: fade-left .6s ease forwards;
+            transform: translateX(0);
+        }
+        .ds-c-box {
+            // animation: fade-right .6s ease calc(.2s * var(--i)) forwards;
+            transform: translateX(0);
+        }
+
+    }
+}
+
+.food-menu-section {
+    padding: 104px 0 80px 0;
+    z-index: 1;
+    @media #{$mobileXL}{
+        padding: 60px 0;
+    }
+    @include pseudo; 
+    &::before {
+        z-index: -1;
+    }
+    .curve-shape-bg {
+        @extend %curve-bg-bottom
+    }
+    &.active{
+        .cs-card {
+            transform: translateY(0);
+        }
+    }
+    .card-img-box {
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+        @media #{$mobileXL} {
+            max-width: 300px;
+            margin: 0 auto 20px auto;
+        }
+        @media #{$mobile} {
+            max-width: 200px;
+        }
+    }
+    .fms-head {
+        .paragraph {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        // @media screen and (max-width: 767px){
+        //     margin-bottom: 40px;
+        // }
+    }
+    .cs-card{
+        @media #{$mobileXL} {
+            margin-top: 40px;
+        }
+    }
+}
+.best-deal-section {
+    padding: 80px 0;
+    .deal-box-row {
+        @media #{$mobile} {
+            .col-lg-6 {
+                height: 250px;
+            }
+        }
+    }
+    .daily-deal {
+        margin-top: 64px;
+        background-image: url(../images/pizzeria-template-deals-img-1.webp);
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 56px 48px;
+        border-radius: 16px;
+        z-index: 1;
+        overflow: hidden;
+        @include pseudo($width: 66%, $left: auto);
+        &:before {
+            // width: 66%;
+            // left: auto;
+            background-image: url(../images/pizzeria-template-deals-shape-bg-1.svg);
+            background-size: cover;
+            background-position: center left;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        @media #{$mobileXL} {
+            background-size: cover;
+            .bds-content {
+                margin-left: 26px;
+            }
+        }
+        @media #{$mobile}{
+            margin-top: 40px;
+            padding: 20px 10px;
+            .bds-content {
+                margin-left: 0;
+            }
+            &:before {
+                background-color: #e4032f;
+                background-image: none;
+                width: 50%;
+            }
+            .bds-image-wrapper {         
+                max-width: 100px;
+            }
+        }
+
+    }
+    .bds-content {
+        @media #{$mobile} {
+            .bds-content {
+                margin-left: 15px;
+            }
+        }
+    }
+    .deal-box {
+        display: flex;
+        border-radius: 16px;
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: end;
+        padding: 64px 32px 120px;
+        text-align: right;
+        z-index: 1;
+        overflow: hidden;
+        margin-top: 48px;
+        flex-shrink: 0;
+        height: 100%;
+        @include pseudo;
+        &:before{
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 16px;
+            z-index: -1;
+        }
+        @media #{$tablet} {
+            margin-top: 0;
+        }
+        @media #{$mobile} {
+            padding: 40px 32px;
+            max-height: 215px;
+            height: 100%;
+        }
+    }
+    .deal-box1{
+        background-image: url(../images/pizzeria-template-deals-img-2.webp);
+        &:before{
+            background-image: url(../images/pizzeria-template-shape-bg-2.svg);
+            background-position: top right;
+            background-size: 66%;
+            @media #{$tablet}{
+                width: 50%;
+                background-size: cover;
+                left: auto;
+            }
+            @media #{$mobileXL}{
+                background-size: contain;
+                width: 70%;
+                left: auto;
+            }
+            @media #{$mobile}{
+                background-color: #e4032f;
+                background-image: none;
+                width: 50%;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+    }
+    .deal-box2{
+        background-image: url(../images/pizzeria-template-deals-img-3.webp);
+        &::before {
+            background-image: url(../images/pizzeria-template-shape-bg-3.svg);
+            background-position: center right;
+            @media #{$tablet}{
+                background-size: 50%;
+            }
+            @media #{$mobileXL}{
+                background-size: cover;
+                width: 60%;
+                left: auto;
+            }
+            @media #{$mobile}{
+                background-color: #e4032f;
+                background-image: none;
+                width: 50%;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+
+    }
+}
+
+.our-location-section {
+    padding: 80px 0 104px 0;
+    @media #{$mobileXL}{
+        padding: 40px 0;
+    }
+    @media #{$mobile}{
+        padding:0;
+    }
+    .ols-row {
+        text-align: center;
+        margin-top: 32px;
+    }
+    .ols-enquiry {
+        padding: 0 40px;
+        @media #{$tablet}{
+            margin-top: 20px;
+        }
+    }
+    .ols-head {
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.join-section {
+    padding: 104px 40px;
+    @media #{$tablet}{
+        padding: 40px;
+    }
+    @media #{$mobile}{
+        padding: 40px 0px;
+    }
+    .js-right-content {
+        padding-top: 32px;
+    }
+}
+
+.gallery-section {
+    .gallery-box {
+        background-image: url(../images/pizzeria-template-gallery-img.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0 0 310px;
+    }
+    .follow-box {
+        padding: 70px 48px;
+        @media #{$tablet}{
+            padding: 84px 48px; 
+        }
+        @media #{$mobile}{
+            padding: 74px 12px; 
+        }
+    }
+    .gs-icon-big {
+        font-size: 82px;
+        @media #{$mobile}{
+            font-size: 50px;
+        }
+    }
+    .gs-content{
+        .heading-3 {
+            margin-bottom: 10px;
+        }
+        .paragraph {
+            margin-bottom: 24px;
+        }
+    }
+    .feedback-box {
+        padding: 64px 40px;
+        @media #{$mobile}{
+            padding: 30px 0px; 
+            .f-56{
+                font-size: 40px;
+            }
+        }
+        .fc-img-wrapper {
+            padding: 8px;
+            i{
+                font-size: 64px;
+                @media #{$mobile} {
+                    font-size: 30px;
+                }
+            }
+        }
+        .rating-txt {
+            margin: 0 20px;
+        }
+    }
+}
+
+.download-section {
+    padding-top: 64px;
+    overflow: hidden;
+    @media #{$mobile}{
+        .image-wrapper img{
+            max-width: 200px;
+        }
+    }
+    &.active {
+        .ds-image {
+            transform: translateY(0);
+        }
+    }
+    .ds-button {
+        @media #{$tablet} {
+            margin-bottom: 40px;
+        }
+        @media #{$mobile} {
+            flex-direction: column;
+        }
+        .btn {
+            margin-right: 32px;
+            @media #{$mobile} {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.footer {
+    .footer-main {
+        padding: 104px 0 64px 0;
+        @media #{$mobile}{
+            padding: 40px 0 0;
+        }
+
+    }
+    .f-brand {
+        margin-bottom: 47px;
+        @media #{$mobile}{
+            margin-bottom: 20px;
+        }
+    }
+    .f-social {
+        font-size: 24px;
+        a {
+            margin-right: 20px;
+        }
+    }
+    .footer-link-box {
+        &:nth-child(2) {
+            padding-left: 80px;
+        }
+        &:nth-child(3) {
+            padding-left: 40px;
+        }
+        @media #{$tablet}{
+            margin-top: 20px;
+            &:nth-child(2){
+                padding-left: 12px;
+            }
+            &:nth-child(3){
+                padding-left: 12px;
+            }
+        }
+        @media #{$mobile} {
+            text-align: center;
+        }
+
+    }
+    .footer-head {
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        @media #{$mobile} {
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+    }
+    .footer-list-item {
+        margin-bottom: 8px;
+        @media #{$mobile} {
+            margin-bottom: 0;
+            a {
+                font-size: 12px;
+            }
+        }
+
+    }
+    .social-link:hover
+    {
+        i {
+            color: var(--clr-primary-400);
+        }
+    }
+    .footer-link:hover {
+        color: var(--clr-primary-400);
+        text-decoration: underline !important; 
+    }
+    .footer-bottom {
+        padding: clamp(10px, 2vw , 20px) 0;
+        @media #{$mobile} {
+            margin-top: 20px;
+        }
+        .paragraph {
+            font-size: clamp(10px, 2vw, .9375em);
+        }
+    }
+    .footer-enquiry {
+        .paragraph {
+            margin-bottom: 10px;
+        }
+    }
+}
+

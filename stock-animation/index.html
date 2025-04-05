@@ -1,0 +1,372 @@
+<html lang="en" class="has-scroll-dragging has-scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll</title>
+    <link rel="stylesheet" href="css/base.98fd6c19.css">
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Link Locomotive Css -->
+    <link rel="stylesheet" href="css/locomotive-scroll.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
+    <div class="cursor" id="cursor"></div>
+    <div class="wrapper" id="wrapper">
+        <header class="header">
+            <div class="header-content c-container">
+                <div class="brand">
+                    <div class="left-logo">
+                        <!-- <img src="img/key-logo.svg" alt="key-logo"> -->
+                        <svg width="100" height="110" viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.9969 90.2858C31.5833 90.2858 40.1652 81.7032 40.1652 71.116C40.1652 60.5288 31.5833 51.9462 20.9969 51.9462C10.4106 51.9462 1.82861 60.5288 1.82861 71.116C1.82861 81.7032 10.4106 90.2858 20.9969 90.2858Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M20.9968 58.1709V3.98315" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M20.9968 58.4253L29.4924 72.9219L20.9968 87.42L12.4998 72.9219L20.9968 58.4253Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M20.9968 106.468L15.4897 97.0719L20.9968 87.6742L26.5039 97.0719L20.9968 106.468Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M7.5757 26.1103L2.07007 16.714L7.5757 7.31763L13.0828 16.714L7.5757 26.1103Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M20.9969 17.2897H13.0828" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M70.5204 24.7245C76.8542 24.7245 81.9888 19.5895 81.9888 13.2552C81.9888 6.92087 76.8542 1.78589 70.5204 1.78589C64.1866 1.78589 59.052 6.92087 59.052 13.2552C59.052 19.5895 64.1866 24.7245 70.5204 24.7245Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M59.0562 31.3977C60.6219 29.7233 61.5819 27.4717 61.5819 24.9973C61.5819 19.8212 57.3848 15.6252 52.2092 15.6252C47.0335 15.6252 42.8379 19.8212 42.8379 24.9973V26.5245C42.8379 33.6164 49.4249 39.3668 57.5491 39.3668C63.1747 39.3668 68.059 36.6109 70.5346 32.5635" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M81.9974 31.3977C80.4303 29.7233 79.4703 27.4717 79.4703 24.9973C79.4703 19.8212 83.6659 15.6252 88.8444 15.6252C94.0201 15.6252 98.2157 19.8212 98.2157 24.9973V26.5245C98.2157 33.6164 91.6287 39.3668 83.5045 39.3668C77.8789 39.3668 72.9932 36.6109 70.5161 32.5635" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M70.5205 24.7245V104.295H87.3174" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M70.5347 89.04H87.3187" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M70.5347 96.6677H87.3187" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M61.6292 46.7859H79.8203" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M61.6292 53.5121H79.8203" stroke="white" stroke-width="2.5" stroke-miterlimit="10"/>
+                            <path d="M63.8691 19.7227L77.1647 6.42615" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+                    </div>
+                    <div class="right-logo">
+                        <svg class="brand-logo" fill="#202020" enable-background="new 0 0 509.316 63.573" version="1.1" viewBox="0 0 509.316 63.573" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" cursorshover="true">
+                            <path d="m1.07 60.265l-1.07-16.552h2.336l4.089 9.638c3.504 5.356 8.373 7.983 14.506 7.983 8.178-0.097 12.754-4.868 12.754-11.78 0-7.886-6.524-11.002-14.993-13.823-9.638-3.408-17.33-7.401-17.33-17.623 0-9.735 8.081-18.01 20.932-18.01 5.452 0 9.93 0.974 13.435 2.044l4.283-1.361 0.292 18.01h-2.141l-7.01-14.019c-2.336-1.463-5.256-2.531-9.248-2.531-6.718 0-11.099 4.184-11.099 9.636 0 7.108 6.328 9.542 14.117 12.367 10.611 3.601 18.4 8.079 18.4 19.274 0 10.418-9.054 19.958-22.976 19.958-7.497 0.098-13.825-1.266-19.277-3.211"></path>
+                            <path d="m116.03 60.265c3.018-0.293 4.185-0.975 4.185-1.753v-55.203h-2.336c-9.151 0.293-14.506 7.011-17.328 13.436l-1.072 3.506h-2.629l2.532-18.887h55.102l1.267 18.79h-2.336l-1.072-3.409c-2.823-7.009-7.984-13.436-16.939-13.436h-2.532v55.493c0 0.779 0.681 1.072 4.966 1.463l3.796 0.389 0.291 1.557h-30.763l0.293-1.557 4.575-0.389z" cursorshover="true"></path>
+                            <path d="m209.28 32.03c0-17.427 15.286-31.933 33.686-31.933 19.08 0 32.711 12.656 32.711 31.64 0 17.429-15.286 31.836-33.685 31.836-19.08 0-32.712-12.753-32.712-31.543m52.476 0c0-18.983-7.886-29.791-19.569-29.791-12.073 0-19.179 9.638-19.179 29.4 0 19.083 7.789 29.792 19.763 29.792 11.976 1e-3 18.985-9.637 18.985-29.401" cursorshover="true"></path>
+                            <path d="m330.57 32.419c0-18.691 13.629-32.419 35.728-32.419 6.134 0 12.364 1.751 15.382 3.31l7.01-2.043 0.488 20.151h-2.435l-8.179-16.259c-2.627-1.655-6.814-2.92-12.169-2.92-14.116 0-22.1 12.56-22.1 29.304 0 18.206 9.248 29.791 21.905 29.791 8.859 0 14.116-3.894 18.401-10.903l3.602-8.471h2.629l-2.922 18.109h-4.186c-3.701 1.558-11.489 3.407-18.206 3.407-20.93 1e-3 -34.948-12.558-34.948-31.057" cursorshover="true"></path>
+                            <path d="m447.59 60.265c3.115-0.391 4.187-0.975 4.187-1.753v-53.741c0-0.684-0.487-1.17-4.965-1.463l-2.823-0.388-0.293-1.558h29.306l-0.293 1.558-4.089 0.388c-3.115 0.293-4.283 1.072-4.283 1.753v29.209l15.187-15.576c11.878-12.172 11.487-14.605 3.895-15.385l-3.018-0.388-0.195-1.558h26.092l-0.292 1.558-2.63 0.388c-6.424 0.779-8.663 3.213-20.056 14.896l-3.894 3.799 18.79 30.375c3.895 6.815 5.257 7.496 8.958 7.982l1.849 0.293 0.293 1.557h-28.43l0.195-1.557 1.947-0.389c3.993-0.487 3.993-1.851-0.39-9.64l-11.878-19.957-6.424 6.424v21.71c0 0.779 0.682 1.072 5.062 1.463l3.214 0.389 0.291 1.557h-29.304l0.292-1.557 3.699-0.389z" cursorshover="true"></path>
+                            </svg>
+                    </div>
+                </div>
+                <nav class="c-nav">
+                    <ul class="cus-nav-list">
+                        <li class="cus-nav-item"><a href="#!" class="cus-nav-link">About</a></li>
+                        <li class="cus-nav-item"><a href="#!" class="cus-nav-link">Project</a></li>
+                        <li class="cus-nav-item"><a href="#!" class="cus-nav-link">Lookbook</a></li>
+                        <li class="cus-nav-item"><a href="#!" class="cus-nav-link">Journal</a></li>
+                        <li class="cus-nav-item"><a href="#!" class="cus-nav-link">Media</a></li>
+                        <li class="cus-nav-item"><a href="#!" class="cus-nav-link">Contact</a></li>
+                    </ul>
+    
+                    <button class="nav-button">
+                        <div class="menu-btn"></div>
+                        <div class="menu-btn"></div>
+                        <div class="menu-btn"></div>
+                    </button>
+                    <div class="full-menu">
+                        <div class="c-container">
+                            <ul class="full-menu-list">
+                                <li class="full-list-item"><a href="#!" class="full-list-link">About</a></li>
+                                <li class="full-list-item"><a href="#!" class="full-list-link">Project</a></li>
+                                <li class="full-list-item"><a href="#!" class="full-list-link">Lookbook</a></li>
+                                <li class="full-list-item"><a href="#!" class="full-list-link">Journal</a></li>
+                                <li class="full-list-item"><a href="#!" class="full-list-link">Media</a></li>
+                                <li class="full-list-item"><a href="#!" class="full-list-link">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="fm-img">
+                            <img src="img/menu-overlay.jpg" alt="full-menu-bg">
+                        </div>
+                    </div>
+                </nav>
+            </div> 
+        </header>
+        <section class="banner" data-scroll-section>
+            <div class="empty-block left-empty"></div>
+            <div class="empty-block right-empty"></div>
+            <div class="c-container">
+                <div class="c-row justify-space">
+                    <div class="badge">
+                        <img src="img/badge-circle.svg" alt="badge-circle">
+                        <img src="img/badge-logo.svg" alt="badge-logo">
+                    </div>
+                    <div class="image-block left-image-block">
+                        <div class="c-image b-image">
+                            <img class="l-img-1" src="img/stock-dutch-design.jpg" alt="b-image">
+                            <img class="l-img-2" src="img/stock-foto-peter-baas.jpg" alt="b-image">
+                        </div>
+                        <div class="c-image m-image">
+                            <img src="img/model1.jpg" alt="model-image">
+                        </div>
+                        <div class="c-image s-image">
+                            <img class="l-img-1" src="img/office-stock-foto-space.jpg" alt="s-image">
+                            <img class="l-img-2" src="img/den-haag-foto-peter-baas.jpg" alt="s-image">
+                        </div>
+                    </div>
+                    <div class="content-block">
+                        <h1 class="xxl">
+                            <span data-scroll data-scroll-speed="2" data-scroll-delay=".1">Making</span>
+                            <br><span data-scroll data-scroll-speed="2" data-scroll-delay=".5">Inchanting</span> 
+                            <br> <span data-scroll data-scroll-speed="2" data-scroll-delay=".9">memories</span>
+                        </h1>
+                        <p class="big-body up-case"><span data-scroll data-scroll-speed="2" data-scroll-delay="1.2">leonie hendrikse</span>  <br><span data-scroll data-scroll-speed="2" data-scroll-delay="1.0"> & Jeroen Stock</span></p>
+                        <div class="illus-circle">
+                        </div>
+                    </div>
+                    <div class="image-block right-image-block" >
+                        <div class="c-image b-image">
+                            <img class="r-img-1" src="img/office-stock-foto-space2.jpg" alt="b-image">
+                            <img class="r-img-2" src="img/le-coin-des-lions-stock-foto-space.jpg" alt="b-image">
+                        </div>
+                        <div class="c-image m-image">
+                            <img src="img/model2.jpg" alt="model-image">
+                        </div>
+                        <div class="c-image s-image">
+                            <img class="r-img-1" src="img/rustic-family-house.jpg" alt="s-image">
+                            <img class="r-img-2" src="img/office-stock-foto-peter.jpg" alt="s-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="b-head">
+                    <p class="quote-m">"We believe true design is about <br>
+                                        understanding our client’s lifestyle." 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="full-width" data-bgcolor="#429ABB" data-scroll-section>
+            <marquee scrollamount="20">
+               — Architecture and Design Review — Architecture and Design Review — Architecture and Design Review Architecture and Design Review
+            </marquee>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="grid">
+                            <div class="grid__item pos-1">
+                                <div class="grid__item-img" style="background-image:url(img/architecture-and-design-review-cover-800x1009.png);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-text">
+                            <h3>News</h3>
+                            <p>This book is an inspiring reference work created by us together with colleagues from leading design firms at home and abroad.Professionals from various disciplines in interior design & construction are proud to share their work with you.</p>
+                            <a href="javascript:void(0)" class="f-button">Read More
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="three-image" data-bgcolor="#ABA9CC" data-scroll-section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 p-0">
+                        <div class="main-column">
+                          <div class="main-column-image">
+                            <div class="c-image-mask">
+                              <img src="img/one.jpg">
+                              </div>
+                          </div>
+                          <div class="main-column-content">
+                              <span class="number">01</span>
+                              <h2 class="f-heading-m">Future<br>Proof<br>Design</h2>
+                              <p>One of our signatures is that each design is future proof. This means that we start the process with a thorough understanding of the lifestyle of the residents and translate it into a practical & durable design that will be enjoyed throughout the years.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-0">
+                        <div class="main-column">
+                          <div class="main-column-image">
+                            <div class="c-image-mask">
+                            <img src="img/two.jpg">
+                            </div>
+                          </div>
+                          <div class="main-column-content">
+                              <span class="number">02</span>
+                             <h2 class="f-heading-m">Embracing<br>Heritage</h2>
+                              <p>Grootmoeder’s stoeltje in een mega spannende stof, een print die doet herinneren aan een mooie reis, en behang kiezen dat dat oude schilderij nieuw leven inblaast. Familie verhalen en dierbaar bezit worden prachtig geïntegreerd in ieder Stock ontwerp. </p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-0">
+                        <div class="main-column">
+                          <div class="main-column-image">
+                            <div class="c-image-mask">
+                            <img src="img/three.jpg">
+                            </div>
+                          </div>
+                          <div class="main-column-content">
+                              <span class="number">03</span>
+                                <h2 class="f-heading-m">Dashing<br>Colors<br>&amp; Patterns</h2>
+                              <p>Wij combineren gedurfde en funky kleuren & patronen op een elegante manier. Iedere ruimte krijgt een eigen karakter en wordt betoverd door het Stock signatuur. </p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="promotion hover-txt-img" data-scroll-section>
+            <div class="chapter">
+                <div class="s-head"><span>002 — </span>LookBook</div>
+            </div>
+            <div class="bg-h-img img-cursor"></div>
+            <div class="bg-h-img s-img-cursor"></div>
+            <div class="promotion-content">
+                <div class="promotion-list">
+                    <div class="promotion-item pr-it-1" data-color="#c3cfbc">
+                        <div class="item-title">
+                            <h1>Embracing & Toasting</h1>
+                        </div>
+                        <div class="p-item-overlay"></div>
+                    </div>
+                    <div class="promotion-item pr-it-2" data-color="#deb799">
+                        <div class="item-title">
+                            <h1>Cooking & Sharing</h1>
+                        </div>
+                        <div class="p-item-overlay"></div>
+                    </div>
+                    <div class="promotion-item pr-it-3" data-color="#c89f67">
+                        <div class="item-title">
+                            <h1>Splattering & Dreaming</h1>
+                        </div>
+                        <div class="p-item-overlay"></div>
+                    </div>
+                    <div class="promotion-item pr-it-4" data-color="#b5969e">
+                        <div class="item-title">
+                            <h1>Creating & Playing</h1>
+                        </div>
+                        <div class="p-item-overlay"></div>
+                    </div>
+                    <div class="promotion-item pr-it-5" data-color="#c3cfbc">
+                        <div class="item-title">
+                            <h1>Stock Originals</h1>
+                        </div>
+                        <div class="p-item-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tabs-slider" data-bgcolor="#904E9C" data-scroll-section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tabs-slider">
+                            <div class="tab-content" id="pills-tabContent">
+                              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="tab-inner-content">
+                                    <div class="tab-inner-content-left">
+                                        <h3 class="">Books</h3>
+                                        <p>Stock Story Telling — Proudly presenting our bookcase, with our own book “Dutch Interiors” and all contributed books.</p>
+                                        <a href="javascript:void(0)" class="f-button">Read More
+                                            <span></span>
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                    <div class="tab-inner-content-right">
+                                        <img src="img/media-slider-book-1024x730.png" alt="">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="tab-inner-content">
+                                    <div class="tab-inner-content-left">
+                                        <h3 class="">Magazines</h3>
+                                        <p>A selection of the national and international magazines with interviews and photos of our work; from Elle Decoration to Residence, we are humbled and proud to be a source of inspiration to interior lovers all over the world.</p>
+                                        <a href="javascript:void(0)" class="f-button">View magazines                
+                                            <span></span>
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                    <div class="tab-inner-content-right">
+                                        <img src="img/media-slider-magazine-1024x730.png" alt="">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                  <div class="tab-inner-content">
+                                      <div class="tab-inner-content-left">
+                                          <h3 class="">Videos</h3>
+                                          <p>Stock is one of the designers of the Dutch television program RTL Woonmagazine. Watch recordings of the shows featuring our make-overs and dream homes here.</p>
+                                          <a href="javascript:void(0)" class="f-button">View videos                               
+                                              <span></span>
+                                              <span></span>
+                                          </a>
+                                      </div>
+                                      <div class="tab-inner-content-right">
+                                        <div class="c-wrap">
+                                          <div class="c-ipad">
+                                            <video class="c-player" muted playsinline loop autoplay>
+                                              <source src="https://stockdutchdesign.com/wp-content/uploads/2018/12/3-preview-stock-house.mp4" type="video/mp4">
+                                            </video>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="custom-tabs">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Books</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Magazines</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Videos</button>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="journal" data-bgcolor="#9ab58a" data-color="172 183 174" data-scroll-section>
+            <div class="chapter">
+                <div class="s-head"><span>004 — </span>Journal</div>
+            </div>
+            <div class="c-container jour-max">
+                <div class="c-row justify-space align-center">
+                    <div class="j-content">
+                        <div class="j-image">
+                            <img src="img/journalist-img.jpg" alt="j-image" data-scroll data-scroll-speed="-2">
+                        </div>
+                    </div>
+                    <div class="j-content">
+                        <p class="d">01.12.21</p>
+                        <h2 class="xl">Koffietijd – <br> Dutch <br> talkshow in <br> the morning</h2>
+                        <div class="content-button">
+                            <a class="btn btn-box" href="#"><span></span><span></span>Read  blog  post</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Footer -->
+    <footer class="footer text-center p-3 bg-light" data-scroll-section>
+        <p class="m-0">© 2022 - All rights reserved — Design By Galaxy WebLinks</p> 
+    </footer>
+    </div>
+
+    <!-- Link WOw JS -->
+    <script src="js/demo1.151408fb.js"></script>
+    <!-- Link Locomotive JSs -->
+    <script src="js/locomotive.js"></script>
+    <!-- Link Gsap JS -->
+    <script type="text/javascript" src="js/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="js/gsap.min.js"></script>
+    <!-- Link JQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Link Bootstrap Js -->
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/CSSPlugin.min.js"></script> 
+    <script src="js/TimelineMax.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <!-- Link Customs JS -->
+    <script src="js/custom.js"></script>
+</body>
+</html>

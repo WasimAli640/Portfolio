@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en" data-livestyle-extension="available" class="h-100">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+<meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+<title>MCT-Lock Desk Automation</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<!-- Animate CSS -->
+<link rel="stylesheet" href="assets/css/animate.css" />
+<!-- Floating lavel CSS -->
+<link rel="stylesheet" href="assets/css/floating-labels.css" />
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/custom.css" />
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css" />
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />	-->
+<!-- Font Awesome v5 CSS -->
+<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css" />
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md"> <a class="navbar-brand" href="#"> <img src="assets/images/mct-logo-1.png" alt="main logo" class="main-logo"></a>
+      <div class="m-visible">
+        <ul class="navbar-nav header-right-nav  flex-row">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <img src="assets/images/menu-icon.svg" alt="menu icon" class="img-fluid"> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav header-right-nav m-invisible">
+          <li class="nav-item">
+            <div class="d-flex flex-column flex-md-row volume-detail">
+              <div class="today-details">Today's Volume </div>
+              <div>
+                <div>Locks: 12</div>
+                <div>Volume: $3,607,334</div>
+                <div>Non Lock: 17</div>
+              </div>
+            </div>
+          </li>
+            <li class="nav-item dropdown"> 
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+            <div class="media">
+            		<img alt="pic" src="assets/images/profile-pic.png" class="user-img rounded-circle">
+            		<div class="media-body">
+                    	<span class="user-name">Natalie Arshakian </span>
+                        <div class="user-profile">Director Lock Desk</div>
+                    </div>
+            </div>
+             </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="admin-manager-edit-user.html">Edit Profile</a> <a class="dropdown-item" href="login.html">Logout</a> </div>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center nav-bottom m-visible">
+          <ul class="list-inline">
+            <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+            </li>
+            <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+            <li class="list-inline-item"><a href="#">Reports</a></li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+              <div class="dropdown-menu dropdown-menu-right fadeInUp animated cmn-animation" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+            </li>
+            <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown4"> <a class="dropdown-item" href="client-list.html">Client  List</a> <a class="dropdown-item active" href="client-administration-6.1.html">Add Client</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown5"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+            </li>
+            <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown6"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+            </li>
+            <li class="list-inline-item"><a href="login.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center nav-bottom m-invisible">
+      <ul class="list-inline">
+        <li class="list-inline-item "><a href="admin-manager-dashboad.html">Dashboard</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown10"> <a class="dropdown-item" href="user-list.html">Users List</a> <a class="dropdown-item" href="admin-manager-create-user.html">Add New User</a> </div>
+        </li>
+        <li class="list-inline-item"><a href="tickets-list.html">Tickets</a></li>
+        <li class="list-inline-item"><a href="#">Reports</a></li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown11" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Teams</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown11"> <a class="dropdown-item" href="team-listing.html">Team List</a> <a class="dropdown-item" href="teams.html">Create Team</a> </div>
+        </li>
+        <li class="list-inline-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown12" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clients</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown12"> <a class="dropdown-item" href="client-list.html">Client List</a> <a class="dropdown-item active" href="client-administration-6.1.html">Add Client</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown13" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Data Dictionary</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown13"> <a class="dropdown-item" href="data-dictionary.html">Data Dictionary</a> <a class="dropdown-item" href="email-format.html">Email Format</a> </div>
+        </li>
+        <li class="list-inline-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown14" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Settings</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown14"> <a class="dropdown-item" href="function-management.html">Function</a> <a class="dropdown-item" href="reason-code.html">Reason Code</a><a class="dropdown-item" href="lock-type-management.html">Lock Type</a> </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main class="pad-r-0">
+  <section class="create-team">
+    <h1 class="cstm-heading1">Client setup</h1>
+    <div class="heading5">Client Name: <span class="font-weight-bold">Auto Club Trust, FSB (AAA)</span></div>
+  </section>
+  <div class="cmn-divider"></div>
+  <section class="client-setup">
+    <div class="container-fluid">
+      <form action="client-administration-6.6.html">
+        <div class="row flex-md-row-reverse">
+          <div class="col-md-3 col-lg-3 client-right-nav p-0 m-invisible">
+            <div class="list-group list-group-flush"> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action completed"> Client Information </a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action completed">Credentials</a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action completed">Client Contacts</a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action completed">Guidelines</a> 
+				<a href="javascript:void(0)" class="list-group-item list-group-item-action active">Client Collateral</a> </div>
+          </div>
+          <div class="col-sm-12 d-none m-visible mt-4 selected-page-title">
+            <div class="form-group">
+              <label for="PPE" class="pt-md-0 pt-3"></label>
+              <select style="display: none;" id="PPE">
+                <option>Select</option>
+                <option value="1">Some option</option>
+                <option value="2">Client Setup</option>
+                <option value="3">A disabled option</option>
+                <option value="4">Potato</option>
+              </select>
+              <div class="nice-select" tabindex="0"><span class="current">Select</span>
+                <ul class="list">
+                  <li data-value="1" class="option">Client Information</li>
+                  <li data-value="2" class="option selected focus">Credentials</li>
+                  <li data-value="3" class="option">Client Contacts</li>
+                  <li data-value="4" class="option">Guidelines</li>
+                  <li data-value="4" class="option">Client Collateral</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 col-lg-9 ">
+            <div class="client-left-panel fadeInUp animated cmn-animationl minimum-height">
+              <div class="custom-form mt-5 mb-3 client-setup-details">
+                <section class="client-collateral">
+                  <div class="d-flex client-setup-row align-items-center">
+                    <div class="mr-auto left-section">
+                      <p class="m-0">Lock Desk Manual</p>
+                    </div>
+                    <div class="right-section">
+                      <button type="button" class="btn custom-outline-btn mr-2">View</button>
+                      <button type="button" class="btn custom-outline-btn mr-2">Change</button>
+                      <div class="custom-inline-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customControlInline2" checked="">
+                        <label class="custom-control-label text-nowrap" for="customControlInline2"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex client-setup-row align-items-center">
+                    <div class="mr-auto left-section">
+                      <p class="m-0">Policies and Procedures</p>
+                    </div>
+                    <div class="right-section d-flex">
+                      <div class="custom-file-upload">
+                        <input type="file" class="custom-file-input position-absolute w-0" id="customFile">
+                        <label class="custom-file-label-upload" for="customFile"></label>
+                        <small id="custom-file-user" class="form-text text-muted small-file-name">user-profile.jpg</small> </div>
+						<div class="clearfix"></div>
+                      <div class="custom-inline-control custom-checkbox ml-2 mr-1">
+                        <input type="checkbox" class="custom-control-input" id="customControlInline3">
+                        <label class="custom-control-label text-nowrap" for="customControlInline3"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="more-link-custom more-link border-0"><a href="javascript:void(0)" class="d-flex align-items-center" data-toggle="modal" data-target="#exampleModalCenter"><img src="assets/images/icon-add.svg" alt="icon add"> <span class="pl-1">Add Document Option</span></a></div>
+                  <div class="buttons-section d-flex justify-content-center">
+                    <button type="submit" class="btn inner-page-btn-cancel mr-4">Back</button>
+                    <button type="submit" class="btn inner-page-btn">Save</button>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="footer mt-auto">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center footer-content">
+      <div>Copyright &copy; 2019 MCT Live</div>
+      <div class="ml-auto">
+        <div class="media align-items-center">
+          <div class="media-body">Powered by </div>
+          <img src="assets/images/mct-logo.png" class="ml-2 footer-logo" alt="footer-logo"> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body document-model">
+        <div class="d-flex align-items-center doucment-heading">Add New Client Collateral Document 
+        <button type="button" class="close ml-auto" data-dismiss="modal"><img src="assets/images/icon-close.svg" alt="closeicon" width="10"></button>
+        </div>
+		  
+		<div class="custom-file upload-section">
+  <input type="file" class="custom-file-input" id="customFile">
+  <label class="custom-file-label" for="customFile">Choose file</label>
+</div>  
+		  
+		  <div class="buttons-section d-flex justify-content-center">
+                    <button type="submit" class="btn inner-page-btn-cancel mr-4">Back</button>
+                    <button type="submit" class="btn inner-page-btn">Save</button>
+                  </div>
+        
+      </div>
+    </div>
+  </div>
+</div>	
+	
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="assets/js/jquery-1.12.4.js"></script> 
+<script src="assets/js/popper.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+
+<!-- Custom JS --> 
+<script src="assets/js/custom.js"></script> 
+<!--	<script src="assets/js/fontawesome-all.js"></script>  --> 
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="assets/js/jquery.dataTables.min.js"></script> 
+<script src="assets/js/dataTables.bootstrap4.min.js"></script> 
+<!--nice select--> 
+<script src="assets/js/jquery.nice-select.min.js"></script> 
+
+</body>
+</html>

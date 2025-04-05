@@ -1,0 +1,212 @@
+.uploader {
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 624px;
+}
+.uploader label {
+	position:relative;
+  float: left;
+  clear: both;
+  width: 100%;
+  padding: 20px 50px;
+  text-align: center;
+  background: #fff;
+  border-radius: 0px;
+  border: 2px dashed #788ca2; 
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.uploader label:hover {
+  border-color: #454cad;
+}
+.uploader label.hover {
+  border: 3px solid #454cad;
+  box-shadow: inset 0 0 0 6px #eee;
+}
+.uploader label.hover #start i.fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.3;
+}
+.uploader #start {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.uploader #start.hidden {
+  display: none;
+}
+.uploader #start i.fa {
+  font-size: 50px;
+  margin-bottom: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.uploader #response {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.uploader #response.hidden {
+  display: none;
+}
+.uploader #response #messages {
+  margin-bottom: .5rem;
+}
+.uploader #file-image {
+  display: inline;
+  margin: 0 auto .5rem auto;
+  width: auto;
+  height: auto;
+  max-width: 50px;
+/*  position: absolute;
+  top: -38px;
+  left: 44%;  */
+}
+.uploader #file-image.hidden {
+  display: none;
+}
+.uploader #notimage {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.uploader #notimage.hidden {
+  display: none;
+}
+.uploader progress,
+.uploader .progress {
+  display: inline;
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 180px;
+  height: 8px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #eee;
+  overflow: hidden;
+}
+.uploader .progress[value]::-webkit-progress-bar {
+  border-radius: 4px;
+  background-color: #eee;
+}
+.uploader .progress[value]::-webkit-progress-value {
+  background: -webkit-gradient(linear, left top, right top, from(#393f90), color-stop(50%, #454cad));
+  background: linear-gradient(to right, #393f90 0%, #454cad 50%);
+  border-radius: 4px;
+}
+.uploader .progress[value]::-moz-progress-bar {
+  background: linear-gradient(to right, #393f90 0%, #454cad 50%);
+  border-radius: 4px;
+}
+.uploader input[type="file"] {
+  display: none;
+}
+.uploader div {
+  margin:10px 0px 0px 0px;
+    font-family: 'Google Sans';  
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.23px;
+  text-align: center;
+  color: #778ca2;
+  }
+.uploader .btn {
+min-width:208px;
+}
+
+
+
+.with-delete-icon {
+    position: relative;
+    width: 100%;
+}
+.with-delete-icon .delete-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    transform: translate(40px, -36px);
+    text-align: center;
+    padding: 15px 0;
+        opacity: 0;
+    transition: all .5s ease-in;
+}
+.with-delete-icon .delete-icon img{
+    width: 20px;
+}
+ul.multi-image-upload {
+    width: 100%;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+        padding: 0;
+}
+.with-delete-icon:hover a.delete-icon {
+    opacity: 1;
+}
+ul.multi-image-upload .avtar-img-big {
+    border-radius: 0;
+}
+ul.multi-image-upload.certifications .avtar-img-big img {
+  background: #E9EAEC;
+}
+ul.multi-image-upload .avtar-img-big img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /*background: #E9EAEC;*/
+    padding: 2px;
+}
+ul.multi-image-upload.certifications a.delete-icon {
+    transform: translate(65px, -65px);
+}
+ul.multi-image-upload .avtar-img-big {
+    border-radius: 0;
+    /*padding: 3px;*/
+}
+ul.multi-image-upload.certifications li {
+    padding: 0 5px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1199px) {
+.with-delete-icon .delete-icon {
+    opacity: 1;
+}
+}
+@media only screen and (max-width: 768px) {
+    .uploader .btn {
+        min-width: 100%;
+    }
+}

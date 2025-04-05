@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>ic_Search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-HireDNA-Candidate-Home" transform="translate(-324.000000, -155.000000)">
+            <g id="Group-2" transform="translate(293.000000, 134.000000)">
+                <g id="Group" transform="translate(30.000000, 18.000000)">
+                    <g id="Component/icon/ic_Search" transform="translate(0.000000, 2.000000)">
+                        <g id="ic_Search">
+                            <polygon id="Path" points="0 0 16 0 16 16 0 16"></polygon>
+                            <path d="M11.7580654,3.12193459 C13.9376252,5.30149438 14.1252035,8.71871283 12.3208002,11.1113045 L14.7295582,13.5216525 C15.3580976,14.1501918 14.4152885,15.0930009 13.7867492,14.4644615 L11.4061777,12.0837629 C9.0069346,14.137416 5.3927193,14.0288501 3.12193459,11.7580654 C0.737132915,9.37326374 0.737132915,5.50673626 3.12193459,3.12193459 C5.50673626,0.737132915 9.37326374,0.737132915 11.7580654,3.12193459 Z M4.06474363,4.06474363 C2.20064101,5.92884625 2.20064101,8.95115375 4.06474363,10.8152564 C5.92884625,12.679359 8.95115375,12.679359 10.8152564,10.8152564 C12.679359,8.95115375 12.679359,5.92884625 10.8152564,4.06474363 C8.95115375,2.20064101 5.92884625,2.20064101 4.06474363,4.06474363 Z" id="Combined-Shape" fill="#50B5FF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

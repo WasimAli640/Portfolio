@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/gif" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- NIce Select CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.css">
+
+    <!-- DatepickerCSS -->
+    <link rel="stylesheet" href="../assets/css/daterangepicker.css">
+
+    <!-- Custom Font CSS -->
+    <link rel="stylesheet" href="../assets/fonts/custom-font.css">
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+
+    <!-- Dasboard CSS -->
+    <link rel="stylesheet" href="../assets/css/dashboard.css?v=1">
+
+    <!-- dataTables -->
+    <link rel="stylesheet" href="../assets/css/dataTables.bootstrap5.min.css">
+
+
+    <!-- Style Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css?v=1">
+    <link rel="stylesheet" href="../assets/css/custom.css?v=1">
+    <link rel="stylesheet" href="../assets/css/responsive.css?v=1">
+    <title>Welcome to Brain Gym</title>
+</head>
+
+<body class="bg-white">
+
+
+    <div class="toasts-alert">
+        <div id="liveAlert" class="live-alert"></div>
+    </div>
+
+
+    <header class="header header-main">
+        <nav class="navbar fixed-top flex-md-nowrap p-0">
+            <a class="navbar-brand col-md-3 col-lg-2 me-0 fs-6" href="#"><img src="../assets/images/logo-with-text.svg" alt="Brain Gym" /></a>
+
+            <div class="page-content-header">
+                <div class="body-block mb-0">
+                    <h4>User management</h4>
+                    <!--             <p class="body-text-mini">User managment</p>-->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">User managment</li>
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+            <ul class="navbar-nav ms-auto right-nav">
+                <li class="nav-item dropdown notification-dd">
+                    <a class="nav-link dropdown-toggle notify" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"><img src="../assets/images/icon-notification-header.svg" alt="" /></a>
+                    <ul class="dropdown-menu p-4">
+                        <li>
+                            <h5 class="text-center text-primary">Notification</h5>
+                        </li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown profile-dd">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://picsum.photos/id/1027/200" alt="profile photo" />
+                        <div class="text-here">
+                            <span>Haylie Kenter</span>
+                            <span class="designation">Admin</span>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="icon-user"></i>Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="icon-logout"></i>Logout
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <li class="nav-item">
+                        <button class="navbar-toggler  d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                    </li>
+
+                </li>
+            </ul>
+        </nav>
+
+        <div class="page-content-header">
+            <div class="body-block mb-0">
+                <h4>User management</h4>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">User managment</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+        <div class="position-sticky sidebar-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">
+                        <i class="icon-dashboard"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="icon-manage"></i> User management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="icon-link"></i> External Resources
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">
+                        <i class="icon-calendar"></i> Events
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="icon-building"></i> Organization
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="Bulk-import" aria-hidden="true" aria-labelledby="Bulk-importLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="body-block mobile-m-0">
+                        <h4 class="mr-b-16">Bulk import CSV</h4>
+                            <div class="new-upload">
+                                <div id="ddArea" class="drag-drop-box action-upload" style="max-width:100%;">
+                                        <img src="../assets/images/upload-files.svg" alt="upload" />
+                                      <div> Drag and drop files or <a href="#">Browse</a></div>
+                                      <p>Recommended size: 460 x 215</p>
+                                </div>
+                                <!-- <div id="showThumb"></div> -->
+                                <input type="file" class="d-none" id="selectfile" multiple />
+                            </div>
+
+                            <ul class="upload-list" id="Bulk-import-list">
+                            </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                        <div class="float-md-start text-md-start me-auto">
+                            <a type="button" class="link d-flex align-middle vertical-align-middle samplefile"> <i class="icon-download   mr-r-10 fs-20"></i>Samplefile.csv</a>
+                        </div>
+                        <div class="float-md-end text-md-end">
+                            <button type="button" class="btn btn-secondary pd-r-32 pd-l-32 mr-r-16" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                            <button class="btn btn-primary pd-r-32 pd-l-32" id="UpdateCoachBtn" data-bs-toggle="modal">Upload</button>
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class=" ms-sm-auto after-login">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-container-one">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item "><a class="nav-link " href="../admin/user-management-employee.html"><span>Employee (96)</span></a></li>
+                            <li class="nav-item active"><a class="nav-link active" href="../admin/user-management-coach.html"><span>Coach (34)</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../admin/user-management-corporate.html"><span>Corporate (20)</span></a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Employee">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <div class="row filter-listing table-filter-listing">
+                                            <div class="col-md-6 col-lg-5 col-xl-4">
+                                                <div class="form-floating search-input">
+                                                    <img src="../assets/images/icon-search.svg" class="input-icon left-icon icon-search" alt="icon-search">
+                                                    <input type="search" class="form-control" id="employeeSearchInTable" name="employeeSearch" placeholder="-">
+                                                    <label for="floatingInput" class="floating-hide">Search by name</label>
+                                                    <div class="feedback invalid-feedback">
+                                                        error message.
+                                                    </div>
+                                                    <img src="../assets/images/icon-close-dark.svg" class="input-icon right-icon icon-close" alt="icon-search">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-xl-6 col-lg-6 ms-auto text-end">
+                                                <a href="#Bulk-import" data-bs-toggle="modal" class="btn btn-outline-primary mr-r-16">Bulk import</a>
+                                                <a href="user-management-coach-generate-new.html" class="btn btn-primary">Add coach</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table id="userManagementEmployee" class="table " style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Rating</th>
+                                                        <th>Email</th>
+                                                        <th>Team members</th>
+                                                        <th>Status</th>
+                                                        <th class="pe-0" style="width: 50px;max-width: 50px; min-width: 50px;box-sizing: border-box;"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://media.istockphoto.com/photos/smiling-indian-man-looking-at-camera-picture-id1270067126?k=20&m=1270067126&s=170667a&w=0&h=qcveK8RhZyUglSueV-X-aiFTnZCn4y5z13TgPckiYjw=" class="avtar avtar-md" alt="">                                                            Dulce Press
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+
+                                                            <div class="badge-rating badge-blue">Great</div>
+
+                                                        </td>
+                                                        <td class="white-space-nowrap">nathan.@example.com</td>
+                                                        <td>10</td>
+                                                        <td>
+                                                            <div class="badge badge-green">Active</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg" class="avtar avtar-md" alt="">                                                            Craig Saris
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+
+                                                            <div class="badge-rating badge-red">Worst</div>
+
+                                                        </td>
+                                                        <td class="white-space-nowrap">nathan.@example.com</td>
+                                                        <td>15</td>
+                                                        <td>
+                                                            <div class="badge badge-yellow">Inactive</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://media.gettyimages.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?s=612x612" class="avtar avtar-md" alt=""> Kaiya Septimus
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+
+                                                            <div class="badge-rating badge-dark-blue">Average</div>
+
+                                                        </td>
+                                                        <td class="white-space-nowrap">nathan.@example.com</td>
+                                                        <td>8</td>
+                                                        <td>
+                                                            <div class="badge badge-red">Never engaged</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000" class="avtar avtar-md" alt=""> Angel Botosh
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+
+                                                            <div class="badge-rating badge-blue">Great</div>
+
+                                                        </td>
+                                                        <td class="white-space-nowrap">nathan.@example.com</td>
+                                                        <td>20</td>
+                                                        <td>
+                                                            <div class="badge badge-yellow">Inactive</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000" class="avtar avtar-md" alt=""> Desirae Kenter
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <div class="badge-rating badge-dark-blue">Good</div>
+                                                        </td>
+                                                        <td class="white-space-nowrap">nathan.@example.com</td>
+                                                        <td>5</td>
+                                                        <td>
+                                                            <div class="badge badge-blue">Engaged</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000" class="avtar avtar-md" alt=""> Wade Warren
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <div class="badge-rating badge-orange">Poor</div>
+                                                        </td>
+                                                        <td class="white-space-nowrap">nathan.@example.com</td>
+                                                        <td>5</td>
+                                                        <td>
+                                                            <div class="badge badge-blue">Engaged</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://media.gettyimages.com/photos/confident-mature-man-against-white-background-picture-id1314493374?s=612x612" class="avtar avtar-md" alt=""> Jacob Jones
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <div class="badge-rating badge-red">Worst</div>
+                                                        </td>
+                                                        <td>nathan.@example.com</td>
+                                                        <td>5</td>
+                                                        <td>
+                                                            <div class="badge badge-blue">Engaged</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://media.gettyimages.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?s=612x612" class="avtar avtar-md" alt=""> Kaiya Septimus
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+
+                                                            <div class="badge-rating badge-dark-blue">Average</div>
+
+                                                        </td>
+                                                        <td>nathan.@example.com</td>
+                                                        <td>8</td>
+                                                        <td>
+                                                            <div class="badge badge-red">Never engaged</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000" class="avtar avtar-md" alt=""> Angel Botosh
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+
+                                                            <div class="badge-rating badge-blue">Great</div>
+
+                                                        </td>
+                                                        <td>nathan.@example.com</td>
+                                                        <td>20</td>
+                                                        <td>
+                                                            <div class="badge badge-yellow">Inactive</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000" class="avtar avtar-md" alt=""> Desirae Kenter
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <div class="badge-rating badge-dark-blue">Good</div>
+                                                        </td>
+                                                        <td>nathan.@example.com</td>
+                                                        <td>5</td>
+                                                        <td>
+                                                            <div class="badge badge-blue">Engaged</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000" class="avtar avtar-md" alt=""> Wade Warren
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <div class="badge-rating badge-orange">Poor</div>
+                                                        </td>
+                                                        <td>nathan.@example.com</td>
+                                                        <td>5</td>
+                                                        <td>
+                                                            <div class="badge badge-blue">Engaged</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-with-avtar">
+                                                            <img src="https://media.gettyimages.com/photos/confident-mature-man-against-white-background-picture-id1314493374?s=612x612" class="avtar avtar-md" alt=""> Jacob Jones
+                                                        </td>
+                                                        <td class="white-space-nowrap">
+                                                            <i class="icon-star-fill text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <i class="icon-star text-warning"></i>
+                                                            <div class="badge-rating badge-red">Worst</div>
+                                                        </td>
+                                                        <td>nathan.@example.com</td>
+                                                        <td>5</td>
+                                                        <td>
+                                                            <div class="badge badge-blue">Engaged</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-floating p-0 m-0">
+                                                                <div class="dropdown min-w-inherit">
+                                                                    <a class="nav-link no-underline " href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more fs-22"></i></a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                        <li>
+                                                                            <a class="dropdown-item " href="user-management-coach-detail.html">
+                                                                                <i class="icon-show-password vertical-align-middle mr-r-10 fs-20 "></i> View details
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#GenerateID">
+                                                                                <i class="icon-edit vertical-align-middle mr-r-10 fs-20"></i> Edit
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="dropdown-item" data-bs-toggle="modal" href="#DeleteModalToggle">
+                                                                                <i class="icon-delete vertical-align-middle mr-r-10 fs-20"></i> Delete
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <div class="loading d-none"><img src="../assets/images/load.svg" alt="" /></div>
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/popper.min-2.9.2.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+
+    <!-- Datepicker JS -->
+    <script src="../assets/js/moment.min.js"></script>
+    <script src="../assets/js/daterangepicker.js"></script>
+    <!-- dataTables -->
+    <script src="../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- Autocomplete JS -->
+    <!-- <script src="../assets/js/coach_search_autocomplete.js"></script> -->
+
+    <script src="../assets/js/os-browser-detection.js"></script>
+
+    <!--  Custom JS-->
+    <script src="../assets/js/custom.js"></script>
+
+
+    <script type="text/javascript">
+        
+
+ $(document).ready(function() {
+        $(".action-upload").on("dragover", function() {
+          $(this).addClass("drag_over");
+          return false;
+        });
+        $(".action-upload").on("dragleave", function() {
+          $(this).removeClass("drag_over");
+          return false;
+        });
+        $(".action-upload").on("click", function(e) {
+          file_explorer();
+        });
+        $(".action-upload").on("drop", function(e) {
+          e.preventDefault();
+          $(this).removeClass("drag_over");
+          var formData = new FormData();
+          var files = e.originalEvent.dataTransfer.files;
+          for (var i = 0; i < files.length; i++) {
+            formData.append("file[]", files[i]);
+          }
+          uploadFormData(formData);
+        });
+        function file_explorer() {
+          document.getElementById("selectfile").click();
+          document.getElementById("selectfile").onchange = function() {
+            files = document.getElementById("selectfile").files;
+            var formData = new FormData();
+
+            for (var i = 0; i < files.length; i++) {
+              formData.append("file[]", files[i]);
+            }
+            uploadFormData(formData);
+          };
+        }
+        function uploadFormData(form_data) {
+            $(".loading")
+             .removeClass("d-none") 
+            .addClass("d-block"); 
+         for (var newfile of form_data.getAll('file[]')){
+                         var reader = new FileReader();  
+
+                        var NameResult = newfile.name;
+                        var SizeResult = newfile.size;
+                        var TypeResult = newfile.type;
+
+
+                        reader.onload = function (e) {  
+                        console.log(TypeResult); 
+
+                        if ( TypeResult == 'image/jpeg' || TypeResult == 'image/png' || TypeResult == 'image/gif'  ) {
+                            var SrcResult = e.target.result
+                        }
+                        else{
+                            var SrcResult = '../assets/images/file-thumb.svg'
+                        }
+                        
+                        var htmlData = 
+                        '<li>'+
+                            '<img src="../assets/images/check-with-circle.svg" alt="check-with-circle.svg" class="check-icon-o" />'+
+                            '<img src='+SrcResult+'  class="upload-list-thumb" alt="file thumb" />'+
+                            '<div>'+
+                            '<p>'+NameResult+'</p>'+
+                            '<span>'+SizeResult+'KB</span>'+
+                            '</div>'+
+                            '<img src="../assets/images/cross-icon.svg" alt="cross" class="cross-icon-o" />'+
+                        ' </li>';
+
+                        $("#Bulk-import-list").append(htmlData);
+
+                     }
+                     reader.readAsDataURL(newfile); 
+            } 
+            setTimeout(function(){
+               $(".loading")
+                         .removeClass("d-block") 
+                        .addClass("d-none");
+            }, 1000);
+        };
+       
+}); 
+
+
+    </script>
+    
+
+
+
+    <script type="text/javascript">
+        function GetURLParameter(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var source = sURLVariables[i].split('=');
+                if (source[1] == sParam) {
+
+                    alert('You have successfully imported CSV file.', 'success')
+
+                }
+            }
+        }
+        GetURLParameter('yes')
+    </script>
+
+
+    <script type="text/javascript">
+        function selectCoach(argument) {
+            $('#UpdateCoachBtn').removeClass('disabled').removeAttr('disabled');
+            $(argument).text('Selected');
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            oTable = $('#userManagementEmployee').DataTable({
+                dom: '<"top"i>rt<"bottom"flp>',
+                info: false,
+
+
+                initComplete: function() {
+                    this.api().columns().every(function() {
+                        var column = this;
+                        var columnHeaderCell = column.header();
+
+                        if (column.index() == 1 || column.index() == 4) {
+
+
+                            var select = $('<select class="" ><option value="">' + $(columnHeaderCell).html() + '</option></select>')
+                                .appendTo($(column.header()).empty())
+                                .on('change', function() {
+                                    var val = $.fn.dataTable.util.escapeRegex(
+                                        $(this).val()
+                                    );
+                                    column
+                                        .search(val ? '^' + val + '$' : '', true, false)
+                                        .draw();
+                                });
+
+                            column.data().unique().sort().each(function(d, j) {
+                                d = d.replace(/<[^>]*>?/gm, '');
+                                select.append('<option value="' + d + '">' + d + '</option>');
+                            });
+
+                        }
+
+                    });
+
+                    setTimeout(function() {}, 2000);
+                },
+
+                "columnDefs": [{
+                    orderable: true,
+                    className: 'reorder',
+                    targets: 0
+                }, {
+                    orderable: true,
+                    className: 'reorder',
+                    targets: 3
+                }, {
+                    orderable: false,
+                    targets: '_all'
+                }]
+            });
+
+            $('#employeeSearchInTable').keyup(function() {
+                oTable.search($(this).val()).draw();
+            })
+
+        });
+    </script>
+
+
+</body>
+
+</html>

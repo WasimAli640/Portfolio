@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>collapse-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="collapse-arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Down-arrow" transform="translate(50.000000, 52.000000) rotate(180.000000) translate(-50.000000, -52.000000) translate(0.000000, 2.000000)" fill="#000000">
+            <path d="M98.5876706,26.2194444 C96.9617446,24.5935185 94.3334795,24.5935185 92.7075536,26.2194444 L49.90346,69.0233431 L7.0995614,26.2194444 C5.47363548,24.5935185 2.84537037,24.5935185 1.21944444,26.2194444 C-0.406481481,27.8453704 -0.406481481,30.4736355 1.21944444,32.0995614 L46.963499,77.843616 C47.7744152,78.6545322 48.8389376,79.0621345 49.903655,79.0621345 C50.9683723,79.0621345 52.0328947,78.6545322 52.8438109,77.843616 L98.5878655,32.0995614 C100.213596,30.4736355 100.213596,27.8453704 98.5876706,26.2194444 Z" id="Path" transform="translate(49.903570, 52.031067) scale(1, -1) translate(-49.903570, -52.031067) "></path>
+        </g>
+    </g>
+</svg>

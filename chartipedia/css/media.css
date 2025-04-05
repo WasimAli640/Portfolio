@@ -1,0 +1,57 @@
+@media (max-width:1200px) {
+    h2 {
+        font-size: 60px;
+    }
+    .community-count {
+        font-size: 20px;
+    }
+    .community-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:991px) {
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .banner .container-fluid, .container-fluid {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+}
+
+@media (max-width:768px) {
+    h2 {
+        font-size: 30px;
+    }
+    .sub-head {
+        font-size: 24px;
+    }
+    .body-lg {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    /* .hide-mob {
+        display: none;
+    } */
+    .community-intro {
+        padding: 100px 0;
+    }
+    :root {
+        --circle-unit: 9vw;
+    }
+    .community--count {
+        height: 100px;
+        width: 100px;
+    }
+    .community-count {
+        font-size: 16px;
+    }
+    .community-description {
+        font-size: 14px;
+    }
+}

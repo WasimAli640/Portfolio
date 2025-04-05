@@ -1,0 +1,2031 @@
+<!doctype html>
+  <html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/gif" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- NIce Select CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.css">
+
+    <!-- DatepickerCSS -->
+    <link rel="stylesheet" href="../assets/css/daterangepicker.css">
+
+    <!-- Custom Font CSS -->
+    <link rel="stylesheet" href="../assets/fonts/custom-font.css">
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+
+    <!-- Dasboard CSS -->
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+    <!-- dataTables -->
+    <link rel="stylesheet" href="../assets/css/dataTables.bootstrap5.min.css">
+
+    <!-- Draggable Nestable List -->
+    <link rel="stylesheet" href="../assets/css/DraggableNestableList.min.css">
+
+    <!-- Style Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <title>Welcome to Brain Gym</title>
+  </head>
+  <body class="bg-white">
+
+    <div class="toasts-alert"><div id="liveAlert" class="live-alert"></div></div>
+
+
+
+    <header class="header header-main">
+      <nav class="navbar fixed-top flex-md-nowrap p-0">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 fs-6" href="#"><img src="../assets/images/logo-with-text.svg" alt="Brain Gym"/></a>
+
+        <div class="page-content-header">
+          <div class="body-block mb-0">
+            <h4>Hello Roger!</h4>
+            <!--             <p class="body-text-mini">User managment</p>-->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+              </ol>
+            </nav>
+
+          </div>
+        </div>
+        <ul class="navbar-nav ms-auto right-nav">
+
+          <li class="nav-item menu-item d-md-none">
+            <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasManageWidgets" aria-controls="offcanvasManageWidgets" >
+              <img src="../assets/images/manage-widgets.svg" alt="manage-widgets" />
+            </a>
+          </li>
+          <li class="nav-item menu-item d-none d-md-flex">
+            <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasManageWidgets" aria-controls="offcanvasManageWidgets" >Manage widgets</a>
+          </li>
+          <li class="nav-item dropdown notification-dd">
+            <a class="nav-link dropdown-toggle notify" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"><img src="../assets/images/icon-notification-header.svg" alt=""/></a>
+            <ul class="dropdown-menu p-4">
+              <li>
+                <h5 class="text-center text-primary">Notification</h5>
+              </li>
+              <li> <hr></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown profile-dd">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://picsum.photos/id/1027/200" alt="profile photo" /> 
+              <div class="text-here">              
+                <span>Haylie Kenter</span>
+                <span class="designation">Admin</span>
+              </div>
+            </a>
+            <ul class="dropdown-menu">
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="icon-user"></i>Profile
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="icon-logout"></i>Logout
+                </a>
+              </li>
+            </ul>
+
+
+            <li class="nav-item">
+              <button class="navbar-toggler  d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </li>
+
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-content-header">
+        <div class="body-block mb-0">
+          <h4>Hello Roger!</h4>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+      <div class="position-sticky sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="dashboard.html">
+              <i class="icon-dashboard"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="user-management-employee.html">
+              <i class="icon-manage"></i>
+              User management
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-link"></i>
+              External Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">
+              <i class="icon-calendar"></i>
+              Events
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-building"></i>
+              Organization
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFilter" aria-labelledby="offcanvasFilterLabel">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Filter</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+            <div class="col-md-12 mr-b-12">
+                <div class="body-text-emphasis ">Date range</div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-floating w-100">
+                  <input type="text" name="daterange" class="form-control datepicker pd-y-12" value="" placeholder="Created date" />
+                   <label for="floatingInput" class="floating-hide">Created date</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                    <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-floating w-100">
+                  <input type="text" name="daterange" class="form-control datepicker pd-y-12" value="" placeholder="Created date" />
+                   <label for="floatingInput" class="floating-hide">Created date</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                    <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                </div>
+            </div>
+
+
+            <div class="col-md-12 mr-b-12 mr-t-16 d-flex">
+                <div class="body-text-emphasis ">Location</div>
+                <a href="#" class="link ms-auto my-1">Clear</a>
+            </div>
+
+            <div class="col-md-12">
+                 <div class="form-floating custom-dd-s">
+                  <label for="floatingInput">Country</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option selected>India</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                   </div>
+
+                 <div class="feedback invalid-feedback" data-valmsg-replace="true"> error message. </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                 <div class="form-floating custom-dd-s">
+                  <label for="floatingInput">State</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option selected>Madhya Pradesh</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                   </div>
+
+                 <div class="feedback invalid-feedback" data-valmsg-replace="true"> error message. </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                 <div class="form-floating custom-dd-s">
+                  <label for="floatingInput">City</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option selected>Indore</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                   </div>
+
+                 <div class="feedback invalid-feedback" data-valmsg-replace="true"> error message. </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="offcanvas-footer">
+          
+        <div class="block-action text-end">
+            <a href="#" data-bs-dismiss="offcanvas" class="btn btn-secondary mr-r-16">Cancel</a>
+            <a class="btn btn-primary" data-bs-dismiss="offcanvas" href="#">Apply</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasratingCoach" aria-labelledby="offcanvasratingCoach">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Filter</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+            <div class="col-md-12 mr-b-12 d-flex align-items-center">
+                <div class="body-text-emphasis ">Date range</div>
+                <a href="#" class="link disable ms-auto">Clear</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-floating w-100">
+                  <input type="text" name="daterange" class="form-control datepicker pd-y-12" value="" placeholder="Created date" />
+                   <label for="floatingInput" class="floating-hide">Created date</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                    <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-floating w-100">
+                  <input type="text" name="daterange" class="form-control datepicker pd-y-12" value="" placeholder="Created date" />
+                   <label for="floatingInput" class="floating-hide">Created date</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                    <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                </div>
+            </div>
+
+
+            <div class="col-md-12 mr-b-12 mr-t-16 d-flex">
+                <div class="body-text-emphasis ">Coach rating</div>
+                <a href="#" class="link ms-auto my-1">Clear</a>
+            </div>
+
+            <div class="col-md-12">
+                <div class="coach-rating-filter">
+                    <ul>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="CoachRating01star">
+                          <label class="form-check-label" for="CoachRating01star">
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="CoachRating02star">
+                          <label class="form-check-label" for="CoachRating02star">
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="CoachRating03star">
+                          <label class="form-check-label" for="CoachRating03star">
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="CoachRating04star">
+                          <label class="form-check-label" for="CoachRating04star">
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star"></i>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="CoachRating05star">
+                          <label class="form-check-label" for="CoachRating05star">
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star-fill"></i>
+                            <i class="icon-star-fill"></i>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="offcanvas-footer">
+          
+        <div class="block-action text-end">
+            <a href="#" data-bs-dismiss="offcanvas" class="btn btn-secondary mr-r-16">Cancel</a>
+            <a class="btn btn-primary" data-bs-dismiss="offcanvas" href="#">Apply</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExternalResources" aria-labelledby="offcanvasExternalResources">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Filter</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+            <div class="col-md-12 mr-b-12 d-flex align-items-center">
+                <div class="body-text-emphasis ">Date range</div>
+                <a href="#" class="link disable ms-auto">Clear</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-floating w-100">
+                  <input type="text" name="daterange" class="form-control datepicker pd-y-12" value="" placeholder="Created date" />
+                   <label for="floatingInput" class="floating-hide">Created date</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                    <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-floating w-100">
+                  <input type="text" name="daterange" class="form-control datepicker pd-y-12" value="" placeholder="Created date" />
+                   <label for="floatingInput" class="floating-hide">Created date</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                    <img src="../assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon ">
+                </div>
+            </div>
+
+
+            <div class="col-md-12 mr-b-12 mr-t-16 d-flex">
+                <div class="body-text-emphasis ">Coach rating</div>
+                <a href="#" class="link ms-auto my-1">Clear</a>
+            </div>
+
+            <div class="col-md-12">
+                <div class="coach-rating-filter">
+                    <ul>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="ExternalResources01">
+                          <label class="form-check-label" for="ExternalResources01">
+                            App
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="ExternalResources02">
+                          <label class="form-check-label" for="ExternalResources02">
+                            Article
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="ExternalResources03">
+                          <label class="form-check-label" for="ExternalResources03">
+                            Audio
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="ExternalResources04">
+                          <label class="form-check-label" for="ExternalResources04">
+                           Video
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="offcanvas-footer">
+          
+        <div class="block-action text-end">
+            <a href="#" data-bs-dismiss="offcanvas" class="btn btn-secondary mr-r-16">Cancel</a>
+            <a class="btn btn-primary" data-bs-dismiss="offcanvas" href="#">Apply</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasManageWidgets" aria-labelledby="offcanvasManageWidgets">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Manage widgets</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+            <div class="col-md-12">
+              
+                <ul id="myList" class="list-group">
+
+                    <li class="list-group-item">
+                        Summary
+                        <a href="#" class="icon-show-password"></a>
+                        <ul class="inner-list-group">
+                            <li class="">Users <a href="#" class="icon-show-password"></a></li>
+                            <li class="">Active users <a href="#" class="icon-show-password"></a></li>
+                            <li class="">Events <a href="#" class="icon-show-password"></a></li>
+                            <li class="">External resources <a href="#" class="icon-show-password"></a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        Users
+                        <a href="#" class="icon-show-password"></a>
+                        <ul class="inner-list-group">
+                            <li class="">Users <a href="#" class="icon-show-password"></a></li>
+                            <li class="">Active users <a href="#" class="icon-show-password"></a></li>
+                            <li class="">Events <a href="#" class="icon-show-password"></a></li>
+                            <li class="">External resources <a href="#" class="icon-show-password"></a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        Events
+                        <a href="#" class="icon-show-password"></a>
+                        <ul class="inner-list-group">
+                            <li class="">Users <a href="#" class="icon-show-password"></a></li>
+                            <li class="">Active users <a href="#" class="icon-show-password"></a></li>
+                            <li class="">Events <a href="#" class="icon-show-password"></a></li>
+                            <li class="">External resources <a href="#" class="icon-show-password"></a></li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        External resources
+                        <a href="#" class="icon-show-password"></a>
+                        <ul class="inner-list-group">
+                            <li class="">Users <a href="#" class="icon-show-password"></a></li>
+                            <li class="">Active users <a href="#" class="icon-show-password"></a></li>
+                            <li class="">Events <a href="#" class="icon-show-password"></a></li>
+                            <li class="">External resources <a href="#" class="icon-show-password"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="offcanvas-footer">
+          
+        <div class="block-action text-end">
+            <a href="#" data-bs-dismiss="offcanvas" class="btn btn-secondary mr-r-16">Cancel</a>
+            <a class="btn btn-primary" data-bs-dismiss="offcanvas" href="#">Apply</a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <main class=" ms-sm-auto after-login">
+
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 pd-b-32 mr-b-12">
+
+            <section class="Summary-section">
+                <div class="row">
+
+                  <div class="col-lg-6 col-xl-7 mr-b-24">
+                    <div class="card scalable-counts">
+                      <div class="card-body">
+                        <div class="scalable-counts-total external-resources">
+                          <img src="../assets/images/external-resources.svg" alt="icon" />
+
+                          <h3 class="counting" data-count="50">0</h3>
+                          <p>Total external resources</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="10">0</h3>
+                          <p>Apps</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="15">0</h3>
+                          <p>Videos</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="15">0</h3>
+                          <p>Videos</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="10">0</h3>
+                          <p>Articles</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-5 mr-b-24">
+                    <div class="card scalable-counts">
+                      <div class="card-body">
+                        <div class="scalable-counts-total events-resources">
+                          <img src="../assets/images/total-events-calendar.svg" alt="icon" />
+                          <h3 class="counting" data-count="30">0</h3>
+                          <p>Total events</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="10">0</h3>
+                          <p>Apps</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="15">0</h3>
+                          <p>Videos</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="05">0</h3>
+                          <p>Videos</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 mr-b-24">
+                    <div class="card scalable-counts">
+                      <div class="card-body">
+                        <div class="scalable-counts-total users-resources">
+                          <img src="../assets/images/total-users.svg" alt="icon" />
+                          <h3 class="counting" data-count="200">0</h3>
+                          <p>Total users</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="120">0</h3>
+                          <p>Employees</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="32">0</h3>
+                          <p>Coaches</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="48">0</h3>
+                          <p>Corporates</p>
+                        </div>
+                        <div class="divided-hr"></div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="100">0</h3>
+                          <p>Active </p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="50">0</h3>
+                          <p>Engaged</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="25">0</h3>
+                          <p>Inactive</p>
+                        </div>
+                        <div class="scalable-counts-items">
+                          <h3 class="counting" data-count="25">0</h3>
+                          <p>Never engaged</p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <section class="Users-section">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 mr-b-24">
+                        <div class="card border-radius-12 border-light coach-detail-graph">
+                            <div class="card-body pd-all-20">
+                                <h6 class="body-text-emphasis text-dark-grey mr-b-16">Coach rating</h6>
+                                <!-- <img src="../assets/images/coach-rating.png" class="img-fluid w-100" alt=""> -->
+                                            <canvas height="300" id="coach-rating-bar-chart"></canvas>
+                                <hr class="m-0 mr-t-16 mr-b-16">
+                                <div class="chart-filter-box ">
+                                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasratingCoach" aria-controls="offcanvasratingCoach" class="filter-btn " ><i class="icon-filter fs-16 mr-r-6"></i>  Filter</button>
+                                    <ul class="chip-group unique-id-list filter-list">
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 mr-b-24">
+                        <div class="card border-radius-12 border-light coach-detail-graph">
+                            <div class="card-body pd-all-20">
+                                <h6 class="body-text-emphasis text-dark-grey mr-b-16">Coach status</h6>
+                                <!-- <img src="../assets/images/team-members.png" class="img-fluid w-100" alt=""> -->
+                                            <canvas height="250" class="mx-auto" id="chart-coach-user"></canvas>
+
+                                <hr class="m-0 mr-t-16 mr-b-16">
+                                <div class="chart-filter-box ">
+                                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter" class="filter-btn " ><i class="icon-filter fs-16 mr-r-6"></i>  Filter</button>
+                                    <ul class="chip-group unique-id-list filter-list">
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 mr-b-24">
+                        <div class="card border-radius-12 border-light coach-detail-graph">
+                            <div class="card-body pd-all-20">
+                                <h6 class="body-text-emphasis text-dark-grey mr-b-16">Employee status</h6>
+                                <!-- <img src="../assets/images/team-members.png" class="img-fluid w-100" alt=""> -->
+                                <canvas height="300" class="mx-auto" id="chart-employee-user"></canvas>
+
+                                <hr class="m-0 mr-t-16 mr-b-16">
+                                <div class="chart-filter-box ">
+                                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter" class="filter-btn " ><i class="icon-filter fs-16 mr-r-6"></i>  Filter</button>
+                                    <ul class="chip-group unique-id-list filter-list">
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 mr-b-24">
+                        <div class="card border-radius-12 border-light coach-detail-graph">
+                            <div class="card-body pd-all-20">
+                                <h6 class="body-text-emphasis text-dark-grey mr-b-16">Corporate status</h6>
+                                <!-- <img src="../assets/images/team-members.png" class="img-fluid w-100" alt=""> -->
+                                 <canvas height="300" class="mx-auto" id="chart-corporate-user"></canvas>
+                                <hr class="m-0 mr-t-16 mr-b-16">
+                                <div class="chart-filter-box ">
+                                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter" class="filter-btn " ><i class="icon-filter fs-16 mr-r-6"></i>  Filter</button>
+                                    <ul class="chip-group unique-id-list filter-list">
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 mr-b-24">
+                  <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="card">
+                          <div class="card-body pd-all-20">
+                            <div class="body-text text-dark-grey d-flex w-100 mr-b-16">
+                              Users
+                              <a href="user-management-employee.html" class="ms-auto">View all</a>
+                            </div>
+                            <div class="tab-container-one">
+                              <ul class="nav nav-tabs">
+                                <li class="nav-item active"><a class="nav-link active" id="Employee-tab-link" data-bs-toggle="tab" data-bs-target="#Employee-tab" type="button" role="tab" aria-controls="Employee" aria-selected="true" ><span>Employee</span></a></li>
+                                <li class="nav-item"><a class="nav-link" id="Employee-tab-link" data-bs-toggle="tab" data-bs-target="#Coach-tab" type="button" role="tab" aria-controls="Coach" aria-selected="true"><span>Coach</span></a></li>
+                                <li class="nav-item"><a class="nav-link" id="Corporate-tab-link" data-bs-toggle="tab" data-bs-target="#Corporate-tab" type="button" role="tab" aria-controls="Corporate" aria-selected="true"><span>Corporate</span></a></li>
+                              </ul>
+                              <div class="tab-content ">
+                                <div class="tab-pane active" id="Employee-tab">
+                                  <ul class="dashboard-tab-listing lg-listing">
+                                      <li>
+                                        <div class="other-detail-box border pd-x-16 pd-t-20 border-radius-12 border-light">
+                                          <div class="feature-block d-block">
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="feature-info mr-b-20">
+                                                    <div class="body-text-mini fw-600 mr-b-6 ">Created date 
+                                                      <div class="badge badge-green pd-y-4 pd-x-8 h-auto">Success</div>
+                                                    </div>
+                                                    <div class="body-text-mini lh-140pr text-dark-grey fs-12">01/05/2022</div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 d-md-flex">
+                                                
+                                                <div class="feature-info mr-b-20 d-inline-block ms-auto">
+                                                    <div class="body-text-mini text-dark-grey fs-12  mr-b-6">Coach</div>
+                                                    <div class="body-text-mini lh-140pr">Dulce Press</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="other-detail-box border pd-x-16 pd-t-20 border-radius-12 border-light">
+                                          <div class="feature-block d-block">
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="feature-info mr-b-20">
+                                                    <div class="body-text-mini fw-600 mr-b-6 ">Created date 
+                                                      <div class="badge badge-green pd-y-4 pd-x-8 h-auto">Success</div>
+                                                    </div>
+                                                    <div class="body-text-mini lh-140pr text-dark-grey fs-12">01/05/2022</div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 d-md-flex">
+                                                
+                                                <div class="feature-info mr-b-20 d-inline-block ms-auto">
+                                                    <div class="body-text-mini text-dark-grey fs-12  mr-b-6">Coach</div>
+                                                    <div class="body-text-mini lh-140pr">Dulce Press</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="other-detail-box border pd-x-16 pd-t-20 border-radius-12 border-light">
+                                          <div class="feature-block d-block">
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="feature-info mr-b-20">
+                                                    <div class="body-text-mini fw-600 mr-b-6 ">Created date 
+                                                      <div class="badge badge-green pd-y-4 pd-x-8 h-auto">Success</div>
+                                                    </div>
+                                                    <div class="body-text-mini lh-140pr text-dark-grey fs-12">01/05/2022</div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 d-md-flex">
+                                                
+                                                <div class="feature-info mr-b-20 d-inline-block ms-auto">
+                                                    <div class="body-text-mini text-dark-grey fs-12  mr-b-6">Coach</div>
+                                                    <div class="body-text-mini lh-140pr">Dulce Press</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="other-detail-box border pd-x-16 pd-t-20 border-radius-12 border-light">
+                                          <div class="feature-block d-block">
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="feature-info mr-b-20">
+                                                    <div class="body-text-mini fw-600 mr-b-6 ">Created date 
+                                                      <div class="badge badge-green pd-y-4 pd-x-8 h-auto">Success</div>
+                                                    </div>
+                                                    <div class="body-text-mini lh-140pr text-dark-grey fs-12">01/05/2022</div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 d-md-flex">
+                                                
+                                                <div class="feature-info mr-b-20 d-inline-block ms-auto">
+                                                    <div class="body-text-mini text-dark-grey fs-12  mr-b-6">Coach</div>
+                                                    <div class="body-text-mini lh-140pr">Dulce Press</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="other-detail-box border pd-x-16 pd-t-20 border-radius-12 border-light">
+                                          <div class="feature-block d-block">
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="feature-info mr-b-20">
+                                                    <div class="body-text-mini fw-600 mr-b-6 ">Created date 
+                                                      <div class="badge badge-green pd-y-4 pd-x-8 h-auto">Success</div>
+                                                    </div>
+                                                    <div class="body-text-mini lh-140pr text-dark-grey fs-12">01/05/2022</div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 d-md-flex">
+                                                
+                                                <div class="feature-info mr-b-20 d-inline-block ms-auto">
+                                                    <div class="body-text-mini text-dark-grey fs-12  mr-b-6">Coach</div>
+                                                    <div class="body-text-mini lh-140pr">Dulce Press</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="other-detail-box border pd-x-16 pd-t-20 border-radius-12 border-light">
+                                          <div class="feature-block d-block">
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="feature-info mr-b-20">
+                                                    <div class="body-text-mini fw-600 mr-b-6 ">Created date 
+                                                      <div class="badge badge-green pd-y-4 pd-x-8 h-auto">Success</div>
+                                                    </div>
+                                                    <div class="body-text-mini lh-140pr text-dark-grey fs-12">01/05/2022</div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 d-md-flex">
+                                                
+                                                <div class="feature-info mr-b-20 d-inline-block ms-auto">
+                                                    <div class="body-text-mini text-dark-grey fs-12  mr-b-6">Coach</div>
+                                                    <div class="body-text-mini lh-140pr">Dulce Press</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                  </ul>
+                                </div>
+                                <div class="tab-pane " id="Coach-tab">
+
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <ul class="dashboard-tab-listing lg-listing">
+                                        <li>
+                                          <div class="other-detail-box border pd-x-16 pd-t-16 border-radius-12 border-light">
+                                            <div class="feature-block d-block">
+                                              <div class="row">
+                                                <div class="col-md-6 d-flex align-items-center mr-b-16">
+                                                  <img src="https://picsum.photos/id/1028/200" class="avtar-md avtar" alt="avtar" />
+                                                  <div class="feature-info ">
+                                                      <div class="body-text-mini fw-500">Dulce Press
+                                                      </div>
+                                                      <div class="body-text-mini lh-140pr text-dark-grey fs-14">dulce.@example.com</div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-6 d-md-flex mr-b-16">
+                                                  
+                                                  <div class="feature-info  d-inline-block ms-auto">
+                                                      <div class="white-space-nowrap mr-b-4">
+                                                          <i class="icon-star-fill text-warning"></i>
+                                                          <i class="icon-star-fill text-warning"></i>
+                                                          <i class="icon-star-fill text-warning"></i>
+                                                          <i class="icon-star-fill text-warning"></i>
+                                                          <i class="icon-star-fill text-warning"></i>
+                                                      </div>
+                                                      <div class="body-text-mini lh-140pr fw-500 text-end">25 team members</div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="other-detail-box border pd-x-16 pd-t-16 border-radius-12 border-light">
+                                            <div class="feature-block d-block">
+                                              <div class="row">
+                                                <div class="col-md-6 d-flex align-items-center mr-b-16">
+                                                  <img src="https://picsum.photos/id/1029/200" class="avtar-md avtar" alt="avtar" />
+                                                  <div class="feature-info ">
+                                                      <div class="body-text-mini fw-500">Dulce Press
+                                                      </div>
+                                                      <div class="body-text-mini lh-140pr text-dark-grey fs-14">dulce.@example.com</div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-6 d-md-flex mr-b-16">
+                                                  
+                                                  <div class="feature-info  d-inline-block ms-auto">
+                                                      <div class="white-space-nowrap mr-b-4">
+                                                          <i class="icon-star-fill text-warning"></i>
+                                                          <i class="icon-star-fill text-warning"></i>
+                                                          <i class="icon-star-fill text-warning"></i>
+                                                          <i class="icon-star text-warning"></i>
+                                                          <i class="icon-star text-warning"></i>
+                                                      </div>
+                                                      <div class="body-text-mini lh-140pr fw-500 text-end">25 team members</div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="other-detail-box border pd-x-16 pd-t-16 border-radius-12 border-light">
+                                            <div class="feature-block d-block">
+                                              <div class="row">
+                                                <div class="col-md-6 d-flex align-items-center mr-b-16">
+                                                  <img src="https://picsum.photos/id/1025/200" class="avtar-md avtar" alt="avtar" />
+                                                  <div class="feature-info ">
+                                                      <div class="body-text-mini fw-500">Dulce Press
+                                                      </div>
+                                                      <div class="body-text-mini lh-140pr text-dark-grey fs-14">dulce.@example.com</div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-6 d-md-flex mr-b-16">
+                                                  
+                                                  <div class="feature-info  d-inline-block ms-auto">
+                                                      <div class="white-space-nowrap mr-b-4">
+                                                          <i class="icon-star-fill text-warning"></i>
+                                                          <i class="icon-star text-warning"></i>
+                                                          <i class="icon-star text-warning"></i>
+                                                          <i class="icon-star text-warning"></i>
+                                                          <i class="icon-star text-warning"></i>
+                                                      </div>
+                                                      <div class="body-text-mini lh-140pr fw-500 text-end">25 team members</div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                      </ul>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane " id="Corporate-tab">
+
+                                  <div class="row">
+                                    <div class="col-md-12">
+
+                                         <ul class="dashboard-tab-listing lg-listing">
+                                          <li>
+                                            <div class="other-detail-box border pd-x-16 pd-t-16 border-radius-12 border-light">
+                                              <div class="feature-block d-block">
+                                                <div class="row">
+                                                  <div class="col-md-6 d-flex align-items-center mr-b-16">
+                                                    <img src="https://picsum.photos/id/1018/200" class="avtar-md avtar" alt="avtar" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-mini fw-500">Dulce Press
+                                                        </div>
+                                                        <div class="body-text-mini lh-140pr text-dark-grey fs-14">dulce.@example.com</div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 d-md-flex mr-b-16">
+                                                    
+                                                    <div class="feature-info  d-inline-block ms-auto my-auto">
+                                                        <div class="body-text-mini lh-140pr fw-500 text-end">Manager</div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="other-detail-box border pd-x-16 pd-t-16 border-radius-12 border-light">
+                                              <div class="feature-block d-block">
+                                                <div class="row">
+                                                  <div class="col-md-6 d-flex align-items-center mr-b-16">
+                                                    <img src="https://picsum.photos/id/1012/200" class="avtar-md avtar" alt="avtar" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-mini fw-500">Dulce Press
+                                                        </div>
+                                                        <div class="body-text-mini lh-140pr text-dark-grey fs-14">dulce.@example.com</div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 d-md-flex mr-b-16">
+                                                    
+                                                    <div class="feature-info  d-inline-block ms-auto my-auto">
+                                                        <div class="body-text-mini lh-140pr fw-500 text-end">Manager</div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="other-detail-box border pd-x-16 pd-t-16 border-radius-12 border-light">
+                                              <div class="feature-block d-block">
+                                                <div class="row">
+                                                  <div class="col-md-6 d-flex align-items-center mr-b-16">
+                                                    <img src="https://picsum.photos/id/1017/200" class="avtar-md avtar" alt="avtar" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-mini fw-500">Dulce Press
+                                                        </div>
+                                                        <div class="body-text-mini lh-140pr text-dark-grey fs-14">dulce.@example.com</div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 d-md-flex mr-b-16">
+                                                    
+                                                    <div class="feature-info  d-inline-block ms-auto my-auto">
+                                                        <div class="body-text-mini lh-140pr fw-500 text-end">Manager</div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="other-detail-box border pd-x-16 pd-t-16 border-radius-12 border-light">
+                                              <div class="feature-block d-block">
+                                                <div class="row">
+                                                  <div class="col-md-6 d-flex align-items-center mr-b-16">
+                                                    <img src="https://picsum.photos/id/1015/200" class="avtar-md avtar" alt="avtar" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-mini fw-500">Dulce Press
+                                                        </div>
+                                                        <div class="body-text-mini lh-140pr text-dark-grey fs-14">dulce.@example.com</div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 d-md-flex mr-b-16">
+                                                    
+                                                    <div class="feature-info  d-inline-block ms-auto my-auto">
+                                                        <div class="body-text-mini lh-140pr fw-500 text-end">Manager</div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="Users-section">
+              <div class="row">
+                <div class="col-lg-6 mr-b-24">
+                  
+                        <div class="card">
+                          <div class="card-body pd-all-20">
+                            <div class="body-text text-dark-grey d-flex w-100 mr-b-16">
+                              Events
+                              <a href="events.html" class="ms-auto">View all</a>
+                            </div>
+                            <div class="tab-container-one">
+                              <ul class="nav nav-tabs">
+                                <li class="nav-item active"><a class="nav-link active" id="Upcoming-event-tab-link" data-bs-toggle="tab" data-bs-target="#Upcoming-event-tab0" type="button" role="tab" aria-controls="Upcoming-event" aria-selected="true" ><span>Upcoming</span></a></li>
+                                <li class="nav-item"><a class="nav-link" id="Ongoing-event-tab-link" data-bs-toggle="tab" data-bs-target="#Ongoing-event-tab0" type="button" role="tab" aria-controls="Ongoing-event" aria-selected="true"><span>Ongoing</span></a></li>
+                                <li class="nav-item"><a class="nav-link" id="Completed-event-tab-link" data-bs-toggle="tab" data-bs-target="#Completed-event-tab0" type="button" role="tab" aria-controls="Completed-event" aria-selected="true"><span>Completed</span></a></li>
+                              </ul>
+                              <div class="tab-content ">
+                                <div class="tab-pane active" id="Upcoming-event-tab0">
+                                  <ul class="dashboard-tab-listing md-listing">
+                                      <li class="event-card">
+                                        <div class="other-detail-box  border-light">
+                                          <div class="feature-block align-items-center">
+                                                <img src="https://picsum.photos/id/1057/200"  alt="images" />
+                                                <div class="feature-info ">
+                                                    <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                    </div>
+                                                    <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/05/2022</div>
+                                                    <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/20/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/20/2022 02PM - 03PM </div>
+                                                </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li class="event-card">
+                                        <div class="other-detail-box  border-light">
+                                          <div class="feature-block align-items-center">
+                                                <img src="https://picsum.photos/id/1037/200"  alt="images" />
+                                                <div class="feature-info ">
+                                                    <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                    </div>
+                                                    <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/05/2022</div>
+                                                    <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/20/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/20/2022 02PM - 03PM </div>
+                                                </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li class="event-card">
+                                        <div class="other-detail-box  border-light">
+                                          <div class="feature-block align-items-center">
+                                                <img src="https://picsum.photos/id/1017/200"  alt="images" />
+                                                <div class="feature-info ">
+                                                    <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                    </div>
+                                                    <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/05/2022</div>
+                                                    <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/20/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/20/2022 02PM - 03PM </div>
+                                                </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li class="event-card">
+                                        <div class="other-detail-box  border-light">
+                                          <div class="feature-block align-items-center">
+                                                <img src="https://picsum.photos/id/1007/200"  alt="images" />
+                                                <div class="feature-info ">
+                                                    <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                    </div>
+                                                    <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/05/2022</div>
+                                                    <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/20/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/20/2022 02PM - 03PM </div>
+                                                </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                  </ul>
+                                </div>
+                                <div class="tab-pane " id="Ongoing-event-tab0">
+
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <ul class="dashboard-tab-listing md-listing">
+                                          <li class="event-card">
+                                            <div class="other-detail-box  border-light">
+                                              <div class="feature-block align-items-center">
+                                                    <img src="https://picsum.photos/id/1087/200"  alt="images" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                        </div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/08/2022</div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/10/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/12/2022 02PM - 03PM </div>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="event-card">
+                                            <div class="other-detail-box  border-light">
+                                              <div class="feature-block align-items-center">
+                                                    <img src="https://picsum.photos/id/1057/200"  alt="images" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                        </div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/05/2022</div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/20/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/20/2022 02PM - 03PM </div>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="event-card">
+                                            <div class="other-detail-box  border-light">
+                                              <div class="feature-block align-items-center">
+                                                    <img src="https://picsum.photos/id/1007/200"  alt="images" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                        </div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/05/2022</div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/20/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/20/2022 02PM - 03PM </div>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="event-card">
+                                            <div class="other-detail-box  border-light">
+                                              <div class="feature-block align-items-center">
+                                                    <img src="https://picsum.photos/id/1017/200"  alt="images" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                        </div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/05/2022</div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/20/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/20/2022 02PM - 03PM </div>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane " id="Completed-event-tab0">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <ul class="dashboard-tab-listing md-listing">
+                                          <li class="event-card">
+                                            <div class="other-detail-box  border-light">
+                                              <div class="feature-block align-items-center">
+                                                    <img src="https://picsum.photos/id/1087/200"  alt="images" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                        </div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/08/2022</div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/10/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/12/2022 02PM - 03PM </div>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="event-card">
+                                            <div class="other-detail-box  border-light">
+                                              <div class="feature-block align-items-center">
+                                                    <img src="https://picsum.photos/id/1057/200"  alt="images" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                        </div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/05/2022</div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/20/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/20/2022 02PM - 03PM </div>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="event-card">
+                                            <div class="other-detail-box  border-light">
+                                              <div class="feature-block align-items-center">
+                                                    <img src="https://picsum.photos/id/1007/200"  alt="images" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                        </div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/05/2022</div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/20/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/20/2022 02PM - 03PM </div>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="event-card">
+                                            <div class="other-detail-box  border-light">
+                                              <div class="feature-block align-items-center">
+                                                    <img src="https://picsum.photos/id/1017/200"  alt="images" />
+                                                    <div class="feature-info ">
+                                                        <div class="body-text-emphasis mr-b-4 lh-160pr ">Event name goes here 
+                                                        </div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr mr-b-10 "><i class="icon-location"></i> 01/05/2022</div>
+                                                        <div class="body-text-mini text-dark-grey lh-160pr"><i class="icon-calendar"></i> 08/20/2022 02PM - 03PM <div class="devieded"></div> <i class="icon-clock"></i> 12/20/2022 02PM - 03PM </div>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                </div>
+                <div class="col-lg-6 mr-b-24">
+                  <div class="card border-radius-12 border-light coach-detail-graph">
+                            <div class="card-body pd-all-20">
+                                <h6 class="body-text-emphasis text-dark-grey mr-b-16">Events</h6>
+                                <!-- <img src="../assets/images/sdfdsf.svg" height="300" style=" height: 300px;" class="img-fluid w-100" alt=""> -->
+                                 <canvas height="300" width="354" class="mx-auto" id="chart-event-user"></canvas>
+                               
+                            </div>
+                        </div>
+                </div>
+              </div>
+            </section>
+            <section class="Users-section">
+              <div class="row">
+                <div class="col-lg-6 mr-b-24">
+                  <div class="card border-radius-12 border-light coach-detail-graph">
+                            <div class="card-body pd-all-20">
+                                <h6 class="body-text-emphasis text-dark-grey mr-b-16">External resources</h6>
+                                <!-- <img src="../assets/images/external-resources.png" height="300" style=" height: 226px;" class="img-fluid w-100" alt=""> -->
+                                 <canvas id="external-resources-bar-chart"></canvas>
+                               <hr class="m-0 mr-t-16 mr-b-16">
+                                <div class="chart-filter-box ">
+                                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExternalResources" aria-controls="offcanvasExternalResources" class="filter-btn " ><i class="icon-filter fs-16 mr-r-6"></i>  Filter</button>
+                                    <ul class="chip-group unique-id-list filter-list">
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="chip">
+                                            <div class="chip-label">03Aug - 09Aug , 22</div>
+                                            <a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-6 mr-b-24">
+                  <div class="card">
+                    <div class="card-body pd-all-20">
+                      <div class="body-text text-dark-grey d-flex w-100 mr-b-16">
+                          External resources
+                          <a href="events.html" class="ms-auto">View all</a>
+                      </div>
+                      <div class="tab-container-one">
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item active"><a class="nav-link active" id="Upcoming-Externalresources-tab-link" data-bs-toggle="tab" data-bs-target="#Upcoming-Externalresources-tab" type="button" role="tab" aria-controls="Upcoming-Externalresources" aria-selected="true" ><span>Apps</span></a></li>
+                          <li class="nav-item"><a class="nav-link" id="Ongoing-event-tab-link" data-bs-toggle="tab" data-bs-target="#Ongoing-Externalresources-tab" type="button" role="tab" aria-controls="Ongoing-Externalresources" aria-selected="true"><span>Articles</span></a></li>
+                          <li class="nav-item"><a class="nav-link" id="Completed-Externalresources-tab-link" data-bs-toggle="tab" data-bs-target="#Completed-Externalresources-tab" type="button" role="tab" aria-controls="Completed-Externalresources" aria-selected="true"><span>Audios</span></a></li>
+                          <li class="nav-item"><a class="nav-link" id="Videos-Externalresources-tab-link" data-bs-toggle="tab" data-bs-target="#Videos-Externalresources-tab" type="button" role="tab" aria-controls="Videos-Externalresources" aria-selected="true"><span>Videos</span></a></li>
+                        </ul>
+                        <div class="tab-content ">
+                          <div class="tab-pane active" id="Upcoming-Externalresources-tab">
+                            <ul class="dashboard-tab-listing md-listing">
+                                <li class="event-card external-resources">
+                                  <div class="other-detail-box  border-light">
+                                    <div class="feature-block align-items-center">
+                                      <div class="feature-info">
+                                        <div class="left-area">
+                                          <div class="badge min-badge badge-purple">Wellness</div>
+                                          <div class="badge min-badge badge-purple">Mindfullness</div>
+                                          <div class="badge min-badge badge-purple">Nutrition</div>
+                                          <a href="#" class="badge min-badge badge-purple">+04</a>
+                                          <div class="body-text-emphasis mr-y-4 lh-160pr ">Event name goes here <img src="../assets/images/external-link.svg" class="icon" alt="external-link" width="16" height="16" /> </div>
+                                          <div class="body-text-mini text-dark-grey lh-160pr ">
+                                            <img src="../assets/images/user-account.svg" class="icon" width="16" height="16">
+                                              Created by John Smith
+                                          </div>
+                                        </div>
+
+                                        <div class="right-area">
+                                          <div class="feature-info d-inline-block ms-auto">
+                                              <div class="body-text-mini text-dark-grey fs-12 mr-b-6 lh-140pr">Created on</div>
+                                              <div class="body-text-mini lh-140pr">12/17/2022</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="event-card external-resources">
+                                  <div class="other-detail-box  border-light">
+                                    <div class="feature-block align-items-center">
+                                      <div class="feature-info">
+                                        <div class="left-area">
+                                          <div class="badge min-badge badge-purple">Wellness</div>
+                                          <div class="badge min-badge badge-purple">Mindfullness</div>
+                                          <div class="badge min-badge badge-purple">Nutrition</div>
+                                          <a href="#" class="badge min-badge badge-purple">+04</a>
+                                          <div class="body-text-emphasis mr-y-4 lh-160pr ">Event name goes here <img src="../assets/images/external-link.svg" class="icon" alt="external-link" width="16" height="16" /> </div>
+                                          <div class="body-text-mini text-dark-grey lh-160pr ">
+                                            <img src="../assets/images/user-account.svg" class="icon" width="16" height="16">
+                                              Created by John Smith
+                                          </div>
+                                        </div>
+
+                                        <div class="right-area">
+                                          <div class="feature-info d-inline-block ms-auto">
+                                              <div class="body-text-mini text-dark-grey fs-12 mr-b-6 lh-140pr">Created on</div>
+                                              <div class="body-text-mini lh-140pr">12/17/2022</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="event-card external-resources">
+                                  <div class="other-detail-box  border-light">
+                                    <div class="feature-block align-items-center">
+                                      <div class="feature-info">
+                                        <div class="left-area">
+                                          <div class="badge min-badge badge-purple">Wellness</div>
+                                          <div class="badge min-badge badge-purple">Mindfullness</div>
+                                          <div class="badge min-badge badge-purple">Nutrition</div>
+                                          <a href="#" class="badge min-badge badge-purple">+04</a>
+                                          <div class="body-text-emphasis mr-y-4 lh-160pr ">Event name goes here <img src="../assets/images/external-link.svg" class="icon" alt="external-link" width="16" height="16" /> </div>
+                                          <div class="body-text-mini text-dark-grey lh-160pr ">
+                                            <img src="../assets/images/user-account.svg" class="icon" width="16" height="16">
+                                              Created by John Smith
+                                          </div>
+                                        </div>
+
+                                        <div class="right-area">
+                                          <div class="feature-info d-inline-block ms-auto">
+                                              <div class="body-text-mini text-dark-grey fs-12 mr-b-6 lh-140pr">Created on</div>
+                                              <div class="body-text-mini lh-140pr">12/17/2022</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                            </ul>
+                          </div>
+                          <div class="tab-pane " id="Ongoing-Externalresources-tab">
+
+                            <div class="row">
+                              <div class="col-md-12">
+                                <ul class="dashboard-tab-listing md-listing">
+                                  <li class="event-card external-resources">
+                                    <div class="other-detail-box  border-light">
+                                      <div class="feature-block align-items-center">
+                                        <div class="feature-info">
+                                          <div class="left-area">
+                                            <div class="badge min-badge badge-purple">Wellness</div>
+                                            <div class="badge min-badge badge-purple">Mindfullness</div>
+                                            <div class="badge min-badge badge-purple">Nutrition</div>
+                                            <a href="#" class="badge min-badge badge-purple">+04</a>
+                                            <div class="body-text-emphasis mr-y-4 lh-160pr ">Ongoing Event name goes here <img src="../assets/images/external-link.svg" class="icon" alt="external-link" width="16" height="16" /> </div>
+                                            <div class="body-text-mini text-dark-grey lh-160pr ">
+                                              <img src="../assets/images/user-account.svg" class="icon" width="16" height="16">
+                                              Created by John Smith
+                                            </div>
+                                          </div>
+
+                                          <div class="right-area">
+                                            <div class="feature-info d-inline-block ms-auto">
+                                                <div class="body-text-mini text-dark-grey fs-12 mr-b-6 lh-140pr">Created on</div>
+                                                <div class="body-text-mini lh-140pr">12/17/2022</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="event-card external-resources">
+                                    <div class="other-detail-box  border-light">
+                                      <div class="feature-block align-items-center">
+                                        <div class="feature-info">
+                                          <div class="left-area">
+                                            <div class="badge min-badge badge-purple">Wellness</div>
+                                            <div class="badge min-badge badge-purple">Mindfullness</div>
+                                            <div class="badge min-badge badge-purple">Nutrition</div>
+                                            <a href="#" class="badge min-badge badge-purple">+04</a>
+                                            <div class="body-text-emphasis mr-y-4 lh-160pr ">Event name goes here <img src="../assets/images/external-link.svg" class="icon" alt="external-link" width="16" height="16" /> </div>
+                                            <div class="body-text-mini text-dark-grey lh-160pr ">
+                                              <img src="../assets/images/user-account.svg" class="icon" width="16" height="16">
+                                              Created by John Smith
+                                            </div>
+                                          </div>
+
+                                          <div class="right-area">
+                                            <div class="feature-info d-inline-block ms-auto">
+                                                <div class="body-text-mini text-dark-grey fs-12 mr-b-6 lh-140pr">Created on</div>
+                                                <div class="body-text-mini lh-140pr">12/17/2022</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane " id="Completed-Externalresources-tab">
+
+                            <div class="row">
+                              <div class="col-md-12">
+                              <ul class="dashboard-tab-listing md-listing">
+                                  <li class="event-card external-resources">
+                                    <div class="other-detail-box  border-light">
+                                      <div class="feature-block align-items-center">
+                                        <div class="feature-info">
+                                          <div class="left-area">
+                                            <div class="badge min-badge badge-purple">Wellness</div>
+                                            <div class="badge min-badge badge-purple">Mindfullness</div>
+                                            <div class="badge min-badge badge-purple">Nutrition</div>
+                                            <a href="#" class="badge min-badge badge-purple">+04</a>
+                                            <div class="body-text-emphasis mr-y-4 lh-160pr ">Completed Event name goes here <img src="../assets/images/external-link.svg" class="icon" alt="external-link" width="16" height="16" /> </div>
+                                            <div class="body-text-mini text-dark-grey lh-160pr ">
+                                              <img src="../assets/images/user-account.svg" class="icon" width="16" height="16">
+                                              Created by John Smith
+                                            </div>
+                                          </div>
+
+                                          <div class="right-area">
+                                            <div class="feature-info d-inline-block ms-auto">
+                                                <div class="body-text-mini text-dark-grey fs-12 mr-b-6 lh-140pr">Created on</div>
+                                                <div class="body-text-mini lh-140pr">12/17/2022</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="event-card external-resources">
+                                    <div class="other-detail-box  border-light">
+                                      <div class="feature-block align-items-center">
+                                        <div class="feature-info">
+                                          <div class="left-area">
+                                            <div class="badge min-badge badge-purple">Wellness</div>
+                                            <div class="badge min-badge badge-purple">Mindfullness</div>
+                                            <div class="badge min-badge badge-purple">Nutrition</div>
+                                            <a href="#" class="badge min-badge badge-purple">+04</a>
+                                            <div class="body-text-emphasis mr-y-4 lh-160pr ">Event name goes here <img src="../assets/images/external-link.svg" class="icon" alt="external-link" width="16" height="16" /> </div>
+                                            <div class="body-text-mini text-dark-grey lh-160pr ">
+                                              <img src="../assets/images/user-account.svg" class="icon" width="16" height="16">
+                                              Created by John Smith
+                                            </div>
+                                          </div>
+
+                                          <div class="right-area">
+                                            <div class="feature-info d-inline-block ms-auto">
+                                                <div class="body-text-mini text-dark-grey fs-12 mr-b-6 lh-140pr">Created on</div>
+                                                <div class="body-text-mini lh-140pr">12/17/2022</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                            </ul>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane " id="Videos-Externalresources-tab">
+
+                            <div class="row">
+                              <div class="col-md-12">
+                              <ul class="dashboard-tab-listing md-listing">
+                                  <li class="event-card external-resources">
+                                    <div class="other-detail-box  border-light">
+                                      <div class="feature-block align-items-center">
+                                        <div class="feature-info">
+                                          <div class="left-area">
+                                            <div class="badge min-badge badge-purple">Wellness</div>
+                                            <div class="badge min-badge badge-purple">Mindfullness</div>
+                                            <div class="badge min-badge badge-purple">Nutrition</div>
+                                            <a href="#" class="badge min-badge badge-purple">+04</a>
+                                            <div class="body-text-emphasis mr-y-4 lh-160pr ">Videos Event name goes here <img src="../assets/images/external-link.svg" class="icon" alt="external-link" width="16" height="16" /> </div>
+                                            <div class="body-text-mini text-dark-grey lh-160pr ">
+                                              <img src="../assets/images/user-account.svg" class="icon" width="16" height="16">
+                                              Created by John Smith
+                                            </div>
+                                          </div>
+
+                                          <div class="right-area">
+                                            <div class="feature-info d-inline-block ms-auto">
+                                                <div class="body-text-mini text-dark-grey fs-12 mr-b-6 lh-140pr">Created on</div>
+                                                <div class="body-text-mini lh-140pr">12/17/2022</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="event-card external-resources">
+                                    <div class="other-detail-box  border-light">
+                                      <div class="feature-block align-items-center">
+                                        <div class="feature-info">
+                                          <div class="left-area">
+                                            <div class="badge min-badge badge-purple">Wellness</div>
+                                            <div class="badge min-badge badge-purple">Mindfullness</div>
+                                            <div class="badge min-badge badge-purple">Nutrition</div>
+                                            <a href="#" class="badge min-badge badge-purple">+04</a>
+                                            <div class="body-text-emphasis mr-y-4 lh-160pr ">Event name goes here <img src="../assets/images/external-link.svg" class="icon" alt="external-link" width="16" height="16" /> </div>
+                                            <div class="body-text-mini text-dark-grey lh-160pr ">
+                                              <img src="../assets/images/user-account.svg" class="icon" width="16" height="16">
+                                              Created by John Smith
+                                            </div>
+                                          </div>
+
+                                          <div class="right-area">
+                                            <div class="feature-info d-inline-block ms-auto">
+                                                <div class="body-text-mini text-dark-grey fs-12 mr-b-6 lh-140pr">Created on</div>
+                                                <div class="body-text-mini lh-140pr">12/17/2022</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                            </ul>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+
+  <!-- jQuery, Popper.js, and Bootstrap JS --> 
+
+  <script src="../assets/js/jquery-3.5.1.min.js"></script> 
+  <script src="../assets/js/popper.min-2.9.2.js"></script> 
+  <script src="../assets/js/bootstrap.min.js"></script> 
+  <script src="../assets/js/bootstrap-select.min.1.14.js"></script>
+
+  <!-- Draggable Nestable List -->
+  <script src="../assets/js/DraggableNestableList.js"></script>
+
+  <!-- chartjs -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+  <script src="../assets/js/chart/chart.min.js"></script>
+
+  <!-- Datepicker JS -->    
+  <script src="../assets/js/moment.min.js"></script> 
+  <script src="../assets/js/daterangepicker.js"></script> 
+  <script src="../assets/js/timepicki.js"></script> 
+  <!-- dataTables -->
+  <script src="../assets/js/jquery.dataTables.min.js"></script> 
+  <script src="../assets/js/dataTables.bootstrap5.min.js"></script> 
+
+  <!-- Autocomplete JS -->    
+  <script src="../assets/js/coach_search_autocomplete.js"></script> 
+
+  <script src="../assets/js/os-browser-detection.js"></script> 
+
+  <!--  Custom JS--> 
+  <script src="../assets/js/custom.js"></script> 
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1VDDWMRSTH');
+</script>
+<script>
+  let dnl = new DraggableNestableList("#myList");
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+
+
+
+<script type="text/javascript">
+   const coachratingChart = document.getElementById('coach-rating-bar-chart');
+ 
+    var barcoachRatingChart = new Chart(coachratingChart, {
+        type: 'bar',
+        legend: {
+            display: false
+        },
+        data: {
+            labels: ["1 Star", "2 Star", "3 Star", "4 Star", "5 Star"],
+            datasets: [
+                {
+                    label: "Coach rating",
+                    backgroundColor: ["#a8b7e0", "#a8b7e0", "#ffa894", "#f9e380", "#b7e5a5"],
+                    data: [10,15,20,5,10],
+                    borderRadius: 8,
+                    barThickness : 25
+                }
+            ]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            scales: {
+                y: {
+                    max:20,
+                    min: 0,
+                    ticks: {
+                        showLabelBackdrop : false,
+                        autoSkip: false,
+                        stepSize: 5
+                    }
+                   
+
+                },
+                x: {
+                    grid: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+
+
+     const coachhart = document.getElementById('chart-coach-user');
+    var coachhartdata = [30,20,40,51];
+
+    var coachpieChart = new Chart(coachhart, {
+        // plugins: [ChartDataLabels],
+        type: 'doughnut',
+        data: {
+            labels: ['Active', 'Engaged', 'InActive', 'Never Engaged'],
+            datasets: [{
+                label: 'Team Member',
+                data: coachhartdata,
+                backgroundColor: ["#b7e5a5", "#ffa894", "#f9e380", "#c4bdf6"]
+            }]
+        },
+        options: {
+            responsive: false,
+            layout: {
+                padding: {
+                    top: 20
+                }
+            },
+            plugins: {
+                datalabels: {
+                    font: {
+                        weight: '400',
+                        size: 12,
+                    },
+                    color: '#0a0a0a',
+                    display: true,
+                    formatter: function (value, ctx) {
+                        if (value == 0)
+                            return "";
+                        else
+                            return value;
+                    },
+                },
+                legend: {
+                    labels: {
+                        padding: 40,
+                        color: '#0b0b0b',
+                        font: {
+                            size: 12,
+                            weight: '400'
+                        },
+                        usePointStyle: true
+                    },
+                    position: 'right',
+                    display: true,
+                }
+            },
+        },
+    })
+
+
+
+
+
+
+
+
+
+
+ const corporatechart = document.getElementById('chart-corporate-user');
+    var corporatedata = [50,40,80,30];
+
+    var corporatepieChart = new Chart(corporatechart, {
+        // plugins: [ChartDataLabels],
+        type: 'doughnut',
+        data: {
+            labels: ['Active', 'Engaged', 'InActive', 'Never Engaged'],
+            datasets: [{
+                label: 'Team Member',
+                data: corporatedata,
+                backgroundColor: ["#b7e5a5", "#ffa894", "#f9e380", "#c4bdf6"]
+            }]
+        },
+        options: {
+            responsive: false,
+            layout: {
+
+                padding: {
+                    top: 0
+                }
+            },
+            plugins: {
+                datalabels: {
+                    // margin:10 0,
+                    padding:0,
+                    font: {
+                        weight: '400',
+                        size: 12,
+                    },
+                    color: '#0a0a0a',
+                    display: true,
+                    formatter: function (value, ctx) {
+                        if (value == 0)
+                            return "";
+                        else
+                            return value;
+                    },
+                },
+                align: 'center',
+                legend: {
+                    labels: {
+                        padding: 40,
+                        color: '#0b0b0b',
+                        font: {
+                            size: 12,
+                            weight: '400'
+                        },
+                        usePointStyle: true
+                    },
+                    position: 'top',
+                    display: true,
+                }
+            },
+        },
+    })
+
+ const employeechart = document.getElementById('chart-employee-user');
+    var employeechartdata = [100,50,70,30];
+  
+    var employeePieChart = new Chart(employeechart, {
+        // plugins: [ChartDataLabels],
+        type: 'doughnut',
+        data: {
+            labels: ['Active', 'Engaged', 'InActive', 'Never Engaged'],
+            datasets: [{
+                label: 'Team Member',
+                data: employeechartdata,
+                backgroundColor: ["#b7e5a5", "#ffa894", "#f9e380", "#c4bdf6"]
+            }]
+        },
+        options: {
+            responsive: false,
+            layout: {
+                padding: {
+                    top: 20
+                }
+            },
+            plugins: {
+                datalabels: {
+                    font: {
+                        weight: '400',
+                        size: 12,
+                    },
+                    color: '#0a0a0a',
+                    display: true,
+                    formatter: function (value, ctx) {
+                        if (value == 0)
+                            return "";
+                        else
+                            return value;
+                    },
+                },
+                legend: {
+                    labels: {
+                        padding: 40,
+                        color: '#0b0b0b',
+                        font: {
+                            size: 12,
+                            weight: '400'
+                        },
+                        usePointStyle: true
+                    },
+                    position: 'bottom',
+                    display: true,
+                }
+            },
+        },
+    })
+ const externalresourcesChart = document.getElementById('external-resources-bar-chart');
+
+    var barexternalresourcesChart = new Chart(externalresourcesChart, {
+        type: 'bar',
+        legend: {
+            display: false
+        },
+        data: {
+            labels: ["Apps", "Articles", "Audios", "Videos"],
+            datasets: [
+                {
+                    label: "External Resources",
+                    backgroundColor: ["#ffa894", "#c4bdf6", "#f9e380", "#b7e5a5"],
+                    data: [20,10,5,15],
+                    borderRadius: 8,
+                    barThickness: 50
+                }
+            ]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            scales: {
+                y: {
+                    max: 25,
+                    min: 0,
+                    ticks: {
+                        showLabelBackdrop: false,
+                        autoSkip: false,
+                        stepSize: 5
+                    }
+
+
+                },
+                x: {
+                    grid: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+
+ const eventChart = document.getElementById('chart-event-user');
+    var eventChartdata = [60,80,40];
+
+    var eventpieChart = new Chart(eventChart, {
+        // plugins: [ChartDataLabels],
+        type: 'pie',
+        data: {
+            labels: ['Upcoming', 'Ongoing', 'Completed'],
+            datasets: [{
+                label: 'Events',
+                data: eventChartdata,
+                backgroundColor: ["#b7e5a5", "#c4bdf6", "#f9e380"]
+            }]
+        },
+        options: {
+            responsive: false,
+            layout: {
+                padding: {
+                    top: -20,
+                    //left: 110
+                }
+            },
+            plugins: {
+                datalabels: {
+                    font: {
+                        weight: '400',
+                        size: 12,
+                    },
+                    color: '#0a0a0a',
+                    display: true,
+                    formatter: function (value, ctx) {
+                        if (value == 0)
+                            return "";
+                        else
+                            return value;
+                    },
+                },
+                legend: {
+                    labels: {
+                        //padding: 40,
+                        color: '#0b0b0b',
+                        font: {
+                            size: 14,
+                            weight: '550'
+                        },
+                        usePointStyle: true
+                    },
+                    position: 'bottom',
+                    display: true,
+                }
+            },
+        },
+    })
+</script>
+
+
+
+
+</body>
+</html>

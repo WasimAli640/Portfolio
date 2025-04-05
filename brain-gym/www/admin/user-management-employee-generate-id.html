@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/gif" sizes="16x16">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+<!-- NIce Select CSS -->
+<link rel="stylesheet" href="../assets/css/bootstrap-select.min.1.14.css">
+
+    <!-- DatepickerCSS -->
+<link rel="stylesheet" href="../assets/css/daterangepicker.css">
+
+<!-- Custom Font CSS -->
+<link rel="stylesheet" href="../assets/fonts/custom-font.css">
+<link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+
+<!-- Dasboard CSS -->
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+
+<!-- Style Custom CSS -->
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/custom.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+<title>Welcome to Brain Gym</title>
+</head>
+<body class="bg-white">
+
+    
+<header class="header header-main">
+<nav class="navbar fixed-top flex-md-nowrap p-0">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 fs-6" href="#"><img src="../assets/images/logo-with-text.svg" alt="Brain Gym"/></a>
+
+  <div class="page-content-header">
+        <div class="body-block mb-0">
+             <h4>Generate ID</h4>
+            <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">User managment</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Generate ID</li>
+  </ol>
+</nav>
+
+          </div>
+    </div>
+  <ul class="navbar-nav ms-auto right-nav">
+      <li class="nav-item dropdown notification-dd">
+      <a class="nav-link dropdown-toggle notify" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"><img src="../assets/images/icon-notification-header.svg" alt=""/></a>
+             <ul class="dropdown-menu p-4">
+              <li>
+                <h5 class="text-center text-primary">Notification</h5>
+              </li>
+              <li> <hr></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+    </li>
+      <li class="nav-item dropdown profile-dd">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://picsum.photos/id/1027/200" alt="profile photo" /> 
+            <div class="text-here">              
+              <span>Haylie Kenter</span>
+              <span class="designation">Admin</span>
+            </div>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">
+                  <i class="icon-user"></i>Profile
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                  <i class="icon-logout"></i>Logout
+              </a>
+            </li>
+          </ul>
+
+
+            <li class="nav-item">
+                <button class="navbar-toggler  d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </li>
+
+        </li>
+  </ul>
+</nav>
+
+  <div class="page-content-header">
+        <div class="body-block mb-0">
+            <h4>Generate ID</h4>
+            <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">User managment</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Generate ID</li>
+  </ol>
+</nav>
+          </div>
+    </div>
+</header>
+
+    <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+      <div class="position-sticky sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="dashboard.html">
+              <i class="icon-dashboard"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+             <i class="icon-manage"></i>
+              User management
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-link"></i>
+              External Resources
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">
+             <i class="icon-calendar"></i>
+              Events
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-building"></i>
+              Organization
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <main class=" ms-sm-auto after-login">
+        
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 generate-id-wrap filter-listing">
+        <div class="go-back me-auto"><a href="index.html" class="body-text text-black"><i class="icon-arrow-left fs-18 vertical-align-middle pd-r-4"></i>Back</a></div>
+              <div class="content-block coach-detail mr-t-20 mr-b-4">
+              <div class="d-flex align-items-center form-fields flex-wrap">
+                  <div class="form-floating custom-dd-s">
+                  <label for="Selectcoach">Select coach</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option>Peg Legge</option>
+                              <option>Liz Erd</option>
+                              <option>Glad I. Oli</option>
+                              <option>Perry Scope</option>
+                              <option>Roy L. Commishun</option>
+                            </select>
+                   </div>
+                </div>
+                  <div class="form-floating ">
+                 <input type="text" class="form-control" id="IDrequired" placeholder="-"><label for="IDrequired">Number of ID’s required</label>
+                </div>
+              </div>
+              </div>
+                <div class="content-block unique-id-structure mr-b-24 pd-b-10 border-bottom border-light">
+               <h4 class="mr-b-16">Unique ID structure</h4>
+               <div class="d-flex align-items-center form-fields flex-wrap">
+                  <div class="form-floating custom-dd-s">
+                  <label for="Prefixtype">Prefix type</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option>Year</option>
+                              <option>Coach initials</option>
+                              <option>Custom</option>
+                            </select>
+                   </div>
+                </div>
+                  <div class="form-floating ">
+                 <input type="text" class="form-control" id="Prefixvalue" placeholder="-"><label for="Prefixvalue">Prefix value</label>
+                </div>
+                   <div class="form-floating ">
+                 <input type="text" class="form-control" id="Alphanumeric" placeholder="-" disabled><label for="Alphanumeric">Alpha-numeric</label>
+                </div>
+                   <a href="#" class="btn btn-primary h-100 mr-l-20">Generate</a>
+              </div>
+              </div>
+              <div class="content-block unique-id-structure mr-b-24">
+               <h4 class="mr-b-16">Unique ID lists</h4>
+                  <ul class="d-flex flex-wrap chip-group unique-id-list">
+                    <li class="chip">
+                      <div class="chip-label">PBKO66854</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                      <li class="chip">
+                      <div class="chip-label">PBKO66853</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                       <li class="chip">
+                      <div class="chip-label">PBKO66852</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                       <li class="chip">
+                      <div class="chip-label">PBKO66851</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                       <li class="chip">
+                      <div class="chip-label">PBKO66850</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                       <li class="chip">
+                      <div class="chip-label">PBKO66849</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                       <li class="chip">
+                      <div class="chip-label">PBKO66848</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                       <li class="chip">
+                      <div class="chip-label">PBKO66847</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                  <li class="chip">
+                      <div class="chip-label">PBKO66847</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                       <li class="chip">
+                      <div class="chip-label">PBKO66846</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                       <li class="chip">
+                      <div class="chip-label">PBKO66845</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                       <li class="chip">
+                      <div class="chip-label">PBKO66844</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                       <li class="chip">
+                      <div class="chip-label">PBKO66843</div><a class="chip-btn" href="#"><img src="../assets/images/icon-close-dark.svg" alt="">
+                      </a>
+                    </li>
+                         
+                        </ul>
+                  <div class="block-action text-end mr-t-12">
+                      <a href="#" class="btn btn-secondary mr-r-16">Reset</a>
+                      <a class="btn btn-primary" data-bs-toggle="modal" href="#ExportCSV">Export CSV</a>
+                  </div>
+                <div class="modal fade" id="ExportCSV" aria-hidden="true" aria-labelledby="ExportCSVLabel" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                <!--        <h4 class="modal-title" id="exampleModalToggleLabel">Modal Title</h4>-->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div class="body-block">
+                             <h4>Export CSV</h4>
+                             <p class="body-text-mini">Are you sure you want to export all ID’s?</p>
+                          </div>  
+                          
+                      </div>
+                      <div class="modal-footer justify-content-start">
+                          <button type="button" class="btn btn-outline-primary">Cancel</button>
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Yes, export</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                  
+                    <div class="no-id text-center mr-t-32">
+                          <img src="../assets/images/icon-no-data.svg" alt="">
+                            <div class="body-text-large text-dark-grey mr-t-12">No new ID created</div>
+                    </div>
+              </div>
+              
+           
+
+             
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+
+
+<!-- jQuery, Popper.js, and Bootstrap JS --> 
+
+<script src="../assets/js/jquery-3.5.1.min.js"></script> 
+<script src="../assets/js/popper.min-2.9.2.js"></script> 
+<script src="../assets/js/bootstrap.min.js"></script> 
+<script src="../assets/js/bootstrap-select.min.1.14.js"></script> 
+
+<script src="../assets/js/os-browser-detection.js"></script> 
+
+<!-- Autocomplete JS -->    
+<script src="../assets/js/search_autocomplete.js"></script> 
+    
+    <!-- Datepicker JS -->    
+<script src="../assets/js/moment.min.js"></script> 
+<script src="../assets/js/daterangepicker.js"></script> 
+
+<!--  Custom JS--> 
+<script src="../assets/js/custom.js"></script> 
+
+
+</body>
+</html>

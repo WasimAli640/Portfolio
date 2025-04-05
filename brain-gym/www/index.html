@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="assets/images/favicon.svg" type="image/gif" sizes="16x16">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<!-- NIce Select CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap-select.css">
+
+<!-- Custom Font CSS -->
+<link rel="stylesheet" href="assets/fonts/custom-font.css">
+
+<!-- Animation CSS -->
+
+
+
+
+<!-- Style Custom CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<title>Welcome to Brain Gym</title>
+</head>
+<body class="">
+<div class="container-fluid">
+<main role="main" class="login-wrapper">
+    
+    <div class="center-block">
+        <div class="login-card bg-white cmn-shadow border-radius-24 ">
+                <div class="logo text-center"><img src="assets/images/logo.svg" alt="Brain Gym"/></div>
+                    <h2 class="text-center">Login</h2>
+                    <div class="body-text-large text-dark-grey text-center">Login to your account</div>
+                    <form class="cmn-form login-form needs-validation" novalidate>
+                         <div class="form-floating form-group">
+                  <input type="email" class="form-control " id="email" placeholder="-" required>
+                  <label for="floatingInput">Email</label>
+                    <div class="feedback invalid-feedback">
+                        <img src="assets/images/icon-warning.svg" alt="alert">
+                          Incorrect email, please try again.
+                    </div>
+                </div>
+                        <div class="form-floating form-group">
+                  <input type="password" class="form-control" id="password" placeholder="-" required>
+                  <a href="javascript:void(0)" class="password-eye"></a>
+                  <label for="floatingInput">Passsword</label>
+                    <div class="feedback invalid-feedback">
+                        <img src="assets/images/icon-warning.svg" alt="alert">
+                         Incorrect password, please try again.
+                    </div>
+                            <div class="feedback invalid-feedback validation-summary-errors" data-valmsg-summary="true">
+                                <ul>
+                                    <li>Device Id is required.</li>
+                                    <li>your credentials are invalid</li>
+                                </ul>
+                            </div>
+                </div>
+
+                         <div class="forgot-ps-link text-end ms-auto"><a class="ms-auto" href="forgot-password.html">Forgot password?</a></div>
+               
+                          <div class="form-action "><button class="btn btn-primary w-100 disabled" disabled>Login</button></div>
+
+                        <div class=" mt-3" >
+                                 <div class="form-check d-inline-block m-0">
+                                  <input class="form-check-input" type="checkbox" name="flexRadioDefault2" id="flexRadioDefault3" onchange="pagechange();" >
+                                  <label class="form-check-label lh-normal fs-12 lh-normal" for="flexRadioDefault3">
+                                    I agree to the&nbsp;<a href="terms-conditions.html" class="link fs-12 lh-normal">Terms Of Services</a>&nbsp;&&nbsp;<a href="privay-policy.html" class="link fs-12 lh-normal">Privacy Policy</a>  
+                                  </label>
+                                </div>
+                        </div>
+                   
+                    </form>
+
+        
+        </div>
+       </div>
+    </main>
+ </div>
+
+<!-- jQuery, Popper.js, and Bootstrap JS --> 
+
+<script src="assets/js/jquery-3.5.1.min.js"></script> 
+<script src="assets/js/popper.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/bootstrap-select.min.js"></script> 
+
+<script src="assets/js/os-browser-detection.js"></script> 
+
+<!--  Custom JS--> 
+<script src="assets/js/custom.js"></script> 
+
+<script>
+
+function pagechange(argument) {
+    window.location.href = "index-2.html";
+}
+
+</script>
+<script>
+
+
+
+// starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        else{
+            
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+</script>
+</body>
+</html>

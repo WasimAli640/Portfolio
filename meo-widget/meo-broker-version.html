@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEO - Broker Version</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Link Custom Scrollbar CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Link Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <!---------   Move Meter Section  ~ START ~    --------->
+    <section class="banner meter-banner meter-widget" id="main" role="main">
+        <div class="container max-843-width">
+            <div class="meter-banner-main bg-blue bx-sh b-rad-30">
+                <div class="meter-logo-box">
+                    <h1><img class="meter-logo" src="images/meter-logo.svg" alt="small-logo"></h1>
+                </div>
+                <div class="meter-box meter-box1 text-center">
+                    <p class="meter-txt">Use data to compare where you live to any other location in America.</p>
+                    <div class="meter-input-box form">
+                        <div class="meter-inputs">
+                            <div class="meter-form" for="city1">
+                                <label for="city1">City</label>
+                                <input type="text" class="search-city search-city1" placeholder="-" id="city1">
+                                <span class="label">City, State or Zip</span>
+                            </div>
+                            <span class="error error-no-match">No matches found</span>
+                            <span class="error error-location-same">Locations cannot be the same.</span>
+                            <span class="error error-typo">Please enter a city and state, or zip</span>
+                        </div>
+                        <span>vs</span>
+                        <div class="meter-inputs">
+                            <div class="meter-form" for="city2">
+                                <label for="city2">City</label>
+                                <input type="text" class="search-city search-city2" placeholder="-" id="city2">
+                                <span class="label">City, State or Zip</span>
+                            </div>
+                            <span class="error error-no-match">No matches found</span>
+                            <span class="error error-location-same">Locations cannot be the same.</span>
+                            <span class="error error-typo">Please enter a city and state, or zip</span>
+                        </div>
+
+                        <div class="submit-button">
+                            <a href="javascript:void(0)" type="submit" class="btn btn-primary disabled" id="mm-calculate">Calculate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="meter-box meter-box2" id="openMeter">
+                    <div class="meter-box-content">
+                        <div class="meter-top">
+                            <button class="back-btn" id="backBtn"><img src="images/left-arrow.svg" alt="back_button"></button>
+                            <div class="fill-content">
+                                <label for="firstCity">City</label>
+                                <input type="text" placeholder="-" class="city1 bg-white" id="firstCity">
+                                <span>VS</span>
+                                <label for="secCity">City</label>
+                                <input type="text" placeholder="-" class="city2 bg-white" id="secCity">
+                            </div>
+                        </div>
+                        <div class="meter-tab-container">
+                            <div class="meter-tab-content" id="gen_Tab">
+                                <div class="score-content">
+                                    <div class="meter-content">
+                                        <div class="chart-box">
+                                            <canvas id="innerChart"></canvas>
+                                            <canvas id="myChart"></canvas>
+                                            <div class="meter-text text-center">
+                                                <label for="meterCount" class="meterCount" value="87" id="moveScore">0</label>
+                                                <h2>Overall Move<br>Score</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-content">
+                                        <div class="progress-box">
+                                            <h3 class="progress-txt">Housing Affordability</h3>
+                                            <label for="housing" class="progress-bar" id="progress1"><span style="--w:65%; --col:#3376FF;"></span></label>
+                                        </div>
+                                        <div class="progress-box">
+                                            <h3 class="progress-txt">quality of life</h3>
+                                            <label for="quality" class="progress-bar" id="progress2"><span style="--w:45%; --col:#00FFB2"></span></label>
+                                        </div>
+                                        <div class="progress-box">
+                                            <h3 class="progress-txt">job market strength</h3>
+                                            <label for="job" class="progress-bar" id="progress3"><span style="--w:56%; --col:#B18CFF"></span></label>
+                                        </div>
+                                        <div class="progress-box">
+                                            <h3 class="progress-txt">living affordability</h3>
+                                            <label for="living" class="progress-bar" id="progress4"><span style="--w:80%; --col:#6DEEFF"></span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meter-tab-content" id="housing_Tab">
+                                <div class="meter-tab-pane white">
+                                    <div class="mm-head-box">
+                                        <h2 class="mm-tab-head vertical-text tab-pos">Housing Affordability</h2>
+                                    </div>
+                                    <div class="pricing-box">
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Home Price <a  class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">$300K</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">$250K</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Property Tax <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">9.3%</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">8.875%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Home Appreciation Rate <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">4.5%</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">8.5%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Price Per Square Foot <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1 p-0">$4.70</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">$3.49</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meter-tab-content" id="quality_Tab">
+                                <div class="meter-tab-pane white">
+                                    <div class="mm-head-box">
+                                        <h2 class="mm-tab-head vertical-text tab-pos">Quality of Life</h2>
+                                    </div>
+                                    <div class="pricing-box">
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Education <a  class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">96</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">79</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Healthcare + Fitness <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">89</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">91</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Weather Grade <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">95</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">74</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Air Quality Index <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">68</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">85</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Commute/Transit Score <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1 p-0">96</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">79</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meter-tab-content" id="job_Tab">
+                                <div class="meter-tab-pane white">
+                                    <div class="mm-head-box">
+                                        <h2 class="mm-tab-head vertical-text tab-pos">Job Market Strength</h2>
+                                    </div>
+                                    <div class="pricing-box">
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Unemployment Rate <a  class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">8%</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">79</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Recent Job Growth <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">89</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">91</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Future Job Growth Index <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">95</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">74</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Median Household Income <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1 p-0">68</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">85</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meter-tab-content" id="living_Tab">
+                                <div class="meter-tab-pane white">
+                                    <div class="mm-head-box">
+                                        <h2 class="mm-tab-head vertical-text tab-pos">Living Affordability</h2>
+                                    </div>
+                                    <div class="pricing-box">
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Statement Income Tax <a  class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">8%</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">79</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Utilities <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">89</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">91</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Food/Groceries <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">95</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">74</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Sales Tax <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1">68</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">85</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <h3 class="price-categ">Transportation Cost <a class="tooltip-link" href="#"><img src="images/info.svg" alt="tooltip-link"><span class="tooltiptext">Average median home price as provided by the U.S. Census Bureau's American Community Survey, with 5-year estimates adjusted by current housing values</span></a></h3>
+                                                </div>
+                                                <div class="col-sm-4 col-auto">
+                                                    <p class="price price1 p-0">68</p>
+                                                </div>
+                                                <div class="col-sm-3 col-auto">
+                                                    <p class="price price2">85</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meter-bottom">
+                    <div class="meter-tabs-content">
+                            <div class="meter-tab-head">
+                                <p>SEE YOUR DETAILED REPORT</p>
+                            </div>
+                        <div class="meter-tabs">
+                            <button class="tab-btn gen-tab" data-color="bg-blue" aria-details="gen_Tab" style="--tab-color:#FFFFFF"> General</button>
+                            <button class="tab-btn non-gen-tab" data-color="bg-skblue1" aria-details="housing_Tab" style="--tab-color:#21CAFF">Housing Affordability</button>
+                            <button class="tab-btn non-gen-tab" data-color="bg-skblue2" aria-details="quality_Tab" style="--tab-color:#00FFB2">Quality of Life</button>
+                            <button class="tab-btn non-gen-tab" data-color="bg-skblue3" aria-details="job_Tab" style="--tab-color:#B18CFF">Job Market Strength</button>
+                            <button class="tab-btn non-gen-tab" data-color="bg-skblue4" aria-details="living_Tab" style="--tab-color:#6DEEFF">Living Affordability </button>
+                        </div>
+                    </div>
+                    <div class="mm-disclamar">
+                        <p class="disclamar-txt">The Coldwell Banker Move Meter® Index is a proprietary formula designed to provide consumers with an estimated Move Score to assist them in evaluating data comparing consumer factors between two cities within the United States. Scores will vary by location within the compared cities and property specifics. The Overall Move Score is based on aggregate data provided by third-party public and private resources in four categories: “Housing Affordability,” Quality of Life,” “Job Market Strength,” and “Living Affordability.” The data is compiled from over 40,000 U.S. cities and data for the geographic correlations are updated on a quarterly basis. The Move Score is based on a base score of 50, with 50 being the lowest score and 100 reflecting the highest score. The Move Meter® Index is designed to provide an estimate of comparative scores for a consumer to use to compare two cities, in one tool, as part of their evaluation for making a move within the U.S. The data is not guaranteed accurate or intended to be comprehensive of all factors consumers might consider, and consumers should conduct their own research when determining whether to make a move to a particular place. Data provided in part by BestPlaces.net.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------   Move Meter Section  ~ END ~    --------->
+    <!-- Link Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Link Custom ScrollBar JS -->
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <!-- Link Chart JS -->
+    <script src="js/chart.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Link Custom JS -->
+    <script src="js/custom.js"></script>
+</body>
+</html>

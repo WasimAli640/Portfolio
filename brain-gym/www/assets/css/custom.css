@@ -1,0 +1,247 @@
+.login-wrapper {
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-align-items: center;
+    justify-content: center;
+    -ms-justify-content: center;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+.center-block {
+    max-width: 540px;
+    width: 100%;
+}
+.login-card {
+    max-width: 100%;
+    width: 100%;
+    padding: 64px;
+}
+.login-card .login-form {
+    width: 100%;
+    margin-top: 32px;
+}
+.login-card .logo {
+    margin-bottom: 40px;
+}
+.login-card h4 {
+    margin-bottom: 4px;
+}
+.login-card h4 {
+    margin-bottom: 4px;
+}
+.login-card .login-form .form-action {
+    margin-top: 32px;
+}
+.otp-box .form-group .form-control {
+    width: 20%;
+    max-width: 80px;
+}
+.otp-box .form-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.login-card.success-done .reset-password {
+    display: none;
+}
+.login-card .success {
+    transform: scale(.8);
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+.login-card.success-done .success {
+    display: block !important;
+}
+.login-card.success-done.show .success {
+    opacity: 1;
+    transform: scale(1) translate(0px, 0px);
+    display: block !important;
+}
+.success-icon svg {
+    transform: scale(.5);
+    transition: all .7s ease-in-out;
+}
+.success-icon .svgcheckbox {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: scale(1) !important;
+    margin: 28px -35px;
+}
+.login-card.show .success-icon svg {
+    transform: scale(1);
+}
+
+/*Employee Detail Page Start*/
+
+/*.other-detail-box>.row>div {
+    margin-bottom: 28px;
+}*/
+.other-detail-box.pd-all-28 {
+    padding-bottom: 0 !important;
+}
+.other-detail-box.pd-all-28 .feature-block {
+    margin-bottom: 28px;
+}
+/*Employee Detail Page Endt*/
+
+/*Generate ID Start */
+.generate-id-wrap .content-block .form-floating {
+    width: auto;
+    margin-right: 12px;
+}
+.generate-id-wrap .content-block .btn:not(.block-action > .btn) {
+    margin-bottom: 16px;
+}
+/*Generate ID End */
+
+/*Coach Detail Page Start */
+.coach-detail-graph {
+    margin-bottom: 24px;
+}
+.coach-detail-graph:nth-last-child(3) {
+    margin-bottom: 0;
+}
+
+.coach-detail-graph .card-body {
+    padding-bottom: calc(20px - 12px) !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.coach-detail-graph .card-body canvas {
+    margin: auto !important;
+    /*padding: 10px;*/
+}
+.coach-detail-graph .filter-btn {
+    height: 42px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.06em;
+    color: #0A0A0A;
+        white-space: nowrap;
+}
+
+.coach-detail-graph .card-body hr {
+    margin-left: -20px !important;
+    margin-right: -20px !important;
+}
+.coach-detail-graph .filter-list {
+    align-items: center;
+    display: flex;
+    margin-left: 8px;
+    width: 100%;
+    overflow: auto;
+    padding: 3px 0;
+}
+.chart-filter-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.coach-detail-graph .filter-list .chip {
+    margin: 0;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+.coach-detail-graph .filter-list .chip .chip-label {
+    white-space: nowrap;
+}
+
+.coach-detail-graph .filter-list::-webkit-scrollbar {
+    height: 3px;
+}
+
+.messages-graph-filter {
+    display: inline-block;
+    color: #0A0A0A;
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    text-align: center;
+    align-items: center;
+    padding: 8px 12px;
+}
+.graph-filter-cricle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background: #ccc;
+    margin-right: 8px;
+    display: inline-block;
+}
+.messages-filter {
+    background: #F9E380;
+}
+.call-filter {
+    background: #B7E5A5;
+}
+.graph-choose-filter {
+    float: right;
+}
+.assign-btn {
+    margin-left: 24px;
+}
+/*Coach Detail Page End */
+
+.events-detail-images {
+    border-radius: 12px;
+    width: 100%;
+    aspect-ratio: 460 / 215;
+    object-fit: cover;
+    object-position: center;
+    max-width: 460px;
+    background-color: #e9edfc;
+}
+
+
+.no-data-organization{
+    margin-top: 12%;
+}
+.event-add-edit .inline-label{
+    min-width: 112px;
+}
+.event-add-edit .form-check-group .form-check{
+    margin-right: 18px;
+}
+.event-add-edit .form-check label.form-check-label{
+    color: #666666;
+}
+.event-add-edit .form-check input:checked ~ label.form-check-label {
+	 color: #0A0A0A;
+}
+.event-add-edit .form-check-group .form-check:last-child{
+    margin-right: 0;
+}
+.event-add-edit .form-check label.form-check-label::before {
+	top: 2px;
+}
+.event-add-edit .form-check input[type="checkbox"] ~ label.form-check-label::after {
+	top: 8px;
+}
+
+
+.event-schedule .date-selection{
+    padding-bottom: 150px;
+}
+.event-schedule .event-feature{
+    display: flex;
+    flex-wrap: wrap;
+}
+.event-schedule .event-feature > .feature-block{
+    margin-right: 60px;
+    margin-bottom: 28px;
+}

@@ -1,0 +1,6 @@
+@media (max-width: 992px) {
+    #content{
+        display: block;
+        height: auto;
+    }
+}

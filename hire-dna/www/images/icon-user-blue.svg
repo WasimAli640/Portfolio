@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon-user</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.17142167,0 C11.8934217,0 14.0974217,2.204 14.0974217,4.926 C14.0974217,6.9184118 12.9148377,8.63503042 11.2123258,9.41084159 C14.891903,10.2367176 17.74364,13.2519662 18.3274217,17.016 C18.4454217,17.766 17.8714217,18.45 17.1134217,18.45 L17.1134217,18.45 L1.22942167,18.45 C0.471421667,18.45 -0.102578333,17.766 0.0154216671,17.016 C0.59920329,13.2519662 3.45094034,10.2367176 7.13007816,9.40958718 C5.42861152,8.63435271 4.24542167,6.91801851 4.24542167,4.926 C4.24542167,2.204 6.45142167,0 9.17142167,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FormField/Textbox/Placeholder-1-Icon" transform="translate(-13.000000, -20.000000)">
+            <g id="Icons/User" transform="translate(10.000000, 17.000000)">
+                <rect id="Container" x="0" y="0" width="24" height="24"></rect>
+                <g id="Rectangle" stroke-width="1" fill-rule="evenodd" transform="translate(3.000000, 3.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#02295C" xlink:href="#path-1"></use>
+                    <rect fill="#02295C" mask="url(#mask-2)" x="-3" y="-3" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

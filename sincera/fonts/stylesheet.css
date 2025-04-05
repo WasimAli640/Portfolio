@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Sharp Sans';
+    src: url('SharpSans-Semibold.eot');
+    src: url('SharpSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('SharpSans-Semibold.woff2') format('woff2'),
+        url('SharpSans-Semibold.woff') format('woff'),
+        url('SharpSans-Semibold.ttf') format('truetype'),
+        url('SharpSans-Semibold.svg#SharpSans-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sharp Sans';
+    src: url('SharpSans-Bold.eot');
+    src: url('SharpSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SharpSans-Bold.woff2') format('woff2'),
+        url('SharpSans-Bold.woff') format('woff'),
+        url('SharpSans-Bold.ttf') format('truetype'),
+        url('SharpSans-Bold.svg#SharpSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sharp Sans';
+    src: url('SharpSans-Medium.eot');
+    src: url('SharpSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SharpSans-Medium.woff2') format('woff2'),
+        url('SharpSans-Medium.woff') format('woff'),
+        url('SharpSans-Medium.ttf') format('truetype'),
+        url('SharpSans-Medium.svg#SharpSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sharp Sans';
+    src: url('SharpSans-Extrabold.eot');
+    src: url('SharpSans-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('SharpSans-Extrabold.woff2') format('woff2'),
+        url('SharpSans-Extrabold.woff') format('woff'),
+        url('SharpSans-Extrabold.ttf') format('truetype'),
+        url('SharpSans-Extrabold.svg#SharpSans-Extrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gramatika';
+    src: url('Gramatika-MediumItalic.eot');
+    src: url('Gramatika-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gramatika-MediumItalic.woff2') format('woff2'),
+        url('Gramatika-MediumItalic.woff') format('woff'),
+        url('Gramatika-MediumItalic.ttf') format('truetype'),
+        url('Gramatika-MediumItalic.svg#Gramatika-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sharp Sans';
+    src: url('SharpSans-BoldItalic.eot');
+    src: url('SharpSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SharpSans-BoldItalic.woff2') format('woff2'),
+        url('SharpSans-BoldItalic.woff') format('woff'),
+        url('SharpSans-BoldItalic.ttf') format('truetype'),
+        url('SharpSans-BoldItalic.svg#SharpSans-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gramatika';
+    src: url('Gramatika-Medium.eot');
+    src: url('Gramatika-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Gramatika-Medium.woff2') format('woff2'),
+        url('Gramatika-Medium.woff') format('woff'),
+        url('Gramatika-Medium.ttf') format('truetype'),
+        url('Gramatika-Medium.svg#Gramatika-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera PRO';
+    src: url('CeraPRO.eot');
+    src: url('CeraPRO.eot?#iefix') format('embedded-opentype'),
+        url('CeraPRO.woff2') format('woff2'),
+        url('CeraPRO.woff') format('woff'),
+        url('CeraPRO.ttf') format('truetype'),
+        url('CeraPRO.svg#CeraPRO') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera PRO';
+    src: url('CeraPRO-Bold.eot');
+    src: url('CeraPRO-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CeraPRO-Bold.woff2') format('woff2'),
+        url('CeraPRO-Bold.woff') format('woff'),
+        url('CeraPRO-Bold.ttf') format('truetype'),
+        url('CeraPRO-Bold.svg#CeraPRO-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

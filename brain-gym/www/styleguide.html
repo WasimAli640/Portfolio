@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/gif" sizes="16x16">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<!-- NIce Select CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap-select.min.1.14.css">
+
+    <!-- DatepickerCSS -->
+<link rel="stylesheet" href="assets/css/daterangepicker.css">
+
+<!-- Custom Font CSS -->
+<link rel="stylesheet" href="assets/fonts/custom-font.css">
+<link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+
+<!-- Dasboard CSS -->
+<link rel="stylesheet" href="assets/css/dashboard.css">
+
+<!-- dataTables -->
+<link rel="stylesheet" href="assets/css/dataTables.bootstrap5.min.css">
+
+
+<!-- Style Custom CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+
+<title>Brain Gym Styleguide</title>
+</head>
+<body class="bg-white">
+<style type="text/css">
+    hr{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+.color-box {
+    height: 80px;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: #eee;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.color-box.light-bg {
+    border: 1px solid #000;
+}
+    p > b, label  > b, h1 > b, h2 > b, h3 > b, h4 > b, h5 > b, h6 > b, p > span{
+        min-width: 200px;
+        display: inline-block
+    }
+    .alert{
+        position: relative !important;
+    }
+
+
+.click {
+    cursor: pointer;
+    position: relative;
+}
+.click:after {
+    content: 'copy';
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1a8;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    padding-left: 0;
+    text-align: center;
+    backdrop-filter: blur(0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.click:hover:after {
+    opacity: 1;
+    backdrop-filter: blur(2px);
+    top: 0px;
+}
+.click:before {
+    content: url(assets/images/download.png);
+    /* width: 10px; */
+    /* height: 10px; */
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
+input#copyClipboard {
+    position: fixed;
+    top: -50px;
+}
+
+.copied {
+  font-family: 'Montserrat', sans-serif;
+      width: 100%;
+      height: 100vh;
+    text-align: center;
+  display: none;
+  position:fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  color:#000;
+  padding: 15px 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 15px #b8c6db;
+  -moz-box-shadow: 0 3px 15px #b8c6db;
+  -webkit-box-shadow: 0 3px 15px #b8c6db;
+      z-index: -1;
+    opacity: 0;
+}
+.copied .box{
+    max-width: 600px;
+    width: 100%;
+}
+.copied.show {
+      z-index: 99;
+    opacity: 1;
+    text-align: center;
+}
+.copied textarea{
+    border: 0;
+    text-align: center;
+    border-top: 1px solid #000;
+    padding: 15px 0 0;
+    margin: 15px 0 0;
+    min-height: 300px;
+}
+.need-dot:before {
+    content: '.';
+}
+</style>
+
+      <div class="spinner-container preloader">
+        <div class="spinner">
+        </div>
+      </div>
+      <div class="spinner-container data-loader d-none">
+        <div class="spinner-box">
+            <div class="spinner">
+            </div>
+            <p>Loading...
+                <span>Please wait</span>
+            </p>
+        </div>
+      </div>
+
+
+
+
+
+
+    <div class=" bg-primary-10 p-4 text-left">
+        <div class="container">
+        <h1 class="d-flex">
+                <img src="assets/images/logo.svg" class="me-4" alt=""/> 
+
+            <div>
+               <span> Brain Gym Styleguide</span>
+               
+               <div class="form-check form-switch ms-auto d-flex align-items-center" style="height: 20px;">
+                  <input class="form-check-input" type="checkbox" id="customSwitch1" onchange="customSwitchCopy(this);">
+                  <label class="form-check-label ms-3 mt-2" for="customSwitch1">Switch On The Toggle To Copy The Code</label>
+                </div>
+              <!--   <div class="custom-control custom-switch ms-auto d-flex" style="height: 20px;">
+                  <input type="checkbox" class="custom-control-input d-block mx-2 mb-1" id="customSwitch1" onchange="customSwitchCopy(this);">
+                  <label class="custom-control-label d-block" for="customSwitch1">Switch On The Toggle To Copy The Code</label>
+                </div> -->
+            </div>
+        </h1>
+
+       
+
+        </div>
+    </div>
+    <div class=" bg-primary-5 p-4 text-left mb-5">
+        <div class="container">
+        <h2>Loader</h2>
+        </div>
+    </div>
+    <div class="container mt-4 mb-5">
+        <a href="#" class="btn btn-primary" onclick="PreLoaderBtn();">Start Pre-Loader</a>
+        <a href="#" class="btn btn-primary" onclick="DataLoaderBtn();">Start Loader</a>
+    </div>
+    <div class=" bg-primary-5 p-4 text-left mb-5">
+        <div class="container">
+        <h2>Typography</h2>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <h1 class="click"><div class="d-none copy"> <h1></h1> </div> <b>h1, .h1</b>font-size: 48px;  line-height: 67px;</h1>
+        <h2 class="click"><div class="d-none copy"> <h2></h2> </div> <b>h2, .h2</b>font-size: 36px;  line-height: 50px;</h2>
+        <h3 class="click"><div class="d-none copy"> <h3></h3> </div> <b>h3, .h3</b>font-size: 28px;  line-height: 39px;</h3>
+        <h4 class="click"><div class="d-none copy"> <h4></h4> </div> <b>h4, .h4</b>font-size: 24px;  line-height: 34px;</h4>
+<!--
+        <h4><b>H4</b> &nbsp; &nbsp; &nbsp;24px Text Style </h4>
+        <h5><b>H5</b> &nbsp; &nbsp; &nbsp;20px Text Style </h5>
+        <h6><b>H6</b> &nbsp; &nbsp; &nbsp;18px Text Style </h6>
+        <h6 class="small-text"><b>H6</b> &nbsp; &nbsp; &nbsp;16px Text Style </h6>
+-->
+<hr>
+        <p class="body-text-large click"><b class="copy need-dot">body-text-large </b> font-family: 'Metropolis';  font-weight: 400;  font-size: 20px;  line-height: 36px;</p>
+        <p class="body-text click"><b class="copy need-dot">body-text</b> font-family: 'Metropolis';  font-weight: 500;  font-size: 16px;  line-height: 25px;</p>
+        <p class="body-text-emphasis click"><b class="copy need-dot">body-text-emphasis</b> font-family: 'Metropolis';  font-weight: 600; font-size: 16px; line-height: 29px;</p>
+        <p class="body-text-mini click"><b class="copy need-dot">body-text-mini</b> font-family: 'Metropolis';  font-weight: 400; font-size: 14px; line-height: 25px;</p>
+<hr>
+        <p class="click"><b class="copy">p</b> font-size: 16px;  letter-spacing: 0px;  line-height: 25px;  font-weight: 400;   color: #000000;</p>
+<hr>
+        <label class=" click"><b class="copy">label, .label-text</b>,font-size: 16px;  letter-spacing: 0px;  line-height: 25px;  font-weight: 400;   color: #000000;</label>
+    </div>
+
+
+    <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>BG Colors</h2>
+        </div>
+    </div>
+
+    <div class="container">
+                
+        <h3 class="mt-5">Primary</h3>
+        <div class="row">
+          <div class="col-md-3 click">
+            <div class="color-box bg-primary"></div>
+            #254DDD <br>
+            <b class="copy need-dot">bg-primary</b>
+          </div>
+             <div class="col-md-3 click">
+            <div class="color-box bg-primary-80"></div>
+            #5071E4 <br>
+           <b class="copy need-dot">bg-primary-80</b>
+          </div>
+             <div class="col-md-3 click">
+            <div class="color-box bg-primary-60"></div>
+            #7C94EB <br>
+            <b class="copy need-dot">bg-primary-60</b>
+          </div>
+            <div class="col-md-3 click">
+            <div class="color-box bg-primary-40"></div>
+            #A8B8F1 <br>
+            <b class="copy need-dot">bg-primary-40</b>
+          </div>
+              <div class="col-md-3 click">
+            <div class="color-box bg-primary-20"></div>
+            #D3DBF8 <br>
+            <b class="copy need-dot">bg-primary-20</b>
+          </div>
+             <div class="col-md-3 click">
+            <div class="color-box bg-primary-10"></div>
+            #E9EDFC <br>
+            <b class="copy need-dot">bg-primary-10</b>
+          </div>
+             <div class="col-md-3 click">
+            <div class="color-box bg-primary-5"></div>
+            #F4F6FD <br>
+            <b class="copy need-dot">bg-primary-5</b>
+          </div>
+          
+          
+        </div>
+        <h3 class="mt-5">Secondary</h3>
+        <div class="row">
+          <div class="col-md-3 click">
+            <div class="color-box bg-secondary"></div>
+            #243383 <br>
+            <b class="copy need-dot">bg-secondary</b>
+          </div>          
+        </div>
+
+        <h3 class="mt-5">Monochrome</h3>
+        
+        <div class="row">
+          <div class="col-md-3 click">
+            <div class="color-box bg-black"></div>
+            #000000 <br>
+            <b class="copy need-dot">bg-black</b>
+          </div>
+             <div class="col-md-3 click">
+            <div class="color-box bg-dark-grey"></div>
+            #666666 <br>
+            <b class="copy need-dot">bg-dark-grey</b>
+          </div>
+             <div class="col-md-3 click">
+            <div class="color-box bg-grey"></div>
+            #B8B8B8 <br>
+            <b class="copy need-dot">bg-grey</b>
+          </div>
+            <div class="col-md-3 click">
+            <div class="color-box bg-light-grey"></div>
+            #E5E5E5 <br>
+            <b class="copy need-dot">bg-light-grey"</b>
+          </div>
+              <div class="col-md-3 click">
+            <div class="color-box bg-ultralight-grey"></div>
+            #FAFAFA <br>
+            <b class="copy need-dot">bg-ultralight-grey</b>
+          </div>
+             <div class="col-md-3 click">
+            <div class="color-box bg-white light-bg"></div>
+            #FFFFFF <br>
+           <b class="copy need-dot">bg-white</b>
+          </div>
+             
+          
+          
+        </div>
+        
+        <div class="row">
+        
+        <div class="col-md-4">
+             <h3 class="mt-5">Success</h3>
+              <div class="row">
+          <div class="col-md-6 click">
+            <div class="color-box bg-success"></div>
+            #14AF2D <br>
+            <b class="copy need-dot">bg-success</b>
+          </div>
+                       <div class="col-md-6 click">
+            <div class="color-box bg-success-light"></div>
+            #E8F7EA <br>
+            <b class="copy need-dot">bg-success-light</b>
+          </div>
+                  </div>
+            </div>
+            <div class="col-md-4 ">
+             <h3 class="mt-5">Error</h3>
+              <div class="row">
+          <div class="col-md-6 click">
+            <div class="color-box bg-error"></div>
+            #D72700 <br>
+            <b class="copy need-dot">bg-error</b>
+          </div>
+                       <div class="col-md-6 click">
+            <div class="color-box bg-error-light"></div>
+            #FBE9E5 <br>
+            <b class="copy need-dot">bg-error-light</b>
+          </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+             <h3 class="mt-5">Warning</h3>
+              <div class="row">
+          <div class="col-md-6 click">
+            <div class="color-box bg-warning"></div>
+            #F8C307 <br>
+           <b class="copy need-dot">bg-warning</b>
+          </div>
+                       <div class="col-md-6 click">
+            <div class="color-box bg-warning-light"></div>
+            #FEF9E6 <br>
+            <b class="copy need-dot">bg-warning-light</b>
+          </div>
+                  </div>
+            </div>
+    </div>
+
+</div>
+
+     <div class=" bg-primary-5 p-4 text-left mb-5 d-none d-md-block mt-5">
+          <div class="container">
+        <div class="row">
+    <div class="col-md-6">
+        <h2>Text Colors</h2>
+    </div>
+             <div class="col-md-5 offset-md-1">
+                 <h2>Font Weight</h2>
+            </div>
+    </div>
+              </div>
+    </div>
+    
+<div class="container">
+    
+    <div class="row">
+    <div class="col-md-6">
+    <div class=" bg-primary-5 p-4 text-left mb-5 d-block d-md-none">
+        <!-- <div class="container"> -->
+        <h2>Text Colors</h2>
+        <!-- </div> -->
+    </div>
+     <p class="text-primary click"><span class="copy need-dot">text-primary</span> Lorem ipsum is a dummy text</p>
+     <p class="text-secondary click"><span class="copy need-dot">text-secondary</span> Lorem ipsum is a dummy text</p>
+     <p class="text-black click"><span class="copy need-dot">text-black</span> Lorem ipsum is a dummy text</p>
+     <p class="text-dark-grey click"><span class="copy need-dot">text-dark-grey</span> Lorem ipsum is a dummy text</p>
+     <p class="text-grey click"><span class="copy need-dot">text-grey</span> Lorem ipsum is a dummy text</p>
+     <p class="bg-black text-light-grey p-1 click"><span class="copy need-dot">text-light-grey</span> Lorem ipsum is a dummy text</p>
+     <p class="bg-black  text-ultralight-grey p-1 click"><span class="copy need-dot">text-ultralight-grey</span> Lorem ipsum is a dummy text</p>
+     <p class="bg-black text-white p-1 click"><span class="copy need-dot">text-white</span> Lorem ipsum is a dummy text</p>
+     <p class="text-success click"><span class="copy need-dot">text-success</span> Lorem ipsum is a dummy text</p>
+     <p class="text-error click"><span class="copy need-dot">text-error</span> Lorem ipsum is a dummy text</p>
+     <p class="text-warning click"><span class="copy need-dot">text-warning</span> Lorem ipsum is a dummy text</p>
+        </div>
+        <div class="col-md-5 offset-md-1">
+    <div class=" bg-primary-5 p-4 text-left mb-5 d-block d-md-none">
+        <!-- <div class="container"> -->
+        <h2>Font Weight</h2>
+        <!-- </div> -->
+    </div>
+         <p class="fw-100 click"><span class="copy need-dot">fw-100</span> Metropolis Thin</p>
+         <p class="fw-300 click"><span class="copy need-dot">fw-300</span> Metropolis Light</p>
+         <p class="fw-400 click"><span class="copy need-dot">fw-400</span> Metropolis Regular</p>
+         <p class="fw-500 click"><span class="copy need-dot">fw-500</span> Metropolis Medium</p>
+         <p class="fw-600 click"><span class="copy need-dot">fw-600</span> Metropolis SemiBold</p>
+         <p class="fw-bold click"><span class="copy need-dot">fw-bold</span> Metropolis Bold</p>
+         <p class="fw-extrabold click"><span class="copy need-dot">fw-extrabold</span> Metropolis ExtraBold</p>
+         <p class="fw-900 click"><span class="copy need-dot">fw-900</span> Metropolis Black</p>
+        </div>
+    </div>
+    
+
+    </div>
+    <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Buttons</h2>
+        </div>
+    </div>
+<div class="container">
+  <div class="row pb-3">
+    <div class="col-md-4 mt-3">
+         <h3>Primary</h3>
+      <button type="button" class="btn btn-primary click"><div class="d-none copy"> class="btn btn-primary" </div> Primary</button>
+      <button type="button" class="btn btn-primary click" disabled> <div class="d-none copy"> class="btn btn-primary" disabled </div>Primary Disabled</button>
+         <br>
+         <br>
+           <b>.btn .btn-primary</b>
+    </div>
+ <div class="col-md-4 mt-3">
+     <h3>Secondary</h3>
+      <button type="button" class="btn btn-secondary click"> <div class="d-none copy"> class="btn btn-secondary" </div> Secondary</button>
+      <button type="button" class="btn btn-secondary click" disabled> <div class="d-none copy"> class="btn btn-secondary" disabled </div>Secondary Disabled</button>
+     <br>
+     <br>
+           <b>.btn .btn-secondary</b>
+    </div>
+      
+
+<div class="col-md-4 mt-3">
+     <h3>Button Link</h3>
+      <button type="button" class="btn btn-link click"> <div class="d-none copy"> class="btn btn-link" </div>Button Link</button>
+      <button type="button" class="btn btn-link click" disabled> <div class="d-none copy"> class="btn btn-link" disabled</div>Button Link Disabled</button>
+    <br>
+    <br>
+           <b>.btn .btn-link</b>
+    </div>
+    <div class="col-md-4 mt-5">
+     <h3>Normal Link</h3>
+         <div class="click">
+            <div class="d-none copy">class="link"</div>
+          <a href="#" class="link ">Link</a>
+            <br>
+            <br>
+               <b>a, .link</b>
+        </div>
+    </div>
+
+    
+
+  </div>
+</div>
+
+        <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Forms</h2>
+        </div>
+    </div>
+
+    <div class="container">
+           <div class="row">
+                <h3 class="mt-3 mb-3">Inputs</h3>
+            <div class="col-md-12 click">
+                <div class="d-none copy"><div class="form-floating"> <input type="email" class="form-control" id="floatingInput" placeholder="-"> <a href="javascript:void(0)" class="password-eye"></a><label for="floatingInput">Label</label> <div class="feedback invalid-feedback"> error message. </div> </div></div>
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="-">
+                  <label for="floatingInput">Label</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class="click">
+                    <h6>For error or invaild answer use "is-invalid" in class on input</h6>
+                    <div class="d-none copy">is-invalid</div>
+                </div>
+                <div class="form-floating">
+                  <input type="email" class="form-control is-invalid" id="floatingInput" value="123455" placeholder="-">
+                  <a href="javascript:void(0)" class="password-eye"></a>
+                  <label for="floatingInput">Label</label>
+                  <div class="feedback invalid-feedback">
+                      <img src="assets/images/icon-warning.svg" alt="alert" />This is the example of the error message.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-floating">
+                  <input type="email" class="form-control is-valid" id="floatingInput" value="123455" placeholder="-">
+                  <a href="javascript:void(0)" class="password-eye"></a>
+                  <label for="floatingInput">Label</label>
+                  <div class="feedback valid-feedback">
+                      <img src="assets/images/icon-valid.svg" alt="alert" />This is the example of the success message.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-floating">
+                 <input type="password" class="form-control" id="floatingInput" placeholder="-"> 
+                 <a href="javascript:void(0)" class="password-eye"></a>
+                 <label for="floatingInput">Label</label> 
+                 <div class="feedback invalid-feedback"> error message. </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-floating disabled">
+                 <input type="password" class="form-control" id="floatingInput" placeholder="-" readonly>  
+                 <a href="javascript:void(0)" class="password-eye"></a>
+                 <label for="floatingInput">Label</label> 
+                 <div class="feedback invalid-feedback"> error message. </div>
+                </div>
+            </div>
+
+               <h3 class="mt-3 mb-3">Checkbox and Radio</h3>
+            <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                  <label class="form-check-label" for="flexCheckDefault1">
+                    Default checkbox
+                  </label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                  <label class="form-check-label" for="flexCheckDefault2">
+                    Default checkbox
+                  </label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-check disabled">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" disabled>
+                  <label class="form-check-label" for="flexCheckDefault3">
+                    Default checkbox
+                  </label>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Default radio
+                  </label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Default checked radio
+                  </label>
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <div class="form-check d-inline-block">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault2" id="flexRadioDefault3" checked>
+                  <label class="form-check-label" for="flexRadioDefault3">
+                  </label>
+                </div>
+                <div class="form-check d-inline-block">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault2" id="flexRadioDefault4" >
+                  <label class="form-check-label" for="flexRadioDefault4">
+                  </label>
+                </div>
+                <div class="form-check d-inline-block">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault5" checked>
+                  <label class="form-check-label" for="flexRadioDefault5">
+                  </label>
+                </div>
+                <div class="form-check d-inline-block">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault6" >
+                  <label class="form-check-label" for="flexRadioDefault6">
+                  </label>
+                </div>
+            </div>
+
+               <div class="col-md-4">
+               <h3 class="mt-3 mb-3">Dropdown</h3>
+                   <div class="body-text mb-3">With Label</div>
+                <div class="form-floating custom-dd-s">
+                  <label for="floatingInput">Label</label>
+                    <div class="dropdown">
+  <a class="dropdown-toggle" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item active" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+                </div>
+               </div>
+            <div class="col-md-4">
+               <h3 class="mt-3 mb-3">Select</h3>
+                <div class="body-text mb-3">With Label</div>
+                <div class="form-floating custom-dd-s">
+                  <label for="floatingInput">Label</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                   </div>
+
+                 <div class="feedback invalid-feedback" data-valmsg-replace="true"> error message. </div>
+                </div>
+
+               </div>
+
+               <div class="col-md-4">
+               <h3 class="mt-3 mb-3">Dropdown disabled</h3>
+                   <div class="body-text mb-3">With Label</div>
+                <div class="form-floating custom-dd-s disabled">
+                  <label for="floatingInput">Label</label>
+                    <div class="dropdown">
+  <a class="dropdown-toggle" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+    <li><a class="dropdown-item active" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+                </div>
+               </div>
+            <div class="col-md-4">
+               <h3 class="mt-3 mb-3">Select disabled</h3>
+                <div class="body-text mb-3">With Label</div>
+                <div class="form-floating custom-dd-s disabled">
+                  <label for="floatingInput">Label</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select" disabled>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                   </div>
+
+                 <div class="feedback invalid-feedback" data-valmsg-replace="true"> error message. </div>
+                </div>
+
+               </div>
+                <div class="col-md-4">
+               <h3 class="mt-3 mb-3">Multi Select</h3>
+               <div class="body-text mb-3">With Label</div>
+                <div class="form-floating custom-dd-s">
+                  <label for="floatingInput">Label</label>
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select" multiple data-selected-text-format="count > 4">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                              <option>Option 6</option>
+                              <option>Option 7</option>
+                              <option>Option 8</option>
+                            </select>
+                   </div>
+                </div>
+               </div>
+                <div class="col-md-4">
+                   <div class="body-text mb-3 mt-3">Without Label</div>
+                <div class="form-floating custom-dd-s">
+                    <div class="dropdown">
+  <a class="dropdown-toggle" href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item active" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+                </div>
+               </div>
+            <div class="col-md-4">
+                <div class="body-text mb-3 mt-3">Without Label</div>
+                <div class="form-floating custom-dd-s">
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                   </div>
+                </div>
+               </div>
+                <div class="col-md-4">
+               <div class="body-text mb-3 mt-3">Without Label</div>
+                <div class="form-floating custom-dd-s">
+                    <div class="custom-select-box">
+                             <select class="selectpicker" title="Select" multiple data-selected-text-format="count > 4">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                              <option>Option 6</option>
+                              <option>Option 7</option>
+                              <option>Option 8</option>
+                            </select>
+                   </div>
+                </div>
+               </div>
+
+        </div>
+    </div>
+    
+
+    <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Search with list</h2>
+        </div>
+    </div>
+    
+    <div class="container">
+           <div class="row">
+                <h3 class="mt-3 mb-3">Search Inputs</h3>
+            <div class="col-md-12 click">
+                <div class="d-none copy"><div class="form-floating"> <input type="text" id="myInput1" class="form-control" id="myCountry" name="myCountry" placeholder="Country" placeholder="-"> <label for="floatingInput">Search...</label> </div></div>
+                <div class="form-floating search-input">
+                    <img src="assets/images/icon-search.svg" class="input-icon left-icon icon-search" alt="icon-search">
+                  <input type="search" id="myInput" class="form-control" id="myCountry" name="myCountry" placeholder="Search by coach name or unique ID" placeholder="-">
+                    <img src="assets/images/icon-close-dark.svg" class="input-icon right-icon icon-close" alt="icon-search">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Bootstrap Tabs!</h2>
+        </div>
+    </div>
+
+<div class="container test">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="mt-5 mb-3">Tabs Option 1</h3>
+                <div class="tab-container-one">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item active"><a class="nav-link active" href="#home" role="tab" aria-controls="home" data-bs-toggle="tab"><span> Employee (96)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#profile" role="tab" aria-controls="profile" data-bs-toggle="tab"><span> Coach (34)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#messages" role="tab" aria-controls="messages" data-bs-toggle="tab"><span> Corporate (20)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#settings" role="tab" aria-controls="settings" data-bs-toggle="tab"><span> Employee (304)</span></a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            Home...</div>
+                        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            Profile...</div>
+                        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                            Messages...</div>
+                        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                            Settings...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h3 class="mt-5 mb-3">Tabs Option 2</h3>
+                <div class="tab-container-two">
+                    <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                        <li class="nav-item active"><a class="nav-link active" href="#home2" role="tab" aria-controls="home2" data-bs-toggle="tab">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#profile2" role="tab" aria-controls="profile2" data-bs-toggle="tab">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#messages2" role="tab" aria-controls="messages2" data-bs-toggle="tab">Messages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#settings2" role="tab" aria-controls="settings2" data-bs-toggle="tab">Settings</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home2" role="tabpanel" aria-labelledby="home-tab">
+                            Home...</div>
+                        <div class="tab-pane" id="profile2" role="tabpanel" aria-labelledby="profile-tab">
+                            Profile...</div>
+                        <div class="tab-pane" id="messages2" role="tabpanel" aria-labelledby="messages-tab">
+                            Messages...</div>
+                        <div class="tab-pane" id="settings2" role="tabpanel" aria-labelledby="settings-tab">
+                            Settings...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Status Badge</h2>
+        </div>
+    </div>
+    <div class="container test">
+        <div class="row">
+            <div class="col-md-3 click">
+                <div class="badge badge-blue">Engaged</div><br><br><b>.badge .badge-blue</b>
+                <div class="d-none copy">.badge .badge-blue</div>
+            </div>
+            <div class="col-md-3 click">
+                <div class="badge badge-blue min-badge">Engaged</div><br><br><b>.badge .badge-blue .min-badge</b>
+                <div class="d-none copy">.badge .badge-blue .min-badge</div>
+            </div>
+            <div class="col-md-3 click">
+                <div class="badge badge-green">Success</div><br><br><b>.badge .badge-green</b>
+                <div class="d-none copy">.badge .badge-green</div>
+            </div>
+             <div class="col-md-3 click">
+                <div class="badge badge-yellow">Warning</div><br><br><b>.badge .badge-yellow</b>
+                   <div class="d-none copy">.badge .badge-yellow</div>
+                </div>
+             <div class="col-md-3 click">
+                <div class="badge badge-red">Error</div><br><br><b>.badge .badge-red</b>
+                   <div class="d-none copy">.badge .badge-red</div>
+                </div>
+                 <div class="col-md-3 click">
+                    <div class="badge badge-purple">Wellness</div>
+                        <br><br><b>.badge .badge-purple</b>
+                    <div class="d-none copy">.badge .badge-red</div>
+                </div>
+            </div>
+        </div>
+    
+       
+    <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Bootstrap Modal</h2>
+        </div>
+    </div>
+    <div class="container test">
+        <div class="row">
+            <div class="col-md-3 ">
+                <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle">Common Modal</a>
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+<!--        <h4 class="modal-title" id="exampleModalToggleLabel">Modal Title</h4>-->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="body-block">
+             <h4>Body Block Title</h4>
+             <p class="body-text-mini">Lorem ipsum is a dummy text.</p>
+          </div>
+          <div class="body-block-group inline-block right-border">
+              <div class="body-block">
+                 <div class="body-text-emphasis">Small Block Title</div>
+                 <p class="body-text-mini">Lorem ipsum</p>
+              </div>
+                <div class="body-block">
+                 <div class="body-text-emphasis">Small Block Title</div>
+                 <p class="body-text-mini">Lorem ipsum</p>
+              </div>
+          </div>
+          
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Primary</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+               
+                </div>
+              <div class="col-md-3 click">
+                  <b>Copy Modal HTML</b>
+             <div class="d-none copy">
+                                <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle">Common Modal</a>
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                <!--        <h4 class="modal-title" id="exampleModalToggleLabel">Modal Title</h4>-->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div class="body-block">
+                             <h4>Body Block Title</h4>
+                             <p class="body-text-mini">Lorem ipsum is a dummy text.</p>
+                          </div>
+                          <div class="body-block-group inline-block right-border">
+                              <div class="body-block">
+                                 <div class="body-text-emphasis">Small Block Title</div>
+                                 <p class="body-text-mini">Lorem ipsum</p>
+                              </div>
+                                <div class="body-block">
+                                 <div class="body-text-emphasis">Small Block Title</div>
+                                 <p class="body-text-mini">Lorem ipsum</p>
+                              </div>
+                          </div>
+                          
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Primary</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+             
+            </div>
+        </div>
+     <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Chips</h2>
+        </div>
+    </div>
+    <div class="container test">
+        <div class="row">
+            <div class="col-md-12 click">
+                
+    <ul class="d-flex flex-wrap chip-group">
+    <li class="chip">
+      <div class="chip-label">Removable Chips</div><a class="chip-btn" href="#"><img src="assets/images/icon-close-dark.svg" alt="" />
+      </a>
+    </li>
+ <li class="chip">
+      <div class="chip-label">Removable Chips</div><a class="chip-btn" href="#"><img src="assets/images/icon-close-dark.svg" alt="" />
+      </a>
+    </li>
+         <li class="chip">
+      <div class="chip-label">Removable Chips</div><a class="chip-btn" href="#"><img src="assets/images/icon-close-dark.svg" alt="" />
+      </a>
+    </li>
+        </ul>
+               
+                </div>
+              
+             
+            </div>
+        </div>
+      <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Avatars</h2>
+        </div>
+    </div>
+    <div class="container test">
+        <div class="row">
+            <div class="col-md-2 click">
+                <img src="assets/images/avtar-male.svg" class="avtar avtar-lg" alt="" /><br><br><b>.avtar .avtar-lg</b><div class="d-none copy">avtar .avtar-lg</div>
+            </div>
+                <div class="col-md-2 click">
+                <img src="assets/images/avtar-male.svg" class="avtar avtar-md" alt="" /><br><br><b>.avtar .avtar-md</b><div class="d-none copy">avtar .avtar-md</div>
+            </div>
+              <div class="col-md-2 click">
+                <img src="assets/images/avtar-male.svg" class="avtar avtar-sm" alt="" /><br><br><b>.avtar .avtar-sm</b><div class="d-none copy">avtar .avtar-sm</div>
+            </div>
+             <div class="col-md-2 click">
+                <img src="assets/images/avtar-male.svg" class="avtar avtar-xs" alt="" /><br><br><b>.avtar .avtar-xs</b><div class="d-none copy">avtar .avtar-xs</div>
+            </div>
+             <div class="col-md-2 click">
+                <img src="assets/images/avtar-male.svg" class="avtar avtar-xxs" alt="" /><br><br><b>.avtar .avtar-xxs</b><div class="d-none copy">avtar .avtar-xxs</div>
+            </div>
+            </div>
+        </div>
+    <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Datepickers</h2>
+        </div>
+    </div>
+<div class="container test">
+        <div class="row">
+            <div class="col-md-4 click">
+                <div class="body-text mb-3">Date Range Picker</div>
+                <div class="form-floating">
+                  <input type="text" name="daterange" class="form-control daterange pd-y-12" value="" placeholder="Created date" />
+                   <label for="floatingInput">Label</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                    <img src="assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon">
+                </div>
+            </div>
+            <div class="col-md-4 click">
+                <div class="body-text mb-3">Date datepicker Picker</div>
+                <div class="form-floating">
+                  <input type="text" name="daterange" class="form-control datepicker pd-y-12" value="" placeholder="Created date" />
+                   <label for="floatingInput">Label</label>
+                    <div class="feedback invalid-feedback">
+                          error message.
+                    </div>
+                    <img src="assets/images/icon-calendar-dark.svg" alt="" class="input-icon right-icon">
+                </div>
+            </div>
+              
+            </div>
+        </div>
+    <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Alerts</h2>
+        </div>
+    </div>
+<div class="container test">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="alert alert-primary" role="alert">
+  <div class="alert-content"><i class="icon-check-fill"></i> A primary success alert—check it out!</div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<div class="alert alert-success" role="alert">
+    <div class="alert-content"><i class="icon-check-fill"></i> A simple success alert—check it out!</div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="alert alert-danger" role="alert">
+   <div class="alert-content"><i class="icon-cross-fill"></i> A danger success alert—check it out!</div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="alert alert-warning" role="alert">
+  <div class="alert-content"><i class="icon-alert"></i> A warning success alert—check it out!</div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+
+            </div>
+            </div>
+        </div>
+    
+    <div class=" bg-primary-5 p-4 text-left mb-5 mt-5">
+        <div class="container">
+        <h2>Footer</h2>
+        </div>
+    </div>
+<footer class="footer mt-auto py-3 dark-bg">
+  <div class="container">
+    <span class="text-muted">Place sticky footer content here.</span>
+  </div>
+</footer>
+
+
+
+<div id="copied-success" class="copied">
+
+    <div class="box">
+        <span>Copied!</span>
+        <textarea  class="copy-input w-100" value="https://www.bugra.work" id="copyClipboard" readonly></textarea>
+    </div>
+</div>
+
+<!-- <div class=""></div> -->
+
+<!-- jQuery, Popper.js, and Bootstrap JS --> 
+
+<script src="assets/js/jquery-3.5.1.min.js"></script> 
+<script src="assets/js/popper.min-2.9.2.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+    <script src="assets/js/bootstrap-select.min.1.14.js"></script>
+
+
+    <!-- Datepicker JS -->    
+<script src="assets/js/moment.min.js"></script> 
+<script src="assets/js/daterangepicker.js"></script> 
+    <!-- dataTables -->
+<script src="assets/js/jquery.dataTables.min.js"></script> 
+<script src="assets/js/dataTables.bootstrap5.min.js"></script> 
+
+<!-- Autocomplete JS -->    
+<script src="assets/js/search_autocomplete.js"></script> 
+
+<script src="assets/js/os-browser-detection.js"></script> 
+
+<!--  Custom JS--> 
+<script src="assets/js/custom.js"></script> 
+
+<script>
+    $(document).ready(function(){
+        $('.click').removeClass('click').addClass('not-click');
+        var checkVal = 'no';
+    });
+    function customSwitchCopy(event){
+        console.log(event)
+        if (event.checked) {           
+            $('.not-click').removeClass('not-click').addClass('click');
+            var checkVal = 'yes';
+
+          } else {
+             $('.click').removeClass('click').addClass('not-click');
+            var checkVal = 'no';
+
+          }
+    }
+
+        $(".click").click(function(){
+            if ($('#customSwitch1').is(':checked')) {    
+                $(this).addClass('here');
+                var CopyHere = $('.here .copy').html()
+                $(this).removeClass('here');
+
+                $('#copyClipboard').val(CopyHere);
+
+                var copyText = document.getElementById("copyClipboard");
+                  copyText.select();
+                  copyText.setSelectionRange(0, 99999);
+                  document.execCommand("copy");
+
+                 $('#copied-success').addClass('show');
+                    setTimeout(function() {
+                        $('#copied-success').removeClass('show');
+                    }, 1000);
+            }
+
+        });
+
+</script>
+
+
+<script type="text/javascript">
+    
+
+function DataLoaderBtn() {
+    DataLoaderStart();
+
+    setTimeout(function(){
+        StopLoader()
+    }, 2000);
+}
+
+function PreLoaderBtn() {
+
+    PreLoaderStart();
+    setTimeout(function(){
+        StopLoader()
+    }, 2000);
+}
+
+
+/*An array containing all the country names in the world:*/
+var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+
+</body>
+</html>

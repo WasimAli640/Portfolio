@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3px" height="15px" viewBox="0 0 3 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-HireDNA-Candidate-Dashboard" transform="translate(-945.000000, -500.000000)" fill="#C5D9E8">
+            <g id="Group-3" transform="translate(914.000000, 357.000000)">
+                <g id="#1" transform="translate(20.000000, 104.000000)">
+                    <path d="M12.5,51 C13.3284271,51 14,51.6715729 14,52.5 C14,53.3284271 13.3284271,54 12.5,54 C11.6715729,54 11,53.3284271 11,52.5 C11,51.6715729 11.6715729,51 12.5,51 Z M12.5,45 C13.3284271,45 14,45.6715729 14,46.5 C14,47.3284271 13.3284271,48 12.5,48 C11.6715729,48 11,47.3284271 11,46.5 C11,45.6715729 11.6715729,45 12.5,45 Z M12.5,39 C13.3284271,39 14,39.6715729 14,40.5 C14,41.3284271 13.3284271,42 12.5,42 C11.6715729,42 11,41.3284271 11,40.5 C11,39.6715729 11.6715729,39 12.5,39 Z" id="Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

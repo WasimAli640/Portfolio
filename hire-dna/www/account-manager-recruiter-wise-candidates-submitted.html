@@ -1,0 +1,538 @@
+    <!doctype html>
+   <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+      <!-- Fonts CSS -->    
+      <link rel="stylesheet" href="css/fonts.css">    
+
+
+      <!-- Custom CSS -->  
+      <link rel="stylesheet" href="css/circle-progress-bar.css">    
+      <link rel="stylesheet" href="css/custom.css">    
+      <link rel="stylesheet" href="css/inner-style.css">    
+        
+       <!-- Dashboard CSS -->  
+       <link href="css/dashboard.css" rel="stylesheet">
+        
+   <!-- Animate CSS -->  
+       <link href="css/animate.css" rel="stylesheet">
+
+
+      <title>Welcome to HireDNA</title>
+    </head>
+
+  <body class="ac-m-r-vs-candidates-submitted">
+    <nav class="navbar fixed-top flex-md-nowrap p-0 align-items-start">
+    <div class="navbar-brand without-sidebar col-xl-2 col-lg-3 col-md-4 mr-0 d-flex d-md-block">
+              <a class="logo mr-0" href="#"><img src="images/hiredna_logo.svg" alt="HireDNA" width="120px" /></a>
+      <a class="notifications d-block d-md-none" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+          <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+          <img src="images/icon-bell.svg" alt=""/></a>
+   </div>
+  <ul class="navbar-nav flex-row align-items-center left-navigations"  id="left-navigations">
+        
+    <li class="nav-item ">
+      <a class="nav-link " href="account-manager-dashboard.html">Dashboard</a>
+    </li>
+           
+   <li class="nav-item">
+      <a class="nav-link" href="account-manager-candidate-list.html">Candidates</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="account-manager-recruiter-list.html">Recruiters</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Jobs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="account-manager-employer-list.html">Employers</a>
+    </li>
+        <li class="nav-item dropdown report-dropdown active">
+      <a class="nav-link dropdown-toggle" href="#" id="report-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports<img src="images/icon-angle-down-grey.svg" class="dropdown-arrow" alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="report-dropdown">
+                                      <a class="dropdown-item" href="account-manager-recruiters-commissions-list.html">Referral Earnings</a>
+                                      <a class="dropdown-item" href="account-manager-candidate-jobs-applied.html">Jobs Applied</a>
+                                      <a class="dropdown-item" href="account-manager-candidate-wise-friends-referred.html">Candidate to Candidate Referrals</a>
+                                      <a class="dropdown-item" href="  ">Recruiter to Candidate Referrals</a>
+                                      <a class="dropdown-item" href="account-manager-recruiter-wise-candidates-submitted.html">Candidates Submitted</a>
+                                      <a class="dropdown-item" href="account-manager-candidate-hired.html">Candidates Hired</a>
+                                      <a class="dropdown-item" href="account-manager-applications-pending-approval.html">Applications Pending Approval</a>
+                                      <a class="dropdown-item" href="account-manager-upcoming-interviews.html">Upcoming Interviews</a>
+                                     
+                                    </div>
+    </li>
+<li class="nav-item  dropdown report-dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="report-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources<img src="images/icon-angle-down-grey.svg" class="dropdown-arrow" alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="report-dropdown">
+                                      <a class="dropdown-item" href="account-manager-edit-resources-candidate2.html">Candidate</a>
+                                      <a class="dropdown-item" href="account-manager-edit-resources-recruter.html">Recruiter</a>
+               
+                                    </div>
+    </li>   
+    
+    
+
+           <li class="nav-item">
+      <a class="nav-link" href="#">Calendar</a>
+    </li>
+<!--
+          <li class="nav-item dropdown more">
+      <a class="nav-link dropdown-toggle" href="#" id="more-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icon-more-grey.svg"  alt=""/></a>
+        <div class="dropdown-menu" aria-labelledby="more-dropdown">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+         
+        </div>
+    </li>
+-->
+  </ul>
+
+  <ul class="navbar-nav px-3 flex-row justify-content-end align-items-center right-navigations">
+     
+         <li class="nav-item d-none d-md-block">
+      <a class="nav-link notifications" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+          <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+          <img src="images/icon-bell.svg" alt=""/></a>
+    </li>
+         
+      
+      
+        <li class="nav-item  dropdown account-dropdown  position-relative">
+          <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#dd-collapse" role="button" aria-expanded="false" aria-controls="dd-collapse"><span class="user-avtar"><img src="images/avtar-placeholder.svg" class="avtar-img" alt=""/></span> John Smith <img src="images/icon-angle-down.svg" class="dropdown-arrow" alt=""/></a>
+           <div class="collapse dd-box" id="dd-collapse">
+           
+             <div class="menu-inner">
+                <a class=" d-flex" href="#"><img src="images/icon-user.svg" alt="" class="mr-2"/>Profile <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="dd-link"></div>
+                <!-- <a class="d-flex" data-toggle="collapse" href="#status-box" role="button" aria-expanded="false" aria-controls="status-box"><img src="images/icon-status.svg" alt="" class="mr-2"/>Status <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                <div class="collapse status-label-box position-relative" id="status-box">
+                    <a href="#status-box" class="btn btn-primary ok-btn" data-toggle="collapse" aria-expanded="false" aria-controls="status-box">OK</a>
+
+                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                         <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job
+                          </label>
+                          <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job
+                          </label>
+                       <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job
+                          </label>
+                    </div>
+                </div> -->
+                <div class="dd-link"></div>
+                <a class=" d-flex" href="account-manager-login.html"><img src="images/icon-logout.svg" alt="" class="mr-2"/>Logout</a>
+            </div>
+           
+           </div>
+         </li>
+       <li class="nav-item d-xl-none d-block toggle">
+      <a class="mobile-toggle navbar-toggle d-flex align-items-center justify-content-center"  href="javascript:void(0);" id="menu-toggle">
+         <div class="bar-group d-flex flex-column align-items-center justify-content-center">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </div>
+     </a>
+    </li>
+       
+  </ul>
+</nav>
+      <main role="main" class="col-auto xs-px-0">
+          <div class="container candidate-home-filter">
+              
+            <div class="row">
+              <div class="col-12 col-md-12">
+                <h3 class="comn-title2 mt-0">
+                  Candidates Submitted
+                </h3>
+                <form class="job-search-filter-form">
+                  <div class="row m-0 p-0" >
+                     <div class="col-12 col-xl-5 col-lg-5 col-md-4 p-0" >
+                      <div class="form-group skills">
+                        <img src="images/icons/search.svg" class="set-by-position">
+                          <input class="form-control icon-gap" id="Search-Employer" type="text" name="Search" placeholder="Search by Candidate, Company, Job Applied, Status" />
+                        </div>
+                      </div>
+                    <div class="col-12 col-xl-2 col-lg-2 col-md-2 p-0" >
+                      <div class="form-group location">
+                        <img src="images/icons/ic_Salary.svg" class="set-by-position">
+                          <input class="form-control icon-gap" id="Search-Employer" type="text" name="Search" placeholder="Recruiter" />
+                        </div>
+                      </div> 
+                    <div class="col-12 col-xl-2 col-lg-2 col-md-2 p-0" >
+                      <div class="form-group location">
+                        <img src="images/icons/ic_Salary.svg" class="set-by-position">
+                          <input class="form-control icon-gap" id="Search-Employer" type="text" name="Search" placeholder="Employer" />
+                        </div>
+                      </div> 
+                    <div class="col-12 col-xl-2 col-lg-2 col-md-2 p-0" >
+                      <div class="form-group location">
+                        <img src="images/icons/match.svg" class="set-by-position">
+                          <input class="form-control icon-gap" id="Search-Employer" type="text" name="Search" placeholder="Match %" />
+                        </div>
+                      </div>                       
+                      <div class="col-12 col-xl-1 col-lg-1 col-md-2 p-0" >
+                          <a class="btn btn-lg btn-primary btn-block" href="#"> Search </a>
+                        </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="col-12 col-md-12 align-right mt-3">
+                <a href="javascript:void(0)" class="link  d-inline-block">
+                  <span class="text-decoration-none pr-1"><img src="images/icons/export-report.svg" alt=" "></span>Export Report
+                </a>
+              </div>
+            </div>
+
+            <div class="Job-matches-for-you jobs-applied">
+                  <ul class="m-0 p-0 list-style-none xs-px-0-section-style recruiter-wise-candidates-submitted">
+                    <li class="section-style hover-effect-grow ">
+                      <a href="javascript:void(0)" class="no-effect pr-md-0">
+                      <div class="row">
+                        <div class="col-9 col-md-10 col-lg-3">
+                          <div class="company-details d-flex align-items-center">
+                            <img src="https://www.designbolts.com/wp-content/uploads/2019/02/beautiful-girl-face-free-stock-photo-1.jpg" class="company_logo">
+                              <div class="">
+                                <h4 class="comn-title font-normal mb-1">Bertie Lewis</h4>
+                                <p class="pera charcol-grey-color  m-0 d-inline-block w-100">Company </p>
+                                <p class="pera charcol-grey-color m-0 d-inline-block  w-100 status-in-line">Status: 
+                            <span class="table-status no-count simple-ui yellow-warning ml-md-1">
+                              Pending Approval
+                            </span>
+                          </p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-8 other-info row d-flex align-items-center order-lg-2 order-md-3 ac-recruiter-listing">
+                          <p class="pera charcol-grey-color  m-0  col-md-3 col-12 pl-md-0 pl-lg-2">Recruiter <br> <span class=" dark-blue-color">Jeremiah Hill</span></p>
+
+                          <p class="pera charcol-grey-color m-0   col-md-3">Submitted on <br> <span class=" dark-blue-color ">02-17-2020</span></p>
+                          
+
+                          <p class="pera charcol-grey-color m-0   col-md-4">Position Referred <br> <span class="dark-blue-color ">Sales manager / Stock manager </span></p>
+
+                          <p class="pera charcol-grey-color m-0   col-md-2">Employer <br> <span class="dark-blue-color ">Canon USA </span></p>
+                        </div>
+                        <div class="col-3 col-md-2 col-lg-1 circle-progress-bar-md-top  d-flex order-lg-3 order-md-2">
+                            <div class=" circle-progress-bar">
+                                <div class="progress progress-bar-big " data-percentage="90">
+                                    <span class="progress-left">
+                                        <span class="progress-bar "></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar "></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      </div>
+                    </a>
+                  </li>
+                    <li class="section-style hover-effect-grow ">
+                      <a href="javascript:void(0)" class="no-effect pr-md-0">
+                      <div class="row">
+                        <div class="col-9 col-md-10 col-lg-3">
+                          <div class="company-details d-flex align-items-center">
+                            <img src="images/user-pic1.jpg" class="company_logo">
+                              <div class="">
+                                <h4 class="comn-title font-normal mb-1">Eddie Ray</h4>
+                                <p class="pera charcol-grey-color  m-0 d-inline-block w-100">Company </p>
+                                <p class="pera charcol-grey-color m-0 d-inline-block  w-100 status-in-line">Status: 
+                            <span class="table-status no-count simple-ui yellow-warning ml-md-1">
+                              Pending Approval
+                            </span>
+                          </p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-8 other-info row d-flex align-items-center order-lg-2 order-md-3 ac-recruiter-listing">
+                          <p class="pera charcol-grey-color  m-0   col-md-3 col-12 pl-md-0 pl-lg-2">Recruiter <br> <span class=" dark-blue-color">VOV International</span></p>
+
+                          <p class="pera charcol-grey-color m-0   col-md-3">Submitted on <br> <span class=" dark-blue-color ">02-16-2020</span></p>
+                          
+
+                          <p class="pera charcol-grey-color m-0   col-md-4">Position Referred <br> <span class=" dark-blue-color ">Assistant sales manager </span></p>
+
+                          <p class="pera charcol-grey-color m-0   col-md-2">Employer <br> <span class=" dark-blue-color ">Canon USA </span></p>
+                        </div>
+                        <div class="col-3 col-md-2 col-lg-1 circle-progress-bar-md-top  d-flex order-lg-3 order-md-2">
+                            <div class=" circle-progress-bar">
+                                <div class="progress progress-bar-big " data-percentage="90">
+                                    <span class="progress-left">
+                                        <span class="progress-bar "></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar "></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      </div>
+                    </a>
+                  </li>
+                    <li class="section-style hover-effect-grow ">
+                      <a href="javascript:void(0)" class="no-effect pr-md-0">
+                      <div class="row">
+                        <div class="col-9 col-md-10 col-lg-3">
+                          <div class="company-details d-flex align-items-center">
+                            <img src="images/user-pic2.jpg" class="company_logo">
+                              <div class="">
+                                <h4 class="comn-title font-normal mb-1">Andre Gonzales</h4>
+                                <p class="pera charcol-grey-color  m-0 d-inline-block w-100">Company </p>
+                                <p class="pera charcol-grey-color m-0 d-inline-block  w-100 status-in-line">Status: 
+                            <span class="table-status no-count simple-ui yellow-warning ml-md-1">
+                              Pending Approval
+                            </span>
+                          </p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-8 other-info row d-flex align-items-center order-lg-2 order-md-3 ac-recruiter-listing">
+                          <p class="pera charcol-grey-color  m-0  col-md-3 col-12 pl-md-0 pl-lg-2">Recruiter <br> <span class="dark-blue-color">SG Consultants</span></p>
+
+                          <p class="pera charcol-grey-color m-0   col-md-3">Submitted on <br> <span class="dark-blue-color ">02-15-2020</span></p>
+                          
+
+                          <p class="pera charcol-grey-color m-0   col-md-4">Position Referred <br> <span class="dark-blue-color ">Manager </span></p>
+
+                          <p class="pera charcol-grey-color m-0  col-md-2">Employer<br> <span class="dark-blue-color ">Canon USA </span></p>
+                        </div>
+                        <div class="col-3 col-md-2 col-lg-1 circle-progress-bar-md-top  d-flex order-lg-3 order-md-2">
+                            <div class=" circle-progress-bar">
+                                <div class="progress progress-bar-big " data-percentage="90">
+                                    <span class="progress-left">
+                                        <span class="progress-bar "></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar "></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      </div>
+                    </a>
+                  </li>
+                    <li class="section-style hover-effect-grow ">
+                      <a href="javascript:void(0)" class="no-effect pr-md-0">
+                      <div class="row">
+                        <div class="col-9 col-md-10 col-lg-3">
+                          <div class="company-details d-flex align-items-center">
+                            <img src="images/user-pic3.jpg" class="company_logo">
+                              <div class="">
+                                <h4 class="comn-title font-normal mb-1">Vernon Sherman</h4>
+                                <p class="pera charcol-grey-color  m-0 d-inline-block w-100">Company </p>
+                                <p class="pera charcol-grey-color m-0 d-inline-block  w-100 status-in-line">Status: 
+                            <span class="table-status no-count simple-ui yellow-warning ml-md-1">
+                              Pending Approval
+                            </span>
+                          </p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-8 other-info row d-flex align-items-center order-lg-2 order-md-3 ac-recruiter-listing">
+                          <p class="pera charcol-grey-color  m-0 col-md-3 col-12 pl-md-0 pl-lg-2">Recruiter <br> <span class=" dark-blue-color">Jeremiah Hill</span></p>
+
+                          <p class="pera charcol-grey-color m-0 col-md-3">Submitted on <br> <span class=" dark-blue-color ">02-14-2020</span></p>
+                          
+
+                          <p class="pera charcol-grey-color m-0 col-md-4">Position Referred <br> <span class=" dark-blue-color ">Sales manager </span></p>
+
+                          <p class="pera charcol-grey-color m-0 col-md-2">Employer <br> <span class=" dark-blue-color ">Canon USA </span></p>
+                        </div>
+                        <div class="col-3 col-md-2 col-lg-1 circle-progress-bar-md-top  d-flex order-lg-3 order-md-2">
+                            <div class=" circle-progress-bar">
+                                <div class="progress progress-bar-big " data-percentage="90">
+                                    <span class="progress-left">
+                                        <span class="progress-bar "></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar "></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      </div>
+                    </a>
+                  </li>
+                    <li class="section-style hover-effect-grow ">
+                      <a href="javascript:void(0)" class="no-effect pr-md-0">
+                      <div class="row">
+                        <div class="col-9 col-md-10 col-lg-3">
+                          <div class="company-details d-flex align-items-center">
+                            <img src="images/user-pic1.jpg" class="company_logo">
+                              <div class="">
+                                <h4 class="comn-title font-normal mb-1">Mattie Brown</h4>
+                                <p class="pera charcol-grey-color  m-0 d-inline-block w-100">Company </p>
+                                <p class="pera charcol-grey-color m-0 d-inline-block  w-100 status-in-line">Status: 
+                            <span class="table-status no-count simple-ui yellow-warning ml-md-1">
+                              Pending Approval
+                            </span>
+                          </p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-8 other-info row d-flex align-items-center order-lg-2 order-md-3 ac-recruiter-listing">
+                          <p class="pera charcol-grey-color  m-0 d-inline-block   col-md-3 col-12 pl-md-0 pl-lg-2">Recruiter <br> <span class="dark-blue-color">Jeremiah Hill</span></p>
+
+                          <p class="pera charcol-grey-color m-0 col-md-3">Submitted on <br> <span class="dark-blue-color ">02-14-2020</span></p>
+                          
+
+                          <p class="pera charcol-grey-color m-0 col-md-4">Position Referred <br> <span class=" dark-blue-color ">Sales manager </span></p>
+
+                          <p class="pera charcol-grey-color m-0 col-md-2">Employer <br> <span class="dark-blue-color ">Canon USA </span></p>
+                        </div>
+                        <div class="col-3 col-md-2 col-lg-1 circle-progress-bar-md-top  d-flex order-lg-3 order-md-2">
+                            <div class=" circle-progress-bar">
+                                <div class="progress progress-bar-big " data-percentage="90">
+                                    <span class="progress-left">
+                                        <span class="progress-bar "></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar "></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      </div>
+                    </a>
+                  </li>
+
+                  
+                  
+                </ul>
+            </div>
+            <div class="dataTables_paginate paging_simple_numbers">
+              <ul class="pagination ml-auto">
+                <li class="paginate_button page-item previous " id="Account-Manager-Candidate_previous">
+                  <a href="#" aria-controls="Account-Manager-Candidate" data-dt-idx="2" tabindex="0" class="page-link">Previous</a>
+                </li>
+
+                <li class="paginate_button page-item ">
+                  <a href="#" aria-controls="Account-Manager-Candidate" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                </li>
+                <li class="paginate_button page-item ">
+                  <a href="#" aria-controls="Account-Manager-Candidate" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                </li>
+                <li class="paginate_button page-item active">
+                  <a href="#" aria-controls="Account-Manager-Candidate" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+                </li>
+
+
+                <li class="paginate_button page-item next disabled" id="Account-Manager-Candidate_next">
+                  <a href="#" aria-controls="Account-Manager-Candidate" data-dt-idx="4" tabindex="0" class="page-link">Next</a>
+                </li>
+              </ul>
+            </div>
+</div>
+      </main>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/dashboard.js"></script>
+
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+         <script>
+
+                 $(document).ready(function(){
+      $("#sidebar-toggle").click(function(){
+        $(".sidebar").toggleClass("open");
+        $("#sidebar-toggle").toggleClass("active");
+      });
+       $("#menu-toggle").click(function(){
+           $(".left-navigations").toggleClass("open");
+        $("#menu-toggle").toggleClass("active");
+      });
+        });
+
+
+
+      </script>
+<!--    Notification Modal -->
+<div class="modal blue-overlay fade" id="NotificationModal" tabindex="-1" role="dialog" aria-labelledby="NotificationModalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout notification-modal" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-flex align-items-center">
+        <h5 class="modal-title" id="NotificationModalModalLabel">Notifications</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="images/icon-cross-black.svg" alt="close"/>
+        </button>
+      </div>
+      <div class="modal-body notification-body">
+          <div class="small-text mr-auto">Today</div>
+          <div class="notification d-flex flex-column new">
+              <div class="notification-content-block d-flex">
+                  <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                  <div class="notification-content">
+                      <div class="notification-title">6WRESEARCH</div>
+                      <div class="notification-description">Hi, you have been shortlisted for the role of Sales Manager on 6WRESEARCH. Please attend this assessment to proceed further.</div>
+                  </div>
+              </div>
+               <div class="small-text ml-auto">19-02-2020, 03:14AM </div>
+          </div>
+          <div class="notification d-flex flex-column">
+              <div class="notification-content-block d-flex">
+                  <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                  <div class="notification-content">
+                      <div class="notification-title">SG Consultants</div>
+                      <div class="notification-description">Hey you,  have been shortlisted for the role of Sales Manager on SG Consultants. Please let us know your availability for an interview by clicking here.</div>
+                  </div>
+              </div>
+               <div class="small-text ml-auto">19-02-2020, 01:00AM </div>
+          </div>
+          
+          
+          
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+      </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

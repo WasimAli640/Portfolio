@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="64px" viewBox="0 0 50 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>document</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08-Account-Manager-Edit-Candidate-profile" transform="translate(-300.000000, -798.000000)" fill="#0077B7" fill-rule="nonzero">
+            <g id="Group-19" transform="translate(218.000000, 628.000000)">
+                <g id="Group-20" transform="translate(16.000000, 170.000000)">
+                    <g id="document" transform="translate(66.000000, 0.000000)">
+                        <path d="M9.2138978,0 L0.571428571,8.598375 L0.571428571,64 L49.5714286,64 L49.5714286,0 L9.2138978,0 Z M46.9417327,61.3928571 L3.20112446,61.3928571 L3.20112446,10.1071429 L11.8791209,10.1071429 L11.8791209,2.60714286 L46.9417327,2.60714286 L46.9417327,61.3928571 Z" id="Shape"></path>
+                        <polygon id="Rectangle" points="9.57142857 15 40.5714286 15 40.5714286 18 9.57142857 18"></polygon>
+                        <polygon id="Rectangle" points="9.57142857 22 40.5714286 22 40.5714286 25 9.57142857 25"></polygon>
+                        <polygon id="Rectangle" points="9.57142857 30 40.5714286 30 40.5714286 33 9.57142857 33"></polygon>
+                        <polygon id="Rectangle" points="9.57142857 38 40.5714286 38 40.5714286 41 9.57142857 41"></polygon>
+                        <polygon id="Rectangle" points="9.57142857 45 25.5714286 45 25.5714286 48 9.57142857 48"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

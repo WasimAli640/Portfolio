@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="239px" height="239px" viewBox="0 0 239 239" version="1.1">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Curve</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Web-Black-Section1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-35.000000, -623.000000)">
+        <path d="M271.5,625 C141.989,625 37,729.989 37,859.5 L104,859.5 C104,766.992 178.992,692 271.5,692 L271.5,625 Z" id="Curve" stroke="#FFDD59" stroke-width="4" transform="translate(154.250000, 742.250000) rotate(-90.000000) translate(-154.250000, -742.250000) "/>
+    </g>
+</svg>

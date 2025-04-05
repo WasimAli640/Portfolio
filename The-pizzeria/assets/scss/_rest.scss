@@ -1,0 +1,78 @@
+@import url(../font/font.css);
+    $loadTime : .3s;
+    // Font Family
+    $font-Oswald: 'Oswald';
+    $font-Roboto:'Roboto' ;
+    $font-Source-sans:'Source Sans Pro' ;
+    $font-montserrat:'Montserrat';
+    
+    // Media Query
+    $tablet: "(max-width: 991px)"; 
+    $mobileXL: "(max-width: 767px)"; // tablet
+    $mobile: "(max-width: 575px)"; // mobile
+    
+* {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    moz-font-smoothing:antialiased;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 106.25%;
+}
+html, body {
+    position: relative;
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+    overscroll-behavior: none;
+}
+body {
+    font-family: 'Source Sans Pro';
+    overflow-x: hidden;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+a {
+    display: inline-block;
+}
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none !important;
+}
+body,
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6,
+p{
+    margin: 0;
+}
+
+.cs-card,
+button {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+

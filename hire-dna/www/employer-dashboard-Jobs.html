@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Fonts CSS -->    
+    <link rel="stylesheet" href="css/fonts.css">    
+
+
+    <!-- Custom CSS -->  
+    <link rel="stylesheet" href="css/circle-progress-bar.css">    
+    <link rel="stylesheet" href="css/custom.css">    
+    <link rel="stylesheet" href="css/inner-style.css">    
+          <link rel="stylesheet" href="css/bootstrap-select.css">    
+      
+     <!-- Dashboard CSS -->  
+     <link href="css/dashboard.css" rel="stylesheet">
+      
+ <!-- Animate CSS -->  
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link href="css/animate.css" rel="stylesheet">
+
+
+    <title>Welcome to HireDNA</title>
+  </head>
+
+<body>
+
+<div class="modal fade candidate-flow-modal  " id="Account-Manager-Recruiter-Of-Candidate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg table-section-popup" role="document" style=" ">
+    <div class="modal-content">
+      <div class="modal-header pb-0 text-center justify-content-center align-items-center position-relative">
+        <div class="d-flex  justify-content-between align-items-center w-100 mt-3">
+          <h5 class="modal-title text-left " id="exampleModalLabel">Users - Payes</h5>
+          <a data-toggle="modal" data-target="#AddEmployerUserModal" data-dismiss="modal" href="javascript:void(0)" class="link ml-auto mt-auto mb-3 d-inline-block">
+            + Add Employer User
+          </a>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <img src="images/icons/cross-circle.svg"> </button>
+      </div>
+      <div class="modal-body align-center">
+        <section class="section-style section-gap-bottom ">
+                                        <table id="Account-Manager-Candidate02" class="table table-ui table-status-right table-striped mt-0 table1 w-100" >
+                                          <thead>
+                                            <tr>
+                                              <th >&nbsp;</th>
+                                              <th>User Name</th>
+                                              <th>Title</th>
+                                              <th>EMAIL</th>
+                                              <th>PHONE</th>
+                                              <th  style=" min-width: 120px;width: 120px;">Status</th>
+                                              <th style="max-width: 120px; max-width: 120px;width: 120px;" >Action </th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+
+                                            <tr>
+                                              <td>
+                                                <div class="custom-control custom-checkbox custom-checkbox-sty2 login-checkbox">
+                                                  <input type="checkbox" id="LoggedIn11" name="KeepLoggedIn" class="custom-control-input">
+                                                    <label class="custom-control-label" for="LoggedIn11">&nbsp;</label>
+                                                  </div>
+                                              </td>
+                                              <td>Gilbert Moreno</td>
+                                              <td>HR Executive</td>
+                                              <td>
+                                                <a href="mailto:gilbert@gmail.com" class="link">gilbert@gmail.com</a>
+                                              </td>
+                                              <td>+1-202-555-0108</td>
+                                              <td>
+                                                <div class="dropdown">
+                                                  <a class="dropdown-toggle" href="javascript:;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Active  </a>
+                                                  <div class="dropdown-menu dd-box p-2" aria-labelledby="dropdownMenu2">
+                                                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                                                      <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                                                        <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                              <input type="radio" name="options" id="option3" autocomplete="off"> Inactive                      
+                                                      </label>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                              </td>
+                                              <td >
+                                                <div class="d-flex justify-content-between">
+                                                  <a data-toggle="modal" data-target="#delete-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-delete.svg" class="">
+                                                  </a>
+                                                  <a data-toggle="modal" data-target="#Update-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-edit2.svg" class="">
+                                                  </a>
+                                                </div>
+                                              </td>
+                                            </tr>
+
+                        
+                        <tr>
+                                              <td>
+                                                <div class="custom-control custom-checkbox custom-checkbox-sty2 login-checkbox">
+                                                  <input type="checkbox" id="LoggedIn22" name="KeepLoggedIn" class="custom-control-input">
+                                                    <label class="custom-control-label" for="LoggedIn22">&nbsp;</label>
+                                                  </div>
+                                              </td>
+                                              <td>Hulda Stewart</td>
+                                              <td>VP-HR</td>
+                                              <td>
+                                                <a href="mailto:gilbert@gmail.com" class="link">hulda.s@gmail.com</a>
+                                              </td>
+                                              <td>+1-202-555-0139</td>
+                                              <td>
+                                                <div class="dropdown">
+                                                  <a class="dropdown-toggle" href="javascript:;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Active  </a>
+                                                  <div class="dropdown-menu dd-box p-2" aria-labelledby="dropdownMenu2">
+                                                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                                                      <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                                                        <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                              <input type="radio" name="options" id="option3" autocomplete="off"> Inactive                      
+                                                      </label>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                              </td>
+                                              <td >
+                                                <div class="d-flex justify-content-between">
+                                                  <a data-toggle="modal" data-target="#delete-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-delete.svg" class="">
+                                                  </a>
+                                                  <a data-toggle="modal" data-target="#Update-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-edit2.svg" class="">
+                                                  </a>
+                                                </div>
+                                              </td>
+                                            </tr>
+                        
+                        
+                        <tr>
+                                              <td>
+                                                <div class="custom-control custom-checkbox custom-checkbox-sty2 login-checkbox">
+                                                  <input type="checkbox" id="LoggedIn33" name="KeepLoggedIn" class="custom-control-input" checked>
+                                                    <label class="custom-control-label" for="LoggedIn33">&nbsp;</label>
+                                                  </div>
+                                              </td>
+                                              <td>Ella Tran</td>
+                                              <td>HR Executive</td>
+                                              <td>
+                                                <a href="mailto:gilbert@gmail.com" class="link">ella.t@rediff.com</a>
+                                              </td>
+                                              <td>+1-202-555-0139</td>
+                                              <td>
+                                                <div class="dropdown">
+                                                  <a class="dropdown-toggle" href="javascript:;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Active  </a>
+                                                  <div class="dropdown-menu dd-box p-2" aria-labelledby="dropdownMenu2">
+                                                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                                                      <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                                                        <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                              <input type="radio" name="options" id="option3" autocomplete="off"> Inactive                      
+                                                      </label>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                              </td>
+                                              <td >
+                                                <div class="d-flex justify-content-between">
+                                                  <a data-toggle="modal" data-target="#delete-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-delete.svg" class="">
+                                                  </a>
+                                                  <a data-toggle="modal" data-target="#Update-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-edit2.svg" class="">
+                                                  </a>
+                                                </div>
+                                              </td>
+                                            </tr>
+                        
+                        
+                        
+                        <tr>
+                                              <td>
+                                                <div class="custom-control custom-checkbox custom-checkbox-sty2 login-checkbox">
+                                                  <input type="checkbox" id="LoggedIn44" name="KeepLoggedIn" class="custom-control-input">
+                                                    <label class="custom-control-label" for="LoggedIn44">&nbsp;</label>
+                                                  </div>
+                                              </td>
+                                              <td>William Davis</td>
+                                              <td>VP-HR</td>
+                                              <td>
+                                                <a href="mailto:gilbert@gmail.com" class="link">william@gmail.com</a>
+                                              </td>
+                                              <td>+1-701-555-0124</td>
+                                              <td>
+                                                <div class="dropdown">
+                                                  <a class="dropdown-toggle" href="javascript:;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Active  </a>
+                                                  <div class="dropdown-menu dd-box p-2" aria-labelledby="dropdownMenu2">
+                                                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                                                      <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                                                        <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                              <input type="radio" name="options" id="option3" autocomplete="off"> Inactive                      
+                                                      </label>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                              </td>
+                                              <td >
+                                                <div class="d-flex justify-content-between">
+                                                  <a data-toggle="modal" data-target="#delete-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-delete.svg" class="">
+                                                  </a>
+                                                  <a data-toggle="modal" data-target="#Update-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-edit2.svg" class="">
+                                                  </a>
+                                                </div>
+                                              </td>
+                                            </tr>
+                        
+                        
+                        <tr>
+                                              <td>
+                                                <div class="custom-control custom-checkbox custom-checkbox-sty2 login-checkbox">
+                                                  <input type="checkbox" id="LoggedIn55" name="KeepLoggedIn" class="custom-control-input">
+                                                    <label class="custom-control-label" for="LoggedIn55">&nbsp;</label>
+                                                  </div>
+                                              </td>
+                                              <td>Jean Flowers</td>
+                                              <td>VP-HR</td>
+                                              <td>
+                                                <a href="mailto:gilbert@gmail.com" class="link">jean.f@gmail.com</a>
+                                              </td>
+                                              <td>+1-651-555-0149</td>
+                                              <td>
+                                                <div class="dropdown">
+                                                  <a class="dropdown-toggle" href="javascript:;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Active  </a>
+                                                  <div class="dropdown-menu dd-box p-2" aria-labelledby="dropdownMenu2">
+                                                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                                                      <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                                                        <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                              <input type="radio" name="options" id="option3" autocomplete="off"> Inactive                      
+                                                      </label>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                              </td>
+                                              <td >
+                                                <div class="d-flex justify-content-between">
+                                                  <a data-toggle="modal" data-target="#delete-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-delete.svg" class="">
+                                                  </a>
+                                                  <a data-toggle="modal" data-target="#Update-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-edit2.svg" class="">
+                                                  </a>
+                                                </div>
+                                              </td>
+                                            </tr>
+                        
+                        <tr>
+                                              <td>
+                                                <div class="custom-control custom-checkbox custom-checkbox-sty2 login-checkbox">
+                                                  <input type="checkbox" id="LoggedIn66" name="KeepLoggedIn" class="custom-control-input">
+                                                    <label class="custom-control-label" for="LoggedIn66">&nbsp;</label>
+                                                  </div>
+                                              </td>
+                                              <td>Rebecca Montgomery</td>
+                                              <td>HR Executive</td>
+                                              <td>
+                                                <a href="mailto:gilbert@gmail.com" class="link">Rebecca@m.com</a>
+                                              </td>
+                                              <td>+1-202-555-0139</td>
+                                              <td>
+                                                <div class="dropdown">
+                                                  <a class="dropdown-toggle" href="javascript:;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Active  </a>
+                                                  <div class="dropdown-menu dd-box p-2" aria-labelledby="dropdownMenu2">
+                                                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                                                      <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                                                        <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                              <input type="radio" name="options" id="option3" autocomplete="off"> Inactive                      
+                                                      </label>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                              </td>
+                                              <td >
+                                                <div class="d-flex justify-content-between">
+                                                  <a data-toggle="modal" data-target="#delete-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-delete.svg" class="">
+                                                  </a>
+                                                  <a data-toggle="modal" data-target="#Update-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-edit2.svg" class="">
+                                                  </a>
+                                                </div>
+                                              </td>
+                                            </tr>
+                        
+                        
+                        <tr>
+                                              <td>
+                                                <div class="custom-control custom-checkbox custom-checkbox-sty2 login-checkbox">
+                                                  <input type="checkbox" id="LoggedIn77" name="KeepLoggedIn" class="custom-control-input">
+                                                    <label class="custom-control-label" for="LoggedIn77">&nbsp;</label>
+                                                  </div>
+                                              </td>
+                                              <td>Ricky Reyes</td>
+                                              <td>HR Executive</td>
+                                              <td>
+                                                <a href="mailto:gilbert@gmail.com" class="link">ricky.r@Yahoo.com</a>
+                                              </td>
+                                              <td>+1-803-555-0146</td>
+                                              <td>
+                                                <div class="dropdown">
+                                                  <a class="dropdown-toggle" href="javascript:;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Active  </a>
+                                                  <div class="dropdown-menu dd-box p-2" aria-labelledby="dropdownMenu2">
+                                                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                                                      <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                                                        <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                              <input type="radio" name="options" id="option3" autocomplete="off"> Inactive                      
+                                                      </label>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                              </td>
+                                              <td >
+                                                <div class="d-flex justify-content-between">
+                                                  <a data-toggle="modal" data-target="#delete-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-delete.svg" class="">
+                                                  </a>
+                                                  <a data-toggle="modal" data-target="#Update-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-edit2.svg" class="">
+                                                  </a>
+                                                </div>
+                                              </td>
+                                            </tr>
+                        
+                        
+                        
+                        
+                         
+                        <tr>
+                                              <td>
+                                                <div class="custom-control custom-checkbox custom-checkbox-sty2 login-checkbox">
+                                                  <input type="checkbox" id="Logged-In99" name="KeepLoggedIn" class="custom-control-input">
+                                                    <label class="custom-control-label" for="Logged-In99">&nbsp;</label>
+                                                  </div>
+                                              </td>
+                                              <td>Jose Murray</td>
+                                              <td>VP-HR</td>
+                                              <td>
+                                                <a href="mailto:gilbert@gmail.com" class="link">jose.m@hotmail.com</a>
+                                              </td>
+                                              <td>+1-303-555-0153</td>
+                                              <td>
+                                                <div class="dropdown">
+                                                  <a class="dropdown-toggle" href="javascript:;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Active  </a>
+                                                  <div class="dropdown-menu dd-box p-2" aria-labelledby="dropdownMenu2">
+                                                    <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                                                      <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                                                        <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                            <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job                      
+                                                      </label>
+                                                      <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                              <input type="radio" name="options" id="option3" autocomplete="off"> Inactive                      
+                                                      </label>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                              </td>
+                                              <td >
+                                                <div class="d-flex justify-content-between">
+                                                  <a data-toggle="modal" data-target="#delete-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-delete.svg" class="">
+                                                  </a>
+                                                  <a data-toggle="modal" data-target="#Update-recruiter" href="javascript:void(0)">
+                                                  <img src="images/icon-edit2.svg" class="">
+                                                  </a>
+                                                </div>
+                                              </td>
+                                            </tr>
+                        
+                      </tbody>
+                                      </table>
+                                    </section>
+      </div>
+     <!--  <div class="modal-footer align-center justify-content-center align-items-center">
+        <button type="button" class="btn btn-outline-primary back-btn  px-5 mb-4" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-lg btn-primary  px-5 mb-4 ml-3"  data-toggle="modal" data-target="#new-recruiter-added" data-dismiss="modal">Create Recruiter</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+  <!-- Modal -->
+<div class="modal fade candidate-flow-modal  " id="AddEmployerUserModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center justify-content-center align-items-center position-relative">
+        <h5 class="modal-title w-100" id="exampleModalLabel">Add Employer User</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <img src="images/icons/cross-circle.svg"> </button>
+      </div>
+      <div class="modal-body align-center">
+        <form class="form-box">
+      <div class="d-flex justify-content-between mt-4">
+          <div class="form__group field form-group mr-2 w-50 ">
+            <input type="input" class="form__field" placeholder="First Name" value="" name="name" id="name" required="">
+            <label for="name" class="form__label">First Name</label>
+          </div>
+        <div class="form__group field form-group w-50 ml-2">
+            <input type="input" class="form__field" placeholder="Last Name" value="" name="name" id="name2" required="">
+            <label for="name2" class="form__label">Last Name</label>
+          </div>
+        </div>
+      
+      <div class="d-flex justify-content-between mt-4">
+          <div class="form__group field form-group mr-2 w-50 ">
+            <input type="input" class="form__field" placeholder="Title" value="" name="name" id="name4" required="">
+            <label for="name4" class="form__label">Title</label>
+          </div>
+        <div class="form__group field form-group w-50 ml-2">
+            <input type="input" class="form__field" placeholder="Phone" value="" name="name" id="name5" required="">
+            <label for="name5" class="form__label">Phone</label>
+          </div>
+        </div>
+
+        <div class="form__group field form-group mt-4 w-100 ">
+        <input type="input" class="form__field" placeholder="Email" value="" name="name" id="name3" required="">
+        <label for="name3" class="form__label">Email</label>
+      </div>
+      
+
+        </form>
+      </div>
+      <div class="modal-footer align-center justify-content-center align-items-center">
+        <button type="button" class="btn btn-outline-primary back-btn  px-5 mb-4" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-lg btn-primary  px-5 mb-4 ml-3"   data-toggle="modal"  data-target="#new-recruiter-added" data-dismiss="modal">Create Employer User </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+         <nav class="navbar fixed-top flex-md-nowrap p-0 align-items-start">
+                        <div class="navbar-brand without-sidebar col-xl-2 col-lg-3 col-md-4 mr-0 d-flex d-md-block">
+                                  <a class="logo mr-0" href="#"><img src="images/hiredna_logo.svg" alt="HireDNA" width="120px" /></a>
+                          <a class="notifications d-block d-md-none" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+                              <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+                              <img src="images/icon-bell.svg" alt=""/></a>
+                       </div>
+                      <ul class="navbar-nav flex-row align-items-center left-navigations"  id="left-navigations">
+                            
+                        <li class="nav-item">
+                          <a class="nav-link " href="#">Dashboard</a>
+                        </li>
+                               <li class="nav-item  active">
+                          <a class="nav-link" href="#">Jobs</a>
+                        </li>
+                               <li class="nav-item ">
+                          <a class="nav-link" href="#">Candidates</a>
+                        </li>
+                        
+                      
+<li class="nav-item dropdown report-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="report-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports<img src="images/icon-angle-down-grey.svg" class="dropdown-arrow" alt=""></a>
+                              <div class="dropdown-menu" aria-labelledby="report-dropdown">
+                                <a class="dropdown-item" href="employer-submitted-candidate.html">Candidates Submitted</a>
+                                <a class="dropdown-item" href="employer-candidate-hired.html">Candidates Hired</a>
+                              
+                            </div>
+                        </li>
+                               
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Calendar</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link btn btn-outline-primary" href="#">Post a Job</a>
+                        </li>
+                    <!--
+                              <li class="nav-item dropdown more">
+                          <a class="nav-link dropdown-toggle" href="#" id="more-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icon-more-grey.svg"  alt=""/></a>
+                            <div class="dropdown-menu" aria-labelledby="more-dropdown">
+                              <a class="dropdown-item" href="#">Link 1</a>
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                             
+                            </div>
+                        </li>
+                    -->
+                      </ul>
+
+                      <ul class="navbar-nav px-3 flex-row justify-content-end align-items-center right-navigations">
+                         
+                             <li class="nav-item d-none d-md-block">
+                          <a class="nav-link notifications" href="javascript:void(0);" data-toggle="modal" data-target="#NotificationModal">
+                              <div class="notification-badge-counter d-flex align-items-center justify-content-center">10</div>
+                              <img src="images/icon-bell.svg" alt=""/></a>
+                        </li>
+                             
+                          
+                          
+                            <li class="nav-item  dropdown account-dropdown  position-relative">
+                              <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#dd-collapse" role="button" aria-expanded="false" aria-controls="dd-collapse"><span class="user-avtar"><img src="images/avtar-placeholder.svg" class="avtar-img" alt=""/></span> John Smith <img src="images/icon-angle-down.svg" class="dropdown-arrow" alt=""/></a>
+                               <div class="collapse dd-box" id="dd-collapse">
+                               
+                                 <div class="menu-inner">
+                                    <a class=" d-flex" href="#"><img src="images/icon-user.svg" alt="" class="mr-2"/>Profile <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                                    <div class="dd-link"></div>
+                                    <a class=" d-flex" data-toggle="modal" data-target="#Account-Manager-Recruiter-Of-Candidate" href="javascript:void(0)"><img src="images/icon-user.svg" alt="" class="mr-2"/>Manage Users </a>
+                                    <div class="dd-link"></div>
+                                      <!-- <a class="d-flex" data-toggle="collapse" href="#status-box" role="button" aria-expanded="false" aria-controls="status-box"><img src="images/icon-status.svg" alt="" class="mr-2"/>Manage Users
+
+                                       <img src="images/icon-edit.svg" alt="" class="ml-auto"/></a>
+                                      <div class="collapse status-label-box position-relative" id="status-box">
+                                          <a href="#status-box" class="btn btn-primary ok-btn" data-toggle="collapse" aria-expanded="false" aria-controls="status-box">OK</a>
+
+                                          <div class="btn-group btn-group-toggle option-group flex-wrap" data-toggle="buttons">
+                                               <label class="btn  custom-radio-button  d-flex align-items-center justify-content-center">
+                                                  <input type="radio" name="options" id="option1" autocomplete="off"> Actively looking for job
+                                                </label>
+                                                <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                  <input type="radio" name="options" id="option2" autocomplete="off"> Passively looking for job
+                                                </label>
+                                             <label class="btn custom-radio-button  d-flex align-items-center justify-content-center">
+                                                  <input type="radio" name="options" id="option3" autocomplete="off"> Not looking for job
+                                                </label>
+                                          </div>
+                                      </div> -->
+                                                               
+                                    <div class="dd-link"></div>
+                                    <a class=" d-flex" href="#"><img src="images/icon-logout.svg" alt="" class="mr-2"/>Logout</a>
+                                </div>
+                               
+                               </div>
+                             </li>
+                           <li class="nav-item d-xl-none d-block toggle">
+                          <a class="mobile-toggle navbar-toggle d-flex align-items-center justify-content-center"  href="javascript:void(0);" id="menu-toggle">
+                             <div class="bar-group d-flex flex-column align-items-center justify-content-center">
+                             <div class="bar"></div>
+                             <div class="bar"></div>
+                             <div class="bar"></div>
+                          </div>
+                         </a>
+                        </li>
+                      </ul>
+                    </nav>
+
+<div class="container">
+  <div class="row">
+
+
+<main role="main" class="col-xl-12 col-lg-12 col-md-12">
+        <h3 class="comn-title2 mt-0">Jobs<div></div></h3>
+          <div class="candidate-home-filter">
+        <form class="job-search-filter-form">
+          <div class="row m-0 p-0" >
+            <div class="col-12 col-xl-11 col-lg-11 col-md-10 p-0" >
+              <div class="form-group skills"> <img src="images/icons/search.svg" class="set-by-position">
+                <input class="form-control icon-gap" id="skills-autocompleteInput" type="text" name="Skills" placeholder="Search Jobs" />
+              </div>
+            </div>
+            
+            
+            
+            <div class="col-12 col-xl-1 col-lg-1 col-md-2 p-0 mx-auto" > <a class="btn btn-lg btn-primary btn-block" href="#"> Search </a> </div>
+          </div>
+        </form>
+        </div>
+
+          <div class="candidate-home-gap">
+              <div class="row my-5">
+                <div class="col-xl-8 col-lg-8 col-md-12">
+                  <h5 class="comn-title ">
+                    Your Job Posts
+                  </h5>
+
+                  <div class="Job-matches-for-you emp-dshbrd-jobs">
+                    <ul class="m-0 p-0 list-style-none">
+                      <li class="section-style p-4 mb-3 hover-effect-grow">
+                        <a href="recruiter-dashboard-jobs-view.html" class="no-effect">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="company-details d-flex align-items-center">
+                                <div class="pl-3 w-100">
+                                  <h4 class="comn-title ">Business Development Manager</h4>
+                                  <p  class="pera charcol-grey-color"><img src="images/icons/grey-location.svg" class="mr-1"> California</p>
+                                  <div class="mt-2 w-100">
+                                    <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Posted on: <span class="dark-blue-color">2 days ago</span></p>
+                                    <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Openings: <span class="dark-blue-color">1</span></p>
+                                    <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Job Applicants: <span class="dark-blue-color">32</span></p>
+                                    <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Experience: <span class="dark-blue-color">1 - 4 Years</span></p>
+                                    <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Salary: <span class="dark-blue-color">$30-60k</span></p>
+                                </div>
+                                </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </a>
+                      </li>
+                      <li class="section-style p-4 mb-3 hover-effect-grow">
+                        <a href="recruiter-dashboard-jobs-view.html" class="no-effect">
+                        <div class="row">
+                          <div class="col-12 ">
+                            <div class="company-details d-flex align-items-center">
+                                <div class="pl-3 w-100">
+                                  <h4 class="comn-title ">Assistant-Sales-Manager</h4>
+  <p  class="pera charcol-grey-color"><img src="images/icons/grey-location.svg" class="mr-1"> California</p>
+                                    <div class="mt-2 w-100">
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Posted on: <span class="dark-blue-color">2 days ago</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Openings: <span class="dark-blue-color">1</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Job Applicants: <span class="dark-blue-color">32</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Experience: <span class="dark-blue-color">1 - 4 Years</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Salary: <span class="dark-blue-color">$30-60k</span></p>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      </li>
+                      <li class="section-style p-4 mb-3 hover-effect-grow">
+                        <a href="recruiter-dashboard-jobs-view.html" class="no-effect">
+                        <div class="row">
+                          <div class="col-12 ">
+                            <div class="company-details d-flex align-items-center">
+                                <div class="pl-3 w-100">
+                                  <h4 class="comn-title ">Area Sales Manager</h4>
+                                      <p  class="pera charcol-grey-color"><img src="images/icons/grey-location.svg" class="mr-1"> California</p>                                    <div class="mt-2">
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Posted on: <span class="dark-blue-color">2 days ago</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Openings: <span class="dark-blue-color">1</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Job Applicants: <span class="dark-blue-color">32</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Experience: <span class="dark-blue-color">1 - 4 Years</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Salary: <span class="dark-blue-color">$30-60k</span></p>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      </li>
+                      <li class="section-style p-4 mb-3 hover-effect-grow">
+                        <a href="employer-dashboard-jobs-view.html" class="no-effect">
+                          <div class="row">
+                            <div class="col-12 ">
+                              <div class="company-details d-flex align-items-center">
+                                  <div class="pl-3 w-100">
+                                    <h4 class="comn-title ">Sales-Manager</h4>
+                                      <p  class="pera charcol-grey-color"><img src="images/icons/grey-location.svg" class="mr-1"> California</p>
+                                      <div class="mt-2 w-100">
+                                        <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Posted on: <span class="dark-blue-color">2 days ago</span></p>
+                                        <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Openings: <span class="dark-blue-color">1</span></p>
+                                        <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Job Applicants: <span class="dark-blue-color">32</span></p>
+                                        <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Experience: <span class="dark-blue-color">1 - 4 Years</span></p>
+                                        <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Salary: <span class="dark-blue-color">$30-60k</span></p>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="section-style p-4 mb-3 hover-effect-grow">
+                        <a href="recruiter-dashboard-jobs-view.html" class="no-effect">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="company-details d-flex align-items-center">
+                                  <div class="pl-3 w-100">
+                                    <h4 class="comn-title ">Business Development Manager</h4>
+                                    <p  class="pera charcol-grey-color"><img src="images/icons/grey-location.svg" class="mr-1"> California</p>
+                                    <div class="mt-2 w-100">
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Posted on: <span class="dark-blue-color">2 days ago</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Openings: <span class="dark-blue-color">1</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Job Applicants: <span class="dark-blue-color">32</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Experience: <span class="dark-blue-color">1 - 4 Years</span></p>
+                                      <p class="pera show-job-details charcol-grey-color mb-0  d-inline-block mr-4">Salary: <span class="dark-blue-color">$30-60k</span></p>
+                                  </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+               </div>
+                    <div class="dataTables_paginate paging_simple_numbers">
+              <ul class="pagination ml-auto  pr-0">
+                <li class="paginate_button page-item previous " id="Account-Manager-Candidate_previous">
+                  <a href="#" aria-controls="Account-Manager-Candidate" data-dt-idx="2" tabindex="0" class="page-link">Previous</a>
+                </li>
+
+                <li class="paginate_button page-item ">
+                  <a href="#" aria-controls="Account-Manager-Candidate" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                </li>
+                <li class="paginate_button page-item ">
+                  <a href="#" aria-controls="Account-Manager-Candidate" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                </li>
+                <li class="paginate_button page-item active">
+                  <a href="#" aria-controls="Account-Manager-Candidate" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+                </li>
+
+
+                <li class="paginate_button page-item next disabled" id="Account-Manager-Candidate_next">
+                  <a href="#" aria-controls="Account-Manager-Candidate" data-dt-idx="4" tabindex="0" class="page-link">Next</a>
+                </li>
+              </ul>
+            </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-12 mt-0 mt-md-5 mt-lg-0">
+                  <h5 class="comn-title ">
+                    Candidates Matches
+                  </h5>
+                  <section class="section-style">
+                      <!-- <hr class="m-0 green-bg"> -->
+ 
+                      <ul class="candidates-matches-4-you">
+                        <li>
+                          <img src="images/icons/candidates-matches-1.svg" class="candidates-matches-photo">
+                          <div class="candidates-details">
+                            <h3 class="name">John Smith</h3>
+                              <div class="candidates-data align-items-center d-flex">
+                                <div class=" circle-progress-bar">
+                                    <div class="progress progress-bar-big round-w115" data-percentage="90">
+                                        <span class="progress-left">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prvi-info">
+                                  <p class="candidates-designation">Assistant Sales Manager,</p>
+
+                                </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/icons/candidates-matches-2.svg" class="candidates-matches-photo">
+                          <div class="candidates-details">
+                            <h3 class="name">John Smith</h3>
+                              <div class="candidates-data align-items-center d-flex">
+                                <div class=" circle-progress-bar">
+                                    <div class="progress progress-bar-big round-w115" data-percentage="90">
+                                        <span class="progress-left">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prvi-info">
+                                  <p class="candidates-designation">Assistant Sales Manager,</p>
+                                </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/icons/candidates-matches-3.svg" class="candidates-matches-photo">
+                          <div class="candidates-details">
+                            <h3 class="name">John Smith</h3>
+                              <div class="candidates-data align-items-center d-flex">
+                                <div class=" circle-progress-bar">
+                                    <div class="progress progress-bar-big round-w115" data-percentage="90">
+                                        <span class="progress-left">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prvi-info">
+                                  <p class="candidates-designation">Assistant Sales Manager,</p>
+                                </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/icons/candidates-matches-4.svg" class="candidates-matches-photo">
+                          <div class="candidates-details">
+                            <h3 class="name">John Smith</h3>
+                              <div class="candidates-data align-items-center d-flex">
+                                <div class=" circle-progress-bar">
+                                    <div class="progress progress-bar-big round-w115" data-percentage="90">
+                                        <span class="progress-left">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prvi-info">
+                                  <p class="candidates-designation">Assistant Sales Manager,</p>
+                                </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/icons/candidates-matches-5.svg" class="candidates-matches-photo">
+                          <div class="candidates-details ">
+                            <h3 class="name">John Smith</h3>
+                              <div class="candidates-data align-items-center d-flex">
+                                <div class=" circle-progress-bar">
+                                    <div class="progress progress-bar-big round-w115" data-percentage="90">
+                                        <span class="progress-left">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prvi-info">
+                                  <p class="candidates-designation">Assistant Sales Manager,</p>
+                                </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/icons/candidates-matches-6.svg" class="candidates-matches-photo">
+                          <div class="candidates-details">
+                            <h3 class="name">John Smith</h3>
+                              <div class="candidates-data align-items-center d-flex">
+                                <div class=" circle-progress-bar">
+                                    <div class="progress progress-bar-big round-w115" data-percentage="90">
+                                        <span class="progress-left">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar "></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prvi-info">
+                                  <p class="candidates-designation">Assistant Sales Manager,</p>
+                                </div>
+                              </div>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <div class="p-4 align-right"> 
+                      <a href="#" class="link green-color">
+                        View more
+                      </a>
+                    </div>
+                  </section>
+                </div>
+              </div>
+          </div>
+
+
+    </main>
+  </div>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/bootstrap-select.js"></script>    
+<script src="js/custom.js"></script>
+    
+
+    
+    
+    
+    <!--    Notification Modal -->
+<div class="modal blue-overlay fade" id="NotificationModal" tabindex="-1" role="dialog" aria-labelledby="NotificationModalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout notification-modal" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-flex align-items-center">
+        <h5 class="modal-title" id="NotificationModalModalLabel">Notifications</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="images/icon-cross-black.svg" alt="close"/>
+        </button>
+      </div>
+      <div class="modal-body notification-body">
+          <div class="small-text mr-auto">Today</div>
+          <div class="notification d-flex flex-column new">
+              <div class="notification-content-block d-flex">
+                  <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                  <div class="notification-content">
+                      <div class="notification-title">6WRESEARCH</div>
+                      <div class="notification-description">Hi, you have been shortlisted for the role of Sales Manager on 6WRESEARCH. Please attend this assessment to proceed further.</div>
+                  </div>
+              </div>
+               <div class="small-text ml-auto">19-02-2020, 03:14AM </div>
+          </div>
+          <div class="notification d-flex flex-column">
+              <div class="notification-content-block d-flex">
+                  <div class="notification-thumb"><img src="images/notification-thumb.svg" alt=""/> </div>
+                  <div class="notification-content">
+                      <div class="notification-title">SG Consultants</div>
+                      <div class="notification-description">Hey you,  have been shortlisted for the role of Sales Manager on SG Consultants. Please let us know your availability for an interview by clicking here.</div>
+                  </div>
+              </div>
+               <div class="small-text ml-auto">19-02-2020, 01:00AM </div>
+          </div>
+          
+          
+          
+      </div>
+     
+    </div>
+  </div>
+</div>
+    </body>
+</html>
+
+
+
+
+
